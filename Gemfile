@@ -2,9 +2,6 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.9'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
 gem "pg"
 
 
@@ -19,7 +16,8 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
-
+gem 'therubyracer'
+gem 'libv8', '~> 3.11.8'
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
