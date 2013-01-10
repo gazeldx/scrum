@@ -25,6 +25,7 @@
     <orderEntry type="library" scope="PROVIDED" name="arel (v3.0.2, RVM: ruby-1.9.3-p327 [rails3.2.9]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.0.4, RVM: ruby-1.9.3-p327 [rails3.2.9]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v1.2.2, RVM: ruby-1.9.3-p327 [rails3.2.9]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="carrierwave (v0.6.2, RVM: ruby-1.9.3-p327 [rails3.2.9]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-rails (v3.2.2, RVM: ruby-1.9.3-p327 [rails3.2.9]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-script (v2.2.0, RVM: ruby-1.9.3-p327 [rails3.2.9]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-script-source (v1.4.0, RVM: ruby-1.9.3-p327 [rails3.2.9]) [gem]" level="application" />
@@ -39,6 +40,7 @@
     <orderEntry type="library" scope="PROVIDED" name="libv8 (v3.11.8.4, RVM: ruby-1.9.3-p327 [rails3.2.9]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.4.4, RVM: ruby-1.9.3-p327 [rails3.2.9]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types (v1.19, RVM: ruby-1.9.3-p327 [rails3.2.9]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mini_magick (v3.4, RVM: ruby-1.9.3-p327 [rails3.2.9]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.5.0, RVM: ruby-1.9.3-p327 [rails3.2.9]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pg (v0.14.1, RVM: ruby-1.9.3-p327 [rails3.2.9]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="polyglot (v0.3.3, RVM: ruby-1.9.3-p327 [rails3.2.9]) [gem]" level="application" />
@@ -57,6 +59,7 @@
     <orderEntry type="library" scope="PROVIDED" name="settingslogic (v2.0.9, RVM: ruby-1.9.3-p327 [rails3.2.9]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="slim (v1.3.5, RVM: ruby-1.9.3-p327 [rails3.2.9]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v2.2.2, RVM: ruby-1.9.3-p327 [rails3.2.9]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="subexec (v0.2.2, RVM: ruby-1.9.3-p327 [rails3.2.9]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="temple (v0.5.5, RVM: ruby-1.9.3-p327 [rails3.2.9]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="therubyracer (v0.11.0, RVM: ruby-1.9.3-p327 [rails3.2.9]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v0.16.0, RVM: ruby-1.9.3-p327 [rails3.2.9]) [gem]" level="application" />

@@ -1,0 +1,25 @@
+- h @trainer.name
+#about_show
+  = image_tag(@trainer.avatar.bigpic.url)
+  p
+    strong
+      | #{t'trainer.base'}:
+    |  #{@trainer.base}
+    br
+    strong
+      | #{t'trainer.work_as'}:
+    |  #{@trainer.work_as}
+    br
+    /<a href="/contact/bob-schatz">contact &gt;</a>
+  p
+    = @trainer.description
+  .clear
+  h3
+    | #{t'trainer.bio'}
+  p
+    = @trainer.bio
+  h3 id="courses"
+    | #{t('trainer.course', w: @trainer.name)}
+  p
+    | Bob Schatz currently has no courses scheduled.</p>
+  .clear

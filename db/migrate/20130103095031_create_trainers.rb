@@ -7,7 +7,9 @@ class CreateTrainers < ActiveRecord::Migration
       t.string :url
       t.string :phone
       t.string :avatar
-
+      t.text     "bio"
+      t.string   "base"
+      t.string   "work_as"
       t.timestamps
     end
   end

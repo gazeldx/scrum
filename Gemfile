@@ -19,6 +19,8 @@ end
 gem 'therubyracer'
 gem 'libv8', '~> 3.11.8'
 gem 'jquery-rails'
+gem "mini_magick", "~> 3.3"
+gem "carrierwave", "0.6.2"
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

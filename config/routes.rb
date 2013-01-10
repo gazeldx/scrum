@@ -1,7 +1,21 @@
 Scrum::Application.routes.draw do
 
+  resources :courses
+
+
   resources :trainers
 
+  get 'admin/trainers' => 'trainers#background_index'
+  get 'admin' => 'admin/home#index'
+  get 'about/the-team' => 'trainers#index'
+
+
+
+  root :to => 'trainers#index'
+
+
+
+  get 'about/:url' => 'trainers#show'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

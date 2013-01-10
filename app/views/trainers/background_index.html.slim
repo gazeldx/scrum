@@ -1,0 +1,14 @@
+a href=admin_path
+  | Admin
+br
+a href=new_trainer_path
+  | Add a Trainer
+#about_team.left
+  h3
+    | Trainers
+  .founder
+    - @trainers.each_with_index do |trainer, i|
+      h4
+        | #{i+1} #{trainer.name}&nbsp;
+        = link_to 'Edit', edit_trainer_path(trainer)
+      br

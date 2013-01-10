@@ -20,6 +20,9 @@ ActiveRecord::Schema.define(:version => 20130103095031) do
     t.string   "url"
     t.string   "phone"
     t.string   "avatar"
+    t.text     "bio"
+    t.string   "base"
+    t.string   "work_as"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end

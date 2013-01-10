@@ -18,7 +18,7 @@ module ApplicationHelper
   end
 
   def h(_title)
-    content_for :h do
+    content_for :h2 do
       _title
     end
   end

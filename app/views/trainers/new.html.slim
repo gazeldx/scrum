@@ -1,0 +1,14 @@
+= title 'Add a trainer'
+.table.b
+  = link_to 'Return', "/admin#{trainers_path}"
+  h2
+    = 'Add a trainer'
+  = render 'shared/notice_error'
+  = form_for @trainer do |f|
+    = f.label 'Name'
+    = f.text_field :name, size: 25, class: 'required'
+    br
+    = f.label 'URL'
+    = f.text_field :url, size: 25, class: 'required'
+    br
+    = f.submit t(:submit)

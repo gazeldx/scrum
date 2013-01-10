@@ -1,29 +1,23 @@
-= title 'The Team'
-h2
-  = setting_nav
-  = t'category.edit'
-
-  table
-    tr
-      th
-        = t'category.name'
-      th
-      th
-      th colspan=2
-        = t'sort'
-    - @categories.each_with_index do |category, i|
-      tr
-        td
-          = category.name
-        td
-          = link_to t(:edit), edit_category_path(category)
-        td
-          = link_to t(:delete), category_path(category), confirm:t('confirm.delete'), method: :delete
-        td
-          - if i > 0
-            = link_to t(:up), up_category_path(category)
-          - else
-            | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          - if i < @categories.length-1
-            = link_to t(:down), down_category_path(category)
-= validate_form 'new_category'
+- h '团队'
+#about_team.left
+  /h3
+  /  | Trainers
+  - @trainers.each_with_index do |trainer, i|
+    .founder
+      h4
+        = trainer.name
+      a href="/about/#{trainer.url}"
+        = image_tag(trainer.avatar.thumb.url)
+      p
+        strong
+          | #{t'trainer.base'}:
+        |  #{trainer.base}
+        br
+        strong
+          | #{t'trainer.work_as'}:
+        |  #{trainer.work_as}
+        br
+        a href="/about/#{trainer.url}"
+          | #{t'more'} &gt;
+    - if i/4 == 3
+      .clear
