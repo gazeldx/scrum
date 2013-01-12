@@ -26,14 +26,14 @@ class TrainersController < ApplicationController
   def create
     @trainer = Trainer.new(params[:trainer])
     if @trainer.save!
-      flash[:notice] = t'create_succ'
-    end
-    render :new, :layout => 'admin'
+      redirect_to admin_trainers_path, :notice => t('create_succ')
+    else
+      render :new, :layout => 'admin'
+    end    
   end
 
   def update
     @trainer = Trainer.find(params[:id])
-    p params[:trainer]
     if @trainer.update_attributes(params[:trainer])
       redirect_to edit_trainer_path, :notice => t('update_succ')
     else

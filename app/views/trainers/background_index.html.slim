@@ -1,14 +1,32 @@
-a href=admin_path
-  | Admin
-br
-a href=new_trainer_path
-  | Add a Trainer
-#about_team.left
-  h3
-    | Trainers
-  .founder
+= render 'shared/notice_error'
+| Trainers
+a.rr href=new_trainer_path
+  | Add Trainer
+table.olt
+  tbody
+    tr
+      td
+        | ID
+      td
+        | Name
+      td
+        | URL
+      td
+        | Base
+      td
+        | Work as
+      td
     - @trainers.each_with_index do |trainer, i|
-      h4
-        | #{i+1} #{trainer.name}&nbsp;
-        = link_to 'Edit', edit_trainer_path(trainer)
-      br
+      tr
+        td
+          = i + 1
+        td
+          = link_to trainer.name, "/about/#{trainer.url}", target: '_blank'
+        td
+          = trainer.url
+        td
+          = trainer.base
+        td
+          = trainer.work_as
+        td
+          = link_to 'Edit', edit_trainer_path(trainer)

@@ -1,3 +1,5 @@
+= title t'_team'
+.clear
 - h '团队'
 #about_team.left
   /h3
@@ -19,5 +21,5 @@
         br
         a href="/about/#{trainer.url}"
           | #{t'more'} &gt;
-    - if i/4 == 3
+    - if i%5 == 4
       .clear

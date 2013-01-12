@@ -1,15 +1,17 @@
 Scrum::Application.routes.draw do
 
-  resources :courses
+  resources :courses, :trainers
 
-
-  resources :trainers
+  match 'courses/register' => 'courses#register'
 
   get 'admin/trainers' => 'trainers#background_index'
+  get 'admin/courses' => 'courses#background_index'
   get 'admin' => 'admin/home#index'
   get 'about/the-team' => 'trainers#index'
 
-
+  namespace :admin do
+    resources :courses, :trainers
+  end
 
   root :to => 'trainers#index'
 

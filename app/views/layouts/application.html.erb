@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
-    <title>Scrum Foundation &mdash; The Team</title>
+    <title><%= yield :title %> &mdash; Shine Scrum</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <%= stylesheet_link_tag    "front", :media => "all" %>
     <%= javascript_include_tag "application" %>
@@ -19,7 +19,7 @@
           <li><a href="/about">关于我们</a></li>
           <li><a href="/about/the-team" class="active">团队</a></li>
           <li><a href="/partners">合作伙伴</a></li>
-          <li><a href="/classes">认证课程</a></li>
+          <li><a href="/courses"><%= t'_course' %></a></li>
           <li><a href="http://scrumfoundation.com/on-site-training">内训</a></li>
           <li><a href="/library">知识库</a></li>
           <li><a href="/contact">联系我们</a></li>
@@ -30,8 +30,7 @@
   </div><!-- /header -->
 
   <div id="mainContent">
-    <h2><%= yield :h2 %></h2>
-    <div class="clear"></div>
+    <h2><%= yield :h2 %></h2>    
     <%= yield %>
 
 <div class="clear"></div>

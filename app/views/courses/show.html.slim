@@ -1,0 +1,26 @@
+= title "#{@course.name}_#{t'_course'}"
+- h t'_course'
+#mainLeft
+  h3
+    = @course.name
+  p
+    strong
+      | #{t'course.trainer'}: #{link_to @course.trainer.name, "/about/#{@course.trainer.url}", target: '_blank'}
+    br
+    strong
+      | #{begin_end_time(@course)} 在 #{@course.location}
+  p
+    = @course.description
+  = form_for @course, url: {action: "register"} do |f|
+    = f.submit raw("报名参加课程 &raquo;")
+#mainRight
+  h4
+    | 培训地点
+  .textile
+    p
+      | Some place need fulfill
+  hr
+  h4
+    | 需要咨询？
+  p
+    = link_to '> 问一个关于本课程的问题', "#"
