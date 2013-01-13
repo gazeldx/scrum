@@ -26,7 +26,7 @@ table id="classes" border="0" cellspacing="0" cellpadding="0"
           = link_to course.trainer.name, "/about/#{course.trainer.url}", target: '_blank'
         td class="link"
           - if course.status == 1
-            = link_to '报名听课 >', "#", target: '_blank'
+            = link_to '报名听课 >', register_course_path(course), target: '_blank'
           - else
             strong
               | Closed

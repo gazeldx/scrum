@@ -3,7 +3,6 @@ class Trainer < ActiveRecord::Base
 
   has_many :courses, :dependent => :destroy
 
-
   mount_uploader :avatar, AvatarUploader
 
   validates :name, :length => { :in => 2..100 }

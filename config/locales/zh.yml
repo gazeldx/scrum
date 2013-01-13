@@ -4,18 +4,27 @@ zh:
   more: 更多
   to: 至
 
+  about_us: 关于我们  
   _team: 团队
+  private_training: 内训
+  contact_us: 联系我们
+
   trainer:
     base: 来自
     work_as: 职责
     bio: 传记
     course: '%{w}的课程'
+
   _course: 认证课程
   course:
     name: 课程名
     start_time: 开课时间
     location: 地点
     trainer: 老师
+    register: 报名参加
+    
+  register:
+    create_succ: "您的报名信息已经提交，稍后会有工作人员与您联系。"
   
   yesterday: "昨天"
   qian_day: "前天"

@@ -12,17 +12,17 @@
   <div id="header">
     <div id="headerContent">
       <h1><a href="/"><span>Scrum Foundation</span><img alt="Scrum Foundation" src="/images/logo.gif?1338151239" /></a></h1>
-        <p class="login"><span onclick="location.href='/admin/home'">log in</span></p>
+        <%#*<p class="login"><span onclick="location.href='/admin/home'">log in</span></p>%>
       <div class="nav">
         <ul id="topNav" style="font-size: 14px">
           <li><a href="/">首页</a></li>
-          <li><a href="/about">关于我们</a></li>
-          <li><a href="/about/the-team" class="active">团队</a></li>
-          <li><a href="/partners">合作伙伴</a></li>
+          <li><a href="/about"><%= t'about_us' %></a></li>
+          <li><a href="/about/the-team" class="active"><%= t'_team' %></a></li>
+          <li><a href="http://scrumfoundation.com/partners" target="_blank">合作伙伴</a></li>
           <li><a href="/courses"><%= t'_course' %></a></li>
-          <li><a href="http://scrumfoundation.com/on-site-training">内训</a></li>
-          <li><a href="/library">知识库</a></li>
-          <li><a href="/contact">联系我们</a></li>
+          <li><a href="http://scrumfoundation.com/on-site-training" target="_blank"><%= t'private_training' %></a></li>
+          <li><a href="http://scrumfoundation.com/library" target="_blank">知识库</a></li>
+          <li><a href="/contact"><%= t'contact_us' %></a></li>
         </ul><!-- /topNav -->
       </div><!-- /nav -->
       <div class="clear"></div>

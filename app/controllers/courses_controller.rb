@@ -41,9 +41,15 @@ class CoursesController < ApplicationController
     end
   end
 
-  def destroy
+  def register
     @course = Course.find(params[:id])
-    @course.destroy
-    redirect_to courses_url
+    @register = Register.new
+    render 'registers/new'
   end
+
+#  def destroy
+#    @course = Course.find(params[:id])
+#    @course.destroy
+#    redirect_to courses_url
+#  end
 end

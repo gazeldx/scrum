@@ -1,22 +1,29 @@
 Scrum::Application.routes.draw do
-
-  resources :courses, :trainers
-
-  match 'courses/register' => 'courses#register'
-
-  get 'admin/trainers' => 'trainers#background_index'
-  get 'admin/courses' => 'courses#background_index'
-  get 'admin' => 'admin/home#index'
-  get 'about/the-team' => 'trainers#index'
-
-  namespace :admin do
-    resources :courses, :trainers
+  resources :registers, :trainers
+  resources :courses do
+    member do
+      get 'register'
+    end
   end
 
-  root :to => 'trainers#index'
+  match 'courses/:id/register' => 'courses#register'
+#  match 'registers/do_register' => 'registers#do_register'
+  get 'admin/trainers' => 'trainers#background_index'
+  get 'admin/courses' => 'courses#background_index'
+  get 'admin/registers' => 'registers#index'
+  get 'admin' => 'admin/home#index'
+  get 'about/the-team' => 'trainers#index'
+  get 'about' => 'shared#about'
+  get 'contact' => 'shared#contact'
+
+  namespace :admin do
+    resources :registers, :courses, :trainers
+  end
+
+  root :to => 'courses#index'
 
 
-
+  get 'notice' => 'shared#notice'
   get 'about/:url' => 'trainers#show'
 
   # The priority is based upon order of creation:
