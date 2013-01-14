@@ -20,7 +20,7 @@ Scrum::Application.routes.draw do
     resources :registers, :courses, :trainers
   end
 
-  root :to => 'courses#index'
+  root :to => 'home#index'
 
 
   get 'notice' => 'shared#notice'
