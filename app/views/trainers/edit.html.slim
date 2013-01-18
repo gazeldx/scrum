@@ -1,36 +1,35 @@
 = title 'Edit a trainer'
-.table.b
-  = link_to 'Return', "/admin#{trainers_path}"
-  h2
-    = 'Edit a trainer'
-  = render 'shared/notice_error'
-  = form_for @trainer do |f|
-    = t'avatar'
-    = image_tag(@trainer.avatar.thumb.url)
-    = f.file_field :avatar
-    br
-    = f.label 'Name'
-    = f.text_field :name, class: 'required'
-    br
-    = f.label 'URL'
-    = f.text_field :url, class: 'required'
-    br
-    = f.label 'Email'
-    = f.text_field :email
-    br
-    = f.label 'Description'
-    = f.text_area :description
-    br
-    = f.label 'Phone'
-    = f.text_field :phone
-    br
-    = f.label 'Base'
-    = f.text_field :base
-    br
-    = f.label 'Work as'
-    = f.text_field :work_as
-    br
-    = f.label 'Biography'
-    = f.text_area :bio
-    br
-    = f.submit t(:submit)
+h2
+  = 'Edit a trainer'
+= render 'shared/notice_error'
+= form_for @trainer do |f|
+  = error_msg @trainer
+  = t'avatar'
+  = image_tag(@trainer.avatar.thumb.url)
+  = f.file_field :avatar
+  br
+  = f.label 'Name'
+  = f.text_field :name, class: 'required'
+  br
+  = f.label 'URL'
+  = f.text_field :url, class: 'required'
+  br
+  = f.label 'Email'
+  = f.text_field :email
+  br
+  = f.label 'Description'
+  = f.text_area :description
+  br
+  = f.label 'Phone'
+  = f.text_field :phone
+  br
+  = f.label 'Base'
+  = f.text_field :base
+  br
+  = f.label 'Work as'
+  = f.text_field :work_as
+  br
+  = f.label 'Biography'
+  = f.text_area :bio
+  br
+  = f.submit

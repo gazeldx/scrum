@@ -1,0 +1,39 @@
+= render 'shared/notice_error'
+| Registers
+table.olt
+  tbody
+    tr
+      td
+        | ID
+      td
+        | Name
+      td
+        | Mobile
+      td
+        | Email
+      td
+        | Company
+      td
+        | Headcount
+      td
+        | Course
+      td
+        | Created at
+    - @registers.each do |register|
+      tr
+        td
+          = register.id
+        td
+          = register.name
+        td
+          = register.mobile
+        td
+          = register.email
+        td
+          = register.company_name
+        td
+          = register.headcount
+        td
+          = link_to register.course.name, register.course, target: '_blank'
+        td
+          = register.created_at.strftime(t'time_format')

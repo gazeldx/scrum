@@ -1,0 +1,22 @@
+= render 'shared/notice_error'
+= form_for @course do |f|
+  = error_msg @course
+  | Trainer
+  = collection_select :course, :trainer_id, Trainer.all, :id, :name
+  br
+  | Name
+  = f.text_field :name, size: 25, class: 'required'
+  br
+  | Description
+  = f.text_area :description, class: 'required'
+  br
+  | Location
+  = f.text_field :location, class: 'required'
+  br
+  | Start Time
+  = datetime_select :course, :start_time
+  br
+  | End Time
+  = datetime_select :course, :end_time
+  br
+  = f.submit

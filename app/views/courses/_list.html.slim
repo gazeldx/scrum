@@ -1,0 +1,32 @@
+table id="classes" border="0" cellspacing="0" cellpadding="0"
+  thead
+    tr
+      th
+        = t'course.start_time'
+      th
+        = t'course.location'
+      th
+        = t'course.name'
+      th
+        = t'course.trainer'
+      th
+        | &nbsp;
+  tbody
+    - @courses.each_with_index do |course, i|
+      tr class="listing-line-#{i/2==0 ? 'even' : 'odd'}"
+        td class="date"
+          = begin_end_time(course)
+        td class="location"
+          = course.location
+          /a href="/classes/north-america/us" title="Show upcoming classes in United States"
+          /  | United States
+        td
+          = link_to course.name, course
+        td class="trainer"
+          = link_to course.trainer.name, "/about/#{course.trainer.url}", target: '_blank'
+        td class="link"
+          - if course.status == 1
+            = link_to '报名听课 >', register_course_path(course), target: '_blank'
+          - else
+            strong
+              | Closed

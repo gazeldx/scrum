@@ -1,0 +1,71 @@
+= title "#{t'course.register'}_#{@course.name}_#{t'_course'}"
+- h t'course.register'
+#mainLeft
+  /h3
+  /  = @course.name
+  p
+    | 你正在报名参加
+    strong
+      |  #{@course.trainer.name}
+    |  的课程：
+    strong
+      | #{@course.name}
+  = form_for @register do |f|
+    = hidden_field_tag :course_id, @course.id
+    = error_msg @register
+    fieldset.courseRegistration
+      legend
+        span
+          | 请填写信息
+      table width="100%"
+        tbody
+          tr
+            td
+              label.required
+                | 姓名
+              span.red
+                | *
+            td
+              = f.text_field :name, class: "text"
+          tr
+            td
+              label.required
+                | 手机号
+              span.red
+                | *
+            td
+              = f.text_field :mobile, class: "text"
+          tr
+            td
+              label.required
+                | Email
+              span.red
+                | *
+            td
+              = f.text_field :email, class: "text"
+          tr
+            td
+              label
+                | 公司名
+            td
+              = f.text_field :company_name, class: "text"
+          tr
+            td
+              label
+                | 人数
+            td
+              = f.text_field :headcount, value: 1, class: "text"
+    p
+      br
+      = f.submit raw("确认报名")
+#mainRight
+  h4
+    | 培训地点
+  .textile
+    p
+      | #{@course.location}
+  hr
+  h4
+    | 培训日期
+  p
+    | #{begin_end_time(@course)}

@@ -345,7 +345,7 @@ table#classes {
 
 table#classes td {
   padding: 8px 10px;
-  font-size: 90%;
+/*  font-size: 90%;*/
   border-bottom: 1px solid #e2e6d8;
   border-right: 1px solid #e2e6d8;
   background: #fff;
@@ -355,7 +355,7 @@ table#classes th {
   background: #f1f3ed;
   border-bottom: 2px solid #e2e6d8;
   font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
-  font-size: 80%;
+/*  font-size: 80%;*/
   padding: 4px 10px 0 10px;
 }
 
@@ -375,7 +375,7 @@ table#classes td.link {
 }
 
 table#classes td.date {
-  width: 120px;
+  width: 165px;
 }
 
 /* ###############   ABOUT   ##################### */
@@ -386,7 +386,7 @@ table#classes td.date {
 }
 
 #about_team.left {
-  width: 690px;
+/*  width: 690px;*/
   float: left;
 }
 
@@ -598,4 +598,37 @@ div.test_site {
   font-weight: bold;
   font-size: 40px;
   color: red;
+}
+
+.red{
+  color: red;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
 }

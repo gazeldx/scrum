@@ -1,0 +1,32 @@
+= render 'shared/notice_error'
+| Courses
+a.rr href=new_course_path
+  | Add Course
+table.olt
+  tbody
+    tr
+      td
+        | ID
+      td
+        | Name
+      td
+        | Trainer
+      td
+        | Location
+      td
+        | Time
+      td
+    - @courses.each_with_index do |course, i|
+      tr
+        td
+          = i + 1
+        td
+          = link_to course.name, course_path(course), target: '_blank'
+        td
+          = link_to course.trainer.name, "/about/#{course.trainer.url}", target: '_blank'
+        td
+          = course.location
+        td
+          = begin_end_time(course)
+        td
+          = link_to 'Edit', edit_course_path(course)

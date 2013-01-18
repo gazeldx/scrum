@@ -1,3 +1,4 @@
+= title @trainer.name
 - h @trainer.name
 #about_show
   = image_tag(@trainer.avatar.bigpic.url)
@@ -20,6 +21,10 @@
     = @trainer.bio
   h3 id="courses"
     | #{t('trainer.course', w: @trainer.name)}
-  p
-    | Bob Schatz currently has no courses scheduled.</p>
+  - @courses = @trainer.courses
+  - if @courses.blank?
+    p
+      | #{@trainer.name} 暂时还没有课程。
+  - else
+    = render 'courses/list'
   .clear
