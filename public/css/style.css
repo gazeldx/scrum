@@ -233,8 +233,8 @@
 
 .team_photo li {
 	float: left;
-	margin-right: 59px;
-/*	cursor: pointer;*/
+	margin-right: 48px;
+	cursor: pointer;
 }
 
 .team_photo .last {
