@@ -1,4 +1,5 @@
 class RegistersController < ApplicationController
+  skip_before_filter :authenticate, :only => [:new, :create, :edit]
   
   def index
     @registers = Register.order('created_at desc')
@@ -8,8 +9,7 @@ class RegistersController < ApplicationController
   # GET /registers/1
   # GET /registers/1.json
   def show
-    @register = Register.find(params[:id])
-
+    @register = Register.find(params[:id])    
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @register }
@@ -20,7 +20,8 @@ class RegistersController < ApplicationController
   # GET /registers/new.json
   def new
     @register = Register.new
-
+    p params[:course_id]
+    @course = Course.find(params[:course_id].to_i)
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @register }

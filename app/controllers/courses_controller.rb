@@ -1,6 +1,10 @@
 class CoursesController < ApplicationController
+  skip_before_filter :authenticate, :only => [:all, :show, :register]
+#  def index
+#    @courses = Course.where('end_time > ?', Time.now).order('start_time')
+#  end
 
-  def index
+  def all
     @courses = Course.where('end_time > ?', Time.now).order('start_time')
   end
 

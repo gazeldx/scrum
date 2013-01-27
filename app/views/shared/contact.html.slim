@@ -1,22 +1,28 @@
 = title t'contact_us'
-- h t'contact_us'
-.clear
-#mainLeft
-  p style="padding-bottom:20px"
-    strong
-      | 查看课程请点击&nbsp;
-      = link_to t('_course'), courses_path
-      | 。专享服务请点击&nbsp;
-      = link_to t('private_training'), "http://scrumfoundation.com/on-site-training"
-      | 。
-#mainRight
-  h4
-    | Shine Scrum
-  p
-    | Christine Hegarty
-    br
-    | Office Manager
-    br
-    | Office: +1 (617) 225-4324
-    br
-    | Fax: +1 (617) 812-8527
+.page.page_bg2
+  .title.contact
+    = t'contact_us'
+  .innerUpdate_con
+    .contact_bg
+      .contact_txt
+        ul
+          li
+            span
+              | ShineScrum（上海）：
+            em
+              | 上海市浦东新区杨新路88号，尚馥丽湾3号楼403室
+          li
+            span
+              | ShineScrum（北京）：
+            em
+              | 北京市西城区新德街甲20号中器大厦710室
+          li
+            span
+              | 电话：
+            em
+              | 400-180-2256
+          li
+            span
+              | Email：
+            em
+              | info@shinescrum.com

@@ -1,20 +1,27 @@
 Scrum::Application.routes.draw do
+  get 'team' => 'trainers#team'
+  get 'all_courses' => 'courses#all'
   resources :registers, :trainers
   resources :courses do
     member do
       get 'register'
+      get 'all'
     end
   end
 
-  match 'courses/:id/register' => 'courses#register'
+  #match 'courses/:id/register' => 'courses#register'
+  match 'course_register' => 'registers#new'
 #  match 'registers/do_register' => 'registers#do_register'
   get 'admin/trainers' => 'trainers#background_index'
   get 'admin/courses' => 'courses#background_index'
   get 'admin/registers' => 'registers#index'
-  get 'admin' => 'admin/home#index'
-  get 'about/the-team' => 'trainers#index'
+  get 'admin' => 'registers#index'
   get 'about' => 'shared#about'
   get 'contact' => 'shared#contact'
+  get 'partners' => 'shared#partners'
+  get 'students' => 'shared#students'
+  get 'inner' => 'shared#inner'
+  get 'library' => 'shared#library'
 
   namespace :admin do
     resources :registers, :courses, :trainers

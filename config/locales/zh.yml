@@ -6,7 +6,6 @@ zh:
 
   about_us: 关于我们  
   _team: 团队
-  private_training: 内训
   contact_us: 联系我们
 
   trainer:
@@ -22,7 +21,12 @@ zh:
     location: 地点
     trainer: 老师
     register: 报名参加
-    
+  _student: 学员
+  _partner: 合作伙伴
+  _library: 知识库
+  _inner: 内训
+  company_inner: 企业内训
+
   register:
     create_succ: "您的报名信息已经提交，稍后会有工作人员与您联系。"
   
