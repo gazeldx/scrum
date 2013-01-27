@@ -234,7 +234,7 @@
 .team_photo li {
 	float: left;
 	margin-right: 48px;
-	cursor: pointer;
+/*	cursor: pointer;*/
 }
 
 .team_photo .last {

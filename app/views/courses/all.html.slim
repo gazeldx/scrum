@@ -28,6 +28,8 @@
           th
             | 课程
           th
+            | 讲师
+          th
             | 地点
           th
             | 讲师
@@ -38,6 +40,8 @@
               = begin_end_time(course)
             td
               = course.name
+            td
+              = course.trainer.name
             td
               = course.location
             td
