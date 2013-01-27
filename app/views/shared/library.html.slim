@@ -1,0 +1,27 @@
+= title t'_library'
+.page
+  .title.knowledge
+    = t'_library'
+  .innerUpdate_con
+    .innerUpdate_intr
+      .innerUpdate_txt3
+        | 根据您的反馈，以下文档将选择性的进行翻译并提供中文版本，欢迎来电告知：
+        em
+          | 400-180-2256
+        | 或发信至
+        em
+          | info@shinescrum.com
+      .knowledge_list
+        - [{title: 'Scrum Primer 2.0 （英语）', source: 'www.scrumfoundation.com', auther: 'Pete Deemer, Gabrielle Benefield, Craig Larman and Bas Vodde.', read: '通过阅读scrum primer 2.0， 你将会对scrum的理论和实践有一个更深入的了解。', link: 'http://assets.scrumfoundation.com/downloads/1/scrumprimer20.pdf?1352449266'}, {title: 'Role of the Manager in Scrum（英语）', source: 'www.scrumfoundation.com', auther: 'Pete Deemer, Gabrielle Benefield, Craig Larman and Bas Vodde.', read: '本文将使经理级别的学员获益匪浅。这篇文章阐述了经理角色如何在企业中运用scrum，并且提供了真实案例、练习方法以及工作描述样例供参考。', link: 'http://assets.scrumfoundation.com/downloads/4/roleofthemanager.pdf?1285932073'}].each do |item|
+          ul
+            li
+              .knowledge_title
+                = item[:title]
+              .knowledge_source
+                | 来自于 #{item[:source]}
+              .knowledge_auther
+                | 作者：#{item[:auther]}
+              .knowledge_read
+                = item[:read]
+              a class="knowledge_down" href=item[:link]
+                | 下载

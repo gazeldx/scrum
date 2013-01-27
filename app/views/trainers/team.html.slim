@@ -1,0 +1,25 @@
+= title t'_team'
+.page
+  .title.team
+    = t'_team'
+  .team_con
+    .team_photo
+      ul
+        - @trainers.each_with_index do |trainer, i|
+          li
+            = image_tag(trainer.avatar.thumb.url)
+            .name
+              = trainer.name
+            div
+              = trainer.work_as
+      .clearFix
+    .team_intr
+      p
+        | Jeff在1995年和Ken Schwaber共同创建了Scrum，他也是敏捷宣言的签署者之一。
+      p
+        | 多年来Jeff一直致力于推广和提升Scrum，他的Scrum公开课让世界各地的敏捷爱好者受益匪浅，许多世界500强公司如谷歌，微软，雅虎，西门子等曾邀请Jeff为其提供CSM/CSPO培训以及团队转型。
+      p
+        | Jeff是Scrum Inc.的首席执行官，专门为全球各地的公司提供培训、咨询和辅导服务，也是Scrum Training Institute的主席和OpenView Venture Partners（波士顿风险投资公司）的高级顾问。
+      p
+        | Jeff毕业于美国军事学院，是同期美国空军 (USAF) RF-4C机长班的佼佼者。他拥有斯坦福大学多个学位和科罗拉多大学医学院的博士学位。
+  .clearFix
