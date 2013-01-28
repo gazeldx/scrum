@@ -30,3 +30,5 @@ table.olt
           = trainer.work_as
         td
           = link_to 'Edit', edit_trainer_path(trainer)
+          | &nbsp;&nbsp;&nbsp;&nbsp;
+          = link_to 'Delete', trainer_path(trainer), confirm: 'Are you sure to delete it?', method: :delete

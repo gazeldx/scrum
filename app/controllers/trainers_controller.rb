@@ -45,4 +45,15 @@ class TrainersController < ApplicationController
     end
   end
 
+  def destroy
+    @trainer = Trainer.find(params[:id])
+    if @trainer.courses.exists?
+      flash[:error] = 'This trainer has courses so you can\'t delete.'
+    else
+      @trainer.destroy
+      flash[:notice] = 'Delete success.'
+    end
+    redirect_to admin_trainers_path
+  end
+
 end
