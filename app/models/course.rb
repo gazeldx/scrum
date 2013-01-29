@@ -9,5 +9,7 @@ class Course < ActiveRecord::Base
   validates :status, :presence => true
   validates :start_time, :presence => true
   validates :end_time, :presence => true
-  validates :trainer_id, :presence => true  
+  validates :trainer_id, :presence => true
+
+  
 end

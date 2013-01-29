@@ -6,6 +6,7 @@ class TrainersController < ApplicationController
 
   def team
     @trainers = Trainer.order('created_at')
+    @trainer = Trainer.find(1)
   end
 
   def background_index
@@ -14,7 +15,9 @@ class TrainersController < ApplicationController
   end
 
   def show
+    @trainers = Trainer.order('created_at')
     @trainer = Trainer.find_by_url(params[:url])
+    render 'team'
   end
 
   def new

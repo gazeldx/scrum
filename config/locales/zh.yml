@@ -1,4 +1,13 @@
 zh:
+  beijing: 北京
+  shanghai: 上海
+  place:
+    shanghai: 上海市浦东新区杨新路88号，尚馥丽湾3号楼403室
+    beijing: 北京市西城区新德街甲20号中器大厦710室
+  _tel: 400-180-2256
+  _email: info-cn@shinescrum.com
+  _fax: 02150762357
+    
   create_succ: 创建成功
   update_succ: 修改成功
   more: 更多
@@ -29,6 +38,9 @@ zh:
 
   register:
     create_succ: "您的报名信息已经提交，稍后会有工作人员与您联系。"
+
+
+  
   
   yesterday: "昨天"
   qian_day: "前天"
@@ -40,7 +52,9 @@ zh:
   no_year: "%m月%d日 %H:%M"
   no_year_simple: "%m-%d %H:%M"
   h_m: "%H:%M"
-  
+  _day: "%d日"
+
+
   num_error: 个原因
   op_error: 使得操作未成功
   

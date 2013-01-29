@@ -7,22 +7,27 @@
     .course_intr
       .course_reg
         .course_reg_txt1
-          | 非常感谢您注册ShineScrum的CSM课程！
+          | 非常感谢您报名ShineScrum的#{@course.name}！
+          br
+          | 讲师：#{@course.trainer.name}
+          br
+          | 时间：#{@course.start_time.strftime(t('date_format'))}-#{@course.end_time.strftime(t('_day'))}
+          br
+          | 地点：#{place_detail(@course)}
         .course_reg_txt2
           | 您可以通过以下
           em
             | 两种方式
           | 联系我们，完成课程注册的流程：
         .course_reg_txt3
-          | 电话/邮箱：热线电话&nbsp;&nbsp;
+          | 热线电话&nbsp;&nbsp;
           span.tel_and_email
-            | 400-18-2256
-        .course_reg_txt4
-          | 邮箱&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            | #{t'_tel'}
+          | &nbsp;&nbsp;&nbsp;邮箱&nbsp;&nbsp;
           span.tel_and_email
-            | info@shinescrum.com
+            | #{t'_email'}
         .course_reg_txt5
-          | 填写以下您的基本个人资料(*为必填)，我们的销售人员会尽快和您核对注册信息及课程安排。
+          | 填写以下您的基本个人资料(*为必填)，我们的课程顾问会尽快和您核对注册信息及课程安排。
         .course_reg_con
           ul.write
             = render 'shared/notice_error'
