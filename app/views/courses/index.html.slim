@@ -32,18 +32,16 @@
           th
             | 地点
           th
-            | 讲师
-          th
         - @courses.each_with_index do |course, i|
-          tr class="#{i.odd? ? nil : 'tr2'}"
+          tr class="#{i.odd? ? 'tr2' : nil}"
             td
               = begin_end_time(course)
             td
-              = course.name
+              = link_to course.name, "#{course_path}?id=#{course.id}"
             td
               = course.trainer.name
             td
               = course.location
             td
               /= link_to '注册', register_course_path(course)
-              = link_to '注册', "course_register?course_id=#{course.id}"
+              = link_to '报名', "course_register?course_id=#{course.id}"

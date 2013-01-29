@@ -1,26 +1,142 @@
-= title "#{@course.name}_#{t'_course'}"
-- h t'_course'
-#mainLeft
-  h3
-    = @course.name
-  p
-    strong
-      | #{t'course.trainer'}: #{link_to @course.trainer.name, "/about/#{@course.trainer.url}", target: '_blank'}
-    br
-    strong
-      | #{begin_end_time(@course)} 在 #{@course.location}
-  p
-    = @course.description
-  = form_for @course, url: {action: "register"} do |f|
-    = f.submit raw("报名参加课程 &raquo;")
-#mainRight
-  h4
-    | 培训地点
-  .textile
-    p
-      | Some place need fulfill
-  /hr
-  /h4
-  /  | 需要咨询？
-  /p
-  /  = link_to '> 问一个关于本课程的问题', "#"
+= title t'_course'
+.page.page_bg2
+  .title.course
+    = t'_course'
+  .course_con
+    .course_intr style="height: 540px;"
+      .left
+        .csm
+          .course_title
+            span
+              | CSM认证培训
+            a href="/all_courses"
+              | 我要报名
+          ul
+            li.course_time
+              | 2013年3月15日 ~ 3月16日  北京
+            li
+              em
+                | 课程主办：
+              | ShineScrum
+            li
+              em
+                | 时间：
+              | 2013年3月15-16号，9：00am –5：00pm
+            li
+              em
+                | 地点：
+              | 北京市西城区新德街甲20号中器大厦710室
+            li
+              em
+                | 讲师：
+              | Jens Østergaard主讲， Jim wang中文辅导
+            li
+              em
+                | 价格：
+              | RMB 7000元/位，截至3月1日前报名或者3人以上团体报名有优惠
+        .know
+          .know_title
+            | 通过此课程，你将了解到
+          ul
+            li
+              | Scrum及其在敏捷过程中扮演的角色
+            li
+              | Scrum Master的角色介绍及与项目经理的区别
+            li
+              | 如何能够通过Scrum解决开发过程中需求变更，预算紧张，提交质量等项目难题
+            li
+              | 如何组织，计划和实施一个scrum项目
+            li
+              | 如何将scrum导入你的日常工作
+      .right
+        .cont
+          .cont_title
+            .icon
+            | 联系方式
+          ul
+            li
+              | Tel:
+              div
+                | 400-180-2256
+            li
+              | Email:
+              div
+                | info@shinescrum.com
+            li
+              | ShineScrum(上海):
+              .addr
+                | 上海市浦东新区杨新路88号，尚馥丽湾3号楼403室
+            li
+              | ShineScrum(北京):
+              .addr
+                | 北京市西城区新德街甲20号中器大厦710室
+        .pointer
+          .pointer_title
+            .icon
+            | 授课特点
+          ul
+            li
+              | 59分钟的模拟Scrum项目、XP Game等大量实例和练习，深入浅出，易于理解
+            li
+              | 互动性和实际操作性极强
+            li
+              | 课堂游戏演练
+      .clearFix
+    .course_line
+    .course_teacher
+      .left style=" width: 630px;"
+        ul.teacher
+          li
+            .photo
+              img src="images/team_photo_02.jpg"
+              .name
+                | Jens Østergaard
+            .intr
+              .teacher_title
+                | 讲师
+              .teacher_name
+                | Jens Østergaard  秦风
+              .teacher_title2
+                | CST、CSP、STI创始人、国际知名Scrum培训大师
+              p
+                | Jens是全球首位认证scrum专家和全球最早的认证scrum培训师之一；他有20多年软件行业的从业经验，Scrum管理和实践的经验。自2004年在哥本哈根取得CST认证后，Jens在欧洲各国教授Scrum培训课程。至今，他已经在全球范围内培养并认证了8000多个Scrum Master，每12个Scrum Master中就有一位是他的学生，他也是全球最受欢迎的Scrum讲师之一。
+              p
+                | 从普通开发人员、DBA、团队lead、项目经理，直至成为一名Scrum Master，在金融领域二十多年的稳步成长使Jens能准确理解和把握Scrum团队里不同的角色可能面临的问题、挑战和机遇，从而制定出相应的培训内容和辅导方式。Jens认为纯粹的Scrum有助于促进整个开发进程的完善，并致力于推行Scrum在公司组织内部的实践。
+              p
+                | 2008年，他和Scrum的创始人之一Jeff Sutherland博士一起创办了Scrum Foundation。 Scrum Foundation的课程遍布美国、加拿大、荷兰、丹麦、英国、德国、澳大利亚、新加波、印度等国家；客户涵盖谷歌，微软、惠普、IBM、Oracle等。
+              p
+                | 2010年，Jens开始为中国的敏捷爱好者和从业人员授课。三年的时间里，他更多的了解和体会到了中国文化和中国软件从业人员所处的环境和现状，同时不断调整自己的授课方法以及内容，使之更贴合国内学员的需求。
+              p
+                | 通过ShineScrum，Jens致力于推动最新的敏捷/scrum理论和实践在中国的普及应用，使国内的开发人员、企业能够接触和运用敏捷进行开发、管理和运营，并且最终能够成为敏捷的人和敏捷的企业。
+            .clearFix
+          li
+            .photo
+              img src="images/team_photo_03.jpg"
+              .name
+                | Jim Wang
+            .intr
+              .teacher_title
+                | 讲师
+              .teacher_name
+                | Jim Wang  王军
+              .teacher_title2
+                | CSM、 CSPO、 MBA、资深敏捷及Scrum培训师、教练、组织顾问
+              p
+                | Jim有18年的国内外软件行业从业经验。他曾师从于Scrum的创始人之一Ken Schwaber，得到到《Coaching Agile teams》作者 Lyssa Adkins的指导，在敏捷及Scrum高端软件产品开发方面有多年实践经验，带领150多人的团队采用Scrum的方法成功交付软件。
+              p
+                | Jim擅长于互动式教学方法，他的敏捷价值游戏和贴近实际的案例分析很受学员欢迎。 此外，他还是《30天敏捷软件开发》的译者（此书由Scrum的创始人Jeff Sutherland和Ken Schwaber 合著）。Jim服务过的客户包括格力空调，路透社，哈里波顿ADP，文思创新、中星微电子、Dextrys, ShineTech等全球及国内知名企业。
+              p
+                | Jim曾任微软全球解决方案和交付高级总监，美国东部最大的IT工程师协会董事和中国区主席。在此之前，他在美国维克公司担任计算机集成制造首席工程师，主持大型制造执行系统的设计、开发、测试以及生产应用。Jim是波士顿东北大学计算机信息工程专业和机械工程专业双硕士,是美国巴布森商业学院工商管理硕士。
+            .clearFix
+      .right style="width: 280px;"
+        ul.course_room
+          li.course_room_title
+            span
+              | 授课场景
+            a href="#"
+              | &gt;&gt;更多
+          li
+            img src="images/course_room.jpg"
+          li
+            img src="images/course_room.jpg"
+      .clearFix

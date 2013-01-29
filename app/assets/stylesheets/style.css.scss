@@ -84,7 +84,7 @@
 	width: 960px;
 	margin: 0 auto;
 	background: #f2f2f2;
-	padding-bottom: 100px;
+	padding-bottom: 40px;
 }
 
 .page .title {
@@ -233,8 +233,8 @@
 
 .team_photo li {
 	float: left;
-	margin-right: 59px;
-	cursor: pointer;
+	margin-right: 48px;
+/*	cursor: pointer;*/
 }
 
 .team_photo .last {
@@ -587,8 +587,7 @@
 	color: #275ca8;
 }
 
-.course_list a{ color: #275CA8;}
-.course_list .reg_btn {
+.course_list a {
 	width: 43px;
 	height: 21px;
 	background: url(../images/reg.gif) 0px 0px no-repeat;
@@ -599,7 +598,7 @@
 	text-decoration: none;
 }
 
-.course_list tr:hover .reg_btn {
+.course_list tr:hover a {
 	background-position: 0px -21px;
 	color: #ffffff;
 }
@@ -769,7 +768,7 @@
 }
 
 .contact_bg {
-	background: ##FAFAFA;
+	background: #FAFAFA;
 	color: #010101;
 	font-size: 18px;
 	line-height: 180%;
@@ -1028,8 +1027,7 @@
 
 .course_reg_con{ padding-left: 33px; padding-top: 20px;}
 
-.write{ width: 510px; height: 300px; background: url(../images/write.gif) 0px 0px no-repeat; padding:20px;}
-
+.write{ width: 510px; height: 300px; background: url(../images/write.gif) 0px 0px no-repeat; padding:20px; padding: 20px;}
 
 .write li {
 	clear: both;
@@ -1058,8 +1056,3 @@
 }
 
 .write .btn_bar{ padding-left: 14px;}
-
-.contact_form{ background: none; width: 700px; height: 350px; padding: 0px;}
-.contact_form .btn_bar{ padding-left: 0px;}
-.contact_form .txt2{ width: 500px;}
-.contact_form span{ width: 60px;}

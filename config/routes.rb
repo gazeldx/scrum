@@ -1,6 +1,6 @@
 Scrum::Application.routes.draw do
   get 'team' => 'trainers#team'
-  get 'all_courses' => 'courses#all'
+  get 'course' => 'courses#show'
   resources :registers, :trainers
   resources :courses do
     member do
