@@ -4,7 +4,8 @@ class CoursesController < ApplicationController
 #    @courses = Course.where('end_time > ?', Time.now).order('start_time')
 #  end
 
-  def all
+
+  def index
     @courses = Course.where('end_time > ?', Time.now).order('start_time')
   end
 
