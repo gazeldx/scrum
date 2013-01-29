@@ -5,7 +5,7 @@ module CoursesHelper
 
   def place_detail course
     if course.location == t('beijing')
-      t('place.bejing')
+      t('place.beijing')
     else
       t('place.shanghai')
     end
