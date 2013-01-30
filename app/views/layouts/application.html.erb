@@ -21,7 +21,7 @@
   <body>
     <div class="top">
       <ul>
-        <li class="logo1"></li>
+        <li class="logo"></li>
         <li class="<%= controller_path == "home" ? 'sel' : nil %>"><a href="/">首页</a></li>
         <li class="<%= controller.action_name == "about" ? 'sel' : nil %>"><a href="/about"><%= t'about_us' %></a></li>
         <li class="<%= controller_path == "trainers" ? 'sel' : nil %>"><a href="team"><%= t'_team' %></a></li>
@@ -47,7 +47,7 @@
       <!--flexsliderV1 End-->
     </div>
     <%= yield %>
-    <div class="foot">Copyright 2013 ShineScrum.com</div>
+    <div class="foot">Copyright 2013 ShineScrum Inc</div>
 <%#* Inc%>
   </body>
 </html>
