@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
-      <title><%= yield :title %> &mdash; ShineScrum</title>
+      <title><%= yield :title %> &mdash; ShineScrum.com</title>
       <meta http-equiv="content-type" content="text/html; charset=utf-8" />      
       <%= csrf_meta_tags %>
       <%= yield :head %>
@@ -21,7 +21,7 @@
   <body>
     <div class="top">
       <ul>
-        <li class="logo"></li>
+        <li class="logo1"></li>
         <li class="<%= controller_path == "home" ? 'sel' : nil %>"><a href="/">首页</a></li>
         <li class="<%= controller.action_name == "about" ? 'sel' : nil %>"><a href="/about"><%= t'about_us' %></a></li>
         <li class="<%= controller_path == "trainers" ? 'sel' : nil %>"><a href="team"><%= t'_team' %></a></li>
@@ -47,7 +47,7 @@
       <!--flexsliderV1 End-->
     </div>
     <%= yield %>
-    <div class="foot">Copyright 2013 ShineScrum Inc</div>
-
+    <div class="foot">Copyright 2013 ShineScrum.com</div>
+<%#* Inc%>
   </body>
 </html>
