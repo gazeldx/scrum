@@ -1,6 +1,9 @@
 zh:
   beijing: 北京
   shanghai: 上海
+  location:
+    shanghai: 上海市浦东新区杨新路88号，尚馥丽湾3号楼403室
+    beijing: 北京市西城区新德街甲20号中器大厦710室
   place:
     shanghai: 上海市浦东新区杨新路88号，尚馥丽湾3号楼403室
     beijing: 北京海淀区知春路25号丽亭华苑酒店二层四季5/6厅
@@ -8,7 +11,7 @@ zh:
   _email: info-cn@shinescrum.com
   _fax: 021-50762357
 
-  shine_scrum: 我们
+  shine_scrum: ShineScrum
   create_succ: 创建成功
   update_succ: 修改成功
   more: 更多
