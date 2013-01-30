@@ -1,7 +1,34 @@
 = title t'_course'
-.page.page_bg2
+.page
   .title.course
     = t'_course'
+  .course_list
+    table width="100%" border="0" cellpadding="0" cellspacing="0"
+      caption
+        | CSM/CSPO认证培训班 — 2013年
+      tr
+        th
+          | 日期
+        th
+          | 课程
+        th
+          | 讲师
+        th
+          | 城市
+        th
+      - @courses.each_with_index do |course, i|
+        tr class="#{i.odd? ? 'tr2' : nil}"
+          td
+            = begin_end_time(course)
+          td
+            = link_to course.name, "#{course_path}?id=#{course.id}"
+          td
+            = course.trainer.name
+          td
+            = course.location
+          td
+            /= link_to '注册', register_course_path(course)
+            = link_to '报名', "course_register?course_id=#{course.id}", class: 'reg_btn'
   .course_con
     .course_intr
       .know2
@@ -17,31 +44,5 @@
           li
             | 通过CSM考试后，您可以获得14 PDUs
       .clearFix
-    .course_line
-    .course_list
-      table width="100%" border="0" cellpadding="0" cellspacing="0"
-        caption
-          | CSM/CSPO认证培训班 — 2013年
-        tr
-          th
-            | 日期
-          th
-            | 课程
-          th
-            | 讲师
-          th
-            | 城市
-          th
-        - @courses.each_with_index do |course, i|
-          tr class="#{i.odd? ? 'tr2' : nil}"
-            td
-              = begin_end_time(course)
-            td
-              = link_to course.name, "#{course_path}?id=#{course.id}"
-            td
-              = course.trainer.name
-            td
-              = course.location
-            td
-              /= link_to '注册', register_course_path(course)
-              = link_to '报名', "course_register?course_id=#{course.id}", class: 'reg_btn'
+    /.course_line
+    

@@ -97,6 +97,8 @@
 	padding-left: 10px;
 }
 
+.page .title a{ color: #ffffff;}
+
 .page .why_shinescrum {
 	background: url(../images/why_shinescrum.gif) right top no-repeat #2f2f31;
 }
@@ -118,7 +120,7 @@
 }
 
 .page .innerUpdate {
-	background: url(../images/innerUpdate.gif) right top no-repeat #2f2f31;
+	background: url(../images/onsite-training.jpg) right bottom no-repeat #2f2f31;
 }
 
 .page .contact {
@@ -128,6 +130,8 @@
 .page .student_page {
 	background: url(../images/student.gif) right top no-repeat #2f2f31;
 }
+
+.page .knowledge{background: url(../images/knowledge.gif) right top no-repeat #2f2f31;}
 
 .page_bg2 {
 	background: #fafafa;
@@ -145,19 +149,22 @@
 
 .why_shinescrum_con {
 	clear: both;
-	padding: 30px 10px 0px 10px;
+	padding: 60px 10px 0px 10px;
 }
 
 .why_shinescrum_photo {
 	float: left;
+	width: 320px;
+	overflow: hidden;
 }
 
 .why_shinescrum_intr {
-	width: 476px;
+	width: 550px;
 	float: right;
 	font-size: 18px;
 	line-height: 180%;
 	color: #010101;
+	padding-right: 40px;
 }
 
 .why_shinescrum_intr em {
@@ -184,7 +191,7 @@
 .aboutUs_con em {
 	color: #245baa;
 	font-style: normal;
-	font-size: 24px;
+	font-size: 28px;
 }
 
 .aboutUs_intr p {
@@ -196,12 +203,12 @@
 }
 
 .aboutUs_intr p em {
-	font-size: 16px;
+	font-size: 18px;
 	color: #245baa;
 }
 
 .aboutUs_intr img {
-	margin-left: 30px;
+	margin-left: 70px;
 }
 
 .team_con {
@@ -226,6 +233,10 @@
 .team_photo {
 	background: url(../images/team_line.jpg) center bottom no-repeat;
 	padding-bottom: 50px;
+}
+
+.team_photo a{
+	color: #333333;	
 }
 
 .team_photo ul {
@@ -561,13 +572,19 @@
 }
 
 .course_list {
+	padding-top: 20px;
+}
+
+.course_list table{
+	border-bottom: #275DAB solid 5px;
 }
 
 .course_list caption {
-	font-size: 14px;
+	font-size: 18px;
 	font-weight: bold;
 	color: #2c2c2c;
-	line-height: 30px;
+	line-height: 50px;
+	padding-left: 20px;
 }
 
 .course_list tr {
@@ -584,7 +601,7 @@
 
 .course_list td {
 	padding-left: 20px;
-	color: #275ca8;
+	color: #333333;
 }
 
 .course_list a{ color: #275CA8;}
@@ -592,7 +609,7 @@
 	width: 43px;
 	height: 21px;
 	background: url(../images/reg.gif) 0px 0px no-repeat;
-	color: #275dab;
+	color: #ffffff;
 	text-align: center;
 	line-height: 21px;
 	display: block;
@@ -1043,7 +1060,7 @@
 }
 
 .write span {
-	width: 75px;
+	width: 95px;
 	display: block;
 	float: left;
 	text-align: right;
@@ -1055,6 +1072,35 @@
 .write em {
 	float: left;
 	display: block;
+}
+
+.errInfo{
+	width: 150px;
+	height: 26px;
+	float: left;
+	background: #f26303;	
+	text-align: left;
+	color: #ffffff;
+	font-size: 12px;
+	padding-left: 10px;
+	margin-left: 5px;
+}
+
+.course_reg_con .txt{
+	width: 280px;
+}
+
+.course_reg_con .write{
+	width: 700px;
+	height: 500px;
+	border: #b1b1b1 dotted 2px;
+	border-radius: 10px;
+	background: none;
+}
+
+.course_reg_con .write .memo{ height: 140px;}
+.course_reg_con .btn_bar{
+	padding-left: 34px !important;
 }
 
 .write .btn_bar{ padding-left: 14px;}
