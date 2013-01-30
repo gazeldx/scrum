@@ -27,4 +27,36 @@
               | Email：
             em
               | #{t'_email'}
-          
+      .write_title
+        | 给我们留言
+      ul.write.contact_form
+        = form_for @message do |f|
+          = error_msg @message
+          li
+            span
+              | 姓名
+            em
+              = f.text_field :name, size: 25, class: 'txt'
+          li
+            span
+              | 公司
+            em
+              = f.text_field :company, size: 25, class: 'txt'
+          li
+            span
+              | 电话
+            em
+              = f.text_field :phone, size: 25, class: 'txt'
+          li
+            span
+              | 邮箱
+            em
+              = f.text_field :email, size: 25, class: 'txt'
+          li.textarea
+            span
+              | 留言
+            em
+              = f.text_area :body, class: 'txt2'
+          li.btn_bar
+            input type="button" class="btn" value="重置"
+            = f.submit raw("提交"), class: "btn2"

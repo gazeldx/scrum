@@ -1,4 +1,7 @@
 Scrum::Application.routes.draw do
+  resources :messages
+
+
   get 'team' => 'trainers#team'
   get 'team_member_:url' => 'trainers#show'
   get 'course' => 'courses#show'
