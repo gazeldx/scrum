@@ -8,7 +8,7 @@
         .csm
           .course_title
             span
-              | CSM认证培训
+              | #{@course.name}
             a href="course_register?course_id=#{@course.id}"
               | 我要报名
           ul
