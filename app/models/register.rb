@@ -3,7 +3,7 @@ class Register < ActiveRecord::Base
 
   belongs_to :course
   
-  validates :name, :length => { :in => 2..30 }
+  validates :name, :length => { :in => 1..30 }
   validates :mobile, :length => { :in => 7..30 }
   validates :email, :length => { :in => 6..40 }
   validates :headcount, :numericality => { :only_integer => true }

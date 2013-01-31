@@ -62,7 +62,7 @@ zh:
 
 
   num_error: 个原因
-  op_error: 使得操作未成功
+  op_error: 看来有些内容输入得不正确，请修改
   
   will_paginate:
     previous_label: "&#8592; 上一页"
@@ -257,7 +257,8 @@ zh:
       empty: "不能留空"
       blank: "是必填项"
       too_long: "过长（最长为 %{count} 个字符）"
-      too_short: "过短（最短为 %{count} 个字符）"
+      #too_short: "过短（最短为 %{count} 个字符）"
+      too_short: "是必填项"
       wrong_length: "长度非法（必须为 %{count} 个字符）"
       not_a_number: "不是数字"
       not_an_integer: "必须是整数"
@@ -292,30 +293,11 @@ zh:
       template:
         <<: *errors_template
     attributes:
-      user:
-        username: "帐号：应由字母、数字和下划线组成，至少5位"
-        name: "真实姓名："
-        domain: "个性域名：应由小写字母、数字和“-”组成，以小写字母打头，至少4位"
+      register:
+        name: "姓名"
+        mobile: "手机"
         email: "Email"
-      blog:
-        title: "标题"
-        content: "正文"
-      note:
-        title: "标题"
-        content: "正文"
-        notecate_id: "日记分类"
-      album:
-        name: "影集名称"
-        description: "影集描述"
-      photo:
-        avatar: "照片"
-      post:
-        title: "标题"
-      letter:
-        body: "私信内容"
-      group:
-        name: "团体名称"
-        domain: "个性域名：应由小写字母、数字和“-”组成，以小写字母打头，至少3位"
+      
   helpers:
     select:
       prompt: "请选择"

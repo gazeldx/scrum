@@ -2,23 +2,22 @@
 /= title '认证课程——课程报名'
 .page
   .title.course
-    | 认证课程——课程报名
+    a href=courses_path
+      | #{t'_course'}
+    | &nbsp;&gt;&nbsp;
+    a href="#{course_path}?id=#{@course.id}"
+      | #{@course.name}
+    | &nbsp;&gt;&nbsp;报名
   .course_con
     .course_intr
       .course_reg
         .course_reg_txt1
-          | 非常感谢您报名#{t('shine_scrum')}的#{@course.name}！
+          /| 非常感谢您报名#{t('shine_scrum')}的#{@course.name}！
+          | 感谢您报名 #{@course.trainer.name} 的 #{@course.name}！
           br
-          | 讲师：#{@course.trainer.name}
-          br
-          | 时间：#{@course.start_time.strftime(t('date_format'))}-#{@course.end_time.strftime(t('_day'))}
-          br
-          | 地点：#{place_detail(@course)}
+          | 时间：#{@course.start_time.strftime(t('date_format'))}-#{@course.end_time.strftime(t('_day'))}&nbsp;&nbsp;&nbsp;地点：#{place_detail(@course)}
         .course_reg_txt2
-          | 您可以通过以下
-          em
-            | 两种方式
-          | 联系我们，完成课程注册的流程：
+          | 您可以通过电话和邮件联系我们，完成报名：
         .course_reg_txt3
           | 热线电话&nbsp;&nbsp;
           span.tel_and_email
@@ -27,7 +26,7 @@
           span.tel_and_email
             | #{t'_email'}
         .course_reg_txt5
-          | 填写以下您的基本个人资料(*为必填)，我们的课程顾问会尽快和您核对注册信息及课程安排。
+          | 也可以填写信息，我们的课程顾问会和您确认并安排课程。
         .course_reg_con
           ul.write
             = render 'shared/notice_error'
@@ -58,7 +57,7 @@
                 span
                   | 培训人数
                 em
-                  = f.text_field :headcount, value: 1, class: "txt"
+                  = select(:register, :headcount, [1, 2, 3, 5, 8, 10, 15, 20])
               li.btn_bar
                 input type="button" class="btn" value="重置"
                 = f.submit raw("提交"), class: "btn2"

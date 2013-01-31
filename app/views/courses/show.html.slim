@@ -1,7 +1,11 @@
 = title t'_course'
 .page.page_bg2
   .title.course
-    = t'_course'
+    a href=courses_path
+      | #{t'_course'}
+    | &nbsp;&gt;&nbsp;
+    a href="#{course_path}?id=#{@course.id}"
+      | #{@course.name}
   .course_con
     .course_intr style="height: 540px;"
       .left
