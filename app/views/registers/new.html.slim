@@ -15,7 +15,7 @@
           /| 非常感谢您报名#{t('shine_scrum')}的#{@course.name}！
           | 感谢您报名 #{@course.trainer.name} 的 #{@course.name}！
           br
-          | 时间：#{@course.start_time.strftime(t('date_format'))}-#{@course.end_time.strftime(t('_day'))}&nbsp;&nbsp;&nbsp;地点：#{place_detail(@course)}
+          | 时间：#{begin_end_time(@course)}&nbsp;&nbsp;&nbsp;地点：#{place_detail(@course)}
         .course_reg_txt2
           | 您可以通过电话和邮件联系我们，完成报名：
         .course_reg_txt3
@@ -26,7 +26,7 @@
           span.tel_and_email
             | #{t'_email'}
         .course_reg_txt5
-          | 也可以填写信息，我们的课程顾问会和您确认并安排课程。
+          | 也可以填写信息，我们的课程顾问会和您确认并安排课程
         .course_reg_con
           ul.write
             = render 'shared/notice_error'

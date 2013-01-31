@@ -1,5 +1,5 @@
 = render 'shared/notice_error'
-= form_for @course do |f|
+= form_for @course, url: "/courses/#{@course.id}" do |f|
   = error_msg @course
   | Trainer
   = collection_select :course, :trainer_id, Trainer.all, :id, :name

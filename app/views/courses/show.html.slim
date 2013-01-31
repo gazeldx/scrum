@@ -17,7 +17,7 @@
               | 我要报名
           ul
             li.course_time
-              | #{@course.start_time.strftime(t('date_format'))} ~ #{@course.end_time.strftime(t('date_without_year'))}  #{@course.location}
+              | #{begin_end_time @course} #{@course.location}
             li
               em
                 | 课程主办：
@@ -25,7 +25,7 @@
             li
               em
                 | 时间：
-              | #{@course.start_time.strftime(t('date_format'))}-#{@course.end_time.strftime(t('_day'))}，9：00am –5：00pm
+              | #{@course.start_time.strftime(t('date_format'))}-#{@course.end_time.strftime(t('_day'))}， 9：00am –5：00pm
             li
               em
                 | 地点：
