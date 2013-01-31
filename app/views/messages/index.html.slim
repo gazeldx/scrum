@@ -1,0 +1,35 @@
+= render 'shared/notice_error'
+| Messages
+table.olt
+  tbody
+    tr
+      td
+        | ID
+      td
+        | Name
+      td
+        | Phone
+      td
+        | Email
+      td
+        | Company
+      td
+        | Message
+      td
+        | Created at
+    - @messages.each do |message|
+      tr
+        td
+          = message.id
+        td
+          = message.name
+        td
+          = message.phone
+        td
+          = message.email
+        td
+          = message.company
+        td
+          = message.body
+        td
+          = message.created_at.strftime(t'time_format')

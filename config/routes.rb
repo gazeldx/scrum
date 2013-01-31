@@ -18,6 +18,7 @@ Scrum::Application.routes.draw do
 #  match 'registers/do_register' => 'registers#do_register'
   get 'admin/trainers' => 'trainers#background_index'
   get 'admin/courses' => 'courses#background_index'
+  get 'admin/messages' => 'messages#index'
   get 'admin/registers' => 'registers#index'
   get 'admin' => 'registers#index'
   get 'about' => 'shared#about'
