@@ -38,7 +38,6 @@ class CoursesController < ApplicationController
   end
 
   def update
-    p "uuuuuuuuuuuuuuuuuuuuuuuuuuuuu"
     @course = Course.find(params[:id])
     if @course.update_attributes(params[:course])
       redirect_to admin_courses_path, :notice => t('update_succ')

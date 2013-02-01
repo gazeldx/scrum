@@ -20,7 +20,6 @@ class RegistersController < ApplicationController
   # GET /registers/new.json
   def new
     @register = Register.new
-    p params[:course_id]
     @course = Course.find(params[:course_id].to_i)
     respond_to do |format|
       format.html # new.html.erb
