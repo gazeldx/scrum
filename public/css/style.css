@@ -1098,8 +1098,8 @@ $xl: 20px;
 }
 
 .course_reg_con .write{
-/*	width: 700px;
-	height: 500px;*/
+	width: 700px;
+	height: 500px;
 	border: #b1b1b1 dotted 2px;
 	border-radius: 10px;
 	background: none;

@@ -10,8 +10,14 @@
   | Description
   = f.text_area :description, class: 'required'
   br
+  | City
+  = f.text_field :city, class: 'required'
+  br
   | Location
   = f.text_field :location, class: 'required'
+  br
+  | Price
+  = f.text_field :discount, class: 'required'
   br
   | Start Time
   = datetime_select :course, :start_time

@@ -12,42 +12,65 @@
     .course_intr
       .course_reg
         .course_reg_txt1
-          /| 非常感谢您报名#{t('shine_scrum')}的#{@course.name}！
-          | 感谢您报名 #{@course.trainer.name} 的 #{@course.name}！
-          br
-          | 时间：#{begin_end_time(@course)}&nbsp;&nbsp;&nbsp;地点：#{place_detail(@course)}
+          | 感谢您报名#{@course.trainer.name}的#{@course.name}课程！
+          /br
+          /| 时间：#{begin_end_time(@course)}&nbsp;&nbsp;&nbsp;地点：#{@course.location}
         .course_reg_txt2
-          | 您可以通过电话和邮件联系我们，完成报名：
+          | 您可以通过
+          em
+            | 两种方式
+          | 完成报名：
         .course_reg_txt3
-          | 热线电话&nbsp;&nbsp;
+          | 方式一： 热线电话&nbsp;&nbsp;
           span.tel_and_email
             | #{t'_tel'}
           | &nbsp;&nbsp;&nbsp;邮箱&nbsp;&nbsp;
           span.tel_and_email
             | #{t'_email'}
         .course_reg_txt5
-          | 也可以填写信息，我们的课程顾问会和您确认并安排课程
+          | 方式二： 请填写信息，我们的课程顾问会和您确认并安排课程
         .course_reg_con
           ul.write
             = render 'shared/notice_error'
             = form_for @register do |f|
               = hidden_field_tag :course_id, @course.id
-              = error_msg @register
+              /= error_msg @register
               li
                 span
-                  | *姓名
+                  | 课程名称
+                em
+                  = text_field_tag :course_name, @course.name, class: "txt"
+              li
+                span
+                  | 上课地点
+                em
+                  = text_field_tag :course_location, @course.location, class: "txt"
+              li
+                span
+                  | 开课时间
+                em
+                  = text_field_tag :course_time, begin_end_time(@course), class: "txt"
+              li
+                span
+                  | 姓名(必填)
                 em
                   = f.text_field :name, class: "txt"
+                .errInfo
+                  | 姓名不能为空！
               li
                 span
-                  | *手机号
+                  | 手机号(必填)
                 em
                   = f.text_field :mobile, class: "txt"
+                .errInfo
+                  | 电话号码不能空！
               li
                 span
-                  | *Email
+                  | Email(必填)
                 em
                   = f.text_field :email, class: "txt"
+                .errInfo
+                  | 请输入有效的邮箱地址！
               li
                 span
                   | 公司名
@@ -58,6 +81,11 @@
                   | 培训人数
                 em
                   = select(:register, :headcount, [1, 2, 3, 5, 8, 10, 15, 20])
+              li.memo
+                span
+                  | 备注
+                em
+                  = f.text_area :remarks, class: "txt2"
               li.btn_bar
                 input type="button" class="btn" value="重置"
                 = f.submit raw("提交"), class: "btn2"

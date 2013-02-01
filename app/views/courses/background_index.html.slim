@@ -12,7 +12,11 @@ table.olt
       td
         | Trainer
       td
+        | City
+      td
         | Location
+      td
+        | Price
       td
         | Time
       td
@@ -25,7 +29,11 @@ table.olt
         td
           = link_to course.trainer.name, "/about/#{course.trainer.url}", target: '_blank'
         td
+          = course.city
+        td
           = course.location
+        td
+          = course.discount
         td
           = begin_end_time(course)
         td

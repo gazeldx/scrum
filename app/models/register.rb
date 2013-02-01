@@ -1,5 +1,5 @@
 class Register < ActiveRecord::Base
-  attr_accessible :name, :mobile, :email, :company_name, :headcount
+  attr_accessible :name, :mobile, :email, :company_name, :headcount, :remarks
 
   belongs_to :course
   

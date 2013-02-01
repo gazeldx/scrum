@@ -17,7 +17,7 @@
               | 我要报名
           ul
             li.course_time
-              | #{begin_end_time @course} #{@course.location}
+              | #{begin_end_time @course} #{@course.city}
             li
               em
                 | 课程主办：
@@ -29,7 +29,7 @@
             li
               em
                 | 地点：
-              | #{place_detail(@course)}
+              | #{@course.location}
             li
               em
                 | 讲师：
@@ -37,7 +37,7 @@
             li
               em
                 | 价格：
-              | RMB 7000元/位，截至#{@course.end_time.strftime(t('date_without_year'))}前报名或者3人以上团体报名有优惠
+              | #{@course.discount}
         .know
           .know_title
             | 通过此课程，你将了解到

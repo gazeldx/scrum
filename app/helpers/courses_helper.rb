@@ -9,13 +9,13 @@ module CoursesHelper
     end
   end
 
-  def place_detail course
-    if course.location == t('beijing')
-      t('place.beijing')
-    elsif course.location == t('shanghai')
-      t('place.shanghai')
-    else
-      t('place.shenzhen')
-    end
-  end
+#  def place_detail course
+#    if course.location == t('beijing')
+#      t('place.beijing')
+#    elsif course.location == t('shanghai')
+#      t('place.shanghai')
+#    else
+#      t('place.shenzhen')
+#    end
+#  end
 end
