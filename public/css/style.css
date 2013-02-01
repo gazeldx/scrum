@@ -5,6 +5,7 @@ $c: 15px;
 $b: 16px;
 $x: 18px;
 $xl: 20px;
+
 .cWhite a:hover {
 	color: #fff;
 	text-decoration: underline;
@@ -89,7 +90,7 @@ $xl: 20px;
 	width: 960px;
 	margin: 0 auto;
 	background: #f2f2f2;
-	padding-bottom: 100px;
+        padding-bottom:50px;
 }
 
 .page .title {
@@ -154,7 +155,7 @@ $xl: 20px;
 
 .why_shinescrum_con {
 	clear: both;
-	padding: 60px 10px 0px 10px;
+        padding: 60px 10px 0 40px;
 }
 
 .why_shinescrum_photo {
@@ -169,7 +170,7 @@ $xl: 20px;
 	font-size: 18px;
 	line-height: 180%;
 	color: #010101;
-	padding-right: 40px;
+	padding-right: 20px;
 }
 
 .why_shinescrum_intr em {
@@ -637,6 +638,7 @@ $xl: 20px;
 
 .innerUpdate_con {
 	clear: both;
+        background:#f2f2f2
 }
 
 .innerUpdate_intr {
