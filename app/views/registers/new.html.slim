@@ -1,5 +1,4 @@
 = title "#{t'course.register'}_#{@course.name}_#{t'_course'}"
-/= title '认证课程——课程报名'
 .page
   .title.course
     a href=courses_path
@@ -12,9 +11,7 @@
     .course_intr
       .course_reg
         .course_reg_txt1
-          | 感谢您报名#{@course.trainer.name}的#{@course.name}课程！
-          /br
-          /| 时间：#{begin_end_time(@course)}&nbsp;&nbsp;&nbsp;地点：#{@course.location}
+          | 感谢您报名#{@course.trainer.name}的#{@course.name}课程！          
         .course_reg_txt2
           | 您可以通过
           em
@@ -39,17 +36,17 @@
                 span
                   | 课程名称
                 em
-                  = text_field_tag :course_name, @course.name, class: "txt"
+                  = text_field_tag :course_name, @course.name, class: "txt", :readonly => true
               li
                 span
                   | 上课地点
                 em
-                  = text_field_tag :course_location, @course.location, class: "txt"
+                  = text_field_tag :course_location, @course.location, class: "txt", :readonly => true
               li
                 span
                   | 开课时间
                 em
-                  = text_field_tag :course_time, begin_end_time(@course), class: "txt"
+                  = text_field_tag :course_time, begin_end_time(@course), class: "txt", :readonly => true
               li
                 span
                   | 姓名(必填)
