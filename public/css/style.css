@@ -1145,3 +1145,7 @@ $xl: 20px;
     /* list-style: square; */
   }
 }
+
+.red {
+	color: red;
+}
