@@ -1,0 +1,13 @@
+= title 'Add a 上课场景'
+h2
+  = 'Add a 上课场景'
+= render 'shared/notice_error'
+= form_for @student do |f|
+  = error_msg @student
+  = f.label 'Name'
+  = f.text_field :name, size: 25, class: 'required'
+  br
+  = f.label 'URL'
+  = f.text_field :url, size: 25, class: 'required'
+  br
+  = f.submit

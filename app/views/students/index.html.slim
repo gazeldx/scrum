@@ -1,0 +1,46 @@
+= title t'_student'
+.page.page_bg2
+  .title.student_page
+    = t'_student'
+  .course_con
+    .course_intr.student
+      .left
+        .student_list
+          ul
+            - @students.each do |student|
+              li
+                .student_title
+                  span                    
+                    | #{student.train_type}
+                .sutdent_txt
+                  | #{student.title}
+                  /| Perth, OZ on March 16, 2012
+                div
+                  /img src="images/sutdent_img_01.jpg"
+                  = image_tag(student.avatar.student.url)
+                .student_title2
+                  /| CSM Trainers
+                  | #{student.trainer_type}
+                .student_title3
+                  | #{student.trainer.name}
+                  /| Jens Østergaard
+          .page_btn
+            a.pre href="javascript:;"
+              | 上一页
+            a.next href="javascript:;"
+              | 下一页
+      .right
+        .year
+          .year_title
+            | 选择年份
+          ul
+            li.sel
+              a href="javascript:;"
+                | 全部
+            li
+              a href="javascript:;"
+                | 2013
+            li
+              a href="javascript:;"
+                | 2012
+      .clearFix

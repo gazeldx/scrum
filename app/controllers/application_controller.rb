@@ -17,7 +17,7 @@ class ApplicationController < ActionController::Base
   private
   def authenticate
     authenticate_or_request_with_http_basic do |user_name, password|
-      user_name == "jim" && password == "shinetech"
+      Digest::SHA1.hexdigest(user_name) == "1cd02e31b43620d7c664e038ca42a060d61727b9" && Digest::SHA1.hexdigest(password) == "f405b29972640b3906fc936d8a88cac653f9eb62"
     end
   end
 
