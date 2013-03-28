@@ -2,7 +2,8 @@ class ClassPhotosController < ApplicationController
   skip_before_filter :authenticate, :only => [:index]
 
   def index
-    @class_photos = ClassPhoto.all
+  	@courses = Course.includes(:class_photos).order('start_time DESC')
+    # @class_photos = ClassPhoto.includes(:course).order('Course.start_time DESC')
   end
 
   # def background_index

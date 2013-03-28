@@ -7,23 +7,24 @@
       .left
         .student_list
           ul
-            - @class_photos.each do |class_photo|
-              li
-                .student_title
-                  span
-                    | #{class_photo.course.name}
-                .sutdent_txt
-                  | #{class_photo.course.city} - #{class_photo.course.start_time.strftime(t'date_format')}
-                  /| Perth, OZ on March 16, 2012
-                div
-                  /img src="images/sutdent_img_01.jpg"
-                  = image_tag(class_photo.avatar.photo.url)
-                .student_title2
-                  /| CSM Trainers
-                  | #{class_photo.course.name}老师
-                .student_title3
-                  | #{class_photo.course.trainer.name}
-                  /| Jens Østergaard
+            - @courses.each do |course|
+              - course.class_photos.each do |class_photo|
+                li
+                  .student_title
+                    span
+                      | #{class_photo.course.name}
+                  .sutdent_txt
+                    | #{class_photo.course.city} - #{class_photo.course.start_time.strftime(t'date_format')}
+                    /| Perth, OZ on March 16, 2012
+                  div
+                    /img src="images/sutdent_img_01.jpg"
+                    = image_tag(class_photo.avatar.photo.url)
+                  .student_title2
+                    /| CSM Trainers
+                    | #{class_photo.course.name}老师
+                  .student_title3
+                    | #{class_photo.course.trainer.name}
+                    /| Jens Østergaard
           .page_btn
             a.pre href="javascript:;"
               | 上一页
