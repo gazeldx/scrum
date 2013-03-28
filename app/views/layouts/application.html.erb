@@ -27,7 +27,7 @@
         <li class="<%= controller_path == "trainers" ? 'sel' : nil %>"><a href="team"><%= t'_team' %></a></li>
         <li class="<%= controller.action_name == "partners" ? 'sel' : nil %>"><a href="partners"><%= t'_partner' %></a></li>
         <li class="<%= (["registers", "courses"].include? controller_path) ? 'sel' : nil %>"><a href="/courses"><%= t'_course' %></a></li>
-        <li class="<%= controller.action_name == "students" ? 'sel' : nil %>"><a href="/students"><%= t'_student' %></a></li>
+        <li class="<%= controller.action_name == "students" ? 'sel' : nil %>"><a href="/class_photos"><%= t'_student' %></a></li>
         <li class="<%= controller.action_name == "inner" ? 'sel' : nil %>"><a href="/inner"><%= t'_inner' %></a></li>
         <li class="<%= controller.action_name == "library" ? 'sel' : nil %>"><a href="/library"><%= t'_library' %></a></li>
         <li class="<%= controller.action_name == "contact" ? 'sel' : nil %>"><a href="/contact"><%= t'contact_us' %></a></li>
