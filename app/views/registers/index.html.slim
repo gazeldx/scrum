@@ -38,6 +38,6 @@ table.olt
         td
           = register.headcount
         td
-          = link_to register.course.name, register.course, target: '_blank'
+          = link_to register.course.name, "/course?id=#{register.course.id}", target: '_blank'
         td
           = register.created_at.strftime(t'time_format')
