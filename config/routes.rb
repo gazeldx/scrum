@@ -35,7 +35,9 @@ Scrum::Application.routes.draw do
   get 'library' => 'shared#library'
 
   namespace :admin do
-    resources :registers, :courses, :trainers
+    # root :to => "registers#index"
+
+    resources :registers, :trainers
     resources :courses do
       resources :class_photos
     end
