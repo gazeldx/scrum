@@ -1,4 +1,5 @@
 Scrum::Application.routes.draw do
+
   resources :messages
 
 
@@ -6,13 +7,15 @@ Scrum::Application.routes.draw do
   get 'team_member_:url' => 'trainers#show'
   
   get 'course' => 'courses#show'
-  resources :registers, :trainers, :students
+  resources :registers, :trainers, :class_photos
   resources :courses do
     member do
       get 'register'
       get 'all'
     end
+    # resources :class_photos
   end
+
 
   #match 'courses/:id/register' => 'courses#register'
   match 'course_register' => 'registers#new'
@@ -21,7 +24,7 @@ Scrum::Application.routes.draw do
   get 'admin/courses' => 'courses#background_index'
   get 'admin/messages' => 'messages#index'
   get 'admin/registers' => 'registers#index'
-  get 'admin/students' => 'students#background_index'
+  get 'admin/class_photos' => 'class_photos#background_index'
   get 'admin' => 'registers#index'
   get 'about' => 'shared#about'
   get 'contact' => 'shared#contact'
@@ -32,7 +35,10 @@ Scrum::Application.routes.draw do
   get 'library' => 'shared#library'
 
   namespace :admin do
-    resources :registers, :courses, :trainers, :students
+    resources :registers, :courses, :trainers
+    resources :courses do
+      resources :class_photos
+    end
   end
 
   root :to => 'home#index'

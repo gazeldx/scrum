@@ -20,6 +20,8 @@ table.olt
       td
         | Time
       td
+        | Class Photos
+      td
     - @courses.each_with_index do |course, i|
       tr
         td
@@ -36,5 +38,8 @@ table.olt
           = course.discount
         td
           = begin_end_time(course)
+        td
+          | #{course.class_photos.size} photos
+          = link_to 'Add', new_admin_course_class_photo_path(course)
         td
           = link_to 'Edit', edit_course_path(course)

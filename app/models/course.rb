@@ -2,6 +2,7 @@ class Course < ActiveRecord::Base
   attr_accessible :name, :description, :location, :start_time, :end_time, :status, :trainer_id, :city, :discount
   belongs_to :trainer
   has_many :registers, :dependent => :destroy
+  has_many :class_photos, :dependent => :destroy
   
   validates :name, :length => { :in => 2..200 }
   validates :description, :length => { :in => 2..100000 }

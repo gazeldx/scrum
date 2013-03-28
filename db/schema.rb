@@ -13,6 +13,13 @@
 
 ActiveRecord::Schema.define(:version => 20130327064217) do
 
+  create_table "class_photos", :force => true do |t|
+    t.integer  "course_id"
+    t.string   "avatar"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "courses", :force => true do |t|
     t.string   "name"
     t.string   "location"
@@ -47,16 +54,6 @@ ActiveRecord::Schema.define(:version => 20130327064217) do
     t.datetime "created_at",                  :null => false
     t.datetime "updated_at",                  :null => false
     t.string   "remarks"
-  end
-
-  create_table "students", :force => true do |t|
-    t.string   "title"
-    t.string   "train_type"
-    t.integer  "trainer_id"
-    t.string   "trainer_type"
-    t.string   "avatar"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
   end
 
   create_table "trainers", :force => true do |t|
