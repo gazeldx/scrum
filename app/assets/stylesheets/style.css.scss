@@ -1,634 +1,1059 @@
-// Place all the styles related to the TrainersController controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url('reset.css');
 
-* {
-  padding: 0;
-  margin: 0;
+.cWhite a:hover {
+	color: #fff;
+	text-decoration: underline;
 }
+/*margins+paddings*/
+.mr5 {
+	margin-right: 5px;
+}
+
+.mr10 {
+	margin-right: 10px;
+}
+
+.mr20 {
+	margin-right: 20px;
+}
+
+.top {
+	height: 70px;
+	border-top: #000000 solid 5px;
+}
+
+.top ul {
+	width: 960px;
+	height: 70px;
+	margin: 0 auto;
+}
+
+.top li a {
+	color: #010101;
+	text-decoration: none;
+}
+
+.top li a:hover {
+	color: #235cab;
+}
+
+.top li {
+	float: left;
+	width: 61px;
+	margin-left: 15px;
+	padding-top: 35px;
+	font-family: '微软雅黑';
+	font-size: 15px;
+	font-weight: bold;
+	border-top: #ffffff solid 6px;
+	text-align: center;
+	word-wrap: normal;
+	letter-spacing: -1px;
+}
+
+.top li:hover {
+	border-top: #245bab solid 6px;
+	text-decoration: none;
+	color: #235cab;
+}
+
+.top li.sel {
+	border-top: #245bab solid 6px;
+	color: #235cab;
+}
+
+.top li.sel a {
+	color: #235cab;
+}
+
+.top li.logo {
+	width: 255px;
+	height: 70px;
+	background: url(../images/logo.gif) 0px 0px no-repeat;
+	border: none;
+	padding-top: 0 !important;
+	margin-left: 0;
+}
+
+.slide {
+	height: 320px;
+	background: #245ba9;
+}
+
+.page {
+	width: 960px;
+	margin: 0 auto;
+	background: #f2f2f2;
+	padding-bottom: 40px;
+}
+
+.page .title {
+	height: 43px;
+	background: #2f2f31;
+	font-size: 18px;
+	line-height: 40px;
+	font-weight: bold;
+	color: #ffffff;
+	padding-left: 10px;
+}
+
+.page .why_shinescrum {
+	background: url(../images/why_shinescrum.gif) right top no-repeat #2f2f31;
+}
+
+.page .aboutUs {
+	background: url(../images/aboutUs.gif) right top no-repeat #2f2f31;
+}
+
+.page .team {
+	background: url(../images/team.gif) right top no-repeat #2f2f31;
+}
+
+.page .partner {
+	background: url(../images/partner.gif) right top no-repeat #2f2f31;
+}
+
+.page .course {
+	background: url(../images/course.gif) right top no-repeat #2f2f31;
+}
+
+.page .innerUpdate {
+	background: url(../images/innerUpdate.gif) right top no-repeat #2f2f31;
+}
+
+.page .contact {
+	background: url(../images/contact.gif) right top no-repeat #2f2f31;
+}
+
+.page .student_page {
+	background: url(../images/student.gif) right top no-repeat #2f2f31;
+}
+
+.page_bg2 {
+	background: #fafafa;
+}
+
+.foot {
+	height: 87px;
+	margin: auto 0 auto;
+	background: url(../images/foot.gif) 0px 0px repeat-x;
+	text-align: center;
+	font-size: 12px;
+	color: #FFF;
+	line-height: 80px;
+}
+
+.why_shinescrum_con {
+	clear: both;
+	padding: 30px 10px 0px 10px;
+}
+
+.why_shinescrum_photo {
+	float: left;
+}
+
+.why_shinescrum_intr {
+	width: 476px;
+	float: right;
+	font-size: 18px;
+	line-height: 180%;
+	color: #010101;
+}
+
+.why_shinescrum_intr em {
+	color: #245baa;
+	font-style: normal;
+	font-size: 24px;
+}
+
+.why_shinescrum_intr .big {
+	font-size: 24px;
+}
+
+.aboutUs_con {
+	clear: both;
+	padding: 40px 30px 0px 30px;
+}
+
+.aboutUs_intr {
+	font-size: 18px;
+	line-height: 180%;
+	color: #010101;
+}
+
+.aboutUs_con em {
+	color: #245baa;
+	font-style: normal;
+	font-size: 24px;
+}
+
+.aboutUs_intr p {
+	font-size: 14px;
+	padding: 40px 0px 10px 0px;
+	clear: both;
+	line-height: 24px;
+	text-align: justify;
+}
 
-body {
-  font-size: 62.5%; /* Resets 1em to 10px */
-  font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
-  color: #333;
-  background: #faf9f7;
-  text-align: center;
+.aboutUs_intr p em {
+	font-size: 16px;
+	color: #245baa;
 }
 
-.clear {
-  clear: both;
+.aboutUs_intr img {
+	margin-left: 30px;
 }
 
-p {
-  margin: 0 0 15px 0;
+.team_con {
+	clear: both;
+	padding: 40px 30px 0px 30px;
 }
 
-a {
-  color: #1fbfb2;
-  font-weight: bold;
-  text-decoration: none;
+.team_intr {
+	font-size: 18px;
+	line-height: 180%;
+	color: #010101;
 }
 
-a:hover {
-  text-decoration: underline;
+.team_intr p {
+	font-size: 14px;
+	padding: 20px 0px 10px 0px;
+	clear: both;
+	line-height: 24px;
+	text-align: justify;
 }
 
-img, img a {
-  border: 0;
-  -ms-interpolation-mode: bicubic;
+.team_photo {
+	background: url(../images/team_line.jpg) center bottom no-repeat;
+	padding-bottom: 50px;
 }
 
-small {
-  font-family: Arial, Helvetica, Sans-Serif;
-  font-size: 0.9em;
-  line-height: 1.5em;
+.team_photo ul {
 }
 
-h1, h2, h3 {
-  font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
-  font-weight: bold;
+.team_photo li {
+	float: left;
+	margin-right: 48px;
+/*	cursor: pointer;*/
 }
 
-h1 {
-  float: left;
+.team_photo .last {
+	margin-right: 0px;
 }
 
-h1 span {
-  display: none;
+.team_photo .sel a {
+	color: #3e78cb;
+	text-decoration: none;
 }
 
-h1 img {
-  position: absolute;
-  top: 0;
+.team_photo .sel img {
+	border: #3e78cb solid 3px;
+	clear: both;
 }
 
-h2 {
-  padding: 10px 10px 10px 0;
-  font-size: 2.0em;
-  text-transform: uppercase;
-  font-weight: normal;
-  margin: 0 0 20px 0;
-  color: #272727;
+.team_photo li img {
+	border: #cecece solid 3px;
+	clear: both;
 }
 
-h3 {
-  color: #1fbfb2;
-  font-size: 1.4em;
-  margin: 25px 0 5px 0;
+.team_photo div {
+	clear: both;
+	font-size: 12px;
+	width: 126px;
+	padding-top: 5px;
 }
 
-h4 {
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 1em;
+.team_photo .name {
+	clear: both;
+	font-size: 14px;
+	font-weight: bold;
 }
 
-#mainLeft h3 {
-	margin-top: 0;
+.team_photo li a:hover {
+	color: #3e78cb;
+	text-decoration: none;
 }
 
-ul, ol {
-  margin: 10px 0 10px 30px;
+.team_photo li a:hover img {
+	border: #3e78cb solid 3px;
+	clear: both;
 }
 
-li {
-  margin: 0 0 20px 0;
+.partner_con {
+	clear: both;
+	padding: 40px 30px 0px 30px;
 }
 
-hr {
-  height: 2px;
-  width: 80%;
-  margin: 20px auto 20px auto;
-  border: 0;
+.partner_intr {
+	font-size: 18px;
+	line-height: 180%;
+	color: #010101;
 }
 
-#outerWrap {
-  font-size: 1.2em;
-  background: #fff url(/images/content-background.gif) repeat-y 7px 0;
-  width: 914px;
-  margin: 0 auto;
-  text-align: left;
+.partner_intr ul {
+	margin-left: 50px;
 }
 
-#header {
-  background: url(/images/header-background.gif?1298238035) top left no-repeat;
-  padding: 30px 0 0 20px;
-  height: 125px;
+.partner_intr li {
+	float: left;
+	padding: 10px;
 }
 
-#mainContent {
-  padding: 0 20px 20px 30px;
+.partner_intr .first {
+	padding-left: 35px;
 }
 
-#mainLeft {
-  width: 580px;
-  float: left;
+.course_con {
+	clear: both;
 }
 
-#mainRight {
-  margin: 0 10px 0 600px;
-  border-top: 1px solid #e2e6d8;
-  border-bottom: 1px solid #e2e6d8;
-  padding: 15px 0 15px 0;
+.course_intr {
+	font-size: 18px;
+	line-height: 180%;
+	color: #010101;
+	padding-top: 40px;
+	background: #f2f2f2;
 }
 
-#mainRight hr {
-  height: 1px;
-  color: white;
-  background-color: white;
-  border: 0;
-  padding: 7px;
-  margin: 0;
+.csm {
+	width: 635px;
+	height: 270px;
 }
 
-#mainRight p,
-#mainRight h4,
-#mainRight img,
-#mainRight div.textile {
-  padding: 15px 20px 15px 20px;
-  margin: 0 15px 0 15px;
-  background: #f1f3ed;
+.csm .course_title {
+	height: 37px;
+	background: url(../images/course_title.gif) 0px 0px no-repeat;
+	font-size: 22px;
+	line-height: 37px;
+	color: #ffffff;
+	padding-left: 20px;
 }
 
-#mainRight div.textile {
-  padding: 15px 20px 15px 20px;
-  margin: 0 15px 0 15px;
-  background: #f1f3ed;
+.csm .course_title span {
+	float: left;
 }
 
-#mainRight h4 {
-  padding-bottom: 0;
-  text-transform: uppercase;
+.csm .course_title a {
+	width: 118px;
+	height: 34px;
+	float: right;
+	background: url(../images/apply.gif) 0px 0px no-repeat;
+	color: #ffffff;
+	text-align: center;
+	font-size: 18px;
+	line-height: 34px;
 }
 
-#mainRight img {
-  width: 184px;
-  padding: 0 20px 17px 20px;
+.csm ul {
+	margin-left: 30px;
 }
 
-#mainRight p strong {
-  display: block;
-  margin-bottom: 12px;
-  padding-bottom: 0;
-  text-transform: uppercase;
+.csm li {
+	font-size: 14px;
+	line-height: 24px;
 }
 
-#mainRight h4 + p {
-  padding-top: 12px;
+.csm .know {
 }
 
-#mainRight h4 + div.textile {
-  padding-top: 2px;
+.csm .course_time {
+	color: #04357b;
+	font-size: 12px;
+	line-height: 56px;
+	font-weight: bold;
+	background: none;
 }
 
-#mainRight div.textile p {
-  margin: 10px 0 0 0;
-  padding: 0;
+.csm li em {
+	font-style: normal;
+	color: #4b4b4b;
+	width: 80px;
+	display: block;
+	float: left;
 }
 
-#mainRight div.textile p strong {
-  display:inline;
-  text-transform: none;
+.know {
+	width: 635px;
+	height: 270px;
 }
 
-#map_container {
-  width: 850px;
-  margin: 10px 0;
+.know_title {
+	background: url(../images/course_line.gif) left bottom repeat-x;
+	color: #4b4b4b;
+	font-size: 14px;
+	margin-left: 33px;
 }
 
-#flashNotice,
-#flashError {
-  background-color: #faf9f7;
-  padding: 10px;
-  border: 2px solid #d9ef44;
-  margin: 20px 20px 20px 20px;
-  text-align: center;
+.know ul {
+	margin-left: 17px;
 }
 
-#flashError {
-  color: red;
+.know li {
+	font-size: 14px;
+	background: url(../images/course_point.gif) 0px 13px no-repeat;
+	padding-left: 15px;
 }
 
-.formError {
-  color: red;
+.know2 {
+	width: 920px;
+	height: 200px;
 }
 
-#errorExplanation {
-  width: 546px;
-  border: 2px solid #d9ef44;
-  padding: 7px 7px 12px;
-  margin-bottom: 20px;
-  background-color: #faf9f7;
+.know2_title {
+	background: url(../images/course_line.gif) left bottom repeat-x;
+	color: #4b4b4b;
+	font-size: 14px;
+	margin-left: 33px;
 }
 
-#errorExplanation h2 {
-  text-transform: none;
-  text-align: left;
-  font-weight: bold;
-  padding: 5px 5px 5px 15px;
-  font-size: 12px;
-  margin: -7px;
-  background-color: #d9ef44;
+.know2 ul {
+	margin-left: 33px;
 }
 
-#errorExplanation p {
-  color: #333;
-  margin-bottom: 0;
-  padding: 15px 4px 0 10px;
+.know2 li {
+	font-size: 14px;
+	background: url(../images/course_point.gif) 0px 13px no-repeat;
+	padding-left: 15px;
 }
 
-#errorExplanation li {
-  margin: 4px;
+.cont {
+	width: 270px;
+	height: 270px;
+	margin-right: 20px;
 }
 
-/* ###############   NAV   ################## */
-#organizational_partner_show img {
-  padding-bottom: 30px;
+.cont_title {
+	background: url(../images/course_line.gif) left bottom repeat-x;
+	color: #4b4b4b;
+	font-size: 14px;
 }
-#organizational_partner_show p {
-/*  float: left;*/
+
+.cont_title .icon {
+	width: 26px;
+	height: 26px;
+	float: left;
+	background: url(../images/cont_icon.gif) 0px 5px no-repeat;
+}
+
+.cont ul {
+}
+
+.cont li {
+	color: #616161;
+	font-size: 12px;
+	line-height: 18px;
+	margin-top: 10px;
+}
+
+.cont li div {
+	font-size: 18px;
+	color: #000000;
+}
+
+.cont li .addr {
+	font-size: 12px;
+}
+
+.pointer {
+	width: 270px;
+	height: 270px;
+	margin-right: 20px;
+}
+
+.pointer_title {
+	background: url(../images/course_line.gif) left bottom repeat-x;
+	color: #4b4b4b;
+	font-size: 14px;
+}
+
+.pointer_title .icon {
+	width: 26px;
+	height: 26px;
+	float: left;
+	background: url(../images/pointer_icon.gif) 0px 5px no-repeat;
+}
+
+.pointer ul {
+}
+
+.pointer li {
+	font-size: 14px;
+	line-height: 24px;
+	background: url(../images/course_point.gif) 0px 9px no-repeat;
+	padding-left: 15px;
+	margin-top: 10px;
+}
+
+.course_line {
+	height: 30px;
+	background: url(../images/course_line2.gif) 0px 0px no-repeat #ffffff;
+}
+
+.teacher li {
+	padding: 10px 0 30px 0;
+	clear: both;
+}
+
+.teacher .photo {
+	float: left;
+	color: #5f5f5f;
+	font-size: 14px;
+	line-height: 24px;
+	margin-right: 20px;
+}
+
+.teacher .photo img {
+	border: #cecece solid 3px;
+	clear: both;
+}
+
+.teacher .intr {
+	float: right;
+	width: 470px;
+	color: #454545;
+	line-height: 24px;
+}
+
+.teacher .intr .teacher_title {
+	font-size: 20px;
+	line-height: 24px;
+	color: #275dab;
+}
+
+.teacher .intr .teacher_name {
+	font-size: 14px;
+	font-weight: bold;
+	color: #000000;
+	line-height: 34px;
+}
+
+.teacher .intr .teacher_title2 {
+	font-size: 14px;
+	color: #000000;
+}
+
+.course_room {
+}
+
+.course_room li {
+	margin-bottom: 20px;
+}
+
+.course_room .course_room_title {
+	font-size: 20px;
+	color: #275dab;
+	height: 20px;
+	line-height: 20px;
+}
+
+.course_room .course_room_title span {
+	float: left;
+}
+
+.course_room .course_room_title a {
+	float: right;
+	font-size: 12px;
+}
+
+.course_room li img {
+	border: #cecece solid 3px;
+	clear: both;
+}
+
+.course_list {
+}
+
+.course_list caption {
+	font-size: 14px;
+	font-weight: bold;
+	color: #2c2c2c;
+	line-height: 30px;
 }
 
-/* ###############   NAV   ################## */
-.login {
-  width: 874px;
-  text-align: right;
-  position: absolute;
-  top: 7px
+.course_list tr {
+	height: 30px;
 }
 
-p.login {
-  text-decoration: none;
-  font-weight: normal;
-  color: #555;
+.course_list .tr2 {
+	background: #f2f2f2;
 }
 
-.nav {
-  padding: 30px 0;
+.course_list tr:hover {
+	background: #d6e7ff;
 }
 
-#topNav {
-  position: absolute;
-  margin: 29px 0 0 0;
-  float: left;
-  text-transform: uppercase;
+.course_list td {
+	padding-left: 20px;
+	color: #275ca8;
 }
 
-#topNav li {
-  float: left;
-  margin: 0;
-  padding: 0;
-  display: inline;
-  list-style: none;
+.course_list a {
+	width: 43px;
+	height: 21px;
+	background: url(../images/reg.gif) 0px 0px no-repeat;
+	color: #275dab;
+	text-align: center;
+	line-height: 21px;
+	display: block;
+	text-decoration: none;
 }
 
-#topNav a:link, #topNav a:visited {
-  float: left;
-  font-size: 100%;
-  line-height: 1em;
-  margin: 0 10px;
-  text-decoration: none;
-  color: #272727;
-  padding: 5px 0 20px 0;
-  font-weight: normal;
+.course_list tr:hover a {
+	background-position: 0px -21px;
+	color: #ffffff;
 }
 
-#topNav a.active:link, #topNav a.active:visited, #topNav a:hover {
-  background: url(/images/nav-notch.gif) center 27px no-repeat;
-  text-decoration: none;
+.course_list th {
+	background: #275dab;
+	border-bottom: #0a0a0a solid 1px;
+	height: 34px;
+	padding-left: 20px;
+	color: #ffffff;
+	font-weight: bold;
 }
 
-/* ###############   FOOTER   ##################### */
-#footer {
-  background: url(/images/footer-background.gif) top left no-repeat;
-  height: 61px;
-  color: #555;
-  font-size: 0.9em;
+.innerUpdate_con {
+	clear: both;
 }
 
-/* ###############   COURSES   ##################### */
-.button-to,
-.button-to div {
-  display: inline;
+.innerUpdate_intr {
+	background: none repeat scroll 0 0 #F2F2F2;
+	color: #010101;
+	font-size: 18px;
+	line-height: 180%;
+	padding-top: 40px;
 }
 
-.redirect-notice {
-  color: #999;
+.innerUpdate_txt {
+	padding: 0px 30px 0 30px;
+	font-size: 16px;
 }
 
-ul#class_areas {
-  float: right;
+.innerUpdate_txt em {
+	color: #245BAA;
+	font-size: 24px;
+	font-style: normal;
 }
 
-ul#class_areas li {
-  display: inline;
-  list-style: none;
-  border-left: 1px solid #000;
-  padding: 1px 5px 1px 9px;
-  margin: 0;
-  font-weight: bold;
+.innerUpdate_c {
+	width: 920px;
 }
 
-ul#class_areas li.first {
-  border-left: none;
+.innerUpdate_title {
+	color: #4B4B4B;
+	font-size: 14px;
+	margin-left: 33px;
 }
-ul#class_areas li.first {
-  border: none;
+
+.innerUpdate_title2 {
+	color: #275dab;
+	font-size: 18px;
+	margin-left: 33px;
+	padding-top: 20px;
+}
+
+.innerUpdate_c ul {
+	margin-left: 33px;
+}
+
+.innerUpdate_c li {
+	font-size: 14px;
+	line-height: 24px;
+	background: url(../images/course_point.gif) 0px 8px no-repeat;
+	padding-left: 15px;
+}
+
+.innerUpdate_txt2 {
+	margin: 20px 30px 20px 30px;
+	padding: 10px 10px 10px 20px;
+	font-size: 16px;
+	border: #c4c4c4 solid 1px;
+	background: #dfdede;
 }
 
-table#classes {
-  margin-bottom: 1em;
-  color: #666;
-  float: left;
-  width: 100%;
+.innerUpdate_txt2 em {
+	color: #245BAA;
+	font-size: 24px;
+	font-style: normal;
 }
 
-table#classes td {
-  padding: 8px 10px;
-/*  font-size: 90%;*/
-  border-bottom: 1px solid #e2e6d8;
-  border-right: 1px solid #e2e6d8;
-  background: #fff;
+.innerUpdate_txt3 {
+	margin: 0px 30px 20px 30px;
+	padding: 10px 10px 10px 20px;
+	font-size: 16px;
+	border: #c4c4c4 solid 1px;
+	background: #dfdede;
 }
 
-table#classes th {
-  background: #f1f3ed;
-  border-bottom: 2px solid #e2e6d8;
-  font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
-/*  font-size: 80%;*/
-  padding: 4px 10px 0 10px;
+.innerUpdate_txt3 em {
+	color: #245BAA;
+	font-size: 24px;
+	font-style: normal;
 }
 
-table#classes th.sort_by {
-  background-color: #dfe5ea;
-  border-bottom: 2px solid #d6dce1;
-  color: #20262B;
+.knowledge_list {
+	width: 920px;
 }
 
-table#classes td.sort_by {
-  background-color: #edf3f9;
-  border-bottom: 1px solid #d6dce1;
+.knowledge_list ul {
+	margin-left: 33px;
 }
 
-table#classes td.link {
-  border-right: 0;
+.knowledge_list li {
+	font-size: 14px;
+	line-height: 24px;
 }
 
-table#classes td.date {
-  width: 165px;
+.knowledge_title {
+	font-size: 16px;
+	font-weight: bold;
+	color: #094395;
 }
 
-/* ###############   ABOUT   ##################### */
-#about_show img {
-  float: left;
-  margin-right: 10px;
-  margin-bottom: 10px;
+.knowledge_source {
+	font-size: 12p;
+	color: #7e7e7e;
+	line-height: 16px;
 }
 
-#about_team.left {
-/*  width: 690px;*/
-  float: left;
+.knowledge_auther {
+	font-size: 12p;
+	color: #7e7e7e;
+	line-height: 16px;
 }
 
-#about_team.right {
-  width: 152px;
-  float: right;
-  background: #f1f3ed;
-  border: 1px solid #ccc;
-  margin-top: 38px;
-  padding-top: 16px;
-  text-align: center;
+.knowledge_read {
+	padding-top: 10px;
 }
 
-#about_team .founder,
-#about_team .partner {
-  float: left;
-  width: 172px;
+.knowledge_down {
+	width: 83px;
+	height: 25px;
+	display: block;
+	background: url(../images/knowledge_down.gif) 0px 0px no-repeat;
+	color: #ffffff;
+	padding-left: 30px;
+	margin-top: 10px;
+	margin-bottom: 30px;
 }
 
-#about_team .founder p,
-#about_team .partner p {
-  margin-right: 20px;
+.contact_txt {
+	font-size: 16px;
+	background: url(../images/contact_txt.gif) 0px 0px no-repeat;
+	width: 883px;
+	height: 114px;
+	margin: 0 auto;
+	padding-top: 15px;
+	padding-left: 15px;
 }
 
-#about_team .staff p {
-  margin-bottom: 30px;
+.contact_txt li {
+	font-size: 14px;
+	line-height: 22px;
+	clear: both;
 }
 
-#about_team .founder img,
-#about_team .partner img,
-#about_team .staff img {
-  width: 80px;
-  height: 107px;
+.contact_txt span {
+	width: 170px;
+	display: block;
+	float: left;
+	text-align: right;
+	margin-right: 10px;
+	color: #666666;
 }
 
-#about_team img {
-  margin: 10px 10px 15px 0;
+.contact_txt em {
+	float: left;
+	display: block;
 }
 
-#about_team.right img {
-  margin: 10px 0 4px 0;
+.contact_bg {
+	background: #FAFAFA;
+	color: #010101;
+	font-size: 18px;
+	line-height: 180%;
+	padding-top: 40px;
 }
 
-#about_team h3 {
-  margin-top: 2em;
-  margin-bottom: 15px;
+.write_title {
+	color: #083c86;
+	font-weight: bold;
+	font-size: 16px;
+	margin-left: 30px;
+	margin-top: 20px;
+	margin-bottom: 10px;
 }
 
-#about_team h3:first-child {
-  margin-top: 0;
+.write li {
+	clear: both;
+	line-height: 26px;
+	margin-bottom: 10px;
+	height: 26px;
 }
 
-#about_team h4 span{
-  display: block;
-  font-weight: normal;
-  text-transform: none;
+.write .textarea {
+	height: 140px !important;
 }
 
-/* ###############   CONTACT   ##################### */
-#business_card {
-  float: left;
-  width: 420px;
-  background: #faf9f7;
-  border: 1px solid #ddd;
-  margin: 0 14px 14px 14px;
+.write span {
+	width: 60px;
+	display: block;
+	float: left;
+	text-align: right;
+	margin-right: 10px;
+	color: #666666;
+	font-size: 14px;
 }
 
-#business_card img {
-  float: left;
-  margin: 10px;
-  width: 120px;
-  height: 160px;
+.write em {
+	float: left;
+	display: block;
 }
 
-#business_card p {
-  margin: 10px 10px 10px 150px;
+.txt {
+	width: 349px;
+	height: 24px;
+	background: #dfdede;
+	border: #c4c4c4 solid 1px;
+	color: #000000;
+	font-size: 14px;
 }
 
-#contact_form textarea {
-  width: 558px;
+.txt2 {
+	width: 349px;
+	height: 140px;
+	background: #dfdede;
+	border: #c4c4c4 solid 1px;
+	color: #000000;
+	font-size: 14px;
 }
 
-#contact_form label,
-#contact_form .button {
-  margin-top: 10px;
-  display: block;
+.btn {
+	width: 118px;
+	height: 34px;
+	background: url(../images/btn.gif) 0px 0px no-repeat;
+	border: none;
+	margin-top: 10px;
+	margin-left: 70px;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: 微软雅黑;
+	font-size: 16px;
+	line-height: 34px;
 }
 
-#contact_important {
-  visibility: hidden;
-  display: none;
+.btn2 {
+	width: 118px;
+	height: 34px;
+	background: url(../images/btn.gif) 0px -34px no-repeat;
+	border: none;
+	margin-top: 10px;
+	margin-left: 20px;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: 微软雅黑;
+	font-size: 16px;
+	line-height: 34px;
 }
 
-#group_photo {
-  margin: 100px auto 0 auto;
-  background: url(/images/team.jpg) no-repeat top left;
-  width: 547px;
-  height: 552px;
+.year {
+	width: 170px;
+	height: 1000px;
+	padding-top: 30px;
+	padding-left: 30px;
+	background: #f2f2f2;
 }
 
-#group_photo p {
-  color: #ddd;
-  padding-top: 8px;
-  text-align: center;
+.year_title {
+	color: #2c2c2c;
+	font-size: 16px;
+	line-height: 40px;
 }
 
-/* ###############   LIBRARY   ##################### */
+.year ul {
+}
 
-#quote_form textarea {
-  width: 558px;
+.year .sel a {
+	color: #ffffff;
+	font-size: 12px;
+	line-height: 18px;
+	width: 68px;
+	height: 36px;
+	display: block;
+	background: #275dab;
+	border: #275dab solid 1px;
+	margin-bottom: 10px;
+	text-align: center;
+	line-height: 36px;
+	font-size: 16px;
+	text-decoration: none;
 }
 
-#quote_form label,
-#contact_form .button {
-  margin-top: 10px;
-  display: block;
+.year a {
+	color: #2c2c2c;
+	font-size: 12px;
+	line-height: 18px;
+	width: 68px;
+	height: 36px;
+	display: block;
+	background: #ffffff;
+	border: #a6a6a6 solid 1px;
+	margin-bottom: 10px;
+	text-align: center;
+	line-height: 36px;
+	font-size: 16px;
+	text-decoration: none;
 }
 
-#quote_important {
-  visibility: hidden;
-  display: none;
+.year a:hover {
+	color: #ffffff;
+	font-size: 12px;
+	line-height: 18px;
+	width: 68px;
+	height: 36px;
+	display: block;
+	background: #275dab;
+	border: #275dab solid 1px;
+	margin-bottom: 10px;
+	text-align: center;
+	line-height: 36px;
+	font-size: 16px;
+	text-decoration: none;
 }
 
+.student {
+	padding: 0;
+	background: #fafafa;
+}
 
-/* ###############   LIBRARY   ##################### */
-ul.links {
-  margin: 0;
+.year .course_title {
+	height: 37px;
+	background: url(../images/course_title.gif) 0px 0px no-repeat;
+	font-size: 22px;
+	line-height: 37px;
+	color: #ffffff;
+	padding-left: 20px;
 }
 
-ul.links li {
-  margin: 10px 0 0;
-  list-style-type: none;
+.student_list {
+	width: 615px;
+	margin-top: 30px;
+	margin-left: 35px;
 }
 
-/* ###############   REGISTRATION   ##################### */
-fieldset.courseRegistration {
-  display: block;
-  position: relative;
-  background: #faf9f7;
-  border: 1px solid #ddd;
-  margin-top: 50px;
-  width: 500px;
+.student_title {
+	background: url("../images/course_title.gif") no-repeat scroll 0 0 transparent;
+	color: #FFFFFF;
+	font-size: 22px;
+	height: 37px;
+	line-height: 37px;
+	padding-left: 20px;
+	border-left: #cccccc solid 10px;
 }
 
-fieldset.courseRegistration legend span {
-  position: absolute;
-  width: 500px;
-  margin-top: -30px;
-  padding: 0;
-  left: 0;
-  font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
-  font-weight: bold;
-  color: #1fbfb2;
-  font-size: 1.4em;
+.student_title span {
+	float: left;
 }
 
-fieldset.courseRegistration legend span span.normal {
-  position: relative;
-  color: #000;
-  font-family: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
-  font-size: 0.8em;
-  font-weight: normal;
+.sutdent_txt {
+	color: #484848;
+	font-size: 12px;
+	border-left: #ffffff solid 10px;
 }
 
-fieldset.courseRegistration th {
-  padding: 5px 5px 0 5px;
+.student_title2 {
+	color: #010101;
+	font-weight: bold;
+	line-height: 18px;
+	font-size: 14px;
 }
 
-fieldset.courseRegistration td {
-  padding: 5px;
+.student_title3 {
+	color: #010101;
+	font-size: 12px;
+	line-height: 18px;
 }
 
-.required {
-  font-weight: bold;
+.student_list li {
+	margin-bottom: 20px;
 }
 
-label.required span {
-  display: none;
+.page_btn {
 }
 
-.registerOneOrMore {
-  font-weight: bold;
-  font-size: 1.3em;
+.page_btn a {
+	width: 55px;
+	height: 26px;
+	display: block;
+	background: #bcbcbc;
+	text-align: center;
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 26px;
+	text-decoration: none;
 }
 
-/* ###############   CLASS   ##################### */
-p.class_closed {
-  font-weight: bold;
-  font-size: 1.3em;
-  color: red;
+.page_btn a:hover {
+	width: 55px;
+	height: 26px;
+	display: block;
+	background: #275dab;
+	text-align: center;
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 26px;
+	text-decoration: none;
 }
 
-a.edit_button span.wrapper2,
-a.edit_text_button span.wrapper2 {
-  background: url(/images/icons/pencil.png) no-repeat center left;
-  line-height: 16px;
-  padding: 8px;
+.pre {
+	float: left;
 }
 
-a.edit_text_button span.wrapper2 {
-  padding-left: 20px;
+.next {
+	float: right;
 }
+
+
+.course_reg_txt1{ font-size: 20px; margin-left: 33px;}
+.course_reg_txt2{ font-size: 14px; margin-left: 33px; color: #265bab;}
+.course_reg_txt2 em{ font-size: 20px;}
+.course_reg_txt3{ margin-left: 33px; background: url("../images/course_point.gif") no-repeat scroll 0 13px transparent;  font-size: 14px; padding-left: 15px; font-size: 16px;}
+.course_reg_txt3, .course_reg_txt5{ margin-left: 33px; background: url("../images/course_point.gif") no-repeat scroll 0 13px transparent;  font-size: 14px; padding-left: 15px; font-size: 16px;}
+.course_reg_txt4{ margin-left: 120px; font-size: 14px; padding-left: 15px; font-size: 16px;}
+
+.tel_and_email{ color:#e74a05; font-size: 18px;}
 
-/* ###############   STAGING/TEST SITE   ##################### */
-div.test_site {
-  position: absolute;
-  left: 350px;
-  top: 16px;
-  font-weight: bold;
-  font-size: 40px;
-  color: red;
+.course_reg{ margin-left: 50px;}
+
+.course_reg_con{ padding-left: 33px; padding-top: 20px;}
+
+.write{ width: 510px; height: 300px; background: url(../images/write.gif) 0px 0px no-repeat; padding:20px; padding: 20px;}
+
+.write li {
+	clear: both;
+	line-height: 26px;
+	margin-bottom: 10px;
+	height: 26px;
 }
 
-.red{
-  color: red;
+.write .textarea {
+	height: 140px !important;
 }
 
-.field_with_errors {
-  padding: 2px;
-  background-color: red;
-  display: table;
+.write span {
+	width: 75px;
+	display: block;
+	float: left;
+	text-align: right;
+	margin-right: 10px;
+	color: #666666;
+	font-size: 14px;
 }
 
-#error_explanation {
-  width: 450px;
-  border: 2px solid red;
-  padding: 7px;
-  padding-bottom: 0;
-  margin-bottom: 20px;
-  background-color: #f0f0f0;
-  h2 {
-    text-align: left;
-    font-weight: bold;
-    padding: 5px 5px 5px 15px;
-    font-size: 12px;
-    margin: -7px;
-    margin-bottom: 0px;
-    background-color: #c00;
-    color: #fff;
-  }
-  ul li {
-    font-size: 12px;
-    list-style: square;
-  }
+.write em {
+	float: left;
+	display: block;
 }
+
+.write .btn_bar{ padding-left: 14px;}
+

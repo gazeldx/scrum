@@ -1,12 +1,20 @@
-/http://www.pinyin.info/tools/converter/chars2uninumbers.html
-/http://www.chinese-tools.com/tools/converter-unichar.html
-/http://chinesenotes.com/chinese_js/chinese_js_strings.php
-/jerrywang.zoka.cc/map/map.htm
-= content_for :head do
-  css:
-    #map_container { width:100%; max-width:800px; background-color:#FFF;  }
-    html, body { background-color:White; font-size:12px; }
-- h 'Shine Scrum全国课程'
-#map_container
-javascript:
-  alert("\u65b0\u7586=新疆");
+= title '敏捷软件开发培训'
+.page
+  .title.why_shinescrum
+    | 选择#{t('shine_scrum')}的理由
+  .why_shinescrum_con
+    .why_shinescrum_photo
+      a href='/team' title="查看#{t('shine_scrum')}团队成员"
+        img src="images/why_shinescrum_photo.jpg" height="220"
+    .why_shinescrum_intr
+      em
+        | #{t('shine_scrum')}
+      | 由
+      br      
+      span.big
+        | Scrum创始人Jeff Sutherland、全球首位CSP Jens Østergaard秦风、
+      /国内敏捷培训行业资深人士Jim Wang、
+      | 北京盛安德科技创始人Jerry Zhang
+      span.big
+        |  共同创办。
+    .clearFix

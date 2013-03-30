@@ -1,5 +1,6 @@
-# source 'https://rubygems.org'
-source 'http://ruby.taobao.org/'
+source 'https://rubygems.org'
+# source 'http://ruby.taobao.org/'
+
 gem 'rails', '3.2.11'
 gem 'sass-rails',   '~> 3.2.3'# Sass adapter for the Rails asset pipeline.
 group :assets do
@@ -16,5 +17,4 @@ gem "carrierwave", "0.6.2"
 gem 'unicorn'
 gem "slim"
 gem "settingslogic"
-gem 'haml'
 gem 'will_paginate'

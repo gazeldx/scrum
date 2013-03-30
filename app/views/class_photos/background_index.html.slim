@@ -1,0 +1,33 @@
+= render 'shared/notice_error'
+| Class Photos
+a.rr href=new_class_photo_path
+  | Add Class Photo
+table.olt
+  tbody
+    tr
+      td
+        | ID
+      td
+        | Course
+      td
+        | Trainer
+      td
+        | Time
+      td
+        | Photo counts
+    - @courses.each_with_index do |course, i|
+      tr
+        td
+          = i + 1
+        td
+          = class_photo.course.name
+        td
+          = class_photo.course.trainer.name
+        td
+          = image_tag(class_photo.avatar.thumb.url)
+        td
+          = class_photo.course.created_at
+        td
+          = link_to 'Edit', edit_class_photo_path(class_photo)
+          | &nbsp;&nbsp;&nbsp;&nbsp;
+          = link_to 'Delete', class_photo_path(class_photo), confirm: 'Are you sure to delete it?', method: :delete

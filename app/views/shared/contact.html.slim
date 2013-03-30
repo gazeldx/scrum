@@ -1,22 +1,66 @@
 = title t'contact_us'
-- h t'contact_us'
-.clear
-#mainLeft
-  p style="padding-bottom:20px"
-    strong
-      | 查看课程请点击&nbsp;
-      = link_to t('_course'), courses_path
-      | 。专享服务请点击&nbsp;
-      = link_to t('private_training'), "http://scrumfoundation.com/on-site-training"
-      | 。
-#mainRight
-  h4
-    | Shine Scrum
-  p
-    | Christine Hegarty
-    br
-    | Office Manager
-    br
-    | Office: +1 (617) 225-4324
-    br
-    | Fax: +1 (617) 812-8527
+.page.page_bg2
+  .title.contact
+    = t'contact_us'
+  .innerUpdate_con
+    .contact_bg
+      .contact_txt
+        ul
+          li
+            span
+              | #{t('shine_scrum')}（上海办公室）：
+            em
+              | #{t'location.shanghai'}
+          /li
+          /  span
+          /    | #{t('shine_scrum')}（北京办公室）：
+          /  em
+          /    | #{t'location.beijing'}
+          li
+            span
+              | 电话：
+            em
+              | #{t'_tel'} 或 #{t'_tel_2'}
+          li
+            span
+              | 传真：
+            em
+              | #{t'_fax'}
+          li
+            span
+              | Email：
+            em
+              | #{t'_email'}
+      .write_title
+        | 给我们留言
+      ul.write.contact_form
+        = form_for @message do |f|
+          = error_msg @message
+          li
+            span
+              | 姓名
+            em
+              = f.text_field :name, size: 25, class: 'txt'
+          li
+            span
+              | 公司
+            em
+              = f.text_field :company, size: 25, class: 'txt'
+          li
+            span
+              | 电话
+            em
+              = f.text_field :phone, size: 25, class: 'txt'
+          li
+            span
+              | 邮箱
+            em
+              = f.text_field :email, size: 25, class: 'txt'
+          li.textarea
+            span
+              | 留言
+            em
+              = f.text_area :body, class: 'txt2'
+          li.btn_bar
+            input type="button" class="btn" value="重置"
+            = f.submit raw("提交"), class: "btn2"

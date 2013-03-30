@@ -1,71 +1,89 @@
 = title "#{t'course.register'}_#{@course.name}_#{t'_course'}"
-- h t'course.register'
-#mainLeft
-  /h3
-  /  = @course.name
-  p
-    | 你正在报名参加
-    strong
-      |  #{@course.trainer.name}
-    |  的课程：
-    strong
+.page
+  .title.course
+    a href=courses_path
+      | #{t'_course'}
+    | &nbsp;&gt;&nbsp;
+    a href="#{course_path}?id=#{@course.id}"
       | #{@course.name}
-  = form_for @register do |f|
-    = hidden_field_tag :course_id, @course.id
-    = error_msg @register
-    fieldset.courseRegistration
-      legend
-        span
-          | 请填写信息
-      table width="100%"
-        tbody
-          tr
-            td
-              label.required
-                | 姓名
-              span.red
-                | *
-            td
-              = f.text_field :name, class: "text"
-          tr
-            td
-              label.required
-                | 手机号
-              span.red
-                | *
-            td
-              = f.text_field :mobile, class: "text"
-          tr
-            td
-              label.required
-                | Email
-              span.red
-                | *
-            td
-              = f.text_field :email, class: "text"
-          tr
-            td
-              label
-                | 公司名
-            td
-              = f.text_field :company_name, class: "text"
-          tr
-            td
-              label
-                | 人数
-            td
-              = f.text_field :headcount, value: 1, class: "text"
-    p
-      br
-      = f.submit raw("确认报名")
-#mainRight
-  h4
-    | 培训地点
-  .textile
-    p
-      | #{@course.location}
-  hr
-  h4
-    | 培训日期
-  p
-    | #{begin_end_time(@course)}
+    | &nbsp;&gt;&nbsp;报名
+  .course_con
+    .course_intr
+      .course_reg
+        .course_reg_txt1
+          | 感谢您报名#{@course.trainer.name}的#{@course.name}课程！          
+        .course_reg_txt2
+          | 您可以通过
+          em
+            | 两种方式
+          | 完成报名：
+        .course_reg_txt3
+          | 方式一： 热线电话&nbsp;&nbsp;
+          span.tel_and_email
+            | #{t'_tel'}
+          | &nbsp;&nbsp;&nbsp;邮箱&nbsp;&nbsp;
+          span.tel_and_email
+            | #{t'_email'}
+        .course_reg_txt5
+          | 方式二： 请填写信息，我们的课程顾问会和您确认并安排课程
+        .course_reg_con
+          ul.write
+            = render 'shared/notice_error'
+            = form_for @register do |f|
+              = hidden_field_tag :course_id, @course.id
+              /= error_msg @register
+              li
+                span
+                  | 课程名称
+                em
+                  = text_field_tag :course_name, @course.name, class: "txt", :readonly => true
+              li
+                span
+                  | 上课地点
+                em
+                  = text_field_tag :course_location, @course.location, class: "txt", :readonly => true
+              li
+                span
+                  | 开课时间
+                em
+                  = text_field_tag :course_time, begin_end_time(@course), class: "txt", :readonly => true
+              li
+                span
+                  | 姓名(必填)
+                em
+                  = f.text_field :name, class: "txt"
+                .errInfo
+                  | 姓名不能为空！
+              li
+                span
+                  | 手机号(必填)
+                em
+                  = f.text_field :mobile, class: "txt"
+                .errInfo
+                  | 电话号码不能空！
+              li
+                span
+                  | 邮箱(必填)
+                em
+                  = f.text_field :email, class: "txt"
+                .errInfo
+                  | 请输入有效的邮箱地址！
+              li
+                span
+                  | 公司名称
+                em
+                  = f.text_field :company_name, class: "txt"
+              li
+                span
+                  | 培训人数
+                em
+                  = select(:register, :headcount, [1, 2, 3, 5, 8, 10, 15, 20])
+              li.memo
+                span
+                  | 备注
+                em
+                  = f.text_area :remarks, class: "txt2"
+              li.btn_bar
+                input type="button" class="btn" value="重置"
+                = f.submit raw("提交"), class: "btn2"
+      .clearFix

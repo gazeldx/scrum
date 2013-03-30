@@ -1,7 +1,12 @@
 class TrainersController < ApplicationController
+  skip_before_filter :authenticate, :only => [:team, :show, :register]
+#  def index
+#    @trainers = Trainer.order('created_at')
+#  end
 
-  def index
+  def team
     @trainers = Trainer.order('created_at')
+    @trainer = Trainer.find(1)
   end
 
   def background_index
@@ -10,7 +15,9 @@ class TrainersController < ApplicationController
   end
 
   def show
+    @trainers = Trainer.order('created_at')
     @trainer = Trainer.find_by_url(params[:url])
+    render 'team'
   end
 
   def new
@@ -39,6 +46,17 @@ class TrainersController < ApplicationController
     else
       render :edit
     end
+  end
+
+  def destroy
+    @trainer = Trainer.find(params[:id])
+    if @trainer.courses.exists?
+      flash[:error] = 'This trainer has courses so you can\'t delete.'
+    else
+      @trainer.destroy
+      flash[:notice] = 'Delete success.'
+    end
+    redirect_to admin_trainers_path
   end
 
 end

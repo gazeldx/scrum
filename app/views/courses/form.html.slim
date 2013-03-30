@@ -1,0 +1,59 @@
+= title '认证课程——课程报名'
+.page
+  .title.course
+    | 认证课程——课程报名
+  .course_con
+    .course_intr
+      .course_reg
+        .course_reg_txt1
+          | 非常感谢您注册#{t('shine_scrum')}的CSM课程！
+        .course_reg_txt2
+          | 您可以通过以下
+          em
+            | 两种方式
+          | 联系我们，完成课程注册的流程：
+        .course_reg_txt3
+          | 电话/邮箱：热线电话&nbsp;&nbsp;
+          span.tel_and_email
+            | 400-18-2256
+        .course_reg_txt4
+          | 邮箱&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          span.tel_and_email
+            | #{t'_email'}
+        .course_reg_txt5
+          | 填写以下您的基本个人资料(*为选填)，我们的销售人员会尽快和您核对注册信息及课程安排。
+        .course_reg_con
+          ul.write
+            = render 'shared/notice_error'
+            = form_for @register do |f|
+              = hidden_field_tag :course_id, @course.id
+              = error_msg @register
+              li
+                span
+                  | *姓名
+                em
+                  = f.text_field :name, class: "txt"
+              li
+                span
+                  | *手机号
+                em
+                  = f.text_field :mobile, class: "txt"
+              li
+                span
+                  | *Email
+                em
+                  = f.text_field :email, class: "txt"
+              li
+                span
+                  | 公司名
+                em
+                  = f.text_field :company_name, class: "txt"
+              li
+                span
+                  | 培训人数
+                em
+                  = f.text_field :headcount, value: 1, class: "txt"
+              li.btn_bar
+                input type="button" class="btn" value="重置"
+                = f.submit raw("提交"), class: "btn2"
+      .clearFix

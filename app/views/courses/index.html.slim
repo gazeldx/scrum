@@ -1,23 +1,48 @@
 = title t'_course'
-- h t'_course'
-#mainLeft
-  h3
-    | 培训服务
-  p
-    | A successful Agile implementation begins with comprehensive training, and The Scrum Foundation is led by some of the most experienced educators in the industry. We can provide customized training tailored to your specific needs, ranging from industry-standard Certified ScrumMaster training to specialized courses for team-members, managers, and the executive team. In addition to Scrum training, we offer a full line of complementary training courses, including Test-Driven Development, Extreme Programming (XP), Agile estimating and planning, and Agile management skills.
-#mainRight
-  h4
-    | Tips
-  p
-    Here are all the classes we currently offer. You can click individual classes to show detailed information.
-.clear
-h3
-  | 即将开始的课程
-/ul id="class_areas"
-/  li.first
-/    a href="/classes/asia"
-/      | Asia
-/  li
-/    a href="/classes/europe"
-/      | Europe
-= render 'list'
+.page
+  .title.course
+    = t'_course'
+  .course_list
+    table width="100%" border="0" cellpadding="0" cellspacing="0"
+      caption
+        | CSM/CSPO认证培训班 — 2013年
+      tr
+        th
+          | 日期
+        th
+          | 课程
+        th
+          | 讲师
+        th
+          | 城市
+        th
+      - @courses.each_with_index do |course, i|
+        tr class="#{i.odd? ? 'tr2' : nil}"
+          td
+            = begin_end_time(course)
+          td
+            = link_to course.name, "#{course_path}?id=#{course.id}"
+          td
+            = course.trainer.name
+          td
+            = course.city
+          td
+            /= link_to '注册', register_course_path(course)
+            = link_to '报名', "course_register?course_id=#{course.id}", class: 'reg_btn'
+  .course_con
+    .course_intr
+      .know2
+        .know2_title
+          | 通过#{t('shine_scrum')}的CSM/CSPO认证课程，你将获得
+        ul
+          li
+            | Scrum的联盟颁发的CSM/CSPO证书
+          li
+            | 获得Scrum Alliance的两年免费会员资格，与Scrum Alliance世界各地的Scrum 专家探讨学习
+          li
+            | 电子版课程详细资料（中英文）
+          li
+            | 通过CSM考试后，您可以获得14 PDUs
+      .clearFix
+    /.course_line
+    

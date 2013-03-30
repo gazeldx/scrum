@@ -1,0 +1,11 @@
+= title 'Add a Photo'
+h2
+  = 'Add a Photo'
+= render 'shared/notice_error'
+= form_for @class_photo do |f|
+  = error_msg @class_photo
+  = f.hidden_field :course_id
+  = t'avatar'
+  = f.file_field :avatar
+  br
+  = f.submit

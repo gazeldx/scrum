@@ -1,24 +1,58 @@
 Scrum::Application.routes.draw do
+
+  resources :messages
+
+  get 'class_photos_:year' => 'class_photos#year'
+  get 'team' => 'trainers#team'
+  get 'team_member_:url' => 'trainers#show'
+  
+  get 'course' => 'courses#show'
   resources :registers, :trainers
+  resources :class_photos, :only => [:index, :create]
   resources :courses do
     member do
       get 'register'
+      get 'all'
     end
+    # resources :class_photos
   end
 
-  match 'courses/:id/register' => 'courses#register'
+
+  #match 'courses/:id/register' => 'courses#register'
+  match 'course_register' => 'registers#new'
 #  match 'registers/do_register' => 'registers#do_register'
   get 'admin/trainers' => 'trainers#background_index'
   get 'admin/courses' => 'courses#background_index'
+  get 'admin/messages' => 'messages#index'
   get 'admin/registers' => 'registers#index'
-  get 'admin' => 'admin/home#index'
-  get 'about/the-team' => 'trainers#index'
+  # get 'admin/class_photos' => 'class_photos#background_index'
+  get 'admin' => 'registers#index'
   get 'about' => 'shared#about'
   get 'contact' => 'shared#contact'
+  get 'partners' => 'shared#partners'
+  # get 'students' => 'shared#students'
 
-  namespace :admin do
-    resources :registers, :courses, :trainers
+  get 'inner' => 'shared#inner'
+  get 'library' => 'shared#library'
+
+  #namespace :admin do
+  #  # root :to => "registers#index"
+  #
+  #  resources :registers, :trainers
+  #  resources :courses do
+  #    # resources :class_photos, :controller => 'class_photos'
+  #    resources :class_photos, :only => [:new, :create]
+  #  end
+  #end
+
+  scope :path => "admin" do
+    resources :registers, :trainers
+    resources :courses do
+      # resources :class_photos, :controller => 'class_photos'
+      resources :class_photos, :only => [:new]
+    end
   end
+
 
   root :to => 'home#index'
 

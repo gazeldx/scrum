@@ -1,0 +1,47 @@
+= title t'_student'
+.page.page_bg2
+  .title.student_page
+    = t'_student'
+  .course_con
+    .course_intr.student
+      .left
+        .student_list
+          ul
+            - @courses.each do |course|
+              - course.class_photos.each do |class_photo|
+                li
+                  .student_title
+                    span
+                      | #{class_photo.course.name}
+                  .sutdent_txt
+                    | #{class_photo.course.city} - #{class_photo.course.start_time.strftime(t'date_format')}
+                    /| Perth, OZ on March 16, 2012
+                  div
+                    /img src="images/sutdent_img_01.jpg"
+                    = image_tag(class_photo.avatar.photo.url)
+                  .student_title2
+                    /| CSM Trainers
+                    | #{class_photo.course.name}老师
+                  .student_title3
+                    | #{class_photo.course.trainer.name}
+                    /| Jens Østergaard
+          /.page_btn
+          /  a.pre href="javascript:;"
+          /    | 上一页
+          /  a.next href="javascript:;"
+          /    | 下一页
+      .right
+        .year
+          .year_title
+            | 选择年份
+          ul
+            - on = "sel" if params[:year].nil?
+            li class=on
+              a href=class_photos_path
+                | 全部
+            - [2013, 2012].each do |year|              
+              - sel = "sel" if year.to_s == params[:year]
+              li class=sel
+                a href="/class_photos_#{year}"
+                  = year
+      .clearFix

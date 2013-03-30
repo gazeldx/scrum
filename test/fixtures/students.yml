@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  train_type: MyString
+  trainer_name: MyString
+  trainer_type: MyString
+  avatar: MyString
+
+two:
+  title: MyString
+  train_type: MyString
+  trainer_name: MyString
+  trainer_type: MyString
+  avatar: MyString

@@ -21,7 +21,7 @@ table.olt
         td
           = i + 1
         td
-          = link_to trainer.name, "/about/#{trainer.url}", target: '_blank'
+          = link_to trainer.name, "/team_member_#{trainer.url}", target: '_blank'
         td
           = trainer.url
         td
@@ -30,3 +30,5 @@ table.olt
           = trainer.work_as
         td
           = link_to 'Edit', edit_trainer_path(trainer)
+          | &nbsp;&nbsp;&nbsp;&nbsp;
+          = link_to 'Delete', trainer_path(trainer), confirm: 'Are you sure to delete it?', method: :delete

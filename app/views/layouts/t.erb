@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title><%= yield :title %> &mdash; Shine Scrum</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <%= stylesheet_link_tag    "front", :media => "all" %>
+    <%= javascript_include_tag "map" %>
+    <%= csrf_meta_tags %>
+    <%= yield :head %>
+</head>
+<body>
+<div id="outerWrap">
+  <div id="header">
+    <div id="headerContent">
+      <h1><a href="/"><span>Scrum Foundation</span><img alt="Scrum Foundation" src="/images/logo.gif" /></a></h1>
+        <%#*<p class="login"><span onclick="location.href='/admin/home'">log in</span></p>%>
+      <div class="nav">
+        <ul id="topNav" style="font-size: 14px">
+          <li><a href="/">首页</a></li>
+          <li><a href="/about"><%= t'about_us' %></a></li>
+          <li><a href="/about/the-team" class="active"><%= t'_team' %></a></li>
+          <li><a href="http://scrumfoundation.com/partners" target="_blank">合作伙伴</a></li>
+          <li><a href="/courses"><%= t'_course' %></a></li>
+          <li><a href="http://scrumfoundation.com/on-site-training" target="_blank"><%= t'private_training' %></a></li>
+          <li><a href="http://scrumfoundation.com/library" target="_blank">知识库</a></li>
+          <li><a href="/contact"><%= t'contact_us' %></a></li>
+        </ul><!-- /topNav -->
+      </div><!-- /nav -->
+      <div class="clear"></div>
+    </div><!-- /headerContent -->
+  </div><!-- /header -->
+
+  <div id="mainContent">
+    <h2><%= yield :h2 %></h2>
+    <%= yield %>
+
+<div class="clear"></div>
+
+  </div><!-- /mainContent -->
+
+  <div id="footer">
+    <div id="footerContent"></div>
+  </div><!-- /footer -->
+</div><!-- /outerWrap -->
+
+
+
+
+<!-- scrumme -->
+
+</body>
+</html>

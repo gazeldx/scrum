@@ -16,6 +16,8 @@ table.olt
       td
         | Headcount
       td
+        | Remarks
+      td
         | Course
       td
         | Created at
@@ -32,8 +34,10 @@ table.olt
         td
           = register.company_name
         td
+          = register.remarks
+        td
           = register.headcount
         td
-          = link_to register.course.name, register.course, target: '_blank'
+          = link_to register.course.name, "/course?id=#{register.course.id}", target: '_blank'
         td
           = register.created_at.strftime(t'time_format')

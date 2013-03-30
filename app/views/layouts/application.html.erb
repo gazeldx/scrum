@@ -1,52 +1,64 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <title><%= yield :title %> &mdash; Shine Scrum</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <%= stylesheet_link_tag    "front", :media => "all" %>
-    <%= javascript_include_tag "map" %>
-    <%= csrf_meta_tags %>
-    <%= yield :head %>
-</head>
-<body>
-<div id="outerWrap">
-  <div id="header">
-    <div id="headerContent">
-      <h1><a href="/"><span>Scrum Foundation</span><img alt="Scrum Foundation" src="/images/logo.gif" /></a></h1>
-        <%#*<p class="login"><span onclick="location.href='/admin/home'">log in</span></p>%>
-      <div class="nav">
-        <ul id="topNav" style="font-size: 14px">
-          <li><a href="/">首页</a></li>
-          <li><a href="/about"><%= t'about_us' %></a></li>
-          <li><a href="/about/the-team" class="active"><%= t'_team' %></a></li>
-          <li><a href="http://scrumfoundation.com/partners" target="_blank">合作伙伴</a></li>
-          <li><a href="/courses"><%= t'_course' %></a></li>
-          <li><a href="http://scrumfoundation.com/on-site-training" target="_blank"><%= t'private_training' %></a></li>
-          <li><a href="http://scrumfoundation.com/library" target="_blank">知识库</a></li>
-          <li><a href="/contact"><%= t'contact_us' %></a></li>
-        </ul><!-- /topNav -->
-      </div><!-- /nav -->
-      <div class="clear"></div>
-    </div><!-- /headerContent -->
-  </div><!-- /header -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+      <title><%= yield :title %> &mdash; ShineScrum</title>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />      
+      <%= csrf_meta_tags %>
+      <%= yield :head %>
+      <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+      <link rel="stylesheet" type="text/css" href="css/flexslider.css" media="screen" />
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+      <script type="text/javascript" src="js/fcommon.js"></script>
+      <%#= stylesheet_link_tag    "style", :media => "all" %>
+      <%#= stylesheet_link_tag    "flexslider", :media => "screen" %>
+      <%#= javascript_include_tag  "jquery", "jquery.flexslider-min", "fcommon" %>
+  </head>
+  
 
-  <div id="mainContent">
-    <h2><%= yield :h2 %></h2>    
+  <body>
+    <div class="top">
+      <ul>
+        <li class="logo"></li>
+        <li class="<%= controller_path == "home" ? 'sel' : nil %>"><a href="/">首页</a></li>
+        <li class="<%= controller.action_name == "about" ? 'sel' : nil %>"><a href="/about"><%= t'about_us' %></a></li>
+        <li class="<%= controller_path == "trainers" ? 'sel' : nil %>"><a href="team"><%= t'_team' %></a></li>
+        <li class="<%= controller.action_name == "partners" ? 'sel' : nil %>"><a href="partners"><%= t'_partner' %></a></li>
+        <li class="<%= (["registers", "courses"].include? controller_path) ? 'sel' : nil %>"><a href="/courses"><%= t'_course' %></a></li>
+        <li class="<%= controller_path == "class_photos" ? 'sel' : nil %>"><a href="/class_photos"><%= t'_student' %></a></li>
+        <li class="<%= controller.action_name == "inner" ? 'sel' : nil %>"><a href="/inner"><%= t'_inner' %></a></li>
+        <li class="<%= controller.action_name == "library" ? 'sel' : nil %>"><a href="/library"><%= t'_library' %></a></li>
+        <li class="<%= controller.action_name == "contact" ? 'sel' : nil %>"><a href="/contact"><%= t'contact_us' %></a></li>
+      </ul>
+    </div>
+    <div class="slide">
+      <!--flexsliderV1 Start-->
+      <div class="flexslider flexsliderV1">
+        <div class="flexCon">
+          <ul class="slides">            
+            <li><a href="courses"><img src="images/slide01.jpg" border="0" /></a></li>
+            <li><a href="courses"><img src="images/slide02.jpg" border="0" /></a></li>
+            <li><a href="courses"><img src="images/slide03.jpg" border="0" /></a></li>
+          </ul>
+        </div>
+      </div>
+      <!--flexsliderV1 End-->
+    </div>
     <%= yield %>
-
-<div class="clear"></div>
-
-  </div><!-- /mainContent -->
-
-  <div id="footer">
-    <div id="footerContent"></div>
-  </div><!-- /footer -->
-</div><!-- /outerWrap -->
-
-
- 
-
-<!-- scrumme -->
-
-</body>
+    <div class="foot">Copyright 2013 ShineScrum Inc</div>
+    <!-- Piwik -->
+    <script type="text/javascript">
+    var pkBaseURL = (("https:" == document.location.protocol) ? "https://www.shinetechchina.com/piwik/" : "http://www.shinetechchina.com/piwik/");
+    document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+    </script><script type="text/javascript">
+    try {
+      var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 11);
+      piwikTracker.trackPageView();
+      piwikTracker.enableLinkTracking();
+    } catch( err ) {}
+    </script><noscript><p><img src="http://www.shinetechchina.com/piwik/piwik.php?idsite=11" style="border:0" alt="" /></p></noscript>
+    <!-- End Piwik Tracking Code -->
+  </body>
 </html>
