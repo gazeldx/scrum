@@ -14,5 +14,5 @@ class Course < ActiveRecord::Base
   validates :end_time, :presence => true
   validates :trainer_id, :presence => true
 
-  scope :by_year, lambda { |year| where('extract(year from created_at) = ?', year) }
+  scope :by_year, lambda { |year| where('extract(year from start_time) = ?', year) }
 end
