@@ -21,14 +21,20 @@
           td
             = begin_end_time(course)
           td
-            = link_to course.name, "#{course_path}?id=#{course.id}"
+            - if course.registrable?
+              = link_to course.name, "#{course_path}?id=#{course.id}"
+            - else
+              = course.name
           td
             = course.trainer.name
           td
             = course.city
-          td
-            /= link_to '注册', register_course_path(course)
-            = link_to '报名', "course_register?course_id=#{course.id}", class: 'reg_btn'
+          td            
+            - if course.registrable?
+              /= link_to '注册', register_course_path(course)
+              = link_to '报名', "course_register?course_id=#{course.id}", class: 'reg_btn'
+            - else
+              | 圆满结束
   .course_con
     .course_intr
       .know2

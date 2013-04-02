@@ -15,4 +15,8 @@ class Course < ActiveRecord::Base
   validates :trainer_id, :presence => true
 
   scope :by_year, lambda { |year| where('extract(year from start_time) = ?', year) }
+
+  def registrable?
+    start_time > Time.now
+  end
 end

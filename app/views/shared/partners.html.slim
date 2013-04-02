@@ -5,9 +5,11 @@
   .partner_con
     .partner_intr
       ul
-        li.first
-          img src="images/partner_01.jpg"
-        - (2..5).each do |i|
+        /li.first
+        /li.first
+        /  img src="images/partner_01.jpg"
+        - [{id: 1, link: 'http://www.scrumalliance.com/'}, {id: 2, link: 'http://scrumfoundation.com/'}, {id: 3, link: 'http://houseofscrum.com/'}, {id: 4, link: 'http://www.agilealliance.org/'}, {id: 5, link: 'http://aqqurite.se/'}].each do |item|
           li
-            img src="images/partner_0#{i}.jpg"
+            a href="#{item[:link]}" target='_blank'
+              img src="images/partner_0#{item[:id]}.jpg"
     .clearFix
