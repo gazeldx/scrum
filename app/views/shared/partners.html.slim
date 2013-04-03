@@ -10,6 +10,6 @@
         /  img src="images/partner_01.jpg"
         - [{id: 1, link: 'http://www.scrumalliance.com/'}, {id: 2, link: 'http://scrumfoundation.com/'}, {id: 3, link: 'http://houseofscrum.com/'}, {id: 4, link: 'http://www.agilealliance.org/'}, {id: 5, link: 'http://aqqurite.se/'}].each do |item|
           li
-            a href="#{item[:link]}" target='_blank'
+            a href="#{item[:link]}" target='_blank' title="#{item[:link]}"
               img src="images/partner_0#{item[:id]}.jpg"
     .clearFix
