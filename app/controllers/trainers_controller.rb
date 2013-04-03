@@ -1,5 +1,7 @@
 class TrainersController < ApplicationController
   skip_before_filter :authenticate, :only => [:team, :show, :register]
+  include OrderByCreatedAt
+  
 #  def index
 #    @trainers = Trainer.order('created_at')
 #  end

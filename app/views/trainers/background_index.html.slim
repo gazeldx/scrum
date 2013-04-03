@@ -32,3 +32,9 @@ table.olt
           = link_to 'Edit', edit_trainer_path(trainer)
           | &nbsp;&nbsp;&nbsp;&nbsp;
           = link_to 'Delete', trainer_path(trainer), confirm: 'Are you sure to delete it?', method: :delete
+          | &nbsp;&nbsp;&nbsp;&nbsp;
+          - if i > 0
+            = link_to t(:up), up_trainer_path(trainer)
+          | &nbsp;&nbsp;
+          - if i < @trainers.length-1
+            = link_to t(:down), down_trainer_path(trainer)

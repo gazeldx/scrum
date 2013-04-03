@@ -7,7 +7,15 @@ Scrum::Application.routes.draw do
   get 'team_member_:url' => 'trainers#show'
   
   get 'course' => 'courses#show'
-  resources :registers, :trainers
+  resources :registers
+  
+  resources :trainers do
+    member do
+      get 'up'
+      get 'down'
+    end
+  end
+
   resources :class_photos, :only => [:index, :create]
   resources :courses do
     member do
@@ -16,6 +24,8 @@ Scrum::Application.routes.draw do
     end
     # resources :class_photos
   end
+
+
 
 
   #match 'courses/:id/register' => 'courses#register'
