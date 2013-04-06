@@ -234,8 +234,8 @@
                 | #{@course.trainer.name}
               .teacher_title2
                 | #{@course.trainer.work_as}
-              p style="white-space: pre-wrap"
-                = @course.trainer.description              
+              pre style="white-space: pre-wrap"
+                = @course.trainer.description
             .clearFix
           - unless @course.trainer.name.include? "Jim"
             li
