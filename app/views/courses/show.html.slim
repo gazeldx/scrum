@@ -7,7 +7,8 @@
     a href="#{course_path}?id=#{@course.id}"
       | #{@course.name}
   .course_con
-    .course_intr style="height: 540px;"
+    /.course_intr style="height: 540px;"
+    .course_intr
       .left
         .csm
           .course_title
@@ -33,25 +34,82 @@
             li
               em
                 | 讲师：
-              | #{@course.trainer.name}主讲， Jim Wang中文助教
+              | #{@course.trainer.name}主讲
+              - unless @course.trainer.name.include? "Jim"
+                | ， Jim Wang中文助教
             li
               em
                 | 价格：
               | #{@course.discount}
         .know
           .know_title
-            | 通过此课程，你将了解到
-          ul
-            li
-              | Scrum及其在敏捷过程中扮演的角色
-            li
-              | Scrum Master的角色介绍及与项目经理的区别
-            li
-              | 如何能够通过Scrum解决开发过程中需求变更，预算紧张，提交质量等项目难题
-            li
-              | 如何组织，计划和实施一个scrum项目
-            li
-              | 如何将scrum导入你的日常工作
+            | 课程概述
+          ul style="list-style-type: none !important;"
+            - if @course.trainer.name.include? "Jim"
+              li
+                | 本课程是一个为期两天的面向软件研发团队的培训和实践相结合的课程，旨在帮助学员深入、全面的理解敏捷及Scrum，课程互动、游戏练习非常丰富，贴近实战，实践性很强，真正帮助学员解决在Scrum及敏捷实施过程中面临的实际问题。课程内容涵盖Scrum及敏捷思维模式转变、Scrum及敏捷项目管理实战操作方法及技巧，高效敏捷及Scrum团队的打造，大型团队及项目、异地团队、外包项目如何实施Scrum和敏捷等话题，课程的过程中也会通过一个模拟的Scrum项目、以及大量穿插的实例、练习等让学员切身体会Scrum的工作方式。
+            - else
+              li
+                | 在这两天的ScrumMaster认证课程中，学员将从实际操作的层面上掌握Scrum的运用技巧，学员将学会如何避免Scrum实施过程中的一些常见问题。Scrum的规则很少，但要掌握其精髓却并非容易，从资深Scrum大师那里答疑解惑，获取有效的实践经验、通过练习亲身体会Scrum的工作方式非常重要课程中通过一个59分钟的模拟Scrum项目、XP Game等大量穿插的实例、练习，讨论等让学员亲历Scrum的工作过程、领悟Scrum的内涵、掌握Scrum的精髓。你的工作方式的改变从这里开始。成为认证的Scrum Master有助您成为组织敏捷转型的推动者、领导者，是您新的职业生涯的迈出的第一步。证书由美国Scrum官方机构Scrum联盟颁发。
+          br
+          .know_title
+            | 课程特色
+          - if @course.trainer.name.include? "Jens"
+            ul
+              li
+                | 全球首位CSP, 最早的认证Scrum培训师之一、知名的世界级Scrum大师Jens Ostergaard授课
+              li
+                | 内容全面、深入, 重在实际操作及运用囊括了大量项目论证过的实践经验
+              li
+                | 课程过程中穿插丰富的实践练习、时间多达50%以上
+          - if @course.trainer.name.include? "Arne"
+            ul
+              li
+                | 资深认证Scrum培训师，国际知名敏捷顾问、Scrum导入及组织转型专家Arne Ahlander授课。内容全面、深入。囊括了大量项目论证过的实践经验
+              li
+                | 课程过程中穿插丰富的实践练习、时间多达50%以上
+          - if @course.trainer.name.include? "Jim"
+            ul
+              li
+                | 课程采用工作坊（Workshop）模式授课，课程互动性强
+              li
+                | 资深Scrum培训师授课，讲师授课风趣幽默，游戏、练习丰富、互动性强
+              li
+                | 讲师在美国工作多年，具有多年在跨国公司的大型团队的带队经验，实战经验丰富，也更了解中国文化及中国团队所面临的挑战
+              li
+                | 课程案例、游戏练习非常丰富，贴近实战，实践性很强
+              li
+                | 课程已经在国内众多知名企业成功交付，千锤百炼，囊括大量项目论证过的实践经验
+          - if @course.trainer.name.include? "Jim"
+            br
+            .know_title
+              | 课程受众
+            ul
+              li
+                | 任何期望全面了解或尝试Scrum及敏捷方法的个人或组织
+              li
+                | 正准备导入敏捷方法，希望在局部项目或者部分团队中尝试敏捷方法的企业
+              li
+                | 已经开始尝试敏捷方法，正在努力提升整体敏捷能力的一线研发团队，包括设计，开发，测试及项目管理等多个角色
+          - else
+            br
+            .know_title
+              | 顺利完成课程并且通过在线认证测试之后，您将获得：
+            ul
+              li
+                | Scrum Alliance颁发的ScrumMaster认证证书，成为一名认证的Scrum Master
+              li
+                | Scrum Alliance的两年会员会费及会员资格
+              li
+                | ShineScrum终身荣誉会员资格，可免费参加ShineScrum主办的各种活动
+              li
+                | 一副价值50元的估算扑克
+              li
+                | 一份CSM课程纸质版及电子版中英文讲义
+              li
+                | Scrum实施模板及大量参考资料推荐
+              li
+                | 美国项目管理协会（PMI）学分 16 PDUs
       .right
         .cont
           .cont_title
@@ -77,14 +135,88 @@
         .pointer
           .pointer_title
             .icon
-            | 授课特点
+            | 课程大纲
           ul
-            li
-              | 59分钟的模拟Scrum项目、XP Game等大量实例和练习，深入浅出，易于理解
-            li
-              | 互动性和实际操作性极强
-            li
-              | 课堂游戏演练
+            - if @course.trainer.name.include? "Jim"
+              li
+                | 软件项目的复杂性
+              li
+                | 敏捷思维，价值观及原则
+              li
+                | Scrum概述-Scrum的理论基础、历史、框架及流程
+              li
+                | Scrum角色破解，传统角色到Scrum角色的转换
+              li
+                | 理解潜在可交付
+              li
+                | “Done”的定义
+              li
+                | 如何做计划
+              li
+                | 如何做评审和回顾会
+              li
+                | Scrum Master的一天
+              li
+                | “59分钟”的模拟Scrum练习
+              li
+                | 产品负责人破解
+              li
+                | 管理人员破解
+              li
+                | Scrum会议破解
+              li
+                | 终止一个Sprint
+              li
+                | 发布管理
+              li
+                | 大型团队和项目的Scrum实施、异地团队的Scrum实施
+              li
+                | Scrum环境下的团队架构，团队之间如何高效协作
+              li
+                | Scrum框架下的需求管理（用户故事发掘、书写、提炼及拆分的方法与技巧）
+              li
+                | 敏捷估算与计划的方法与技巧、Scrum项目的进展跟踪及报告机制
+              li
+                | Scrum实施的基本模式
+              li
+                | Scrum环境下的绩效考核及评估
+            - else
+              li
+                | 软件项目的复杂性
+              li
+                | 敏捷宣言及其价值观、究竟什么是敏捷
+              li
+                | Scrum概述-Scrum的理论基础、历史、框架及流程
+              li
+                | Scrum角色破解
+              li
+                | 理解潜在可交付
+              li
+                | “Done”的定义
+              li
+                | 如何做计划
+              li
+                | 如何做回顾和反馈
+              li
+                | Scrum Master的一天
+              li
+                | “59分钟”的模拟Scrum练习
+              li
+                | 产品负责人破解
+              li
+                | 管理人员破解
+              li
+                | Scrum会议破解
+              li
+                | 终止一个Sprint
+              li
+                | 发布管理
+              li
+                | 大型团队和项目的Scrum实施、异地团队的Scrum实施
+              li
+                | Scrum和XP
+              li
+                | Scrum和CMMI
       .clearFix
     .course_line
     .course_teacher
@@ -103,44 +235,34 @@
               .teacher_title2
                 | #{@course.trainer.work_as}
               p style="white-space: pre-wrap"
-                = @course.trainer.description
-              /p
-              /  | Jens是全球首位认证scrum专家和全球最早的认证scrum培训师之一；他有20多年软件行业的从业经验，Scrum管理和实践的经验。自2004年在哥本哈根取得CST认证后，Jens在欧洲各国教授Scrum培训课程。至今，他已经在全球范围内培养并认证了8000多个Scrum Master，每12个Scrum Master中就有一位是他的学生，他也是全球最受欢迎的Scrum讲师之一。
-              /p
-              /  | 从普通开发人员、DBA、团队lead、项目经理，直至成为一名Scrum Master，在金融领域二十多年的稳步成长使Jens能准确理解和把握Scrum团队里不同的角色可能面临的问题、挑战和机遇，从而制定出相应的培训内容和辅导方式。Jens认为纯粹的Scrum有助于促进整个开发进程的完善，并致力于推行Scrum在公司组织内部的实践。
-              /p
-              /  | 2008年，他和Scrum的创始人之一Jeff Sutherland博士一起创办了Scrum Foundation。 Scrum Foundation的课程遍布美国、加拿大、荷兰、丹麦、英国、德国、澳大利亚、新加波、印度等国家；客户涵盖谷歌，微软、惠普、IBM、Oracle等。
-              /p
-              /  | 2010年，Jens开始为中国的敏捷爱好者和从业人员授课。三年的时间里，他更多的了解和体会到了中国文化和中国软件从业人员所处的环境和现状，同时不断调整自己的授课方法以及内容，使之更贴合国内学员的需求。
-              /p
-              /  | 通过ShineScrum，Jens致力于推动最新的敏捷/scrum理论和实践在中国的普及应用，使国内的开发人员、企业能够接触和运用敏捷进行开发、管理和运营，并且最终能够成为敏捷的人和敏捷的企业。
+                = @course.trainer.description              
             .clearFix
-          li
-            .photo
-              = image_tag('/images/thumb_jim_wang.jpg')
-              /img src="images/team_photo_03.jpg"
-              .name
-                | Jim Wang
-            .intr
-              .teacher_title
-                | 中文助教
-              .teacher_name
-                | Jim Wang
-              .teacher_title2
-                | CSP、CSM、CSPO、MBA、资深敏捷及Scrum培训师、教练、组织顾问
-              p
-                | Jim有18年的国内外软件行业从业经验。他曾师从于Scrum的创始人之一Ken Schwaber，得到《Coaching Agile teams》作者 Lyssa Adkins的指导，在敏捷及Scrum高端软件产品开发方面有多年实践经验，带领150多人的团队采用Scrum的方法成功交付软件。
-              p
-                | Jim擅长于互动式教学方法，他的敏捷价值游戏和贴近实际的案例分析很受学员欢迎。 此外，他还是《30天敏捷软件开发》的译者（此书由Scrum的创始人Jeff Sutherland和Ken Schwaber 合著）。Jim服务过的客户包括格力空调、路透社、甲骨文、哈里波顿、ADP、文思创新、中星微电子、橡果国际、新宇软件等全球及国内知名企业。
-              p
-                | Jim曾任某跨国公司全球解决方案和交付高级总监，美国东部最大的IT工程师协会董事和中国区主席。在此之前，他在美国维克公司担任计算机集成制造首席工程师，主持大型制造执行系统的设计、开发、测试以及生产应用。Jim是波士顿东北大学计算机信息工程专业和机械工程专业双硕士,是美国巴布森商业学院工商管理硕士。
-            .clearFix
+          - unless @course.trainer.name.include? "Jim"
+            li
+              .photo
+                = image_tag('/images/thumb_jim_wang.jpg')
+                .name
+                  | Jim Wang
+              .intr
+                .teacher_title
+                  | 中文助教
+                .teacher_name
+                  | Jim Wang
+                .teacher_title2
+                  | CSP、CSM、CSPO、MBA、资深敏捷及Scrum培训师、教练、组织顾问
+                p
+                  | Jim有18年的国内外软件行业从业经验。他曾师从于Scrum的创始人之一Ken Schwaber，得到《Coaching Agile teams》作者 Lyssa Adkins的指导，在敏捷及Scrum高端软件产品开发方面有多年实践经验，带领150多人的团队采用Scrum的方法成功交付软件。
+                p
+                  | Jim擅长于互动式教学方法，他的敏捷价值游戏和贴近实际的案例分析很受学员欢迎。 此外，他还是《30天敏捷软件开发》的译者（此书由Scrum的创始人Jeff Sutherland和Ken Schwaber 合著）。Jim服务过的客户包括格力空调、路透社、甲骨文、哈里波顿、ADP、文思创新、中星微电子、橡果国际、新宇软件等全球及国内知名企业。
+                p
+                  | Jim曾任某跨国公司全球解决方案和交付高级总监，美国东部最大的IT工程师协会董事和中国区主席。在此之前，他在美国维克公司担任计算机集成制造首席工程师，主持大型制造执行系统的设计、开发、测试以及生产应用。Jim是波士顿东北大学计算机信息工程专业和机械工程专业双硕士,是美国巴布森商业学院工商管理硕士。
+              .clearFix
       .right style="width: 280px;"
         ul.course_room
           li.course_room_title
             span
               | 授课场景
-            a href="/students"
+            a href="/class_photos"
               | &gt;&gt;更多
           li
             img src="images/course_room.jpg"
