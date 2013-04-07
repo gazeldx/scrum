@@ -65,7 +65,9 @@
           - if @course.trainer.name.include? "Arne"
             ul
               li
-                | 资深认证Scrum培训师，国际知名敏捷顾问、Scrum导入及组织转型专家Arne Ahlander授课。内容全面、深入。囊括了大量项目论证过的实践经验
+                | 资深认证Scrum培训师，国际知名敏捷顾问、Scrum导入及组织转型专家Arne Ahlander授课
+              li
+                | 内容全面、深入, 重在实际操作及运用囊括了大量项目论证过的实践经验
               li
                 | 课程过程中穿插丰富的实践练习、时间多达50%以上
           - if @course.trainer.name.include? "Jim"
@@ -264,8 +266,19 @@
               | 授课场景
             a href="/class_photos"
               | &gt;&gt;更多
-          li
-            img src="images/course_room.jpg"
-          li
-            img src="images/course_room2.jpg"
+          - if @course.trainer.name.include? "Jens"
+            li
+              img src="images/class_jens_1.jpg"
+            li
+              img src="images/class_jens_2.jpg"
+          - if @course.trainer.name.include? "Jim"
+            li
+              img src="images/class_jim_1.jpg"
+            li
+              img src="images/class_jim_2.jpg"
+          - if @course.trainer.name.include? "Arne"
+            li
+              img src="images/class_arne_1.jpg"
+            li
+              img src="images/class_arne_2.jpg"
       .clearFix
