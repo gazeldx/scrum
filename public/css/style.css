@@ -719,11 +719,16 @@ pre {
 }
 
 .innerUpdate_txt3 em {
-	color: #245BAA;
+	/*color: #245BAA;*/
 	font-size: 24px;
 	font-style: normal;
 }
-
+.innerUpdate_txt3 em a{
+	color: #245BAA;
+	font-size: 24px;
+	font-style: normal;
+	text-decoration: underline; 
+}
 .knowledge_list {
 	width: 920px;
 }
