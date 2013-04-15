@@ -5,7 +5,7 @@ class Course < ActiveRecord::Base
   has_many :class_photos, :dependent => :destroy
   
   validates :name, :length => { :in => 2..200 }
-  validates :description, :length => { :in => 2..100000 }
+  # validates :description, :length => { :in => 2..100000 }
   validates :city, :presence => true
   validates :location, :length => { :in => 2..300 }
   validates :status, :presence => true
