@@ -14,8 +14,12 @@
           .course_title
             span
               | #{@course.name}
-            a href="course_register?course_id=#{@course.id}"
-              | 我要报名
+            - if @course.registrable?
+              a href="course_register?course_id=#{@course.id}"
+                | 我要报名
+            - else
+              a href="#" title="课程已圆满结束，请参与其他课程。"
+                | 圆满结束
           ul
             li.course_time
               | #{begin_end_time @course} #{@course.city}
