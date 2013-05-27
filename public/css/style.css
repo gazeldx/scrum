@@ -778,8 +778,9 @@ pre {
 .contact_txt {
 	font-size: 16px;
 	background: url(../images/contact_txt.gif) 0px 0px no-repeat;
+	background-size:883px 132px;
 	width: 883px;
-	height: 114px;
+	height: 132px;
 	margin: 0 auto;
 	padding-top: 15px;
 	padding-left: 15px;
