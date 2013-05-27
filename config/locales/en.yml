@@ -2,4 +2,10 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  mailer:
+    registration:
+      confirmation:
+        subject: Apply Successful！
+        content:
+          welcome_to_apply: Thanks for apply ${course_name}.
+          confirm_msg: Your information has been submitted successfully. Our course consultant will contact you within one working day.

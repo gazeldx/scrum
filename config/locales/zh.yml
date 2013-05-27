@@ -1,4 +1,28 @@
 zh:
+  mailer:
+    registration:
+      confirmation:
+        subject: 报名成功！
+        content:
+          welcome_to_apply: 感谢您报名%{course_name}。
+          confirm_msg: 您的报名信息已经提交，我们的课程顾问会在一个工作日内与您联系。
+      admin_notification:
+        subject: 学员报名提醒！
+        content:
+          title_1: 报名信息如下
+          title_2: 课程信息
+          register:
+            name: 姓名
+            mobile: 手机号
+            email: 邮箱
+            company_name: 公司名称
+            headcount: 培训人数
+            remarks: 备注
+          courses:
+            name: 课程名称
+            location: 上课地点
+            trainer: 讲师
+            time: 开课时间
   beijing: 北京
   shanghai: 上海
   shenzhen: 深圳
