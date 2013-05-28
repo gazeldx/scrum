@@ -52,6 +52,12 @@ class CoursesController < ApplicationController
     render 'registers/new'
   end
 
+  def destroy_all_class_photos
+    course = Course.find(params[:id])
+    course.class_photos.delete_all
+    redirect_to admin_courses_path, :notice => t('delete_succ')
+  end
+
 #  def destroy
 #    @course = Course.find(params[:id])
 #    @course.destroy

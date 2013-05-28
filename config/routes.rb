@@ -45,6 +45,8 @@ Scrum::Application.routes.draw do
   get 'inner' => 'shared#inner'
   get 'library' => 'shared#library'
 
+  get 'destroy_all_class_photos_:id' => 'courses#destroy_all_class_photos'
+
   #namespace :admin do
   #  # root :to => "registers#index"
   #
