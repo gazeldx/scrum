@@ -1,0 +1,4 @@
+<p> Hi <%= @register.name %>,</p>
+
+<p> <%= I18n.t("mailer.registration.confirmation.content.welcome_to_apply", course_name: @course.name) %></p>
+<p> <%= I18n.t("mailer.registration.confirmation.content.confirm_msg") %></p>

@@ -1,0 +1,13 @@
+<%= I18n.t("mailer.registration.admin_notification.content.title_1") %>:
+<%= I18n.t("mailer.registration.admin_notification.content.register.name") %>: <%= @register.name %>
+<%= I18n.t("mailer.registration.admin_notification.content.register.mobile") %>: <%= @register.mobile %>
+<%= I18n.t("mailer.registration.admin_notification.content.register.email") %>: <%= @register.email %>
+<%= I18n.t("mailer.registration.admin_notification.content.register.company_name") %>: <%= @register.company_name %>
+<%= I18n.t("mailer.registration.admin_notification.content.register.headcount") %>: <%= @register.headcount %>
+<%= I18n.t("mailer.registration.admin_notification.content.register.remarks") %>: <%= @register.remarks %>
+
+<%= I18n.t "mailer.registration.admin_notification.content.title_2" %>:
+<%= I18n.t "mailer.registration.admin_notification.content.courses.name" %>: <%= @course.name %>
+<%= I18n.t "mailer.registration.admin_notification.content.courses.trainer" %>: <%= @course.trainer.name %>
+<%= I18n.t "mailer.registration.admin_notification.content.courses.time" %>: <%= @course.start_time.strftime("%Y-%m-%d") %> ~ <%= @course.end_time.strftime("%Y-%m-%d") %>
+<%= I18n.t "mailer.registration.admin_notification.content.courses.location" %>: <%= @course.location %>
