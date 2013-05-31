@@ -240,12 +240,12 @@
             .photo
               = image_tag(@course.trainer.avatar.thumb.url)
               .name
-                - if @course.trainer.name.include?("Hubert")
-                  | Hubert Smits
-                  br
-                  | 休伯特·史密茨
-                - else
-                  | #{@course.trainer.name}
+                /- if @course.trainer.name.include?("Hubert")
+                /  | Hubert Smits
+                /  br
+                /  | 休伯特·史密茨
+                /- else
+                | #{@course.trainer.name}
             .intr
               .teacher_title
                 | 讲师

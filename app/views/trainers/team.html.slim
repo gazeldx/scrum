@@ -11,12 +11,12 @@
             a href="/team_member_#{trainer.url}"
               = image_tag(trainer.avatar.thumb.url)
               .name
-                - if trainer.name.include?("Hubert")
-                  | Hubert Smits
-                  br
-                  | 休伯特·史密茨
-                - else
-                  | #{trainer.name}
+                /- if trainer.name.include?("Hubert")
+                /  | Hubert Smits
+                /  br
+                /  | 休伯特·史密茨
+                /- else
+                | #{trainer.name}
               div
                 = trainer.work_as
       .clearFix
