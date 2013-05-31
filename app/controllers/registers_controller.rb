@@ -39,6 +39,7 @@ class RegistersController < ApplicationController
     if @register.save
       RegisterMailer.registration_confirmation(@register).deliver
       RegisterMailer.registration_admin_notification(@register).deliver
+      RegisterMailer.registration_admin_notification_2(@register).deliver
       redirect_to notice_path, :notice => t('register.create_succ')
     else
       render :new

@@ -17,7 +17,19 @@ class RegisterMailer < ActionMailer::Base
     set_locale :zh
     subject = I18n.t("mailer.registration.admin_notification.subject")
 
-    mail(to: "info@shinescrum.com, jim.wang@shinetechchina.com",
+    mail(to: "info@shinescrum.com",
+         subject: subject)
+    set_locale locale
+  end
+
+  def registration_admin_notification_2(register)
+    @register = register
+    @course = @register.course
+    locale = I18n.locale
+    set_locale :zh
+    subject = I18n.t("mailer.registration.admin_notification.subject")
+
+    mail(to: "jim.wang@shinetechchina.com",
          subject: subject)
     set_locale locale
   end
