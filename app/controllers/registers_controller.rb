@@ -2,7 +2,7 @@ class RegistersController < ApplicationController
   skip_before_filter :authenticate, :only => [:new, :create, :edit]
   
   def index
-    @registers = Register.order('created_at desc')
+    @registers = Register.order('created_at desc').paginate(page: params[:page] || 1, per_page: params[:per_page] || 10)
     render :layout => 'admin'
   end
 
