@@ -1,43 +1,76 @@
 = render 'shared/notice_error'
-| Registers
-table.olt
-  tbody
-    tr
-      td
-        | ID
-      td
-        | Name
-      td
-        | Mobile
-      td
-        | Email
-      td
-        | Company
-      td
-        | Headcount
-      td
-        | Remarks
-      td
-        | Course
-      td
-        | Created at
-    - @registers.each do |register|
+div.registers
+  h2
+    | Registers
+  table.olt
+    thead
       tr
-        td
-          = register.id
-        td
-          = register.name
-        td
-          = register.mobile
-        td
-          = register.email
-        td
-          = register.company_name
-        td
-          = register.remarks
-        td
-          = register.headcount
-        td
-          = link_to register.course.name, "/course?id=#{register.course.id}", target: '_blank'
-        td
-          = register.created_at.strftime(t'time_format')
+        th
+          | ID
+        th
+          | Name
+        th colspan=2
+          | Register Detail
+        th colspan=2
+          | Course Detail
+        th
+          | Created at
+    tbody
+      - @registers.each do |register|
+        - current_class = cycle("odd", "even")
+        tr class=current_class
+          td rowspan=5
+            = register.id
+          td rowspan=5
+            = register.name
+          td
+            | Mobile:
+          td
+            = register.mobile
+          td
+            | Name:
+          td
+            = link_to register.course.name, "/course?id=#{register.course.id}", target: '_blank'
+          td rowspan=5
+            = register.created_at.strftime(t'time_format')
+        tr class=current_class
+          td
+            | Email:
+          td
+            = register.email
+          td
+            | Trainer
+          td
+            = register.course.trainer.name
+        tr class=current_class
+          td
+            | Company Name:
+          td
+            = register.company_name
+
+          td
+            | Time:
+          td
+            = "#{register.course.start_time.strftime("%Y-%m-%d")} ~ #{register.course.end_time.strftime("%Y-%m-%d")}"
+        tr class=current_class
+          td
+            | Headcount:
+          td
+            = register.headcount
+          td
+            | Location:
+          td
+            =raw register.course.location
+        tr class=current_class
+          td
+            | Remarks:
+          td
+            = register.remarks
+          td
+            |
+          td
+            |
+    tfoot
+      tr
+        td colspan=7 align="right"
+          = will_paginate @registers

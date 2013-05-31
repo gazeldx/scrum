@@ -2,7 +2,7 @@ class RegistersController < ApplicationController
   skip_before_filter :authenticate, :only => [:new, :create, :edit]
   
   def index
-    @registers = Register.order('created_at desc')
+    @registers = Register.order('created_at desc').paginate(page: params[:page] || 1, per_page: params[:per_page] || 10)
     render :layout => 'admin'
   end
 
@@ -37,8 +37,10 @@ class RegistersController < ApplicationController
     @course = Course.find(params[:course_id])
     @register.course = @course
     if @register.save
+      RegisterMailer.registration_confirmation(@register).deliver
+      RegisterMailer.registration_admin_notification(@register).deliver
       redirect_to notice_path, :notice => t('register.create_succ')
-    else      
+    else
       render :new
     end
   end
