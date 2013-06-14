@@ -1,4 +1,5 @@
 zh:
+  name: ShineScrum
   mailer:
     registration:
       confirmation:
@@ -23,6 +24,22 @@ zh:
             location: 上课地点
             trainer: 讲师
             time: 开课时间
+  navigation:
+    home: 首页
+    about_us: 关于我们
+    team: 团队
+    partners: 合作伙伴
+    courses: 认证课程
+    trainees: 学员
+    training: 内训
+    knowledge: 知识库
+    contact_us: 联系我们
+  home:
+    title: 敏捷软件开发培训
+    why_shinescrum: 选择%{name}的理由
+    team_members: 查看%{name}团队成员
+    shinescrum_introduction: "<em>%{name}</em>由<br />Scrum创始人Jeff Sutherland、<br />全球首位CSP Jens Østergaard秦风、<br />北京盛安德科技创始人Jerry Zhang共同创办。"
+
   beijing: 北京
   shanghai: 上海
   shenzhen: 深圳
@@ -45,9 +62,9 @@ zh:
   more: 更多
   to: "~"
 
-  about_us: 关于我们
-  _team: 团队
-  contact_us: 联系我们
+#  about_us: 关于我们
+#  _team: 团队
+#  contact_us: 联系我们
 
   trainer:
     base: 来自
@@ -55,17 +72,17 @@ zh:
     bio: 传记
     course: '%{w}的课程'
 
-  _course: 认证课程
+#  _course: 认证课程
   course:
     name: 课程名
     start_time: 开课时间
     location: 地点
     trainer: 老师
     register: 报名参加
-  _student: 学员
-  _partner: 合作伙伴
-  _library: 知识库
-  _inner: 内训
+#  _student: 学员
+#  _partner: 合作伙伴
+#  _library: 知识库
+#  _inner: 内训
   company_inner: 企业内训
 
   register:

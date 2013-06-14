@@ -2,10 +2,26 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
+  name: ShineScrum
   mailer:
     registration:
       confirmation:
         subject: Apply Successful！
         content:
-          welcome_to_apply: Thanks for apply ${course_name}.
+          welcome_to_apply: Thanks for apply %{course_name}.
           confirm_msg: Your information has been submitted successfully. Our course consultant will contact you within one working day.
+  navigation:
+    home: Home
+    about_us: About us
+    team: Team
+    partners: Partners
+    courses: Courses
+    trainees: Trainees
+    training: Training
+    knowledge: Knowledge
+    contact_us: Contact us
+  home:
+    title: 敏捷软件开发培训
+    why_shinescrum: Why %{name}?
+    team_members: Team members of %{name}
+    shinescrum_introduction: "<em>%{name}</em> was founded by:<br /> Jeff Sutherland, the founder of Scrum. <br />Jens Østergaard 秦风, the world’s first CSP. <br />Jerry Zhang, Founder of Beijing Shinetech Technology."
