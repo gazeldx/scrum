@@ -25,3 +25,15 @@ en:
     why_shinescrum: Why %{name}?
     team_members: Team members of %{name}
     shinescrum_introduction: "<em>%{name}</em> was founded by:<br /> Jeff Sutherland, the founder of Scrum. <br />Jens Østergaard 秦风, the world’s first CSP. <br />Jerry Zhang, Founder of Beijing Shinetech Technology."
+
+  about_us:
+    title: About us
+    agile_introduction: "<em>Agile</em> is more than just a training method. At %{name}, we believe that the principles and values of Agile can change an individual, a business, and affect the entire business community. We are pioneering the concept of Agile through scrum training in China."
+    scrum_training: "<em>Scrum training</em><br />A successful Agile team and enterprise is founded upon training. %{name} brings the industry's most experienced lecturers, offering a variety of training services to suit your needs. Our tailored CSM programs are designed for executives and managers at all levels."
+    agile_consulting: "<em>Agile consulting</em><br />We provide agile solutions which evaluate key aspects such as business objectives, company culture, and individual roles within your organisation. Short term, we provide a framework to identify and solve issues within working practise. Through certified training, coaching, counselling and advising, we help you to organise your business. Working with %{name} will optimize the efficiency, costs and quality of delivery, improving employee morale and providing sustainable long term improvements. Our adaptable integrated training turns your business into a truly flexible agile enterprise."
+
+  team:
+      title: Team
+
+  partners:
+    title: Partners

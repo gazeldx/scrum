@@ -40,6 +40,18 @@ zh:
     team_members: 查看%{name}团队成员
     shinescrum_introduction: "<em>%{name}</em>由<br />Scrum创始人Jeff Sutherland、<br />全球首位CSP Jens Østergaard秦风、<br />北京盛安德科技创始人Jerry Zhang共同创办。"
 
+  about_us:
+    tilte: 关于我们
+    agile_introduction: "<em>敏捷</em> 是一种人生哲学，%{name}相信敏捷原则和价值观将改变一个人，一个企业，甚至整个商业世界。_我们一直致力于敏捷/scrum在中国的普及和推广。"
+    scrum_training: "<em>Scrum培训</em><br />任何一个敏捷的企业和敏捷的团队的成功转变都是从人的培训开始。%{name}拥有业内最富有经验的scrum讲师，提供多样化的培训服务来满足您的需求，从标准的CSM培训到可针对企业普通员工，中层管理人员及高管等不同级别专门定制的课程。"
+    agile_consulting: "<em>敏捷咨询</em><br />我们根据每个企业的公司文化（正如一个人的个性）和业务目标定制敏捷化解决方案，涵盖认证、培训、咨询、教练、辅导等多个方面，短期内我们会为您解决组织及项目的核心问题，包括交付效率、交付质量、交付成本、员工士气等，长期会为您的企业建立持续改善的机制。%{name}将帮助您建立一个真正的敏捷的企业，而非制定和遵循“敏捷制度”。"
+
+  team:
+    title: 团队
+
+  partners:
+    title: 合作伙伴
+
   beijing: 北京
   shanghai: 上海
   shenzhen: 深圳
