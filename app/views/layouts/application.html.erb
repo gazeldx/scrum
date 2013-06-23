@@ -18,6 +18,13 @@
 
   <body>
     <div class="top">
+      <div class="language">
+        <% if I18n.locale == I18n.default_locale %>
+          <%= link_to "English", :locale=>'en'%>
+        <% else %>
+          <%= link_to "中文", :locale=>'zh'%>
+        <%end%>
+      </div>
       <ul>
         <li class="logo"></li>
         <li class="<%= controller_path == "home" ? 'sel' : nil %>"><%= link_to t("navigation.home"), "/" %></li>
@@ -29,13 +36,6 @@
         <li class="<%= controller.action_name == "inner" ? 'sel' : nil %>"><%= link_to t("navigation.training"), "inner" %></li>
         <li class="<%= controller.action_name == "library" ? 'sel' : nil %>"><%= link_to t("navigation.knowledge"), "library" %></li>
         <li class="<%= controller.action_name == "contact" ? 'sel' : nil %>"><%= link_to t("navigation.contact_us"), "contact" %></li>
-        <li class="language">
-          <% if I18n.locale == I18n.default_locale %>
-            <%= link_to "中文", :locale=>'zh'%>
-          <% else %>
-            <%= link_to "English", :locale=>'en'%>
-          <%end%>
-        </li>
       </ul>
     </div>
     <div class="slide">

@@ -58,13 +58,13 @@ $xl: 20px;
 }
 
 .top li:hover {
-  border-top: #245bab solid 6px;
+  border-bottom: #245bab solid 6px;
   text-decoration: none;
   color: #235cab;
 }
 
 .top li.sel {
-  border-top: #245bab solid 6px;
+  border-bottom: #245bab solid 6px;
   color: #235cab;
 }
 
@@ -80,10 +80,10 @@ $xl: 20px;
   padding-top: 0 !important;
   margin-left: 0;
 }
-.top li.language {
+
+.language {
   float: right;
-  margin-top: -30px;
-  margin-right: -64px;
+  margin-right: 15px;
   color: bule;
   text-decoration: true;
 }
