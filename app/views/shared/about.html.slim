@@ -4,7 +4,8 @@
     = t "about_us.title"
   .aboutUs_con
     .aboutUs_intr
-      = t("about_us.agile_introduction", name: t("name")).html_safe
+      p
+        = t("about_us.agile_introduction", name: t("name")).html_safe
       p
         img src="images/aboutUs_intr_01.jpg" width="500" height="231" align="right"
         = t("about_us.scrum_training", name: t("name")).html_safe
