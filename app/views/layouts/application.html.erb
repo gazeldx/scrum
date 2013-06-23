@@ -8,6 +8,7 @@
     <%= csrf_meta_tags %>
     <%= yield :head %>
     <%= stylesheet_link_tag    "style", :media => "all" %>
+    <%= stylesheet_link_tag    "skin", :media => "screen" %>
     <%= stylesheet_link_tag    "flexslider", :media => "screen" %>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
@@ -17,27 +18,39 @@
   
 
   <body>
-    <div class="top">
-      <div class="language">
-        <% if I18n.locale == I18n.default_locale %>
-          <%= link_to "English", :locale=>'en'%>
-        <% else %>
-          <%= link_to "中文", :locale=>'zh'%>
-        <%end%>
+    <header id="branding">
+    <div class="branding-container group">
+      <div class="logo ">
+        <a href="/" title="Scrum.org">shinescrum.com</a>
       </div>
-      <ul>
-        <li class="logo"></li>
-        <li class="<%= controller_path == "home" ? 'sel' : nil %>"><%= link_to t("navigation.home"), "/" %></li>
-        <li class="<%= controller.action_name == "about" ? 'sel' : nil %>"><%= link_to t("navigation.about_us"), "about" %></li>
-        <li class="<%= controller_path == "trainers" ? 'sel' : nil %>"><%= link_to t("navigation.team"), "team" %></li>
-        <li class="<%= controller.action_name == "partners" ? 'sel' : nil %>"><%= link_to t("navigation.partners"), "partners" %></li>
-        <li class="<%= (["registers", "courses"].include? controller_path) ? 'sel' : nil %>"><%= link_to t("navigation.courses"), "courses" %></li>
-        <li class="<%= controller_path == "class_photos" ? 'sel' : nil %>"><%= link_to t("navigation.trainees"), "class_photos" %></li>
-        <li class="<%= controller.action_name == "inner" ? 'sel' : nil %>"><%= link_to t("navigation.training"), "inner" %></li>
-        <li class="<%= controller.action_name == "library" ? 'sel' : nil %>"><%= link_to t("navigation.knowledge"), "library" %></li>
-        <li class="<%= controller.action_name == "contact" ? 'sel' : nil %>"><%= link_to t("navigation.contact_us"), "contact" %></li>
-      </ul>
-    </div>
+      <div class="menu-container">
+        <nav id="primary">
+          <ul class='topLevel'>
+            <li class="item first <%= controller_path == "home" ? 'selected' : nil %>"><%= link_to t("navigation.home"), "/" %></li>
+            <li class="item <%= controller.action_name == "about" ? 'selected' : nil %>"><%= link_to t("navigation.about_us"), "about" %></li>
+            <li class="item <%= controller_path == "trainers" ? 'selected' : nil %>"><%= link_to t("navigation.team"), "team" %></li>
+            <li class="item <%= controller.action_name == "partners" ? 'selected' : nil %>"><%= link_to t("navigation.partners"), "partners" %></li>
+            <li class="item <%= (["registers", "courses"].include? controller_path) ? 'selected' : nil %>"><%= link_to t("navigation.courses"), "courses" %></li>
+            <li class="item <%= controller_path == "class_photos" ? 'selected' : nil %>"><%= link_to t("navigation.trainees"), "class_photos" %></li>
+            <li class="item <%= controller.action_name == "inner" ? 'selected' : nil %>"><%= link_to t("navigation.training"), "inner" %></li>
+            <li class="item <%= controller.action_name == "library" ? 'selected' : nil %>"><%= link_to t("navigation.knowledge"), "library" %></li>
+            <li class="item last <%= controller.action_name == "contact" ? 'selected' : nil %>"><%= link_to t("navigation.contact_us"), "contact" %></li>
+          </ul>
+        </nav>
+        <div class="top-links">
+          <ul>
+            <li>
+              <% if I18n.locale == I18n.default_locale %>
+                <%= link_to "English", :locale=>'en'%>
+              <% else %>
+                <%= link_to "中文", :locale=>'zh'%>
+              <%end%>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- .branding-container -->
+    </header>
     <div class="slide">
       <!--flexsliderV1 Start-->
       <div class="flexslider flexsliderV1">
