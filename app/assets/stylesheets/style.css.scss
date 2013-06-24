@@ -1182,16 +1182,22 @@ pre {
     color: #245ba9;
     font-size: 18px;
     margin-bottom: 14px;
+    padding-left: 24px;
+    background-image: url('/images/bg_list_icon.png');
+    background-repeat: no-repeat;
+    backgroud-position: center left; 
   }
   .left {
     float: left;
   }
   .right {
+    width: 440px;
     float: left;
     margin-left: 40px;
     p.news_entry {
       font-size: 14px;
-      line-height: 38px;
+      line-height: 14px;
+      margin-bottom: 26px;
       a {
         color: black;
       }
