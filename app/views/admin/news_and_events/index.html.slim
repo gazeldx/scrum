@@ -1,0 +1,30 @@
+= render 'shared/notice_error'
+| News and Events
+a.rr href=new_admin_news_and_event_path
+  | Add News
+table.olt
+  tbody
+    tr
+      td
+        | Category
+      td
+        | Title
+      td
+        | Status
+      td
+        | Post Time
+      td
+        | Operation
+      td
+    - @news_and_events.each do |news_and_event|
+      tr
+        td
+          = news_and_event.category
+        td
+          = news_and_event.title
+        td
+          = news_and_event.status
+        td
+          = news_and_event.posted_on.strftime('%Y-%m-%d')
+        td
+          = link_to 'Edit', edit_admin_news_and_event_path(news_and_event)

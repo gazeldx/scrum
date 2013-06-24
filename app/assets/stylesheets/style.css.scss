@@ -1174,3 +1174,31 @@ pre {
 .red {
   color: red;
 }
+
+#video_and_news {
+  height: 320px;
+  padding: 40px 40px 0;
+  h2 {
+    color: #245ba9;
+    font-size: 18px;
+    margin-bottom: 14px;
+  }
+  .left {
+    float: left;
+  }
+  .right {
+    float: left;
+    margin-left: 40px;
+    p.news_entry {
+      font-size: 14px;
+      line-height: 38px;
+      a {
+        color: black;
+      }
+      a:hover {
+        color: #245ba9;
+        text-decoration: none;
+      }
+    }
+  }
+}
