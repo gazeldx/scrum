@@ -1,5 +1,12 @@
 zh:
   name: ShineScrum
+
+  common:
+    or: 或
+    form:
+      reset: 重置
+      submit: 提交
+
   mailer:
     registration:
       confirmation:
@@ -24,6 +31,7 @@ zh:
             location: 上课地点
             trainer: 讲师
             time: 开课时间
+
   navigation:
     home: 首页
     about_us: 关于我们
@@ -34,6 +42,7 @@ zh:
     training: 内训
     knowledge: 知识库
     contact_us: 联系我们
+
   home:
     title: 敏捷软件开发培训
     why_shinescrum: 选择%{name}的理由
@@ -51,6 +60,41 @@ zh:
 
   partners:
     title: 合作伙伴
+
+  courses:
+    title: 认证课程
+    name: 课程名
+    start_time: 开课时间
+    location: 地点
+    trainer: 老师
+    apply: 报名
+    closed: 圆满结束
+    price: 价格
+
+  contact_us:
+    title: 联系我们
+    phone: 电话
+    fax: 传真
+    email: Email
+    location:
+      shanghai: "%{name}（上海办公室）"
+      shanghai_address: 上海市浦东新区杨新路88号，尚馥丽湾3号楼401室
+      beijing:  "%{name}（北京办公室）"
+      beijing_address: 北京市西城区新德街甲20号中器大厦710室
+    tel:
+      number1: 4008210871
+      number2: 021-50683597
+    fax_number: 021-50762357
+    email_address: info@shinescrum.com
+    leave_message:
+      title: 给我们留言
+      name: 姓名
+      company: 公司
+      phone: 电话
+      email: 邮箱
+      message: 留言
+
+
 
   beijing: 北京
   shanghai: 上海
@@ -85,12 +129,12 @@ zh:
     course: '%{w}的课程'
 
 #  _course: 认证课程
-  course:
-    name: 课程名
-    start_time: 开课时间
-    location: 地点
-    trainer: 老师
-    register: 报名参加
+#  course:
+#    name: 课程名
+#    start_time: 开课时间
+#    location: 地点
+#    trainer: 老师
+#    register: 报名参加
 #  _student: 学员
 #  _partner: 合作伙伴
 #  _library: 知识库

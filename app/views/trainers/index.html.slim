@@ -1,25 +1,26 @@
-= title t'_team'
-- h t'_team'
-.clear
-#about_team.left
-  /h3
-  /  | Trainers
-  - @trainers.each_with_index do |trainer, i|
-    .founder
-      h4
-        = trainer.name
-      a href="/about/#{trainer.url}"
-        = image_tag(trainer.avatar.thumb.url)
-      p
-        strong
-          | #{t'trainer.base'}:
-        |  #{trainer.base}
-        br
-        strong
-          | #{t'trainer.work_as'}:
-        |  #{trainer.work_as}
-        br
-        a href="/about/#{trainer.url}"
-          | #{t'more'} &gt;
-    - if i%5 == 4
-      .clear
+= title t 'team.title'
+.page
+  .title.team
+    = t 'team.title'
+  .team_con
+    .team_photo
+      ul
+        - @trainers.each_with_index do |trainer, i|
+          - _css = trainer==@trainer ? 'sel'  : nil
+          li class=_css
+            a href="/team_member_#{trainer.url}"
+              = image_tag(trainer.avatar.thumb.url)
+              .name
+                /- if trainer.name.include?("Hubert")
+                /  | Hubert Smits
+                /  br
+                /  | 休伯特·史密茨
+                /- else
+                | #{trainer.name}
+              div
+                = trainer.work_as
+      .clearFix
+    .team_intr
+      p style="white-space: pre-wrap"
+        = @trainer.bio
+  .clearFix

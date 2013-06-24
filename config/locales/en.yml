@@ -3,6 +3,13 @@
 
 en:
   name: ShineScrum
+
+  common:
+    or: or
+    form:
+      reset: Reset
+      submit: Submit
+
   mailer:
     registration:
       confirmation:
@@ -10,6 +17,7 @@ en:
         content:
           welcome_to_apply: Thanks for apply %{course_name}.
           confirm_msg: Your information has been submitted successfully. Our course consultant will contact you within one working day.
+
   navigation:
     home: Home
     about_us: About us
@@ -20,8 +28,9 @@ en:
     training: Training
     knowledge: Knowledge
     contact_us: Contact us
+
   home:
-    title: 敏捷软件开发培训
+    title: Agile Software Development Training
     why_shinescrum: Why %{name}?
     team_members: Team members of %{name}
     shinescrum_introduction: "<em>%{name}</em> was founded by:<br /> Jeff Sutherland, the founder of Scrum. <br />Jens Østergaard 秦风, the world’s first CSP. <br />Jerry Zhang, Founder of Beijing Shinetech Technology."
@@ -37,3 +46,36 @@ en:
 
   partners:
     title: Partners
+
+  courses:
+    title: Certification Course
+    name: Course
+    start_time: Date
+    location: Location
+    trainer: Trainer
+    apply: Apply
+    closed: Closed
+    price: Price
+
+  contact_us:
+    title: Contact Us
+    phone: Phone
+    fax: Fax
+    email: Email
+    location:
+      shanghai: "%{name} (Shanghai Office)"
+      shanghai_address: 'Room 401, ShangfuLiwan Building #3, 88 Yangxin Road, Pudong New District, Shanghai, China'
+      beijing:  "%{name} (Beijing Office)"
+      beijing_address: Room 607, Zhongqi Building, 20A Xinde Street, Xicheng District, Beijing, China
+    tel:
+      number1: 4008210871
+      number2: 021-50683597
+    fax_number: 021-50762357
+    email_address: info@shinescrum.com
+    leave_message:
+      title: Leave Message
+      name: Name
+      company: Company
+      phone: Tel
+      email: Email
+      message: Message

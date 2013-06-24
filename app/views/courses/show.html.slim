@@ -16,34 +16,34 @@
               | #{@course.name}
             - if @course.registrable?
               a href="course_register?course_id=#{@course.id}"
-                | 我要报名
+                = t 'courses.apply'
             - else
               a href="#" title="课程已圆满结束，请参与其他课程。"
-                | 圆满结束
+                = t 'courses.closed'
           ul
             li.course_time
               | #{begin_end_time @course} #{@course.city}
             li
               em
                 | 课程主办：
-              | #{t('shine_scrum')}
+              = t('name')
             li
               em
-                | 时间：
+                = "#{t 'courses.start_time'}:"
               | #{begin_end_time(@course)}， 9：00am – 5：00pm
             li
               em
-                | 地点：
+                = "#{t 'courses.location'}:"
               | #{raw @course.location}
             li
               em
-                | 讲师：
+                = "#{t 'courses.trainer'}:"
               | #{@course.trainer.name}主讲
               - unless @course.trainer.name.include? "Jim"
                 | ， Jim Wang中文助教
             li
               em
-                | 价格：
+                | #{t 'courses.price'}:
               | #{@course.discount}
         .know
           .know_title

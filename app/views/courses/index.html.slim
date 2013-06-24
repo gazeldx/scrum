@@ -1,37 +1,37 @@
-= title t'_course'
+= title t 'courses.title'
 .page
   .title.course
-    = t'_course'
+    = t 'courses.title'
   .course_list
     table width="100%" border="0" cellpadding="0" cellspacing="0"
       caption
         | CSM/CSPO认证培训班 — 2013年
       tr
         th
-          | 日期
+          = t 'courses.start_time'
         th
-          | 课程
+          = t 'courses.name'
         th
-          | 讲师
+          = t 'courses.trainer'
         th
-          | 城市
+          = t 'courses.location'
         th
       - @courses.each_with_index do |course, i|
         tr class="#{i.odd? ? 'tr2' : nil}"
           td
             = begin_end_time(course)
           td
-            = link_to course.name, "#{course_path}?id=#{course.id}"
+            = link_to course.name, "#{course_path(course)}"
           td
             = course.trainer.name
           td
             = course.city
-          td            
+          td
             - if course.registrable?
               /= link_to '注册', register_course_path(course)
-              = link_to '报名', "course_register?course_id=#{course.id}", class: 'reg_btn'
+              = link_to t('courses.apply'), "course_register?course_id=#{course.id}", class: 'reg_btn'
             - else
-              | 圆满结束
+              = t 'courses.closed'
   .course_con
     .course_intr
       .know2

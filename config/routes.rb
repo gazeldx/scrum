@@ -1,28 +1,33 @@
 Scrum::Application.routes.draw do
 
+  root :to => 'home#index'
+
   resources :messages
 
-  get 'class_photos_:year' => 'class_photos#year'
-  get 'team' => 'trainers#team'
-  get 'team_member_:url' => 'trainers#show'
-  
-  get 'course' => 'courses#show'
+
   resources :registers
-  
+
   resources :trainers do
     member do
-      get 'up'
-      get 'down'
+      get :up
+      get :down
+    end
+    collection do
+      get :team
     end
   end
+  get 'team_member_:url' => 'trainers#show'
+  get 'team' => 'trainers#team'
 
   resources :class_photos, :only => [:index, :create]
+  get 'class_photos_:year' => 'class_photos#year'
+
   resources :courses do
     member do
       get 'register'
       get 'all'
     end
-    # resources :class_photos
+    #resources :class_photos
   end
 
 
@@ -37,10 +42,13 @@ Scrum::Application.routes.draw do
   get 'admin/registers' => 'registers#index'
   # get 'admin/class_photos' => 'class_photos#background_index'
   get 'admin' => 'registers#index'
+
+
+
   get 'about' => 'shared#about'
   get 'contact' => 'shared#contact'
   get 'partners' => 'shared#partners'
-  # get 'students' => 'shared#students'
+  #get 'students' => 'shared#students'
 
   get 'inner' => 'shared#inner'
   get 'library' => 'shared#library'
@@ -64,9 +72,6 @@ Scrum::Application.routes.draw do
       resources :class_photos, :only => [:new]
     end
   end
-
-
-  root :to => 'home#index'
 
 
   get 'notice' => 'shared#notice'
@@ -127,5 +132,5 @@ Scrum::Application.routes.draw do
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
-  # match ':controller(/:action(/:id))(.:format)'
+  #match ':controller(/:action(/:id))(.:format)'
 end

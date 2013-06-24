@@ -27,23 +27,23 @@
         <nav id="primary">
           <ul class='topLevel'>
             <li class="item first <%= controller_path == "home" ? 'selected' : nil %>"><%= link_to t("navigation.home"), "/" %></li>
-            <li class="item <%= controller.action_name == "about" ? 'selected' : nil %>"><%= link_to t("navigation.about_us"), "about" %></li>
-            <li class="item <%= controller_path == "trainers" ? 'selected' : nil %>"><%= link_to t("navigation.team"), "team" %></li>
-            <li class="item <%= controller.action_name == "partners" ? 'selected' : nil %>"><%= link_to t("navigation.partners"), "partners" %></li>
-            <li class="item <%= (["registers", "courses"].include? controller_path) ? 'selected' : nil %>"><%= link_to t("navigation.courses"), "courses" %></li>
-            <li class="item <%= controller_path == "class_photos" ? 'selected' : nil %>"><%= link_to t("navigation.trainees"), "class_photos" %></li>
-            <li class="item <%= controller.action_name == "inner" ? 'selected' : nil %>"><%= link_to t("navigation.training"), "inner" %></li>
-            <li class="item <%= controller.action_name == "library" ? 'selected' : nil %>"><%= link_to t("navigation.knowledge"), "library" %></li>
-            <li class="item last <%= controller.action_name == "contact" ? 'selected' : nil %>"><%= link_to t("navigation.contact_us"), "contact" %></li>
+            <li class="item <%= controller.action_name == "about" ? 'selected' : nil %>"><%= link_to t("navigation.about_us"), "/about" %></li>
+            <li class="item <%= controller_path == "trainers" ? 'selected' : nil %>"><%= link_to t("navigation.team"), trainers_path %></li>
+            <li class="item <%= controller.action_name == "partners" ? 'selected' : nil %>"><%= link_to t("navigation.partners"), "/partners" %></li>
+            <li class="item <%= (["registers", "courses"].include? controller_path) ? 'selected' : nil %>"><%= link_to t("navigation.courses"), courses_path %></li>
+            <li class="item <%= controller_path == "class_photos" ? 'selected' : nil %>"><%= link_to t("navigation.trainees"), class_photos_path %></li>
+            <li class="item <%= controller.action_name == "inner" ? 'selected' : nil %>"><%= link_to t("navigation.training"), "/inner" %></li>
+            <li class="item <%= controller.action_name == "library" ? 'selected' : nil %>"><%= link_to t("navigation.knowledge"), "/library" %></li>
+            <li class="item last <%= controller.action_name == "contact" ? 'selected' : nil %>"><%= link_to t("navigation.contact_us"), "/contact" %></li>
           </ul>
         </nav>
         <div class="top-links">
           <ul>
             <li>
               <% if I18n.locale == I18n.default_locale %>
-                <%= link_to "English", :locale=>'en'%>
+                <%= link_to "English", params.merge(:locale=>'en')%>
               <% else %>
-                <%= link_to "中文", :locale=>'zh'%>
+                <%= link_to "中文", params.merge(:locale=>'zh')%>
               <%end%>
             </li>
           </ul>
