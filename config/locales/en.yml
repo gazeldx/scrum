@@ -9,6 +9,8 @@ en:
     form:
       reset: Reset
       submit: Submit
+    footer:
+      copyright: Copyright © 2013 ShineScrum Inc Shinetech (Shanghai) Enterprise Management Co.Ltd.
 
   mailer:
     registration:
@@ -33,13 +35,14 @@ en:
     title: Agile Software Development Training
     why_shinescrum: Why %{name}?
     team_members: Team members of %{name}
-    shinescrum_introduction: "<em>%{name}</em> was founded by:<br /> Jeff Sutherland, the founder of Scrum. <br />Jens Østergaard 秦风, the world’s first CSP. <br />Jerry Zhang, Founder of Beijing Shinetech Technology."
+    shinescrum_introduction: <em>%{name}</em> was founded by:<br />Jeff Sutherland; the original founder of the concept ‘Scrum’, Jens Østergaard; the world’s first CSP and the first to train and consult the method of Scrum and Agile and Beijing Shinetech Technologies, the global leading company that focuses on professional Agile and Scrum training.
+    shinescrum_vision: We focus on CSM/CSPO certified training, with courses especially tailored for each company’s individual culture and business goals. Our courses cover certification, training, assessments, counselling, coaching and advising. Short term, we provide a framework to identify and solve the core issues within your company’s working practise. Through certified training, coaching, counselling and advising, we help you to organize your business. Working with Shinescrum will optimize the efficiency, costs and quality of delivery, improving employee morale and providing sustainable long-term improvements. Our adaptable integrated training turns your business into a truly flexible agile enterprise.
 
   about_us:
     title: About us
-    agile_introduction: "<em>Agile</em> is more than just a training method. At %{name}, we believe that the principles and values of Agile can change an individual, a business, and affect the entire business community. We are pioneering the concept of Agile through scrum training in China."
-    scrum_training: "<em>Scrum training</em><br />A successful Agile team and enterprise is founded upon training. %{name} brings the industry's most experienced lecturers, offering a variety of training services to suit your needs. Our tailored CSM programs are designed for executives and managers at all levels."
-    agile_consulting: "<em>Agile consulting</em><br />We provide agile solutions which evaluate key aspects such as business objectives, company culture, and individual roles within your organisation. Short term, we provide a framework to identify and solve issues within working practise. Through certified training, coaching, counselling and advising, we help you to organise your business. Working with %{name} will optimize the efficiency, costs and quality of delivery, improving employee morale and providing sustainable long term improvements. Our adaptable integrated training turns your business into a truly flexible agile enterprise."
+    agile_introduction: <em>Agile</em> is more than just a training method. At %{name}, we believe that the principles and values of Agile can change an individual, a business, and affect the entire business community. We are pioneering the concept of Agile through scrum training in China.
+    scrum_training: <em>Scrum training</em><br />A successful Agile team and enterprise is founded upon training. %{name} brings the industry's most experienced lecturers, offering a variety of training services to suit your needs. Our tailored CSM programs are designed for executives and managers at all levels.
+    agile_consulting: <em>Agile consulting</em><br />We provide agile solutions which evaluate key aspects such as business objectives, company culture, and individual roles within your organisation. Short term, we provide a framework to identify and solve issues within working practise. Through certified training, coaching, counselling and advising, we help you to organise your business. Working with %{name} will optimize the efficiency, costs and quality of delivery, improving employee morale and providing sustainable long term improvements. Our adaptable integrated training turns your business into a truly flexible agile enterprise.
 
   team:
       title: Team
@@ -49,6 +52,7 @@ en:
 
   courses:
     title: Certification Course
+    list_header: CSM/CSPO certification courses – %{year}
     name: Course
     start_time: Date
     location: Location
@@ -56,6 +60,12 @@ en:
     apply: Apply
     closed: Closed
     price: Price
+    know:
+      header: By passing %{name}’s CSM/CSPO certification course, you will
+      one: Obtain a Scrum Alliance awarded CSM/CSPO certificate.
+      two:  Qualify for a two years free membership with Scrum Alliance, including the access to discuss your studying and development of Scrum with our Scrum Alliance experts.
+      three: Get access to online material from the course in both Chinese and English
+      four: After passing the CSM test, be entitled to 16 PDU’s
 
   contact_us:
     title: Contact Us
@@ -79,3 +89,33 @@ en:
       phone: Tel
       email: Email
       message: Message
+
+  trainees:
+    title: Trainees
+    trainer_of: Trainer of %{course_name}
+    select_year: Select Year
+    all: All
+
+  training:
+    title: Onsite Training
+    introduction: Working closely with your corporate team, %{name} will develop and provide Agile/Scrum training programs to meet your specific needs.
+    courses: <em>Systematic training courses</em> and <em>customized training courses</em>
+    courses_detail:
+      header: 'Our internal training covers Scrum and Agile Project Management courses, engineering and technical courses and research and development management class courses, including:'
+      one: Scrum Master training
+      two: Scrum Product Owner training
+      three: Scrum Agile Project Management core application programs
+      four: Agile testing essentials
+      five: Agile Management Strategy
+      six: Agile team leadership
+      seven: Agile teams in transition
+    courses_highlights:
+      header: Course highlights
+      one: Course is developed jointly by international senior masters and senior experts
+      two: Thourough evaluation and understanding of your needs resulting in tailor made approach according to your sepecific requirements
+      three: Group sessions and targeted training integrated into your actual project and team structure
+      four: Comprehensive teaching materials and handouts
+      five: Diverse forms of instruction including theory and examples, workshops and interactive sessions, which motivate and engage students.
+    photos:
+      header: Photos
+    contact: For more information aobut %{name} onsite training，please call <em>4008210871</em> or send email to <em>info@shinescrum.com</em>. We'll reply within one work day.

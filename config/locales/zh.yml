@@ -6,6 +6,8 @@ zh:
     form:
       reset: 重置
       submit: 提交
+    footer:
+      copyright: Copyright © 2013 ShineScrum Inc 盛安德（上海）企业管理有限公司
 
   mailer:
     registration:
@@ -47,13 +49,14 @@ zh:
     title: 敏捷软件开发培训
     why_shinescrum: 选择%{name}的理由
     team_members: 查看%{name}团队成员
-    shinescrum_introduction: "<em>%{name}</em>由<br />Scrum创始人Jeff Sutherland、<br />全球首位CSP Jens Østergaard秦风、<br />北京盛安德科技创始人Jerry Zhang共同创办。"
+    shinescrum_introduction: <em>%{name}</em>由<br />Scrum创始人Jeff Sutherland、全球首位CSP Jens Østergaard秦风、倡导敏捷的领头雁北京盛安德科技公司共同创办，是全球领先的专注敏捷及Scrum的专业培训咨询机构。
+    shinescrum_vision: 我们专注于CSM/CSPO认证培训, 根据每个企业的文化和业务目标量身定制培训课程和敏捷导入实施方案，涵盖认证、培训、评估、咨询、教练、辅导等方面，短期内我们会为您解决组织及项目的核心问题，包括交付效率、交付质量、交付成本、员工士气等，长期会为您的企业建立持续改善的机制，成为一个真正的敏捷企业。
 
   about_us:
     title: 关于我们
-    agile_introduction: "<em>敏捷</em> 是一种人生哲学，%{name}相信敏捷原则和价值观将改变一个人，一个企业，甚至整个商业世界。_我们一直致力于敏捷/scrum在中国的普及和推广。"
-    scrum_training: "<em>Scrum培训</em><br />任何一个敏捷的企业和敏捷的团队的成功转变都是从人的培训开始。%{name}拥有业内最富有经验的scrum讲师，提供多样化的培训服务来满足您的需求，从标准的CSM培训到可针对企业普通员工，中层管理人员及高管等不同级别专门定制的课程。"
-    agile_consulting: "<em>敏捷咨询</em><br />我们根据每个企业的公司文化（正如一个人的个性）和业务目标定制敏捷化解决方案，涵盖认证、培训、咨询、教练、辅导等多个方面，短期内我们会为您解决组织及项目的核心问题，包括交付效率、交付质量、交付成本、员工士气等，长期会为您的企业建立持续改善的机制。%{name}将帮助您建立一个真正的敏捷的企业，而非制定和遵循“敏捷制度”。"
+    agile_introduction: <em>敏捷</em> 是一种人生哲学，%{name}相信敏捷原则和价值观将改变一个人，一个企业，甚至整个商业世界。_我们一直致力于敏捷/scrum在中国的普及和推广。
+    scrum_training: <em>Scrum培训</em><br />任何一个敏捷的企业和敏捷的团队的成功转变都是从人的培训开始。%{name}拥有业内最富有经验的scrum讲师，提供多样化的培训服务来满足您的需求，从标准的CSM培训到可针对企业普通员工，中层管理人员及高管等不同级别专门定制的课程。
+    agile_consulting: <em>敏捷咨询</em><br />我们根据每个企业的公司文化（正如一个人的个性）和业务目标定制敏捷化解决方案，涵盖认证、培训、咨询、教练、辅导等多个方面，短期内我们会为您解决组织及项目的核心问题，包括交付效率、交付质量、交付成本、员工士气等，长期会为您的企业建立持续改善的机制。%{name}将帮助您建立一个真正的敏捷的企业，而非制定和遵循“敏捷制度”。
 
   team:
     title: 团队
@@ -63,6 +66,7 @@ zh:
 
   courses:
     title: 认证课程
+    list_header: CSM/CSPO认证培训班 — %{year}年
     name: 课程名
     start_time: 开课时间
     location: 地点
@@ -70,6 +74,12 @@ zh:
     apply: 报名
     closed: 圆满结束
     price: 价格
+    know:
+      header: 通过%{name}的CSM/CSPO认证课程，你将获得
+      one: Scrum联盟颁发的CSM/CSPO证书
+      two: 获得Scrum Alliance的两年免费会员资格，与Scrum Alliance世界各地的Scrum 专家探讨学习
+      three: 电子版课程详细资料（中英文）
+      four: 通过CSM考试后，您可以获得16 PDUs
 
   contact_us:
     title: 联系我们
@@ -94,7 +104,35 @@ zh:
       email: 邮箱
       message: 留言
 
+  trainees:
+    title: 学员
+    trainer_of: "%{course_name}老师"
+    select_year: 选择年份
+    all: 全部
 
+  training:
+    title: 企业内训
+    introduction: 针对企业团队敏捷/Scrum转型的需要，%{name}为您提供整体的敏捷培训方案。
+    courses: <em>系统化培训课程</em>和<em>定制化培训课程</em>
+    courses_detail:
+      header: '我们的内训涵盖Scrum及敏捷项目管理类课程、工程技术实践类课程、研发管理类课程等，具体包括:'
+      one: Scrum Master培训
+      two: Scrum Product Owner培训
+      three: Scrum敏捷项目管理核心应用课程
+      four: 敏捷测试精要
+      five: 管理者敏捷策略
+      six: 敏捷领导力及敏捷团队
+      seven: 敏捷团队转型
+    courses_highlights:
+      header: 课程特点
+      one: 课程由国际资深大师和国内资深专家团队共同开发
+      two: 在充分调研和了解您的需求的基础上，我们可以根据您的要求量身定制
+      three: 授课过程中结合您的实际项目及团队结构进行学员分组和针对性培训
+      four: 完备的授课教材及讲义
+      five: 多样化的授课形式：理论和实例结合、workshop、寓教于乐的互动环节、调动学员自主性的案例分析等
+    photos:
+      header: 场景照片
+    contact: 更多%{name}企业内训信息，请拨打 <em>4008210871</em> 或发信至 <em>info@shinescrum.com</em>我们将在一个工作日内回复。
 
   beijing: 北京
   shanghai: 上海

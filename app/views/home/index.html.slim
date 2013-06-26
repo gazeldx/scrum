@@ -4,19 +4,11 @@
     | #{t("home.why_shinescrum", name: t("name"))}
   .why_shinescrum_con
     .why_shinescrum_photo
-      a href='/team' title=t("home.team_members", name: t("name"))
-        img src="images/why_shinescrum_photo.jpg" height="220"
+      = link_to trainers_path, title: t("home.team_members", name: t("name")) do
+        = image_tag "why_shinescrum_photo.jpg", height: 220
+
     .why_shinescrum_intr
-      span.big
-        | #{t("home.shinescrum_introduction", name: t("name")).html_safe}
-    /  em
-        | #{t('name')}
-      | 由
+      | #{t("home.shinescrum_introduction", name: t("name")).html_safe}
       br
-      span.big
-        | Scrum创始人Jeff Sutherland、全球首位CSP Jens Østergaard秦风、
-      /国内敏捷培训行业资深人士Jim Wang、
-      | 北京盛安德科技创始人Jerry Zhang
-      span.big
-        |  共同创办。
+      | #{t 'home.shinescrum_vision'}
     .clearFix

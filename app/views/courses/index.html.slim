@@ -5,7 +5,7 @@
   .course_list
     table width="100%" border="0" cellpadding="0" cellspacing="0"
       caption
-        | CSM/CSPO认证培训班 — 2013年
+        = t 'courses.list_header', year: Time.now.year
       tr
         th
           = t 'courses.start_time'
@@ -36,16 +36,16 @@
     .course_intr
       .know2
         .know2_title
-          | 通过#{t('shine_scrum')}的CSM/CSPO认证课程，你将获得
+          = t 'courses.know.header', name: t('name')
         ul
           li
-            | Scrum联盟颁发的CSM/CSPO证书
+            = t 'courses.know.one'
           li
-            | 获得Scrum Alliance的两年免费会员资格，与Scrum Alliance世界各地的Scrum 专家探讨学习
+            = t 'courses.know.two'
           li
-            | 电子版课程详细资料（中英文）
+            = t 'courses.know.three'
           li
-            | 通过CSM考试后，您可以获得16 PDUs
+            = t 'courses.know.four'
       .clearFix
     /.course_line
     
