@@ -1195,10 +1195,11 @@ pre {
     width: 440px;
     float: left;
     margin-left: 40px;
-    p.news_entry {
+    li.news_entry {
+      list-style-type: square;
       font-size: 14px;
-      line-height: 14px;
-      margin-bottom: 26px;
+      line-height: 16px;
+      margin-bottom: 24px;
       a {
         color: black;
       }

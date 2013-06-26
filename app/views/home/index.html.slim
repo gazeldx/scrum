@@ -10,9 +10,10 @@
     .right
       h2.home_page_h2
         | 新闻
-      - @news.each do |news|
-        p.news_entry
-          = link_to_news news
+      ul.news_list
+        - @news.each do |news|
+          li.news_entry
+            = link_to_news news
   .why_shinescrum_con
     h2.home_page_h2
       | 选择ShineScrum的理由
