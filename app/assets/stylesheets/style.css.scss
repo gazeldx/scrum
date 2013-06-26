@@ -113,7 +113,7 @@ $xl: 20px;
 .page .title a{ color: #ffffff;}
 
 .page .why_shinescrum {
-  background: url(../images/why_shinescrum.gif) right top no-repeat #2f2f31;
+  background: url(../images/shinescrum.gif) right top no-repeat #2f2f31;
 }
 
 .page .aboutUs {
@@ -148,6 +148,16 @@ $xl: 20px;
 
 .page_bg2 {
   background: #fafafa;
+}
+
+.page h2.home_page_h2 {
+  color: #245ba9;
+  font-size: 18px;
+  margin-bottom: 14px;
+  padding-left: 24px;
+  background-image: url('/images/bg_list_icon.png');
+  background-repeat: no-repeat;
+  background-position: center left;
 }
 
 .foot {
@@ -1178,15 +1188,6 @@ pre {
 #video_and_news {
   height: 320px;
   padding: 40px 40px 0;
-  h2 {
-    color: #245ba9;
-    font-size: 18px;
-    margin-bottom: 14px;
-    padding-left: 24px;
-    background-image: url('/images/bg_list_icon.png');
-    background-repeat: no-repeat;
-    backgroud-position: center left; 
-  }
   .left {
     float: left;
   }

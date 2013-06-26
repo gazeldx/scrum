@@ -1,19 +1,21 @@
 = title '敏捷软件开发培训'
 .page
   .title.why_shinescrum
-    | 选择#{t('shine_scrum')}的理由
+    | ShineScrum
   #video_and_news
     .left
-      h2
+      h2.home_page_h2
         | Why Is Scrum So Hard
       embed src="http://player.youku.com/player.php/sid/XNTczNDc0Nzc2/v.swf" allowFullScreen="true" quality="high" width="400" height="265" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash" style=""
     .right
-      h2
-        | News
+      h2.home_page_h2
+        | 新闻
       - @news.each do |news|
         p.news_entry
           = link_to_news news
   .why_shinescrum_con
+    h2.home_page_h2
+      | 选择ShineScrum的理由
     .why_shinescrum_photo
       a href='/team' title="查看#{t('shine_scrum')}团队成员"
         img src="images/why_shinescrum_photo.jpg" height="220"
@@ -21,7 +23,7 @@
       em
         | #{t('shine_scrum')}
       | 由
-      br      
+      br
       span.big
         | Scrum创始人Jeff Sutherland、全球首位CSP Jens Østergaard秦风、
       /国内敏捷培训行业资深人士Jim Wang、
