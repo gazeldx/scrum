@@ -17,7 +17,7 @@ table.olt
         | Operation
       td
     - @news_and_events.each do |news_and_event|
-      tr
+      tr class="#{cycle("odd", "even")}"
         td
           = news_and_event.category
         td
