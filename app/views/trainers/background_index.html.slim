@@ -17,7 +17,7 @@ table.olt
         | Work as
       td
     - @trainers.each_with_index do |trainer, i|
-      tr
+      tr class="#{cycle("odd", "even")}"
         td
           = i + 1
         td

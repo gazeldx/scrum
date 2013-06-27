@@ -23,17 +23,17 @@ table.olt
         | Class Photos
       td
     - @courses.each_with_index do |course, i|
-      tr
+      tr class="#{cycle("odd", "even")}"
         td
           = i + 1
         td
-          = link_to course.name, "#{course_path}?id=#{course.id}", target: '_blank'
+          = link_to course.name, "#{course_path(course)}", target: '_blank'
         td
           = link_to course.trainer.name, "/team_member_#{course.trainer.url}", target: '_blank'
         td
           = course.city
         td
-          = course.location
+          =raw course.location
         td
           = course.discount
         td

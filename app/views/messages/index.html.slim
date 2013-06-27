@@ -18,7 +18,7 @@ table.olt
       td
         | Created at
     - @messages.each do |message|
-      tr
+      tr class="#{cycle("odd", "even")}"
         td
           = message.id
         td
@@ -32,4 +32,4 @@ table.olt
         td
           = message.body
         td
-          = message.created_at.strftime(t'time_format')
+          = message.created_at.strftime("%F %T")

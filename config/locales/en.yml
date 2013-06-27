@@ -67,29 +67,6 @@ en:
       three: Get access to online material from the course in both Chinese and English
       four: After passing the CSM test, be entitled to 16 PDU’s
 
-  contact_us:
-    title: Contact Us
-    phone: Phone
-    fax: Fax
-    email: Email
-    location:
-      shanghai: "%{name} (Shanghai Office)"
-      shanghai_address: 'Room 401, ShangfuLiwan Building #3, 88 Yangxin Road, Pudong New District, Shanghai, China'
-      beijing:  "%{name} (Beijing Office)"
-      beijing_address: Room 607, Zhongqi Building, 20A Xinde Street, Xicheng District, Beijing, China
-    tel:
-      number1: 4008210871
-      number2: 021-50683597
-    fax_number: 021-50762357
-    email_address: info@shinescrum.com
-    leave_message:
-      title: Leave Message
-      name: Name
-      company: Company
-      phone: Tel
-      email: Email
-      message: Message
-
   trainees:
     title: Trainees
     trainer_of: Trainer of %{course_name}
@@ -119,3 +96,32 @@ en:
     photos:
       header: Photos
     contact: For more information aobut %{name} onsite training，please call <em>4008210871</em> or send email to <em>info@shinescrum.com</em>. We'll reply within one work day.
+
+  knowledge:
+    title: Knowledge
+    welcome_to_share: Welcom to share
+    weekly: "%{name}周刊"
+    download: Download
+
+  contact_us:
+    title: Contact Us
+    phone: Phone
+    fax: Fax
+    email: Email
+    location:
+      shanghai: "%{name} (Shanghai Office)"
+      shanghai_address: 'Room 401, ShangfuLiwan Building #3, 88 Yangxin Road, Pudong New District, Shanghai, China'
+      beijing:  "%{name} (Beijing Office)"
+      beijing_address: Room 607, Zhongqi Building, 20A Xinde Street, Xicheng District, Beijing, China
+    tel:
+      number1: 4008210871
+      number2: 021-50683597
+    fax_number: 021-50762357
+    email_address: info@shinescrum.com
+    leave_message:
+      title: Leave Message
+      name: Name
+      company: Company
+      phone: Tel
+      email: Email
+      message: Message
