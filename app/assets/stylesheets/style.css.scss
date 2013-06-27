@@ -172,7 +172,7 @@ $xl: 20px;
 
 .why_shinescrum_con {
   clear: both;
-  padding: 60px 10px 0 40px;
+  padding: 40px 10px 0 40px;
 }
 
 .why_shinescrum_photo {
@@ -1186,10 +1186,16 @@ pre {
 }
 
 #video_and_news {
-  height: 320px;
+  height: 400px;
   padding: 40px 40px 0;
+  background: url("../images/team_line.jpg") no-repeat scroll center bottom transparent;
   .left {
     float: left;
+    embed {
+      border-bottom: 4px solid #245BA9;
+      border-top: 4px solid #245BA9;
+      box-shadow: 1px 4px 6px;
+    }
   }
   .right {
     width: 440px;
@@ -1199,8 +1205,12 @@ pre {
       list-style-type: square;
       font-size: 14px;
       line-height: 16px;
-      margin-bottom: 24px;
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+      border-bottom: 1px #BBB dashed;
       a {
+        height: 14px;;
+        display: inline-block;
         color: black;
       }
       a:hover {
