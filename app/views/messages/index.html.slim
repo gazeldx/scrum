@@ -1,22 +1,23 @@
 = render 'shared/notice_error'
 | Messages
 table.olt
-  tbody
+  thead
     tr
-      td
+      th
         | ID
-      td
+      th
         | Name
-      td
+      th
         | Phone
-      td
+      th
         | Email
-      td
+      th
         | Company
-      td
+      th
         | Message
-      td
+      th
         | Created at
+  tbody
     - @messages.each do |message|
       tr class="#{cycle("odd", "even")}"
         td

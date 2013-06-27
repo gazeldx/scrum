@@ -80,6 +80,10 @@ zh:
       two: 获得Scrum Alliance的两年免费会员资格，与Scrum Alliance世界各地的Scrum 专家探讨学习
       three: 电子版课程详细资料（中英文）
       four: 通过CSM考试后，您可以获得16 PDUs
+    thanks_for_apply: 感谢您报名%{trainer_name}的%{course_name}课程！
+    two_way_to_apply: "您可以通过<em>两种方式</em>完成报名："
+    way_1: 方式一： 热线电话&nbsp;&nbsp;
+    way_2: 方式二： 请填写信息，我们的课程顾问会和您确认并安排课程
 
   trainees:
     title: 学员
@@ -121,7 +125,7 @@ zh:
     title: 联系我们
     phone: 电话
     fax: 传真
-    email: Email
+    email: 邮箱
     location:
       shanghai: "%{name}（上海办公室）"
       shanghai_address: 上海市浦东新区杨新路88号，尚馥丽湾3号楼401室

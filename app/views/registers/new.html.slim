@@ -1,31 +1,26 @@
-= title "#{t'course.register'}_#{@course.name}_#{t'_course'}"
+= title "#{t'courses.apply'}_#{@course.name}_#{t'courses.title'}"
 .page
   .title.course
-    a href=courses_path
-      | #{t'_course'}
+    = link_to t('courses.title'), courses_path
     | &nbsp;&gt;&nbsp;
-    a href="#{course_path}?id=#{@course.id}"
-      | #{@course.name}
-    | &nbsp;&gt;&nbsp;报名
+    = link_to @course.name, course_path(@course)
+    | &nbsp;&gt;&nbsp;#{t'courses.apply'}
   .course_con
     .course_intr
       .course_reg
         .course_reg_txt1
-          | 感谢您报名#{@course.trainer.name}的#{@course.name}课程！          
+          = t 'courses.thanks_for_apply', trainer_name: @course.trainer.name, course_name: @course.name
         .course_reg_txt2
-          | 您可以通过
-          em
-            | 两种方式
-          | 完成报名：
+          =raw t 'courses.two_way_to_apply'
         .course_reg_txt3
-          | 方式一： 热线电话&nbsp;&nbsp;
+          =raw t 'courses.way_1'
           span.tel_and_email
-            | #{t'_tel'}
-          | &nbsp;&nbsp;&nbsp;邮箱&nbsp;&nbsp;
+            = t'contact_us.tel.number1'
+          | &nbsp;&nbsp;&nbsp;#{t 'contact_us.email'}&nbsp;&nbsp;
           span.tel_and_email
-            | #{t'_email'}
+            = t'contact_us.email_address'
         .course_reg_txt5
-          | 方式二： 请填写信息，我们的课程顾问会和您确认并安排课程
+          = t 'courses.way_2'
         .course_reg_con
           ul.write
             = render 'shared/notice_error'
@@ -84,6 +79,6 @@
                 em
                   = f.text_area :remarks, class: "txt2"
               li.btn_bar
-                input type="button" class="btn" value="重置"
-                = f.submit raw("提交"), class: "btn2"
+                input type="button" class="btn" value="#{t('common.form.reset')}"
+                = f.submit t('courses.apply'), class: "btn2"
       .clearFix

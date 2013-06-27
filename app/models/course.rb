@@ -19,4 +19,19 @@ class Course < ActiveRecord::Base
   def registrable?
     start_time > Time.now
   end
+
+  # For I18n.
+  #
+  #name
+  #description
+  #city
+  #location
+  #discount
+  #
+
+  %w{name description city location discount}.each do |attr_name|
+    define_method attr_name do
+      send("#{attr_name}_#{I18n.locale}")
+    end
+  end
 end

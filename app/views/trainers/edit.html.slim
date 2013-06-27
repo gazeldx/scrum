@@ -4,32 +4,50 @@ h2
 = render 'shared/notice_error'
 = form_for @trainer do |f|
   = error_msg @trainer
-  = t'avatar'
-  = image_tag(@trainer.avatar.thumb.url)
-  = f.file_field :avatar
-  br
-  = f.label 'Name'
-  = f.text_field :name, class: 'required'
-  br
-  = f.label 'URL'
-  = f.text_field :url, class: 'required'
-  br
-  = f.label 'Email'
-  = f.text_field :email
-  br
-  = f.label 'Description'
-  = f.text_area :description
-  br
-  = f.label 'Phone'
-  = f.text_field :phone
-  br
-  = f.label 'Base'
-  = f.text_field :base
-  br
-  = f.label 'Work as'
-  = f.text_field :work_as
-  br
-  = f.label 'Biography'
-  = f.text_area :bio
-  br
-  = f.submit
+  div
+    = t'avatar'
+    = image_tag(@trainer.avatar.thumb.url)
+    = f.file_field :avatar
+    br
+    = f.label 'URL'
+    = f.text_field :url, class: 'required'
+    br
+    = f.label 'Email'
+    = f.text_field :email
+    br
+    = f.label 'Phone'
+    = f.text_field :phone
+    br
+    = f.label 'Base'
+    = f.text_field :base
+  .zh
+    .section_title
+      | 中文版
+    = f.label 'Name'
+    = f.text_field :name_zh, class: 'required'
+    br
+    = f.label 'Description'
+    = f.text_area :description_zh
+    br
+    = f.label 'Work as'
+    = f.text_field :work_as_zh
+    br
+    = f.label 'Biography'
+    = f.text_area :bio_zh
+
+  .en
+    .section_title
+      | English Version
+    = f.label 'Name'
+    = f.text_field :name_en, class: 'required'
+    br
+    = f.label 'Description'
+    = f.text_area :description_en
+    br
+    = f.label 'Work as'
+    = f.text_field :work_as_en
+    br
+    = f.label 'Biography'
+    = f.text_area :bio_en
+  .submit
+    = f.submit

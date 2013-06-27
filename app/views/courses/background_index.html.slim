@@ -3,25 +3,26 @@
 a.rr href=new_course_path
   | Add Course
 table.olt
-  tbody
+  thead
     tr
-      td
+      th
         | ID
-      td
+      th
         | Name
-      td
+      th
         | Trainer
-      td
+      th
         | City
-      td
+      th
         | Location
-      td
+      th
         | Price
-      td
+      th
         | Time
-      td
+      th
         | Class Photos
-      td
+      th
+  tbody
     - @courses.each_with_index do |course, i|
       tr class="#{cycle("odd", "even")}"
         td

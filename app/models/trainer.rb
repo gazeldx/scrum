@@ -8,4 +8,19 @@ class Trainer < ActiveRecord::Base
   validates :name, :length => { :in => 2..100 }
   #validates :email, :uniqueness => true, :length => { :in => 9..36 }
   validates :url, :uniqueness => true, :length => { :in => 1..50 }
+
+  # For I18n.
+  #
+  #name
+  #description
+  #bio
+  #work_as
+  #
+
+  %w{name description bio work_as}.each do |attr_name|
+    define_method attr_name do
+      send("#{attr_name}_#{I18n.locale}")
+    end
+  end
+
 end

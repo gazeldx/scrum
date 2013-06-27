@@ -3,19 +3,20 @@
 a.rr href=new_trainer_path
   | Add Trainer
 table.olt
-  tbody
+  thead
     tr
-      td
+      th
         | ID
-      td
+      th
         | Name
-      td
+      th
         | URL
-      td
+      th
         | Base
-      td
+      th
         | Work as
-      td
+      th
+  tbody
     - @trainers.each_with_index do |trainer, i|
       tr class="#{cycle("odd", "even")}"
         td
