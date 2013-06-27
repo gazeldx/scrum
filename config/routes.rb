@@ -1,6 +1,6 @@
 Scrum::Application.routes.draw do
 
-  resources :news_and_events
+  resources :news_and_events, only: [:index, :show]
 
   resources :messages
 
@@ -66,7 +66,7 @@ Scrum::Application.routes.draw do
   end
 
   namespace :admin do
-    resources :news_and_events
+    resources :news_and_events, except: :destroy
   end
 
 
