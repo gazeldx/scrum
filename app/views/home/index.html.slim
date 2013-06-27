@@ -13,7 +13,7 @@
       ul.news_list
         - @news.each do |news|
           li.news_entry
-            = link_to_news news
+            = link_to_news news, target: '_blank'
   .why_shinescrum_con
     h2.home_page_h2
       | 选择ShineScrum的理由
