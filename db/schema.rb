@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130327064217) do
+ActiveRecord::Schema.define(:version => 20130627073859) do
 
   create_table "class_photos", :force => true do |t|
     t.integer  "course_id"
@@ -21,17 +21,22 @@ ActiveRecord::Schema.define(:version => 20130327064217) do
   end
 
   create_table "courses", :force => true do |t|
-    t.string   "name"
-    t.string   "location"
-    t.text     "description"
+    t.string   "name_zh"
+    t.string   "location_zh"
+    t.text     "description_zh"
     t.datetime "start_time"
     t.datetime "end_time"
     t.integer  "trainer_id"
-    t.integer  "status",      :default => 1
-    t.datetime "created_at",                 :null => false
-    t.datetime "updated_at",                 :null => false
-    t.string   "city"
-    t.string   "discount"
+    t.integer  "status",         :default => 1
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
+    t.string   "city_zh"
+    t.string   "discount_zh"
+    t.string   "name_en"
+    t.string   "description_en"
+    t.string   "city_en"
+    t.string   "location_en"
+    t.string   "discount_en"
   end
 
   create_table "messages", :force => true do |t|
@@ -57,17 +62,28 @@ ActiveRecord::Schema.define(:version => 20130327064217) do
   end
 
   create_table "trainers", :force => true do |t|
-    t.string   "name"
-    t.text     "description"
+    t.string   "name_zh"
+    t.text     "description_zh"
     t.string   "email"
     t.string   "url"
     t.string   "phone"
     t.string   "avatar"
-    t.text     "bio"
+    t.text     "bio_zh"
     t.string   "base"
-    t.string   "work_as"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.string   "work_as_zh"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+    t.string   "name_en"
+    t.string   "description_en"
+    t.string   "bio_en"
+    t.string   "work_as_en"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end

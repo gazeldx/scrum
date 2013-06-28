@@ -15,9 +15,9 @@ en:
   mailer:
     registration:
       confirmation:
-        subject: Apply Successful！
+        subject: Register Successful！
         content:
-          welcome_to_apply: Thanks for apply %{course_name}.
+          welcome_to_register: Thanks for register %{course_name}.
           confirm_msg: Your information has been submitted successfully. Our course consultant will contact you within one working day.
 
   navigation:
@@ -57,7 +57,7 @@ en:
     start_time: Date
     location: Location
     trainer: Trainer
-    apply: Apply
+    register: Register
     closed: Closed
     price: Price
     know:
@@ -66,6 +66,20 @@ en:
       two:  Qualify for a two years free membership with Scrum Alliance, including the access to discuss your studying and development of Scrum with our Scrum Alliance experts.
       three: Get access to online material from the course in both Chinese and English
       four: After passing the CSM test, be entitled to 16 PDU’s
+    thanks_for_register: Thanks for registering  course %{course_name} - %{trainer_name}
+    two_way_to_register: "Follows the two ways bellow to accomplish your register:"
+    way_1: Hot line
+    way_2: Please fill in the form, our course consultant will contact you later and help you to arrange the course
+    registe:
+      name: Name *
+      name_required: Please fill in your name
+      phone: Phone *
+      phone_required: Please fill in your phone number
+      email: Email *
+      email_invalid: Please fill in you Email
+      company_name: Company
+      headcount: Number of Trainee
+      remarks: Notes
 
   trainees:
     title: Trainees
@@ -100,7 +114,7 @@ en:
   knowledge:
     title: Knowledge
     welcome_to_share: Welcom to share
-    weekly: "%{name}周刊"
+    weekly: "%{name} Weekly"
     download: Download
 
   contact_us:
@@ -125,3 +139,14 @@ en:
       phone: Tel
       email: Email
       message: Message
+
+
+  create_succ: Create successfull
+  update_succ: Update successfull
+  delete_succ: Delete successfull
+
+  register:
+    create_succ: Register successful. Our course consultant will contact you within two working day.
+
+  message:
+    create_succ: Leaving message successfull. Thanks for your concern.

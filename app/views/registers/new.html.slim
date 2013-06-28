@@ -1,19 +1,20 @@
-= title "#{t'courses.apply'}_#{@course.name}_#{t'courses.title'}"
+= title "#{t'courses.register'}_#{@course.name}_#{t'courses.title'}"
 .page
   .title.course
     = link_to t('courses.title'), courses_path
     | &nbsp;&gt;&nbsp;
     = link_to @course.name, course_path(@course)
-    | &nbsp;&gt;&nbsp;#{t'courses.apply'}
+    | &nbsp;&gt;&nbsp;#{t'courses.register'}
   .course_con
     .course_intr
       .course_reg
         .course_reg_txt1
-          = t 'courses.thanks_for_apply', trainer_name: @course.trainer.name, course_name: @course.name
+          = t 'courses.thanks_for_register', trainer_name: @course.trainer.name, course_name: @course.name
         .course_reg_txt2
-          =raw t 'courses.two_way_to_apply'
+          =raw t 'courses.two_way_to_register'
         .course_reg_txt3
           =raw t 'courses.way_1'
+          | &nbsp;&nbsp;
           span.tel_and_email
             = t'contact_us.tel.number1'
           | &nbsp;&nbsp;&nbsp;#{t 'contact_us.email'}&nbsp;&nbsp;
@@ -29,56 +30,56 @@
               /= error_msg @register
               li
                 span
-                  | 课程名称
+                  = t 'courses.name'
                 em
                   = text_field_tag :course_name, @course.name, class: "txt", :readonly => true
               li
                 span
-                  | 上课地点
+                  = t 'courses.location'
                 em
                   = text_field_tag :course_location, @course.location, class: "txt", :readonly => true
               li
                 span
-                  | 开课时间
+                  = t 'courses.start_time'
                 em
                   = text_field_tag :course_time, begin_end_time(@course), class: "txt", :readonly => true
               li
                 span
-                  | 姓名(必填)
+                  = t 'courses.registe.name'
                 em
                   = f.text_field :name, class: "txt"
                 .errInfo
-                  | 姓名不能为空！
+                  = t 'courses.registe.name_required'
               li
                 span
-                  | 手机号(必填)
+                  = t 'courses.registe.phone'
                 em
                   = f.text_field :mobile, class: "txt"
                 .errInfo
-                  | 电话号码不能空！
+                  = t 'courses.registe.phone_required'
               li
                 span
-                  | 邮箱(必填)
+                  = t 'courses.registe.email'
                 em
                   = f.text_field :email, class: "txt"
                 .errInfo
-                  | 请输入有效的邮箱地址！
+                  = t 'courses.registe.email_invalid'
               li
                 span
-                  | 公司名称
+                  = t 'courses.registe.company_name'
                 em
                   = f.text_field :company_name, class: "txt"
               li
                 span
-                  | 培训人数
+                  = t 'courses.registe.headcount'
                 em
                   = select(:register, :headcount, [1, 2, 3, 5, 8, 10, 15, 20])
               li.memo
                 span
-                  | 备注
+                  = t 'courses.registe.remarks'
                 em
                   = f.text_area :remarks, class: "txt2"
               li.btn_bar
                 input type="button" class="btn" value="#{t('common.form.reset')}"
-                = f.submit t('courses.apply'), class: "btn2"
+                = f.submit t('courses.register'), class: "btn2"
       .clearFix

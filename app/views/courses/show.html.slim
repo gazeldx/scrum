@@ -16,7 +16,7 @@
               | #{@course.name}
             - if @course.registrable?
               a href="course_register?course_id=#{@course.id}"
-                = t 'courses.apply'
+                = t 'courses.register'
             - else
               a href="#" title="课程已圆满结束，请参与其他课程。"
                 = t 'courses.closed'
