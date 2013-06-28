@@ -9,12 +9,19 @@ group :assets do
 end
 
 gem "pg"
-gem 'therubyracer'
-gem 'libv8', '~> 3.11.8'
 gem 'jquery-rails'
 gem "mini_magick", "~> 3.3"
 gem "carrierwave", "0.6.2"
-gem 'unicorn'
 gem "slim"
 gem "settingslogic"
 gem 'will_paginate'
+
+platform :ruby do # linux
+  gem 'therubyracer'
+  gem 'libv8', '~> 3.11.8'
+  gem 'unicorn'
+end
+
+platform :mswin, :mingw do # windows
+  gem 'execjs'
+end

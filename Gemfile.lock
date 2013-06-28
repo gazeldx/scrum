@@ -129,6 +129,7 @@ PLATFORMS
 DEPENDENCIES
   carrierwave (= 0.6.2)
   coffee-rails (~> 3.2.1)
+  execjs
   jquery-rails
   libv8 (~> 3.11.8)
   mini_magick (~> 3.3)

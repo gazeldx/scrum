@@ -1,0 +1,25 @@
+= render 'shared/notice_error'
+= form_for [:admin, @news_and_event] do |f|
+  = error_msg @news_and_event
+  | 标题
+  = f.text_field :title, size: '100' ,class: 'required'
+  br
+  | 分类
+  = f.select :category, NewsAndEvent::CATEGORY, class: 'required'
+  br
+  | 摘要
+  = f.text_area :abstract, size: '100x5' ,class: 'required'
+  br
+  | 内容
+  = f.text_area :body, size: '100x10'
+  br
+  | 引用链接
+  = f.text_field :ref_link, size: '100'
+  br
+  | 发布时间
+  = f.datetime_select :posted_on, class: 'required'
+  br
+  | 状态
+  = f.select :status, NewsAndEvent::STATUS, class: 'required'
+  br
+  = f.submit

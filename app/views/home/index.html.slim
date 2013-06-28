@@ -1,8 +1,22 @@
 = title '敏捷软件开发培训'
 .page
   .title.why_shinescrum
-    | 选择#{t('shine_scrum')}的理由
+    | ShineScrum
+  #video_and_news
+    .left
+      h2.home_page_h2
+        | Why Is Scrum So Hard
+      embed src="http://player.youku.com/player.php/sid/XNTczNDc0Nzc2/v.swf" allowFullScreen="true" quality="high" width="400" height="273" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"
+    .right
+      h2.home_page_h2
+        | 新闻
+      ul.news_list
+        - @news.each do |news|
+          li.news_entry
+            = link_to_news news, target: '_blank'
   .why_shinescrum_con
+    h2.home_page_h2
+      | 选择ShineScrum的理由
     .why_shinescrum_photo
       a href='/team' title="查看#{t('shine_scrum')}团队成员"
         img src="images/why_shinescrum_photo.jpg" height="220"
@@ -11,7 +25,6 @@
         | #{t('shine_scrum')}
       | 由
       br
-      /　　      
       span
         | Scrum创始人Jeff Sutherland、全球首位CSP Jens Østergaard秦风、倡导敏捷的领头雁北京盛安德科技公司共同创办，是全球领先的专注敏捷及Scrum的专业培训咨询机构。
         br

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130327064217) do
+ActiveRecord::Schema.define(:version => 20130620065604) do
 
   create_table "class_photos", :force => true do |t|
     t.integer  "course_id"
@@ -43,6 +43,26 @@ ActiveRecord::Schema.define(:version => 20130327064217) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  create_table "news_and_events", :force => true do |t|
+    t.string   "title"
+    t.text     "body"
+    t.string   "abstract"
+    t.datetime "posted_on"
+    t.string   "category"
+    t.string   "ref_link"
+    t.string   "status"
+    t.string   "keywords"
+    t.string   "description"
+    t.string   "slug"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  add_index "news_and_events", ["category"], :name => "index_news_and_events_on_category"
+  add_index "news_and_events", ["posted_on"], :name => "index_news_and_events_on_posted_on"
+  add_index "news_and_events", ["status"], :name => "index_news_and_events_on_status"
+  add_index "news_and_events", ["title"], :name => "index_news_and_events_on_title"
 
   create_table "registers", :force => true do |t|
     t.string   "name"
