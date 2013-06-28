@@ -1,8 +1,22 @@
 = title "#{t "home.title"}"
 .page
   .title.why_shinescrum
-    | #{t("home.why_shinescrum", name: t("name"))}
+    = t("name")
+  #video_and_news
+    .left
+      h2.home_page_h2
+        | Why Is Scrum So Hard
+      embed src="http://player.youku.com/player.php/sid/XNTczNDc0Nzc2/v.swf" allowFullScreen="true" quality="high" width="400" height="273" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"
+    .right
+      h2.home_page_h2
+        = t 'home.news_and_events'
+      ul.news_list
+        - @news.each do |news|
+          li.news_entry
+            = link_to_news news, target: '_blank'
   .why_shinescrum_con
+    h2.home_page_h2
+      = t("home.why_shinescrum", name: t("name"))
     .why_shinescrum_photo
       = link_to trainers_path, title: t("home.team_members", name: t("name")) do
         = image_tag "why_shinescrum_photo.jpg", height: 220

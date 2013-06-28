@@ -1,6 +1,7 @@
 Scrum::Application.routes.draw do
 
   root :to => 'home#index'
+  resources :news_and_events, only: [:index, :show]
 
   resources :messages
 
@@ -29,8 +30,6 @@ Scrum::Application.routes.draw do
     end
     #resources :class_photos
   end
-
-
 
 
   #match 'courses/:id/register' => 'courses#register'
@@ -71,6 +70,10 @@ Scrum::Application.routes.draw do
       # resources :class_photos, :controller => 'class_photos'
       resources :class_photos, :only => [:new]
     end
+  end
+
+  namespace :admin do
+    resources :news_and_events, except: :destroy
   end
 
 

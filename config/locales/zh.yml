@@ -51,6 +51,7 @@ zh:
     team_members: 查看%{name}团队成员
     shinescrum_introduction: <em>%{name}</em>由<br />Scrum创始人Jeff Sutherland、全球首位CSP Jens Østergaard秦风、倡导敏捷的领头雁北京盛安德科技公司共同创办，是全球领先的专注敏捷及Scrum的专业培训咨询机构。
     shinescrum_vision: 我们专注于CSM/CSPO认证培训, 根据每个企业的文化和业务目标量身定制培训课程和敏捷导入实施方案，涵盖认证、培训、评估、咨询、教练、辅导等方面，短期内我们会为您解决组织及项目的核心问题，包括交付效率、交付质量、交付成本、员工士气等，长期会为您的企业建立持续改善的机制，成为一个真正的敏捷企业。
+    news_and_events: 新闻
 
   about_us:
     title: 关于我们

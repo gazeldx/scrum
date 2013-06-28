@@ -58,13 +58,13 @@ $xl: 20px;
 }
 
 .top li:hover {
-  border-bottom: #245bab solid 6px;
+  border-top: #245bab solid 6px;
   text-decoration: none;
   color: #235cab;
 }
 
 .top li.sel {
-  border-bottom: #245bab solid 6px;
+  border-top: #245bab solid 6px;
   color: #235cab;
 }
 
@@ -80,10 +80,10 @@ $xl: 20px;
   padding-top: 0 !important;
   margin-left: 0;
 }
-
-.language {
+.top li.language {
   float: right;
-  margin-right: 15px;
+  margin-top: -30px;
+  margin-right: -64px;
   color: bule;
   text-decoration: true;
 }
@@ -113,7 +113,7 @@ $xl: 20px;
 .page .title a{ color: #ffffff;}
 
 .page .why_shinescrum {
-  background: url(../images/why_shinescrum.gif) right top no-repeat #2f2f31;
+  background: url(../images/shinescrum.gif) right top no-repeat #2f2f31;
 }
 
 .page .aboutUs {
@@ -150,6 +150,16 @@ $xl: 20px;
   background: #fafafa;
 }
 
+.page h2.home_page_h2 {
+  color: #245ba9;
+  font-size: 18px;
+  margin-bottom: 14px;
+  padding-left: 24px;
+  background-image: url('/images/bg_list_icon.png');
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
 .foot {
   height: 87px;
   margin: auto 0 auto;
@@ -162,7 +172,7 @@ $xl: 20px;
 
 .why_shinescrum_con {
   clear: both;
-  padding: 60px 10px 0 40px;
+  padding: 40px 10px 0 40px;
 }
 
 .why_shinescrum_photo {
@@ -1173,4 +1183,40 @@ pre {
 
 .red {
   color: red;
+}
+
+#video_and_news {
+  height: 400px;
+  padding: 40px 40px 0;
+  background: url("../images/team_line.jpg") no-repeat scroll center bottom transparent;
+  .left {
+    float: left;
+    embed {
+      border-bottom: 4px solid #245BA9;
+      border-top: 4px solid #245BA9;
+      box-shadow: 1px 4px 6px;
+    }
+  }
+  .right {
+    width: 440px;
+    float: left;
+    margin-left: 40px;
+    li.news_entry {
+      list-style-type: square;
+      font-size: 14px;
+      line-height: 16px;
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+      border-bottom: 1px #BBB dashed;
+      a {
+        height: 14px;;
+        display: inline-block;
+        color: black;
+      }
+      a:hover {
+        color: #245ba9;
+        text-decoration: none;
+      }
+    }
+  }
 }
