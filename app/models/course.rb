@@ -1,6 +1,6 @@
 class Course < ActiveRecord::Base
-  attr_accessible :name, :description, :location, :start_time, :end_time, :status, :trainer_id, :city, :discount
-  belongs_to :trainer
+  attr_accessible :name_zh, :description_zh, :location_zh, :start_time, :end_time, :status, :trainer_id, :city_zh, :discount_zh, :name_en, :description_en, :location_en, :city_en, :discount_en
+                  belongs_to :trainer
   has_many :registers, :dependent => :destroy
   has_many :class_photos, :dependent => :destroy
   

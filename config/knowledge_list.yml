@@ -1,49 +1,49 @@
 zh:
   - title: The Scrum Papers（英语）
     source: www.scrumfoundation.com
-    auther: Jeff Sutherland
+    author: Jeff Sutherland
     read: 本文中，Jeff Sutherland从基础到高端全面介绍了Scrum的最佳实践，比如如何确定Scrum范围，如何在CMMI 5项目中，实施Scrum等等。
     link: 'http://assets.scrumfoundation.com/downloads/2/scrumpapers.pdf?1285932052'
 
   - title: Scrum Primer 2.0 （英语）
     source: www.scrumfoundation.com
-    auther: Pete Deemer, Gabrielle Benefield, Craig Larman and Bas Vodde.
+    author: Pete Deemer, Gabrielle Benefield, Craig Larman and Bas Vodde.
     read: 通过阅读Scrum Primer 2.0， 你将会对scrum的理论和实践有一个更深入的了解。
     link: 'http://assets.scrumfoundation.com/downloads/1/scrumprimer20.pdf?1352449266'
 
   - title: Role of the Manager in Scrum（英语）
     source: www.scrumfoundation.com
-    auther: Pete Deemer, Gabrielle Benefield, Craig Larman and Bas Vodde.
+    author: Pete Deemer, Gabrielle Benefield, Craig Larman and Bas Vodde.
     read: 本文将使经理级别的学员获益匪浅。这篇文章阐述了经理角色如何在企业中运用scrum，并且提供了真实案例、练习方法以及工作描述样例供参考。
     link: 'http://assets.scrumfoundation.com/downloads/4/roleofthemanager.pdf?1285932073'
 
   - title: Scrum 指南（中文）
     source: www.scrum.org
-    auther: Jeff Sutherland, Ken Schwaber
+    author: Jeff Sutherland, Ken Schwaber
     read: 这份指南包含了Scrum的定义,其中包括Scrum 的角色、事件、工件，以及把它们绑在一起的规则。
     link: 'http://www.scrum.org/Portals/0/Documents/Scrum%20Guides/Scrum%20Guide%20-%20CN.pdf#zoom=100'
 
 en:
   - title: The Scrum Papers
     source: www.scrumfoundation.com
-    auther: Jeff Sutherland
+    author: Jeff Sutherland
     read: Jeff Sutherland conducts a comprehensive introduction from a basic to a high-end level, introducing some of Scrum’s best practices; such as how to determine the scope of Scrum, how to implementation of Scrum in CMMI5 projects.
     link: 'http://assets.scrumfoundation.com/downloads/2/scrumpapers.pdf?1285932052'
 
   - title: Scrum Primer 2.0
     source: www.scrumfoundation.com
-    auther: Pete Deemer, Gabrielle Benefield, Craig Larman and Bas Vodde.
+    author: Pete Deemer, Gabrielle Benefield, Craig Larman and Bas Vodde.
     read: By reading the Scrum Primer 2.0, you will gain a better understanding of the theories and practices of Scrum.
     link: 'http://assets.scrumfoundation.com/downloads/1/scrumprimer20.pdf?1352449266'
 
   - title: Role of the Manager in Scrum
     source: www.scrumfoundation.com
-    auther: Pete Deemer, Gabrielle Benefield, Craig Larman and Bas Vodde.
+    author: Pete Deemer, Gabrielle Benefield, Craig Larman and Bas Vodde.
     read: This will benefit students who are on a managerial level.  The article explains how a manager for a company can use Scrum. It provides real-world examples, exercises, methods, and job sample descriptions for reference.
     link: 'http://assets.scrumfoundation.com/downloads/4/roleofthemanager.pdf?1285932073'
 
   - title: Scrum Guide（Chinese）
     source: www.scrum.org
-    auther: Jeff Sutherland, Ken Schwaber
+    author: Jeff Sutherland, Ken Schwaber
     read: This guideline includes the definition of Scrum, the different roles of Scrum, events, working material and the different rules for each of the above mentioned.
     link: 'http://www.scrum.org/Portals/0/Documents/Scrum%20Guides/Scrum%20Guide%20-%20CN.pdf#zoom=100'

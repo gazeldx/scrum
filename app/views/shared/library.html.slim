@@ -23,10 +23,9 @@
               .knowledge_title
                 = item["title"]
               .knowledge_source
-                | 来自于 #{item["source"]}
+                | #{t 'knowledge.ref'}: #{item["source"]}
               .knowledge_auther
-                | 作者：#{item["auther"]}
+                | #{t 'knowledge.author'}: #{item["author"]}
               .knowledge_read
                 = item["read"]
-              a class="knowledge_down" href=item["link"]
-                | 下载
+              = link_to t('knowledge.download'), item["link"], class: 'knowledge_down'

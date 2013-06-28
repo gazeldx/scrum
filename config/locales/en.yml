@@ -116,6 +116,8 @@ en:
     title: Knowledge
     welcome_to_share: Welcom to share
     weekly: "%{name} Weekly"
+    ref: Ref
+    author: Author
     download: Download
 
   contact_us:

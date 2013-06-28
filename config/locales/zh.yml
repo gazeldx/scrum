@@ -130,6 +130,8 @@ zh:
     title: 知识库
     welcome_to_share: 欢迎分享
     weekly: "%{name}周刊"
+    ref: 来自于
+    author: '作者'
     download: 下载
 
   contact_us:
