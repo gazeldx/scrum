@@ -12,4 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.flexslider-min
+//= require fcommon
 //= require_tree .

@@ -1,11 +1,9 @@
-= title t'_course'
+= title t('courses.title')
 .page.page_bg2
   .title.course
-    a href=courses_path
-      | #{t'_course'}
+    = link_to t('courses.title'), courses_path
     | &nbsp;&gt;&nbsp;
-    a href="#{course_path}?id=#{@course.id}"
-      | #{@course.name}
+    = link_to @course.name, course_path(@course)
   .course_con
     /.course_intr style="height: 540px;"
     .course_intr
@@ -13,224 +11,120 @@
         .csm
           .course_title
             span
-              | #{@course.name}
+              = @course.name
             - if @course.registrable?
-              a href="course_register?course_id=#{@course.id}"
-                = t 'courses.register'
+              = link_to t('courses.register'), new_register_path(course_id: @course.id)
             - else
-              a href="#" title="课程已圆满结束，请参与其他课程。"
-                = t 'courses.closed'
+              = link_to t('courses.closed'), "#", title: t('courses.closed_msg')
           ul
             li.course_time
               | #{begin_end_time @course} #{@course.city}
             li
               em
-                | 课程主办：
+                | #{t('courses.organizer')}：
               = t('name')
             li
               em
-                = "#{t 'courses.start_time'}:"
+                | #{t 'courses.start_time'}:
               | #{begin_end_time(@course)}， 9：00am – 5：00pm
             li
               em
-                = "#{t 'courses.location'}:"
+                | #{t 'courses.location'}:
               | #{raw @course.location}
             li
               em
-                = "#{t 'courses.trainer'}:"
-              | #{@course.trainer.name}主讲
+                | #{t 'courses.trainer'}:
+              | #{@course.trainer.name}
               - unless @course.trainer.name.include? "Jim"
-                | ， Jim Wang中文助教
+                | ， Jim Wang(#{t 'courses.assistant_cn'})
             li
               em
                 | #{t 'courses.price'}:
-              | #{@course.discount}
+              = @course.discount
         .know
           .know_title
-            | 课程概述
+            = t 'courses.course_overview'
           ul style="list-style-type: none !important;"
             - if @course.trainer.name.include? "Jim"
               li
-                | 本课程是一个为期两天的面向软件研发团队的培训和实践相结合的课程，旨在帮助学员深入、全面的理解敏捷及Scrum，课程互动、游戏练习非常丰富，贴近实战，实践性很强，真正帮助学员解决在Scrum及敏捷实施过程中面临的实际问题。课程内容涵盖Scrum及敏捷思维模式转变、Scrum及敏捷项目管理实战操作方法及技巧，高效敏捷及Scrum团队的打造，大型团队及项目、异地团队、外包项目如何实施Scrum和敏捷等话题，课程的过程中也会通过一个模拟的Scrum项目、以及大量穿插的实例、练习等让学员切身体会Scrum的工作方式。
+                = t('courses.course_detail.overview.one')
             - else
               li
-                | 在这两天的ScrumMaster认证课程中，学员将从实际操作的层面上掌握Scrum的运用技巧，学员将学会如何避免Scrum实施过程中的一些常见问题。Scrum的规则很少，但要掌握其精髓却并非容易，从资深Scrum大师那里答疑解惑，获取有效的实践经验，通过练习亲身体会Scrum的工作方式非常重要。课程中通过一个59分钟的模拟Scrum项目、XP Game等大量穿插的实例、练习、讨论等让学员亲历Scrum的工作过程、领悟Scrum的内涵、掌握Scrum的精髓。你的工作方式的改变从这里开始。成为认证的Scrum Master有助您成为组织敏捷转型的推动者、领导者，是您新的职业生涯的迈出的第一步。证书由美国Scrum官方机构Scrum联盟颁发。
+                = t('courses.course_detail.overview.two')
           br
           .know_title
-            | 课程特色
+            = t 'courses.course_features'
           - if @course.trainer.name.include? "Jens"
             ul
-              li
-                | 全球首位CSP, 最早的认证Scrum培训师之一、知名的世界级Scrum大师Jens Ostergaard授课
-              li
-                | 内容全面、深入, 重在实际操作及运用囊括了大量项目论证过的实践经验
-              li
-                | 课程过程中穿插丰富的实践练习、时间多达50%以上
+              - t('courses.course_detail.features.jens').each do |item|
+                li
+                  = item
           - if @course.trainer.name.include? "Arne"
             ul
-              li
-                | 资深认证Scrum培训师，国际知名敏捷顾问、Scrum导入及组织转型专家Arne Ahlander授课
-              li
-                | 内容全面、深入, 重在实际操作及运用囊括了大量项目论证过的实践经验
-              li
-                | 课程过程中穿插丰富的实践练习、时间多达50%以上
+              - t('courses.course_detail.features.arne').each do |item|
+                li
+                  = item
           - if @course.trainer.name.include? "Hubert"
             ul
-              li
-                | 资深认证Scrum培训师，国际知名敏捷顾问、Scrum导入及组织转型专家Hubert Smits授课
-              li
-                | 内容全面、深入, 重在实际操作及运用囊括了大量项目论证过的实践经验
-              li
-                | 课程过程中穿插丰富的实践练习、时间多达50%以上
+              - t('courses.course_detail.features.hubert').each do |item|
+                li
+                  = item
           - if @course.trainer.name.include? "Jim"
             ul
-              li
-                | 课程采用工作坊（Workshop）模式授课，课程互动性强
-              li
-                | 资深Scrum培训师授课，讲师授课风趣幽默，游戏、练习丰富、互动性强
-              li
-                | 讲师在美国工作多年，具有多年在跨国公司的大型团队的带队经验，实战经验丰富，也更了解中国文化及中国团队所面临的挑战
-              li
-                | 课程案例、游戏练习非常丰富，贴近实战，实践性很强
-              li
-                | 课程已经在国内众多知名企业成功交付，千锤百炼，囊括大量项目论证过的实践经验
+              - t('courses.course_detail.features.jim').each do |item|
+                li
+                  = item
           - if @course.trainer.name.include? "Jim"
             br
             .know_title
-              | 课程受众
+              = t 'courses.course_audience'
             ul
-              li
-                | 任何期望全面了解或尝试Scrum及敏捷方法的个人或组织
-              li
-                | 正准备导入敏捷方法，希望在局部项目或者部分团队中尝试敏捷方法的企业
-              li
-                | 已经开始尝试敏捷方法，正在努力提升整体敏捷能力的一线研发团队，包括设计，开发，测试及项目管理等多个角色
+              - t('courses.course_detail.audience').each do |item|
+                li
+                  = item
           - else
             br
             .know_title
-              | 顺利完成课程并且通过在线认证测试之后，您将获得：
+              | #{t 'courses.course_detail.boons_header'}:
             ul
-              li
-                | Scrum Alliance颁发的ScrumMaster认证证书，成为一名认证的Scrum Master
-              li
-                | Scrum Alliance的两年会员会费及会员资格
-              li
-                | ShineScrum终身荣誉会员资格，可免费参加ShineScrum主办的各种活动
-              li
-                | 一副价值50元的估算扑克
-              li
-                | 一份CSM课程纸质版及电子版中英文讲义
-              li
-                | Scrum实施模板及大量参考资料推荐
-              li
-                | 美国项目管理协会（PMI）学分 16 PDUs
+              - t('courses.course_detail.boons').each do |item|
+                li
+                  = item
       .right
         .cont
           .cont_title
             .icon
-            | 联系方式
+            = t'courses.contact_info'
           ul
             li
               | Tel:
               div
-                | #{t'_tel'}
+                = t'contact_us.tel.number1'
             li
               | Email:
               div
-                | #{t'_email'}
+                = t'contact_us.email_addressemail'
             li
-              | #{t('shine_scrum')}(上海办公室):
+              = t'contact_us.location.beijing', name: t('name')
               .addr
-                | #{t'location.shanghai'}
+                = t'contact_us.location.shanghai_address'
             li
-             | #{t('shine_scrum')}(北京办公室):
-             .addr
-               | #{t'location.beijing'}
+              = t'contact_us.location.beijing', name: t('name')
+              .addr
+                = t'contact_us.location.beijing_address'
         .pointer
           .pointer_title
             .icon
-            | 课程大纲
+            = t 'courses.course_agenda'
           ul
             - if @course.trainer.name.include? "Jim"
-              li
-                | 软件项目的复杂性
-              li
-                | 敏捷思维，价值观及原则
-              li
-                | Scrum概述-Scrum的理论基础、历史、框架及流程
-              li
-                | Scrum角色破解，传统角色到Scrum角色的转换
-              li
-                | 理解潜在可交付
-              li
-                | “Done”的定义
-              li
-                | 如何做计划
-              li
-                | 如何做评审和回顾会
-              li
-                | Scrum Master的一天
-              li
-                | “59分钟”的模拟Scrum练习
-              li
-                | 产品负责人破解
-              li
-                | 管理人员破解
-              li
-                | Scrum会议破解
-              li
-                | 终止一个Sprint
-              li
-                | 发布管理
-              li
-                | 大型团队和项目的Scrum实施、异地团队的Scrum实施
-              li
-                | Scrum环境下的团队架构，团队之间如何高效协作
-              li
-                | Scrum框架下的需求管理（用户故事发掘、书写、提炼及拆分的方法与技巧）
-              li
-                | 敏捷估算与计划的方法与技巧、Scrum项目的进展跟踪及报告机制
-              li
-                | Scrum实施的基本模式
-              li
-                | Scrum环境下的绩效考核及评估
+              - t('courses.course_detail.agenda.two').each do |item|
+                li
+                  = item
             - else
-              li
-                | 软件项目的复杂性
-              li
-                | 敏捷宣言及其价值观、究竟什么是敏捷
-              li
-                | Scrum概述-Scrum的理论基础、历史、框架及流程
-              li
-                | Scrum角色破解
-              li
-                | 理解潜在可交付
-              li
-                | “Done”的定义
-              li
-                | 如何做计划
-              li
-                | 如何做回顾和反馈
-              li
-                | Scrum Master的一天
-              li
-                | “59分钟”的模拟Scrum练习
-              li
-                | 产品负责人破解
-              li
-                | 管理人员破解
-              li
-                | Scrum会议破解
-              li
-                | 终止一个Sprint
-              li
-                | 发布管理
-              li
-                | 大型团队和项目的Scrum实施、异地团队的Scrum实施
-              li
-                | Scrum和XP
-              li
-                | Scrum和CMMI
+              - t('courses.course_detail.agenda.one').each do |item|
+                li
+                  = item
       .clearFix
     .course_line
     .course_teacher
@@ -248,7 +142,7 @@
                 | #{@course.trainer.name}
             .intr
               .teacher_title
-                | 讲师
+                = t 'courses.trainer'
               .teacher_name
                 | #{@course.trainer.name}
               .teacher_title2
@@ -264,7 +158,7 @@
                   | Jim Wang
               .intr
                 .teacher_title
-                  | 中文助教
+                  = t 'courses.assistant_cn'
                 .teacher_name
                   | Jim Wang
                 .teacher_title2
@@ -280,9 +174,8 @@
         ul.course_room
           li.course_room_title
             span
-              | 授课场景
-            a href="/class_photos"
-              | &gt;&gt;更多
+              = t 'courses.photos'
+            = link_to ">>#{t 'common.more'}", class_photos_path
           - if @course.trainer.name.include? "Jens"
             li
               img src="images/class_jens_1.jpg"

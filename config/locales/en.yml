@@ -6,6 +6,7 @@ en:
 
   common:
     or: or
+    more: More
     form:
       reset: Reset
       submit: Submit
@@ -60,7 +61,11 @@ en:
     trainer: Trainer
     register: Register
     closed: Closed
+    closed_msg: Closed. Please select other courses.
     price: Price
+    organizer: Course organizer
+    assistant_cn: Chinese Assistant
+    photos: Photos
     know:
       header: By passing %{name}’s CSM/CSPO certification course, you will
       one: Obtain a Scrum Alliance awarded CSM/CSPO certificate.
@@ -72,15 +77,92 @@ en:
     way_1: Hot line
     way_2: Please fill in the form, our course consultant will contact you later and help you to arrange the course
     registe:
-      name: Name *
+      name: 'Name *'
       name_required: Please fill in your name
-      phone: Phone *
+      phone: 'Phone *'
       phone_required: Please fill in your phone number
-      email: Email *
+      email: 'Email *'
       email_invalid: Please fill in you Email
       company_name: Company
       headcount: Number of Trainee
       remarks: Notes
+    course_overview: Overview
+    course_features: Course Features
+    course_audience: Course Audience
+    course_agenda: Agenda
+    contact_info: Contact Information
+    course_detail:
+      overview:
+        one: In this 2-day Certified Scrum Master course, participants will learn how to stop thrashing and start executing along with everything necessary for getting started with Scrum. There are very few rules to Scrum so it is important to learn its fundamental principles by experiencing them directly from those who have implemented the best Scrums in the software industry. Participants gain hands-on practice with the release backlog, sprint backlog, the daily Scrum meeting, tracking progress with a burn down chart and experience the Scrum process through a “59-minute Scrum” and the "XP Game” which simulate Scrum projects through non-technical group exercises.
+        two: In this 2-day Certified Scrum Master course, participants will learn how to stop thrashing and start executing along with everything necessary for getting started with Scrum. There are very few rules to Scrum so it is important to learn its fundamental principles by experiencing them directly from those who have implemented the best Scrums in the software industry. Participants gain hands-on practice with the release backlog, sprint backlog, the daily Scrum meeting, tracking progress with a burn down chart and experience the Scrum process through a “59-minute Scrum” and the "XP Game” which simulate Scrum projects through non-technical group exercises.
+      features:
+        jens:
+          - This course taught by the first Certified Scrum Practitioner and one of the first Certified Scrum Trainers Jens Ostergaard
+          - Comprehensive and thorough Practical, project-proven practices.
+          - Not only provides the fundamental principles of Scrum, but also gives participants hands-on experience using Scrum.
+        arne:
+          - This course taught by senior Agile consultant, Scrum import and organizational transformation expert Arne Ahlander
+          - Comprehensive and thorough Practical, project-proven practices.
+          - Not only provides the fundamental principles of Scrum, but also gives participants hands-on experience using Scrum.
+        hubert:
+          - This course taught by senior Agile consultant, Scrum import and organizational transformation expert Hubert Smits
+          - Comprehensive and thorough Practical, project-proven practices.
+          - Not only provides the fundamental principles of Scrum, but also gives participants hands-on experience using Scrum.
+        jim:
+          - 课程采用工作坊（Workshop）模式授课，课程互动性强
+          - 资深Scrum培训师授课，讲师授课风趣幽默，游戏、练习丰富、互动性强
+          - 讲师在美国工作多年，具有多年在跨国公司的大型团队的带队经验，实战经验丰富，也更了解中国文化及中国团队所面临的挑战
+          - 课程案例、游戏练习非常丰富，贴近实战，实践性很强
+          - 课程已经在国内众多知名企业成功交付，千锤百炼，囊括大量项目论证过的实践经验
+      audience:
+        - This course will focus on the ScrumMaster, the Product Owner, and the Team in a software development organization.
+        - However, the course is useful to everyone in a company using Scrum.
+        - There is a pattern that says that the more an organization understand Scrum, the better the implementation will be.
+      boons_header: 顺利完成课程并且通过在线认证测试之后，您将获得
+      boons:
+        - Scrum Alliance颁发的ScrumMaster认证证书，成为一名认证的Scrum Master
+        - Scrum Alliance的两年会员会费及会员资格
+        - ShineScrum终身荣誉会员资格，可免费参加ShineScrum终身荣誉会员资格主办的各种活动
+        - 一副价值50元的估算扑克
+        - 一份CSM课程纸质版及电子版中英文讲义
+        - Scrum实施模板及大量参考资料推荐
+        - 美国项目管理协会（PMI）学分 16 PDUs
+      agenda:
+        one:
+          - Complexity
+          - Agile Manifesto
+          - Agile Overview
+          - Scrum Overview
+          - Roles in Scrum
+          - “DONE”
+          - Planning
+          - Retrospective
+          - Day in the Life of a Scrum Master
+          - Product Owner
+          - Scrum Teams and the environment
+          - Managers
+          - Meetings
+          - Sprint Termination
+          - Release Management
+          - Scaling
+        two:
+          - Complexity
+          - Agile Manifesto
+          - Agile Overview
+          - Scrum Overview
+          - Roles in Scrum
+          - “DONE”
+          - Planning
+          - Retrospective
+          - Day in the Life of a Scrum Master
+          - Product Owner
+          - Scrum Teams and the environment
+          - Managers
+          - Meetings
+          - Sprint Termination
+          - Release Management
+          - Scaling
+
 
   trainees:
     title: Trainees
