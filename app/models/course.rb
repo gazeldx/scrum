@@ -31,7 +31,7 @@ class Course < ActiveRecord::Base
 
   %w{name description city location discount}.each do |attr_name|
     define_method attr_name do
-      send("#{attr_name}_#{I18n.locale}")
+      send("#{attr_name}_#{I18n.locale}") || send("#{attr_name}_zh")
     end
   end
 end

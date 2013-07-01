@@ -19,7 +19,7 @@ class Trainer < ActiveRecord::Base
 
   %w{name description bio work_as}.each do |attr_name|
     define_method attr_name do
-      send("#{attr_name}_#{I18n.locale}")
+      send("#{attr_name}_#{I18n.locale}") || send("#{attr_name}_zh")
     end
   end
 
