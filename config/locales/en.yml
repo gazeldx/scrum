@@ -212,6 +212,10 @@ en:
       shanghai_address: 'Room 401, ShangfuLiwan Building #3, 88 Yangxin Road, Pudong New District, Shanghai, China'
       beijing:  "%{name} (Beijing Office)"
       beijing_address: Room 607, Zhongqi Building, 20A Xinde Street, Xicheng District, Beijing, China
+      suzhou: "%{name} (Suzhou Office)"
+      suzhou_address: Room 301, Creative Estate Block 10, 328 Xinghu Street, SISPark, Suzhou, China
+      wuxi:  "%{name} (Wuxi Office)"
+      wuxi_address: Room 108, Chuangyuan Building, 21-1 Xinchangjiang Road, New District, Wuxi, China
     tel:
       number1: 4008210871
       number2: 021-50683597

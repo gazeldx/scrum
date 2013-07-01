@@ -233,6 +233,10 @@ zh:
       shanghai_address: 上海市浦东新区杨新路88号，尚馥丽湾3号楼401室
       beijing:  "%{name}（北京办公室）"
       beijing_address: 北京市西城区新德街甲20号中器大厦710室
+      suzhou: "%{name}（苏州办公室）"
+      suzhou_address: 苏州市星湖街328号创意产业园10栋301室
+      wuxi:  "%{name}（无锡办公室）"
+      wuxi_address: 无锡市新区长江路21-1号创源大厦108室
     tel:
       number1: 4008210871
       number2: 021-50683597
