@@ -229,7 +229,7 @@ zh:
     fax: 传真
     email: 邮箱
     location:
-      shanghai: "%{name}（上海办公室）"
+      shanghai: "%{name}（上海总部）"
       shanghai_address: 上海市浦东新区杨新路88号，尚馥丽湾3号楼401室
       beijing:  "%{name}（北京办公室）"
       beijing_address: 北京市西城区新德街甲20号中器大厦710室
