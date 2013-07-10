@@ -641,9 +641,9 @@ pre {
 
 .course_list a{ color: #275CA8;}
 .course_list .reg_btn {
-  width: 43px;
+  width: 73px;
   height: 21px;
-  background: url(../images/reg.gif) 0px 0px no-repeat;
+  background: url(reg.gif) 0px 0px no-repeat;
   color: #ffffff;
   text-align: center;
   line-height: 21px;
@@ -654,6 +654,9 @@ pre {
 .course_list tr:hover .reg_btn {
   background-position: 0px -21px;
   color: #ffffff;
+}
+.course_list .closed {
+  padding-left: 10px;
 }
 
 .course_list th {
