@@ -231,7 +231,7 @@ en:
   delete_succ: Delete successfull
 
   register:
-    create_succ: Register successful. Our course consultant will contact you within two working day.
+    create_succ: Register successful. Our course consultant will contact you within one working day.
 
   message:
     create_succ: Leaving message successfull. Thanks for your concern.
