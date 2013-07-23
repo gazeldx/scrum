@@ -1212,9 +1212,10 @@ pre {
       margin-bottom: 16px;
       border-bottom: 1px #BBB dashed;
       a {
-        height: 14px;;
+        height: 15px;
         display: inline-block;
         color: black;
+        overflow: hidden;
       }
       a:hover {
         color: #245ba9;
