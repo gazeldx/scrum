@@ -174,18 +174,20 @@ en:
       header: 'Our internal training covers several courses in Scrum and Agile Project Management, engineering and technical courses as well as research and development management class courses:'
       one: Scrum Master training
       two: Scrum Product Owner training
-      three: Scrum Agile Project Management core application programs
-      four: Agile testing essentials
-      five: Agile Management Strategy
-      six: Agile team leadership
-      seven: Agile teams in transition
+      three: Scrum Agile Software Development
+      four: Scrum Agile Project Management core application programs
+      five: Agile testing essentials
+      six: Agile Management Strategy
+      seven: Agile team leadership
+      eight: Agile teams in transition
     courses_highlights:
       header: Course highlights
-      one: Course is developed jointly by international senior masters and senior experts
-      two: Thourough evaluation and understanding of your needs resulting in tailor made approach according to your specific requirements
-      three: Group sessions and targeted training integrated into your actual project and team structure
-      four: Comprehensive teaching materials and handouts
-      five: Diverse forms of intruction including theories and examples, as well as workshops and interactive sessions that will motivate and engage students.
+      content:
+        - Course is developed jointly by international senior masters and senior experts
+        - Thourough evaluation and understanding of your needs resulting in tailor made approach according to your specific requirements
+        - Group sessions and targeted training integrated into your actual project and team structure
+        - Comprehensive teaching materials and handouts
+        - Diverse forms of intruction including theories and examples, as well as workshops and interactive sessions that will motivate and engage students.
     photos:
       header: Photos
     contact: For more info about %{name} onsite training, please call <em>4008210871</em> or send email to <em>info@shinescrum.com</em>. We will reply within one working day.

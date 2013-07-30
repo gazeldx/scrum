@@ -17,7 +17,7 @@
           li
             = t 'training.courses_detail.two'
           li
-            = t 'training.courses_detail.three'
+            = link_to t('training.courses_detail.three'), course_path(Course.find(40))
           li
             = t 'training.courses_detail.four'
           li
@@ -26,19 +26,14 @@
             = t 'training.courses_detail.six'
           li
             = t 'training.courses_detail.seven'
+          li
+            = t 'training.courses_detail.eight'
         .innerUpdate_title2
           = t 'training.courses_highlights.header'
         ul
-          li
-            = t 'training.courses_highlights.one'
-          li
-            = t 'training.courses_highlights.two'
-          li
-            = t 'training.courses_highlights.three'
-          li
-            = t 'training.courses_highlights.four'
-          li
-            = t 'training.courses_highlights.five'
+          - t('training.courses_highlights.content').each do |item|
+            li
+              = item
         .innerUpdate_title2
           = t 'training.photos.header'
         ul
