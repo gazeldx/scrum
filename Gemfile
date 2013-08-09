@@ -15,6 +15,8 @@ gem "carrierwave", "0.6.2"
 gem "slim"
 gem "settingslogic"
 gem 'will_paginate'
+gem 'rails_kindeditor', '~> 0.4.0'
+gem 'friendly_id'
 
 platform :ruby do # linux
   gem 'therubyracer'

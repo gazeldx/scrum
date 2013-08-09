@@ -24,7 +24,7 @@
     = f.text_area :abstract_zh, size: '50x5' ,class: 'required'
     br
     | 内容
-    = f.text_area :body_zh, size: '50x10'
+    = f.kindeditor :body_zh
   .en
     .section_title
       | English Version
@@ -35,6 +35,6 @@
     = f.text_area :abstract_en, size: '50x5' ,class: 'required'
     br
     | 内容
-    = f.text_area :body_en, size: '50x10'
+    = f.kindeditor :body_en
   .submit
     = f.submit

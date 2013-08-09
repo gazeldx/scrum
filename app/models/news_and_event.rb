@@ -1,6 +1,8 @@
 class NewsAndEvent < ActiveRecord::Base
   attr_accessible :category, :description, :keywords, :posted_on, :ref_link, :slug, :status, :abstract_zh, :body_zh, :title_zh, :abstract_en, :body_en, :title_en
 
+  extend FriendlyId
+
   CATEGORY = %w[Newsletter News Event Promotion]
   STATUS = %w[online offline]
 
@@ -9,6 +11,8 @@ class NewsAndEvent < ActiveRecord::Base
   validates_inclusion_of :category, in: CATEGORY
 
   scope :online, where(status: 'online')
+
+  friendly_id :title_en, use: :slugged
 
   # For I18n.
   #

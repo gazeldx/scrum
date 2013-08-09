@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130627073859) do
+ActiveRecord::Schema.define(:version => 20130809094045) do
 
   create_table "class_photos", :force => true do |t|
     t.integer  "course_id"
@@ -69,6 +69,7 @@ ActiveRecord::Schema.define(:version => 20130627073859) do
 
   add_index "news_and_events", ["category"], :name => "index_news_and_events_on_category"
   add_index "news_and_events", ["posted_on"], :name => "index_news_and_events_on_posted_on"
+  add_index "news_and_events", ["slug"], :name => "index_news_and_events_on_slug", :unique => true
   add_index "news_and_events", ["status"], :name => "index_news_and_events_on_status"
   add_index "news_and_events", ["title_zh"], :name => "index_news_and_events_on_title"
 
