@@ -17,3 +17,6 @@
 /nbproject/
 /.idea/
 *.*project
+
+# Ignore uploaded files
+public/uploads
