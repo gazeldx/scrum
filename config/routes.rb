@@ -73,7 +73,9 @@ Scrum::Application.routes.draw do
   end
 
   namespace :admin do
-    resources :news_and_events, except: :destroy
+    resources :news_and_events, except: :destroy do
+      member { get :preview }
+    end
   end
 
 

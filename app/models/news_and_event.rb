@@ -4,10 +4,11 @@ class NewsAndEvent < ActiveRecord::Base
   extend FriendlyId
 
   CATEGORY = %w[Newsletter News Event Promotion]
-  STATUS = %w[online offline]
+  STATUS = %w[offline online]
 
   validates :title_zh, :abstract_zh, :title_en, :abstract_en, :posted_on, presence: true
   validates_presence_of :ref_link, message: "required if category is newsletter", if: proc { |attributes| attributes[:category] == 'Newsletter' }
+  validates_presence_of :body_zh, :body_en, message: "required for news", if: proc { |attributes| attributes[:category] == 'News' }
   validates_inclusion_of :category, in: CATEGORY
 
   scope :online, where(status: 'online')

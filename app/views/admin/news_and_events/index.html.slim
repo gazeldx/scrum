@@ -13,9 +13,9 @@ table.olt
         | Status
       td
         | Post Time
-      td
+      td colspan="2"
         | Operation
-      td
+
     - @news_and_events.each do |news_and_event|
       tr class="#{cycle("odd", "even")}"
         td
@@ -28,3 +28,5 @@ table.olt
           = news_and_event.posted_on.strftime('%Y-%m-%d')
         td
           = link_to 'Edit', edit_admin_news_and_event_path(news_and_event)
+        td
+          = link_to_preview news_and_event, target: '_blank'
