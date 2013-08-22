@@ -1,0 +1,71 @@
+= render 'shared/notice_error'
+= nested_form_for([:admin, @course_description]) do |f|
+  = error_msg @course_description
+  .zh
+    .section_title
+      | 中文版
+    | Name
+    br
+    = f.text_field :name_zh, size: 25, class: 'required'
+    br
+    | Overview
+    br
+    = f.text_area :overview_zh, class: 'required'
+    br
+    | Features
+    br
+    = f.text_area :features_zh, class: 'required'
+    br
+    | Bonus
+    br
+    = f.text_area :bonus_zh, class: 'required'
+    br
+    | Audience
+    br
+    = f.text_area :audience_zh, class: 'required'
+    br
+    | Agenda Introduction
+    br
+    = f.text_area :agenda_introduction_zh, class: 'required'
+    br
+    | Agenda
+    br
+    = f.text_area :agenda_zh, class: 'required'
+  .en
+    .section_title
+      | English Version
+    | Name
+    br
+    = f.text_field :name_en, size: 25, class: 'required'
+    br
+    | Overview
+    br
+    = f.text_area :overview_en, class: 'required'
+    br
+    | Features
+    br
+    = f.text_area :features_en, class: 'required'
+    br
+    | Bonus
+    br
+    = f.text_area :bonus_en, class: 'required'
+    br
+    | Audience
+    br
+    = f.text_area :audience_en, class: 'required'
+    br
+    | Agenda Introduction
+    br
+    = f.text_area :agenda_introduction_en, class: 'required'
+    br
+    | Agenda
+    br
+    = f.text_area :agenda_en, class: 'required'
+  br
+  h2
+    | Comments
+    = f.fields_for :comments
+    p = f.link_to_add 'Add a Comment', :comments
+
+  .submit
+    = f.submit

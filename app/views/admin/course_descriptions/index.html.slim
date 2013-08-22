@@ -1,0 +1,19 @@
+= render 'shared/notice_error'
+| Course Descriptions
+
+= link_to 'New Course description', new_admin_course_description_path, class: :rr
+table.olt
+  thead
+    tr
+      th ID
+      th Name
+      th colspan="2"
+        | Actions
+  tbody
+    - @course_descriptions.each do |course_description|
+      tr
+        td = course_description.id
+        td = course_description.name
+        td = link_to 'Edit', edit_admin_course_description_path(course_description)
+        td = link_to 'Destroy', admin_course_description_path(course_description), method: :delete, data: { confirm: 'Are you sure?' }
+

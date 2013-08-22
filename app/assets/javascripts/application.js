@@ -15,4 +15,5 @@
 //= require kindeditor
 //= require jquery.flexslider-min
 //= require fcommon
-//= require_tree .
+//= require_tree
+//= require jquery_nested_form
