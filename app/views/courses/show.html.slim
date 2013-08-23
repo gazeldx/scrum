@@ -5,7 +5,6 @@
     | &nbsp;&gt;&nbsp;
     = link_to @course.name, course_path(@course)
   .course_con
-    /.course_intr style="height: 540px;"
     .course_intr
       .left
         .csm
@@ -84,7 +83,7 @@
               div
                 = mail_to t'contact_us.email_address'
             li
-              = t'contact_us.location.beijing', name: t('name')
+              = t'contact_us.location.shanghai', name: t('name')
               .addr
                 = t'contact_us.location.shanghai_address'
             li
