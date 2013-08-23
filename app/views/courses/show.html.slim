@@ -42,54 +42,33 @@
                 | #{t 'courses.price'}:
               = @course.discount
         .know
-          .know_title
-            = t 'courses.course_overview'
-          ul style="list-style-type: none !important;"
-            - if @course.trainer.name.include? "Jim"
-              li
-                = t('courses.course_detail.overview.one')
-            - else
-              li
-                = t('courses.course_detail.overview.two')
-          br
-          .know_title
-            = t 'courses.course_features'
-          - if @course.trainer.name.include? "Jens"
-            ul
-              - t('courses.course_detail.features.jens').each do |item|
-                li
-                  = item
-          - if @course.trainer.name.include? "Arne"
-            ul
-              - t('courses.course_detail.features.arne').each do |item|
-                li
-                  = item
-          - if @course.trainer.name.include? "Hubert"
-            ul
-              - t('courses.course_detail.features.hubert').each do |item|
-                li
-                  = item
-          - if @course.trainer.name.include? "Jim"
-            ul
-              - t('courses.course_detail.features.jim').each do |item|
-                li
-                  = item
-          - if @course.trainer.name.include? "Jim"
+          - if @course_description.overview.present?
+            .know_title
+              = t 'courses.course_overview'
+            ul style="list-style-type: none !important;"
+              - @course_description.overview.each do |i|
+                li= i
             br
+          - if @course_description.features.present?
+            .know_title
+              = t 'courses.course_features'
+            ul
+              - @course_description.features.each do |i|
+                li= i
+            br
+          - if @course_description.audience.present?
             .know_title
               = t 'courses.course_audience'
             ul
-              - t('courses.course_detail.audience').each do |item|
-                li
-                  = item
-          - else
+              - @course_description.audience.each do |i|
+                li= i
             br
+          - if @course_description.bonus.present?
             .know_title
-              | #{t 'courses.course_detail.boons_header'}:
+              = t 'courses.course_detail.boons_header'
             ul
-              - t('courses.course_detail.boons').each do |item|
-                li
-                  = item
+              - @course_description.bonus.each do |i|
+                li= i
       .right
         .cont
           .cont_title
@@ -103,7 +82,7 @@
             li
               | Email:
               div
-                = t'contact_us.email_addressemail'
+                = mail_to t'contact_us.email_address'
             li
               = t'contact_us.location.beijing', name: t('name')
               .addr
@@ -117,14 +96,8 @@
             .icon
             = t 'courses.course_agenda'
           ul
-            - if @course.trainer.name.include? "Jim"
-              - t('courses.course_detail.agenda.two').each do |item|
-                li
-                  = item
-            - else
-              - t('courses.course_detail.agenda.one').each do |item|
-                li
-                  = item
+            - @course_description.agenda.each do |i|
+              li= i
       .clearFix
     .course_line
     .course_teacher
@@ -134,11 +107,6 @@
             .photo
               = image_tag(@course.trainer.avatar.thumb.url)
               .name
-                /- if @course.trainer.name.include?("Hubert")
-                /  | Hubert Smits
-                /  br
-                /  | 休伯特·史密茨
-                /- else
                 | #{@course.trainer.name}
             .intr
               .teacher_title
@@ -153,7 +121,7 @@
           - unless @course.trainer.name.include? "Jim"
             li
               .photo
-                = image_tag('/images/thumb_jim_wang.jpg')
+                = image_tag('thumb_jim_wang.jpg')
                 .name
                   = @jim.name
               .intr
@@ -173,18 +141,12 @@
               = t 'courses.photos'
             = link_to ">>#{t 'common.more'}", class_photos_path
           - if @course.trainer.name.include? "Jens"
-            li
-              img src="/images/class_jens_1.jpg"
-            li
-              img src="/images/class_jens_2.jpg"
+            li= image_tag('class_jens_1.jpg')
+            li= image_tag('class_jens_2.jpg')
           - if @course.trainer.name.include? "Jim"
-            li
-              img src="/images/class_jim_1.jpg"
-            li
-              img src="/images/class_jim_2.jpg"
+            li= image_tag('class_jim_1.jpg')
+            li= image_tag('class_jim_2.jpg')
           - if @course.trainer.name.include? "Hubert"
-            li
-              img src="/images/class_arne_1.jpg"
-            li
-              img src="/images/class_arne_2.jpg"
+            li= image_tag('class_arne_1.jpg')
+            li= image_tag('class_arne_2.jpg')
       .clearFix

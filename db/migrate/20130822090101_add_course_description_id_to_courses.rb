@@ -10,6 +10,7 @@ class AddCourseDescriptionIdToCourses < ActiveRecord::Migration
     }
     Course.all.each do |c|
       c.course_description_id = course_description_ids[c.trainer.url]
+      c.save
     end
   end
 end
