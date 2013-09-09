@@ -11,13 +11,43 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130815073920) do
+ActiveRecord::Schema.define(:version => 20130822090101)
 
   create_table "class_photos", :force => true do |t|
     t.integer  "course_id"
     t.string   "avatar"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "comments", :force => true do |t|
+    t.text     "body_zh"
+    t.string   "comment_by_zh"
+    t.text     "body_en"
+    t.string   "comment_by_en"
+    t.integer  "commentable_id"
+    t.string   "commentable_type"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+  end
+
+  create_table "course_descriptions", :force => true do |t|
+    t.string   "name_zh"
+    t.text     "overview_zh"
+    t.text     "features_zh"
+    t.text     "bonus_zh"
+    t.text     "audience_zh"
+    t.text     "agenda_introduction_zh"
+    t.text     "agenda_zh"
+    t.string   "name_en"
+    t.text     "overview_en"
+    t.text     "features_en"
+    t.text     "bonus_en"
+    t.text     "audience_en"
+    t.text     "agenda_introduction_en"
+    t.text     "agenda_en"
+    t.datetime "created_at",             :null => false
+    t.datetime "updated_at",             :null => false
   end
 
   create_table "courses", :force => true do |t|
@@ -27,9 +57,9 @@ ActiveRecord::Schema.define(:version => 20130815073920) do
     t.datetime "start_time"
     t.datetime "end_time"
     t.integer  "trainer_id"
-    t.integer  "status",         :default => 1
-    t.datetime "created_at",                    :null => false
-    t.datetime "updated_at",                    :null => false
+    t.integer  "status",                :default => 1
+    t.datetime "created_at",                           :null => false
+    t.datetime "updated_at",                           :null => false
     t.string   "city_zh"
     t.string   "discount_zh"
     t.string   "name_en"
@@ -37,6 +67,7 @@ ActiveRecord::Schema.define(:version => 20130815073920) do
     t.string   "city_en"
     t.string   "location_en"
     t.string   "discount_en"
+    t.integer  "course_description_id"
   end
 
   create_table "messages", :force => true do |t|
@@ -102,12 +133,4 @@ ActiveRecord::Schema.define(:version => 20130815073920) do
     t.text     "bio_en"
     t.string   "work_as_en"
   end
-
-  create_table "users", :force => true do |t|
-    t.string   "name"
-    t.string   "email"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
 end

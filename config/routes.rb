@@ -76,6 +76,7 @@ Scrum::Application.routes.draw do
     resources :news_and_events, except: :destroy do
       member { get :preview }
     end
+    resources :course_descriptions
   end
 
 

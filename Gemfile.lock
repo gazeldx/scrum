@@ -61,6 +61,7 @@ GEM
     mini_magick (3.5.0)
       subexec (~> 0.2.1)
     multi_json (1.7.2)
+    nested_form (0.3.1)
     pg (0.15.0)
     polyglot (0.3.3)
     rack (1.4.5)
@@ -138,6 +139,7 @@ DEPENDENCIES
   jquery-rails
   libv8 (~> 3.11.8)
   mini_magick (~> 3.3)
+  nested_form
   pg
   rails (= 3.2.11)
   rails_kindeditor (~> 0.4.0)

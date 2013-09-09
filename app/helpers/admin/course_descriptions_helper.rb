@@ -1,0 +1,2 @@
+module Admin::CourseDescriptionsHelper
+end

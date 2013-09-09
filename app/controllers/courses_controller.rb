@@ -16,6 +16,7 @@ class CoursesController < ApplicationController
 
   def show
     @course = Course.find(params[:id])
+    @course_description =  @course.course_description
     unless @course.trainer.name.include? "Jim"
       @jim = Trainer.find_by_url("Jim-Wang")
     end
