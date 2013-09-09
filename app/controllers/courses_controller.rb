@@ -6,11 +6,11 @@ class CoursesController < ApplicationController
 
 
   def index
-    @courses = Course.where('end_time > ?', Time.new(2013)).order('start_time')
+    @courses = Course.where('end_time > ?', Time.new(2013)).order('start_time desc')
   end
 
   def background_index
-    @courses = Course.order('start_time')
+    @courses = Course.order('start_time desc')
     render :layout => 'admin'
   end
 
