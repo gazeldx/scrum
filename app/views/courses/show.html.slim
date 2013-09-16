@@ -11,7 +11,7 @@
           .course_title
             span
               = @course.name
-            - if @course.registrable?
+            - if @course.active?
               = link_to t('courses.register'), new_register_path(course_id: @course.id)
             - else
               = link_to t('courses.closed'), "#", title: t('courses.closed_msg')

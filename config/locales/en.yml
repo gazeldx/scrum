@@ -56,7 +56,7 @@ en:
 
   courses:
     title: Certification Course
-    list_header: CSM/CSPO certification courses – %{year}
+    list_header: CSM/CSPO certification courses
     name: Course
     start_time: Date
     location: Location

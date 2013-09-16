@@ -70,7 +70,7 @@ zh:
 
   courses:
     title: 认证课程
-    list_header: CSM/CSPO认证培训班 — %{year}年
+    list_header: CSM/CSPO认证培训班
     name: 课程名
     start_time: 开课时间
     location: 地点
