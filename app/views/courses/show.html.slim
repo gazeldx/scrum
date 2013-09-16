@@ -117,7 +117,7 @@
               pre style="white-space: pre-wrap"
                 = @course.trainer.description
             .clearFix
-          - unless @course.trainer.name.include? "Jim"
+          - if @course.trainer.need_assistant?
             li
               .photo
                 = image_tag('thumb_jim_wang.jpg')

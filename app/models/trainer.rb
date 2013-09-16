@@ -1,5 +1,7 @@
 class Trainer < ActiveRecord::Base
-  attr_accessible :avatar, :email, :phone, :url, :base, :name_zh, :description_zh, :bio_zh, :work_as_zh, :name_en, :description_en, :bio_en, :work_as_en
+  attr_accessible :avatar, :email, :phone, :url, :base, :need_assistant,
+                  :name_zh, :description_zh, :bio_zh, :work_as_zh,
+                  :name_en, :description_en, :bio_en, :work_as_en
 
   has_many :courses, :dependent => :destroy
 
