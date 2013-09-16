@@ -1,14 +1,13 @@
-.page.page_bg2
+.page.page_bg2#news_index
   .title.news_and_events
     = t'news_and_events'
 
   .news_list
     - @news_and_events.each do |news_and_event|
       .news_entry
-        .news_title
-          = news_and_event.title
+        h2.news_title
+          = link_to_news news_and_event, target: '_blank'
         .news_abstract
           = news_and_event.abstract
         .news_date
-          = news_and_event.posted_on.strftime('%Y-%M-%d')
-      br
+          = news_and_event.posted_on.strftime('%Y-%m-%d')
