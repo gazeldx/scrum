@@ -1224,3 +1224,22 @@ pre {
     }
   }
 }
+
+.subscribe {
+  padding: 20px 40px 0;
+  a {
+    float: right;
+    width: 200px;
+    height: 21px;
+    background: url(reg.gif) 0px 0px no-repeat;
+    color: #ffffff;
+    text-align: center;
+    line-height: 21px;
+    display: block;
+    text-decoration: none;
+  }
+  a:hover {
+    background-position: 0px -21px;
+    color: #ffffff;
+  }
+}
