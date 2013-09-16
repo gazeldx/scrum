@@ -2,6 +2,8 @@
 .page
   .title.why_shinescrum
     = t("name")
+  .subscribe
+    = link_to t("home.subscribe"), "https://app.e2ma.net/app2/audience/signup/1746862/1720894/?v=a", target: '_blank', class: "reg_btn"
   #video_and_news
     .left
       h2.home_page_h2
@@ -14,6 +16,8 @@
         - @news.each do |news|
           li.news_entry
             = link_to_news news, target: '_blank'
+      span.more
+        = link_to t("home.more_news"), news_and_events_path, target: '_blank' 
   .why_shinescrum_con
     h2.home_page_h2
       = t("home.why_shinescrum", name: t("name"))

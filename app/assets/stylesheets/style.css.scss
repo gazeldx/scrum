@@ -146,6 +146,10 @@ $xl: 20px;
 
 .page .knowledge{background: url(../images/knowledge.jpg) right bottom no-repeat #2f2f31;}
 
+.page .news_and_events {
+  background: url(../images/news.gif) right top no-repeat #2f2f31;
+}
+
 .page_bg2 {
   background: #fafafa;
 }
@@ -1209,7 +1213,7 @@ pre {
       font-size: 14px;
       line-height: 16px;
       padding-bottom: 8px;
-      margin-bottom: 16px;
+      margin-bottom: 15px;
       border-bottom: 1px #BBB dashed;
       a {
         height: 15px;
@@ -1222,5 +1226,65 @@ pre {
         text-decoration: none;
       }
     }
+    .more {
+      a {
+        float: right;
+      }
+    }
+  }
+}
+
+#news_index {
+  .news_list {
+    margin-bottom: -40px;
+    .news_entry {
+      border: #c4c4c4 solid 1px;
+      background-color: #F0F0F0;
+      margin: 20px 30px;
+      padding: 20px;
+      h2.news_title {
+        font-size: $m;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: black;
+        a {
+          color: black;
+        }
+        a:hover {
+          color: #245ba9;
+          text-decoration: none;
+        }
+      }
+      .news_abstract {
+        color: black;
+        text-indent: 2em;
+        line-height: 18px;
+      }
+      .news_date {
+        text-align: right;
+      }
+    }
+    .news_entry:hover {
+      background-color: #F8F8F8;
+    }
+  }
+}
+
+.subscribe {
+  padding: 20px 40px 0;
+  a {
+    float: right;
+    width: 220px;
+    height: 21px;
+    background: url(subscribe.gif) 0px 0px no-repeat;
+    color: #ffffff;
+    text-align: center;
+    line-height: 21px;
+    display: block;
+    text-decoration: none;
+  }
+  a:hover {
+    background-position: 0px -21px;
+    color: #ffffff;
   }
 }

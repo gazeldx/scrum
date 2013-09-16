@@ -39,6 +39,8 @@ en:
     shinescrum_introduction: <em>%{name}</em> was founded by:<br />Jeff Sutherland; the original founder of the concept ‘Scrum’, Jens Østergaard; the world’s first CSP and the first to train and consult the method of Scrum and Agile and Beijing Shinetech Technologies, the global leading company that focuses on professional Agile and Scrum training.
     shinescrum_vision: We focus on CSM/CSPO certified training, with courses especially tailored for each company’s individual culture and business goals. Our courses cover certification, training, assessments, counselling, coaching and advising. Short term, we provide a framework to identify and solve the core issues within your company’s working practise. Through certified training, coaching, counselling and advising, we help you to organize your business. Working with Shinescrum will optimize the efficiency, costs and quality of delivery, improving employee morale and providing sustainable long-term improvements. Our adaptable integrated training turns your business into a truly flexible agile enterprise.
     news_and_events: News
+    subscribe: Subscribe Shinescrum Weekly
+    more_news: More
 
   about_us:
     title: About us
@@ -237,3 +239,6 @@ en:
 
   message:
     create_succ: Leaving message successfull. Thanks for your concern.
+
+  news:
+    news_header: News
