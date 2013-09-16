@@ -53,12 +53,17 @@
       <div class="flexslider flexsliderV1">
         <div class="flexCon">
           <ul class="slides">
-            <% %w{slide01 slide02 slide03}.each do |slide| %>
             <li>
-              <%= link_to courses_path do
-                image_tag "#{slide}_#{I18n.locale}.jpg"
+              <%= link_to course_path(12) do
+                image_tag "slide_ad_#{I18n.locale}.jpg"
               end %>
             </li>
+            <% %w{slide01 slide02 slide03}.each do |slide| %>
+              <li>
+                <%= link_to courses_path do
+                  image_tag "#{slide}_#{I18n.locale}.jpg"
+                end %>
+              </li>
             <% end %>
           </ul>
         </div>
