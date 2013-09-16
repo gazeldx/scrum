@@ -43,6 +43,7 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    friendly_id (4.0.9)
     hike (1.2.1)
     i18n (0.6.4)
     journey (1.0.4)
@@ -60,6 +61,7 @@ GEM
     mini_magick (3.5.0)
       subexec (~> 0.2.1)
     multi_json (1.7.2)
+    nested_form (0.3.1)
     pg (0.15.0)
     polyglot (0.3.3)
     rack (1.4.5)
@@ -77,6 +79,9 @@ GEM
       activesupport (= 3.2.11)
       bundler (~> 1.0)
       railties (= 3.2.11)
+    rails_kindeditor (0.4.0)
+      carrierwave
+      mini_magick
     railties (3.2.11)
       actionpack (= 3.2.11)
       activesupport (= 3.2.11)
@@ -130,11 +135,14 @@ DEPENDENCIES
   carrierwave (= 0.6.2)
   coffee-rails (~> 3.2.1)
   execjs
+  friendly_id
   jquery-rails
   libv8 (~> 3.11.8)
   mini_magick (~> 3.3)
+  nested_form
   pg
   rails (= 3.2.11)
+  rails_kindeditor (~> 0.4.0)
   sass-rails (~> 3.2.3)
   settingslogic
   slim

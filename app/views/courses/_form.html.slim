@@ -1,28 +1,63 @@
 = render 'shared/notice_error'
-= form_for @course, url: "/courses/#{@course.id}" do |f|
+= form_for @course do |f|
   = error_msg @course
-  | Trainer
-  = collection_select :course, :trainer_id, Trainer.all, :id, :name
-  br
-  | Name
-  = f.text_field :name, size: 25, class: 'required'
-  br
-  | Description
-  = f.text_area :description, class: 'required'
-  br
-  | City
-  = f.text_field :city, class: 'required'
-  br
-  | Location
-  = f.text_field :location, class: 'required'
-  br
-  | Price
-  = f.text_field :discount, class: 'required'
-  br
-  | Start Time
-  = datetime_select :course, :start_time
-  br
-  | End Time
-  = datetime_select :course, :end_time
-  br
-  = f.submit
+  div
+    | Trainer
+    = collection_select :course, :trainer_id, Trainer.all, :id, :name
+    br
+    | Course Description
+    = collection_select :course, :course_description_id, CourseDescription.all, :id, :name
+    br
+    | Start Time
+    br
+    = datetime_select :course, :start_time
+    br
+    | End Time
+    br
+    = datetime_select :course, :end_time
+  .zh
+    .section_title
+      | 中文版
+    | Name
+    br
+    = f.text_field :name_zh, size: 25, class: 'required'
+    br
+    | Description
+    br
+    = f.text_area :description_zh, class: 'required'
+    br
+    | City
+    br
+    = f.text_field :city_zh, class: 'required'
+    br
+    | Location
+    br
+    = f.text_field :location_zh, class: 'required'
+    br
+    | Price
+    br
+    = f.text_field :discount_zh, class: 'required'
+  .en
+    .section_title
+      | English Version
+    | Name
+    br
+    = f.text_field :name_en, size: 25, class: 'required'
+    br
+    | Description
+    br
+    = f.text_area :description_en, class: 'required'
+    br
+    | City
+    br
+    = f.text_field :city_en, class: 'required'
+    br
+    | Location
+    br
+    = f.text_field :location_en, class: 'required'
+    br
+    | Price
+    br
+    = f.text_field :discount_en, class: 'required'
+  .submit
+    = f.submit

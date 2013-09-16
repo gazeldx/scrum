@@ -1,58 +1,42 @@
-= title t'company_inner'
+= title t'training.title'
 .page.page_bg2
   .title.innerUpdate
-    = t'company_inner'
+    = t'training.title'
   .innerUpdate_con
     .innerUpdate_intr
       .innerUpdate_txt
-        | 针对企业团队敏捷/Scrum转型的需要，#{t('shine_scrum')}为您提供整体的敏捷培训方案。
+        = t 'training.introduction', name: t('name')
         br
-        em
-          | 系统化培训课程
-        | 和
-        em
-          | 定制化培训课程
+        =raw t 'training.courses'
       .innerUpdate_c
         .innerUpdate_title
-          | 我们的内训涵盖Scrum及敏捷项目管理类课程、工程技术实践类课程、研发管理类课程等，具体包括：
+          = t 'training.courses_detail.header'
         ul
           li
-            | Scrum Master培训
+            = t 'training.courses_detail.one'
           li
-            | Scrum Product Owner培训
+            = t 'training.courses_detail.two'
           li
-            | Scrum敏捷项目管理核心应用课程
+            = link_to t('training.courses_detail.three'), course_path(Course.find(40))
           li
-            | 敏捷测试精要
+            = t 'training.courses_detail.four'
           li
-            | 管理者敏捷策略
+            = t 'training.courses_detail.five'
           li
-            | 敏捷领导力及敏捷团队
+            = t 'training.courses_detail.six'
           li
-            | 敏捷团队转型
+            = t 'training.courses_detail.seven'
+          li
+            = t 'training.courses_detail.eight'
         .innerUpdate_title2
-          | 课程特点
+          = t 'training.courses_highlights.header'
         ul
-          li
-            | 课程由国际资深大师和国内资深专家团队共同开发
-          li
-            | 在充分调研和了解您的需求的基础上，我们可以根据您的要求量身定制
-          li
-            | 授课过程中结合您的实际项目及团队结构进行学员分组和针对性培训
-          li
-            | 完备的授课教材及讲义
-          li
-            | 多样化的授课形式：理论和实例结合、workshop、寓教于乐的互动环节、调动学员自主性的案例分析等
+          - t('training.courses_highlights.content').each do |item|
+            li
+              = item
         .innerUpdate_title2
-          | 场景照片
+          = t 'training.photos.header'
         ul
           img src="images/inner.jpg"
         .innerUpdate_txt2
-          | 更多#{t('shine_scrum')}企业内训信息，请拨打&nbsp;
-          em
-            | #{t'_tel'}
-          |  或发信至&nbsp;
-          em
-            | #{t'_email'}
-          br
-          | 我们将在一个工作日内回复。
+          =raw t('training.contact', name: t('name'))

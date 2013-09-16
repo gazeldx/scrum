@@ -8,13 +8,16 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'# Ruby wrapper for UglifyJS JavaScript compressor
 end
 
-gem "pg"
+gem 'pg'
 gem 'jquery-rails'
-gem "mini_magick", "~> 3.3"
-gem "carrierwave", "0.6.2"
-gem "slim"
-gem "settingslogic"
+gem 'mini_magick', '~> 3.3'
+gem 'carrierwave', '0.6.2'
+gem 'slim'
+gem 'settingslogic'
 gem 'will_paginate'
+gem 'rails_kindeditor', '~> 0.4.0'
+gem 'friendly_id'
+gem 'nested_form'
 
 platform :ruby do # linux
   gem 'therubyracer'

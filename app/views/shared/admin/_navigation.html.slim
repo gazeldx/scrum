@@ -1,17 +1,12 @@
-/a href=admin_path
-/  | Admin
-/| &nbsp;|&nbsp;
-a href="/admin#{registers_path}"
-  | Registers
+= link_to "Registers", admin_registers_path
 | &nbsp;|&nbsp;
-a href="/admin#{messages_path}"
-  | Messages
+= link_to "Messages", admin_messages_path
 | &nbsp;|&nbsp;
-a href="/admin#{trainers_path}"
-  | Trainers
+= link_to "Trainers", admin_trainers_path
 | &nbsp;|&nbsp;
-a href="/admin#{courses_path}"
-  | Courses
+= link_to "Courses", admin_courses_path
+| &nbsp;|&nbsp;
+=link_to "Course Descriptions", admin_course_descriptions_path
 | &nbsp;|&nbsp;
 =link_to "News", admin_news_and_events_path
 br

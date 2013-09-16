@@ -32,7 +32,7 @@ div.registers
           td
             = link_to register.course.name, "/course?id=#{register.course.id}", target: '_blank'
           td rowspan=5
-            = register.created_at.strftime(t'time_format')
+            = register.created_at.strftime("%F %T")
         tr class=current_class
           td
             | Email:
@@ -51,7 +51,7 @@ div.registers
           td
             | Time:
           td
-            = "#{register.course.start_time.strftime("%Y-%m-%d")} ~ #{register.course.end_time.strftime("%Y-%m-%d")}"
+            = "#{register.course.start_time.strftime("%F")} ~ #{register.course.end_time.strftime("%F")}"
         tr class=current_class
           td
             | Headcount:

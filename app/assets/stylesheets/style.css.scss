@@ -405,14 +405,14 @@ $xl: 20px;
 .csm li em {
   font-style: normal;
   color: #4b4b4b;
-  width: 80px;
+  width: 130px;
   display: block;
   float: left;
 }
 
 .know {
   width: 635px;
-  height: 270px;
+  /*height: 270px;*/
 }
 
 .know_title {
@@ -645,9 +645,9 @@ pre {
 
 .course_list a{ color: #275CA8;}
 .course_list .reg_btn {
-  width: 43px;
+  width: 73px;
   height: 21px;
-  background: url(../images/reg.gif) 0px 0px no-repeat;
+  background: url(reg.gif) 0px 0px no-repeat;
   color: #ffffff;
   text-align: center;
   line-height: 21px;
@@ -658,6 +658,9 @@ pre {
 .course_list tr:hover .reg_btn {
   background-position: 0px -21px;
   color: #ffffff;
+}
+.course_list .closed {
+  padding-left: 10px;
 }
 
 .course_list th {
@@ -790,12 +793,12 @@ pre {
 }
 
 .knowledge_down {
-  width: 83px;
+  width: 93px;
   height: 25px;
   display: block;
-  background: url(../images/knowledge_down.gif) 0px 0px no-repeat;
+  background: url(knowledge_down.png) 0px 0px no-repeat;
   color: #ffffff;
-  padding-left: 30px;
+  padding-left: 40px;
   margin-top: 10px;
   margin-bottom: 30px;
 }
@@ -832,7 +835,7 @@ pre {
 }
 
 .contact_bg {
-  background: #FAFAFA;
+  //background: #FAFAFA;
   color: #010101;
   font-size: 18px;
   line-height: 180%;
@@ -1213,9 +1216,10 @@ pre {
       margin-bottom: 16px;
       border-bottom: 1px #BBB dashed;
       a {
-        height: 14px;;
+        height: 15px;
         display: inline-block;
         color: black;
+        overflow: hidden;
       }
       a:hover {
         color: #245ba9;
@@ -1257,5 +1261,24 @@ pre {
     .news_entry:hover {
       background-color: #F8F8F8;
     }
+  }
+}
+
+.subscribe {
+  padding: 20px 40px 0;
+  a {
+    float: right;
+    width: 200px;
+    height: 21px;
+    background: url(reg.gif) 0px 0px no-repeat;
+    color: #ffffff;
+    text-align: center;
+    line-height: 21px;
+    display: block;
+    text-decoration: none;
+  }
+  a:hover {
+    background-position: 0px -21px;
+    color: #ffffff;
   }
 }

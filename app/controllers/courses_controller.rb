@@ -6,16 +6,20 @@ class CoursesController < ApplicationController
 
 
   def index
-    @courses = Course.where('end_time > ?', Time.new(2013)).order('start_time')
+    @courses = Course.where('end_time > ?', Time.new(2013)).order('start_time desc')
   end
 
   def background_index
-    @courses = Course.order('start_time')
+    @courses = Course.order('start_time desc')
     render :layout => 'admin'
   end
 
   def show
     @course = Course.find(params[:id])
+    @course_description =  @course.course_description
+    unless @course.trainer.name.include? "Jim"
+      @jim = Trainer.find_by_url("Jim-Wang")
+    end
   end
 
   def new

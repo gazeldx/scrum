@@ -1,0 +1,9 @@
+- content_for :title, @news_and_events.title
+- content_for :head do
+  = stylesheet_link_tag "news_and_events"
+.page
+  .title
+    = @news_and_events.title
+
+  #content
+    = raw @news_and_events.body

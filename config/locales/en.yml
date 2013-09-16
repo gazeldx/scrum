@@ -2,10 +2,239 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
+  name: ShineScrum
+
+  common:
+    or: or
+    more: More
+    form:
+      reset: Reset
+      submit: Submit
+    footer:
+      copyright: Copyright © 2013 ShineScrum Inc Shinetech (Shanghai) Enterprise Management Co.Ltd.
+
   mailer:
     registration:
       confirmation:
-        subject: Apply Successful！
+        subject: Register Successful！
         content:
-          welcome_to_apply: Thanks for apply ${course_name}.
+          welcome_to_register: Thanks for register %{course_name}.
           confirm_msg: Your information has been submitted successfully. Our course consultant will contact you within one working day.
+
+  navigation:
+    home: Home
+    about_us: About us
+    team: Team
+    partners: Partners
+    courses: Courses
+    trainees: Trainees
+    training: Training
+    knowledge: Knowledge
+    contact_us: Contact us
+
+  home:
+    title: Agile Software Development Training
+    why_shinescrum: Why %{name}?
+    team_members: Team members of %{name}
+    shinescrum_introduction: <em>%{name}</em> was founded by:<br />Jeff Sutherland; the original founder of the concept ‘Scrum’, Jens Østergaard; the world’s first CSP and the first to train and consult the method of Scrum and Agile and Beijing Shinetech Technologies, the global leading company that focuses on professional Agile and Scrum training.
+    shinescrum_vision: We focus on CSM/CSPO certified training, with courses especially tailored for each company’s individual culture and business goals. Our courses cover certification, training, assessments, counselling, coaching and advising. Short term, we provide a framework to identify and solve the core issues within your company’s working practise. Through certified training, coaching, counselling and advising, we help you to organize your business. Working with Shinescrum will optimize the efficiency, costs and quality of delivery, improving employee morale and providing sustainable long-term improvements. Our adaptable integrated training turns your business into a truly flexible agile enterprise.
+    news_and_events: News
+    subscribe: Subscribe
+
+  about_us:
+    title: About us
+    agile_introduction: <em>Agile</em> is more than just a training method. At %{name}, we believe that the principles and values of Agile can change an individual, a business, and affect the entire business community. We are pioneering the concept of Agile through scrum training in China.
+    scrum_training: <em>Scrum training</em><br />A successful Agile team and enterprise is founded upon training. %{name} brings the industry's most experienced lecturers, offering a variety of training services to suit your needs. Our tailored CSM programs are designed for executives and managers at all levels.
+    agile_consulting: <em>Agile consulting</em><br />We provide agile solutions which evaluate key aspects such as business objectives, company culture, and individual roles within your organisation. Short term, we provide a framework to identify and solve issues within working practise. Through certified training, coaching, counselling and advising, we help you to organise your business. Working with %{name} will optimize the efficiency, costs and quality of delivery, improving employee morale and providing sustainable long term improvements. Our adaptable integrated training turns your business into a truly flexible agile enterprise.
+
+  team:
+      title: Team
+
+  partners:
+    title: Partners
+
+  courses:
+    title: Certification Course
+    list_header: CSM/CSPO certification courses – %{year}
+    name: Course
+    start_time: Date
+    location: Location
+    trainer: Trainer
+    register: Register
+    closed: Closed
+    closed_msg: Closed. Please select other courses.
+    price: Price
+    organizer: Course organizer
+    assistant_cn: Chinese Assistant
+    photos: Photos
+    know:
+      header: By passing %{name}’s CSM/CSPO certification course, you will
+      one: Obtain a Scrum Alliance awarded CSM/CSPO certificate.
+      two:  Qualify for a two years free membership with Scrum Alliance, including the access to discuss your studying and development of Scrum with our Scrum Alliance experts.
+      three: Get access to online material from the course in both Chinese and English
+      four: After passing the CSM test, be entitled to 16 PDU’s
+    thanks_for_register: Thanks for registering  course %{course_name} - %{trainer_name}
+    two_way_to_register: "Follows the two ways bellow to accomplish your register:"
+    way_1: Hot line
+    way_2: Please fill in the form, our course consultant will contact you later and help you to arrange the course
+    registe:
+      name: 'Name *'
+      name_required: Please fill in your name
+      phone: 'Phone *'
+      phone_required: Please fill in your phone number
+      email: 'Email *'
+      email_invalid: Please fill in you Email
+      company_name: Company
+      headcount: Number of Trainee
+      remarks: Notes
+    course_overview: Overview
+    course_features: Course Features
+    course_audience: Course Audience
+    course_agenda: Agenda
+    contact_info: Contact Information
+    course_detail:
+      overview:
+        one: In this 2-day Certified Scrum Master course, participants will learn how to stop thrashing and start executing along with everything necessary for getting started with Scrum. There are very few rules to Scrum so it is important to learn its fundamental principles by experiencing them directly from those who have implemented the best Scrums in the software industry. Participants gain hands-on practice with the release backlog, sprint backlog, the daily Scrum meeting, tracking progress with a burn down chart and experience the Scrum process through a “59-minute Scrum” and the "XP Game” which simulate Scrum projects through non-technical group exercises.
+        two: This is a two-day course aimed for software development teams, in order to help them gain an in-depth understanding of Agile and Scrum.  This training consists of interactive games and exercises that will challenge students to solve problems that can be faced in real-life situations, when implementing Scrum and Agile into a team. The course includes learning the fundamental thinking of Scrum and Agile, its project management methods and techniques and how to build an efficient Scrum team. Whether they are large teams, outsourcing projects or teams placed in different locations, you will gain a thorough understanding of how to use Scrum and Agile in practice.
+      features:
+        jens:
+          - This course taught by the first Certified Scrum Practitioner and one of the first Certified Scrum Trainers Jens Ostergaard
+          - Comprehensive and thorough Practical, project-proven practices.
+          - Not only provides the fundamental principles of Scrum, but also gives participants hands-on experience using Scrum.
+        arne:
+          - This course taught by senior Agile consultant, Scrum import and organizational transformation expert Arne Ahlander
+          - Comprehensive and thorough Practical, project-proven practices.
+          - Not only provides the fundamental principles of Scrum, but also gives participants hands-on experience using Scrum.
+        hubert:
+          - This course taught by senior Agile consultant, Scrum import and organizational transformation expert Hubert Smits
+          - Comprehensive and thorough Practical, project-proven practices.
+          - Not only provides the fundamental principles of Scrum, but also gives participants hands-on experience using Scrum.
+        jim:
+          - In our ‘Workshop’ style lectures, we use highly interactive games and exercises led by our Senior Scrum Trainers, with several years’ experience in large led teams internationally including the United States. They not only operate multi-nationally, but also hold a broad knowledge of Chinese culture and challenges that Chinese teams may typically face. This program has been successful in delivering Scrum to a large amount of Chinese companies.
+      audience:
+        - Aimed at individuals or companies looking to gain a comprehensive understanding of Scrum and Agile methods
+        - For those who are prepared to import Agile methods into their projects or teams
+        - For those who have already started using Agile and would like to improve the overall agility within their team including designers, testers, developers and project managers
+      boons_header:  By successfully completing the course and the online certification test, you will receive
+      boons:
+        - A Scrum Alliance Scrum Master certificate awarded to become a certified Scrum Master
+        - A two-year Scrum Alliance membership
+        - A ShineScrum membership for life giving you the opportunity to free of charge participate in various activities organized by ShineScrum
+        - Poker planning cards with an estimated value of ￥50
+        - An electronic and hard copy of the CSM training’s content in English and additional hand-outs
+        - Scrum implementation templates and further material recommendation
+        - American Project Management Institute (PMI) 16 PDU Credits
+      agenda:
+        one:
+          - Complexity
+          - Agile Manifesto
+          - Agile Overview
+          - Scrum Overview
+          - Roles in Scrum
+          - “DONE”
+          - Planning
+          - Retrospective
+          - Day in the Life of a Scrum Master
+          - Product Owner
+          - Scrum Teams and the environment
+          - Managers
+          - Meetings
+          - Sprint Termination
+          - Release Management
+          - Scaling
+        two:
+          - Complexity
+          - Agile Manifesto
+          - Agile Overview
+          - Scrum Overview
+          - Roles in Scrum
+          - “DONE”
+          - Planning
+          - Retrospective
+          - Day in the Life of a Scrum Master
+          - Product Owner
+          - Scrum Teams and the environment
+          - Managers
+          - Meetings
+          - Sprint Termination
+          - Release Management
+          - Scaling
+
+
+  trainees:
+    title: Trainees
+    trainer_of: Trainer of %{course_name}
+    select_year: Select Year
+    all: All
+
+  training:
+    title: Onsite Training
+    introduction: Working closely with your corporate team, %{name} will develop and provide Agile/Scrum training programs to meet your specific needs.
+    courses: <em>Systematic training courses</em> and <em>customized training courses</em>
+    courses_detail:
+      header: 'Our internal training covers several courses in Scrum and Agile Project Management, engineering and technical courses as well as research and development management class courses:'
+      one: Scrum Master training
+      two: Scrum Product Owner training
+      three: Scrum Agile Software Development
+      four: Scrum Agile Project Management core application programs
+      five: Agile testing essentials
+      six: Agile Management Strategy
+      seven: Agile team leadership
+      eight: Agile teams in transition
+    courses_highlights:
+      header: Course highlights
+      content:
+        - Course is developed jointly by international senior masters and senior experts
+        - Thourough evaluation and understanding of your needs resulting in tailor made approach according to your specific requirements
+        - Group sessions and targeted training integrated into your actual project and team structure
+        - Comprehensive teaching materials and handouts
+        - Diverse forms of intruction including theories and examples, as well as workshops and interactive sessions that will motivate and engage students.
+    photos:
+      header: Photos
+    contact: For more info about %{name} onsite training, please call <em>4008210871</em> or send email to <em>info@shinescrum.com</em>. We will reply within one working day.
+
+  knowledge:
+    title: Knowledge
+    welcome_to_share: 'Welcome to share '
+    weekly: "%{name} Weekly"
+    ref: Ref
+    author: Author
+    download: Download
+
+  contact_us:
+    title: Contact Us
+    phone: Phone
+    fax: Fax
+    email: Email
+    location:
+      shanghai: "%{name} (Shanghai Office)"
+      shanghai_address: 'Room 401, ShangfuLiwan Building #3, 88 Yangxin Road, Pudong New District, Shanghai, China'
+      beijing:  "%{name} (Beijing Office)"
+      beijing_address: Room 607, Zhongqi Building, 20A Xinde Street, Xicheng District, Beijing, China
+      suzhou: "%{name} (Suzhou Office)"
+      suzhou_address: Room 301, Creative Estate Block 10, 328 Xinghu Street, SISPark, Suzhou, China
+      wuxi:  "%{name} (Wuxi Office)"
+      wuxi_address: Room 108, Chuangyuan Building, 21-1 Xinchangjiang Road, New District, Wuxi, China
+    tel:
+      number1: 4008210871
+      number2: 021-50683597
+    fax_number: 021-50762357
+    email_address: info@shinescrum.com
+    leave_message:
+      title: Leave Message
+      name: Name
+      company: Company
+      phone: Tel
+      email: Email
+      message: Message
+
+
+  create_succ: Create successfull
+  update_succ: Update successfull
+  delete_succ: Delete successfull
+
+  register:
+    create_succ: Register successful. Our course consultant will contact you within one working day.
+
+  message:
+    create_succ: Leaving message successfull. Thanks for your concern.

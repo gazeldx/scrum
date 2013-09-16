@@ -1,10 +1,21 @@
 zh:
+  name: ShineScrum
+
+  common:
+    or: 或
+    more: 更多
+    form:
+      reset: 重置
+      submit: 提交
+    footer:
+      copyright: Copyright © 2013 ShineScrum Inc 盛安德（上海）企业管理有限公司
+
   mailer:
     registration:
       confirmation:
         subject: 报名成功！
         content:
-          welcome_to_apply: 感谢您报名%{course_name}。
+          welcome_to_register: 感谢您报名%{course_name}。
           confirm_msg: 您的报名信息已经提交，我们的课程顾问会在一个工作日内与您联系。
       admin_notification:
         subject: 学员报名提醒！
@@ -23,56 +34,234 @@ zh:
             location: 上课地点
             trainer: 讲师
             time: 开课时间
-  beijing: 北京
-  shanghai: 上海
-  shenzhen: 深圳
-  location:
-    shanghai: 上海市浦东新区杨新路88号，尚馥丽湾3号楼401室
-    beijing: 北京市西城区新德街甲20号中器大厦710室
-    suzhou: 苏州市星湖街328号创意产业园10栋301室
-    wuxi: 无锡市新区长江路21-1号创源大厦108室
-  place:
-    shanghai: 上海市浦东新区迎春路1199号证大丽笙酒店
-    beijing: 北京海淀区知春路25号丽亭华苑酒店二层四季5/6厅
-    shenzhen: 深圳
-  _tel: 4008210871
-  _tel_2: 021-50683597
-  _email: info@shinescrum.com
-  _fax: 021-50762357
 
-  shine_scrum: ShineScrum
-  create_succ: 创建成功
-  update_succ: 修改成功
-  delete_succ: 删除成功
-  more: 更多
-  to: "~"
+  navigation:
+    home: 首页
+    about_us: 关于我们
+    team: 团队
+    partners: 合作伙伴
+    courses: 认证课程
+    trainees: 学员
+    training: 内训
+    knowledge: 知识库
+    contact_us: 联系我们
 
-  about_us: 关于我们
-  _team: 团队
-  contact_us: 联系我们
-  news_and_events: 新闻
+  home:
+    title: 敏捷软件开发培训
+    why_shinescrum: 选择%{name}的理由
+    team_members: 查看%{name}团队成员
+    shinescrum_introduction: <em>%{name}</em>由<br />Scrum创始人Jeff Sutherland、全球首位CSP Jens Østergaard秦风、倡导敏捷的领头雁北京盛安德科技公司共同创办，是全球领先的专注敏捷及Scrum的专业培训咨询机构。
+    shinescrum_vision: 我们专注于CSM/CSPO认证培训, 根据每个企业的文化和业务目标量身定制培训课程和敏捷导入实施方案，涵盖认证、培训、评估、咨询、教练、辅导等方面，短期内我们会为您解决组织及项目的核心问题，包括交付效率、交付质量、交付成本、员工士气等，长期会为您的企业建立持续改善的机制，成为一个真正的敏捷企业。
+    news_and_events: 新闻
+    subscribe: 免费订阅shinescrum周刊
 
-  trainer:
-    base: 来自
-    work_as: 职责
-    bio: 传记
-    course: '%{w}的课程'
+  about_us:
+    title: 关于我们
+    agile_introduction: <em>敏捷</em> 是一种人生哲学，盛安德（上海）企业管理有限公司（%{name}）相信敏捷原则和价值观将改变一个人，一个企业，甚至整个商业世界。我们一直致力于敏捷/scrum在中国的普及和推广。
+    scrum_training: <em>Scrum培训</em><br />任何一个敏捷的企业和敏捷的团队的成功转变都是从人的培训开始。%{name}拥有业内最富有经验的scrum讲师，提供多样化的培训服务来满足您的需求，从标准的CSM培训到可针对企业普通员工，中层管理人员及高管等不同级别专门定制的课程。
+    agile_consulting: <em>敏捷咨询</em><br />我们根据每个企业的公司文化（正如一个人的个性）和业务目标定制敏捷化解决方案，涵盖认证、培训、咨询、教练、辅导等多个方面，短期内我们会为您解决组织及项目的核心问题，包括交付效率、交付质量、交付成本、员工士气等，长期会为您的企业建立持续改善的机制。%{name}将帮助您建立一个真正的敏捷的企业，而非制定和遵循“敏捷制度”。
 
-  _course: 认证课程
-  course:
+  team:
+    title: 团队
+
+  partners:
+    title: 合作伙伴
+
+  courses:
+    title: 认证课程
+    list_header: CSM/CSPO认证培训班 — %{year}年
     name: 课程名
     start_time: 开课时间
     location: 地点
-    trainer: 老师
-    register: 报名参加
-  _student: 学员
-  _partner: 合作伙伴
-  _library: 知识库
-  _inner: 内训
-  company_inner: 企业内训
+    trainer: 讲师
+    register: 报名
+    closed: 圆满结束
+    closed_msg: 课程已圆满结束，请参与其他课程。
+    price: 价格
+    organizer: 课程主办
+    assistant_cn: 中文助教
+    photos: 授课场景
+    know:
+      header: 通过%{name}的CSM/CSPO认证课程，你将获得
+      one: Scrum联盟颁发的CSM/CSPO证书
+      two: 获得Scrum Alliance的两年免费会员资格，与Scrum Alliance世界各地的Scrum 专家探讨学习
+      three: 电子版课程详细资料（中英文）
+      four: 通过CSM考试后，您可以获得16 PDUs
+    thanks_for_register: 感谢您报名%{trainer_name}的%{course_name}课程！
+    two_way_to_register: "您可以通过<em>两种方式</em>完成报名："
+    way_1: 方式一： 热线电话&nbsp;&nbsp;
+    way_2: 方式二： 请填写信息，我们的课程顾问会和您确认并安排课程
+    registe:
+      name: 姓名(必填)
+      name_required: 姓名不能为空！
+      phone: 手机号(必填)
+      phone_required: 电话号码不能空！
+      email: 邮箱(必填)
+      email_invalid: 请输入有效的邮箱地址！
+      company_name: 公司名称
+      headcount: 培训人数
+      remarks: 备注
+    course_overview: 课程概述
+    course_features: 课程特色
+    course_audience: 课程受众
+    course_agenda: 课程大纲
+    contact_info: 联系方式
+    course_detail:
+      overview:
+        one: 本课程是一个为期两天的面向软件研发团队的培训和实践相结合的课程，旨在帮助学员深入、全面的理解敏捷及Scrum，课程互动、游戏练习非常丰富，贴近实战，实践性很强，真正帮助学员解决在Scrum及敏捷实施过程中面临的实际问题。课程内容涵盖Scrum及敏捷思维模式转变、Scrum及敏捷项目管理实战操作方法及技巧，高效敏捷及Scrum团队的打造，大型团队及项目、异地团队、外包项目如何实施Scrum和敏捷等话题，课程的过程中也会通过一个模拟的Scrum项目、以及大量穿插的实例、练习等让学员切身体会Scrum的工作方式。
+        two: 在这两天的ScrumMaster认证课程中，学员将从实际操作的层面上掌握Scrum的运用技巧，学员将学会如何避免Scrum实施过程中的一些常见问题。Scrum的规则很少，但要掌握其精髓却并非容易，从资深Scrum大师那里答疑解惑，获取有效的实践经验，通过练习亲身体会Scrum的工作方式非常重要。课程中通过一个59分钟的模拟Scrum项目、XP Game等大量穿插的实例、练习、讨论等让学员亲历Scrum的工作过程、领悟Scrum的内涵、掌握Scrum的精髓。你的工作方式的改变从这里开始。成为认证的Scrum Master有助您成为组织敏捷转型的推动者、领导者，是您新的职业生涯的迈出的第一步。证书由美国Scrum官方机构Scrum联盟颁发。
+      features:
+        jens:
+          - 全球首位CSP, 最早的认证Scrum培训师之一、知名的世界级Scrum大师Jens Ostergaard授课
+          - 内容全面、深入, 重在实际操作及运用囊括了大量项目论证过的实践经验
+          - 课程过程中穿插丰富的实践练习、时间多达50%以上
+        arne:
+          - 资深认证Scrum培训师，国际知名敏捷顾问、Scrum导入及组织转型专家Arne Ahlander授课
+          - 内容全面、深入, 重在实际操作及运用囊括了大量项目论证过的实践经验
+          - 课程过程中穿插丰富的实践练习、时间多达50%以上
+        hubert:
+          - 资深认证Scrum培训师，国际知名敏捷顾问、Scrum导入及组织转型专家Hubert Smits授课
+          - 内容全面、深入, 重在实际操作及运用囊括了大量项目论证过的实践经验
+          - 课程过程中穿插丰富的实践练习、时间多达50%以上
+        jim:
+          - 课程采用工作坊（Workshop）模式授课，课程互动性强
+          - 资深Scrum培训师授课，讲师授课风趣幽默，游戏、练习丰富、互动性强
+          - 讲师在美国工作多年，具有多年在跨国公司的大型团队的带队经验，实战经验丰富，也更了解中国文化及中国团队所面临的挑战
+          - 课程案例、游戏练习非常丰富，贴近实战，实践性很强
+          - 课程已经在国内众多知名企业成功交付，千锤百炼，囊括大量项目论证过的实践经验
+      audience:
+        - 任何期望全面了解或尝试Scrum及敏捷方法的个人或组织
+        - 正准备导入敏捷方法，希望在局部项目或者部分团队中尝试敏捷方法的企业
+        - 已经开始尝试敏捷方法，正在努力提升整体敏捷能力的一线研发团队，包括设计，开发，测试及项目管理等多个角色
+      boons_header: 顺利完成课程并且通过在线认证测试之后，您将获得
+      boons:
+        - Scrum Alliance颁发的ScrumMaster认证证书，成为一名认证的Scrum Master
+        - Scrum Alliance的两年会员会费及会员资格
+        - ShineScrum终身荣誉会员资格，可免费参加ShineScrum终身荣誉会员资格主办的各种活动
+        - 一副价值50元的估算扑克
+        - 一份CSM课程纸质版及电子版中英文讲义
+        - Scrum实施模板及大量参考资料推荐
+        - 美国项目管理协会（PMI）学分 16 PDUs
+      agenda:
+        one:
+          - 软件项目的复杂性
+          - 敏捷宣言及其价值观、究竟什么是敏捷
+          - Scrum概述-Scrum的理论基础、历史、框架及流程
+          - Scrum角色破解
+          - 理解潜在可交付
+          - “Done”的定义
+          - 如何做计划
+          - 如何做回顾和反馈
+          - Scrum Master的一天
+          - “59分钟”的模拟Scrum练习
+          - 产品负责人破解
+          - 管理人员破解
+          - Scrum会议破解
+          - 终止一个Sprint
+          - 发布管理
+          - 大型团队和项目的Scrum实施、异地团队的Scrum实施
+          - Scrum和XP
+          - Scrum和CMMI
+        two:
+          - 软件项目的复杂性
+          - 敏捷思维，价值观及原则
+          - Scrum概述-Scrum的理论基础、历史、框架及流程
+          - Scrum角色破解，传统角色到Scrum角色的转换
+          - 理解潜在可交付
+          - “Done”的定义
+          - 如何做计划
+          - 如何做评审和回顾会
+          - Scrum Master的一天
+          - “59分钟”的模拟Scrum练习
+          - 产品负责人破解
+          - 管理人员破解
+          - Scrum会议破解
+          - 终止一个Sprint
+          - 发布管理
+          - 大型团队和项目的Scrum实施、异地团队的Scrum实施
+          - Scrum环境下的团队架构，团队之间如何高效协作
+          - Scrum框架下的需求管理（用户故事发掘、书写、提炼及拆分的方法与技巧）
+          - 敏捷估算与计划的方法与技巧、Scrum项目的进展跟踪及报告机制
+          - Scrum实施的基本模式
+          - Scrum环境下的绩效考核及评估
+
+
+  trainees:
+    title: 学员
+    trainer_of: "%{course_name}老师"
+    select_year: 选择年份
+    all: 全部
+
+  training:
+    title: 企业内训
+    introduction: 针对企业团队敏捷/Scrum转型的需要，%{name}为您提供整体的敏捷培训方案。
+    courses: <em>系统化培训课程</em>和<em>定制化培训课程</em>
+    courses_detail:
+      header: '我们的内训涵盖Scrum及敏捷项目管理类课程、工程技术实践类课程、研发管理类课程等，具体包括:'
+      one: Scrum Master培训
+      two: Scrum Product Owner培训
+      three: Scrum敏捷软件开发
+      four: Scrum敏捷项目管理核心应用课程
+      five: 敏捷测试精要
+      six: 管理者敏捷策略
+      seven: 敏捷领导力及敏捷团队
+      eight: 敏捷团队转型
+    courses_highlights:
+      header: 课程特点
+      content:
+        - 课程由国际资深大师和国内资深专家团队共同开发
+        - 在充分调研和了解您的需求的基础上，我们可以根据您的要求量身定制
+        - 授课过程中结合您的实际项目及团队结构进行学员分组和针对性培训
+        - 完备的授课教材及讲义
+        - 多样化的授课形式：理论和实例结合、workshop、寓教于乐的互动环节、调动学员自主性的案例分析等
+    photos:
+      header: 场景照片
+    contact: 更多%{name}企业内训信息，请拨打 <em>4008210871</em> 或发信至 <em>info@shinescrum.com</em>我们将在一个工作日内回复。
+
+  knowledge:
+    title: 知识库
+    welcome_to_share: 欢迎分享
+    weekly: "%{name}周刊"
+    ref: 来自于
+    author: '作者'
+    download: 下载
+
+  contact_us:
+    title: 联系我们
+    phone: 电话
+    fax: 传真
+    email: 邮箱
+    location:
+      shanghai: "%{name}（上海总部）"
+      shanghai_address: 上海市浦东新区杨新路88号，尚馥丽湾3号楼401室
+      beijing:  "%{name}（北京办公室）"
+      beijing_address: 北京市西城区新德街甲20号中器大厦710室
+      suzhou: "%{name}（苏州办公室）"
+      suzhou_address: 苏州市星湖街328号创意产业园10栋301室
+      wuxi:  "%{name}（无锡办公室）"
+      wuxi_address: 无锡市新区长江路21-1号创源大厦108室
+    tel:
+      number1: 4008210871
+      number2: 021-50683597
+    fax_number: 021-50762357
+    email_address: info@shinescrum.com
+    leave_message:
+      title: 给我们留言
+      name: 姓名
+      company: 公司
+      phone: 电话
+      email: 邮箱
+      message: 留言
+
+
+  ## TODO the following content need to refactor later
+
+  create_succ: 创建成功
+  update_succ: 修改成功
+  delete_succ: 删除成功
 
   register:
-    create_succ: 您的报名信息已经提交，我们的课程顾问会在两个工作日内与您联系。
+    create_succ: 您的报名信息已经提交，我们的课程顾问会在一个工作日内与您联系。
 
   message:
     create_succ: 您的留言我们已经收到，感谢您的关注！

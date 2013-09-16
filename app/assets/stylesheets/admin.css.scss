@@ -21,6 +21,15 @@ table {
   border-collapse:collapse;
   border-spacing:0
 }
+caption,th {
+  text-align:left;
+  font-weight: bolder !important;
+  background-color: #f0f0f0;
+  color: #454545;
+}
+td, th{
+  font-size: 13px !important;
+}
 fieldset,img {
   border:0
 }
@@ -33,9 +42,6 @@ del,ins {
 }
 ul {
   list-style:none
-}
-caption,th {
-  text-align:left
 }
 h1,h2,h3,h4,h5,h6 {
   font-size:100%;
@@ -287,7 +293,7 @@ a img {
   border-width:0;
   vertical-align:middle
 }
-body,td,th {
+body,td {
   font:$s Arial,Helvetica,sans-serif;
   line-height:162%
 }
@@ -1265,3 +1271,22 @@ a.btn-fav:hover,a.btn-fav:active {
 #all_unread_comments{a {color: red}}
 #all_unread_letters{a {color: purple}}
 #all_unread_messages{a {color: blue}}
+
+/*=======Added by henry=========================================================*/
+
+.zh, .en {
+  display:inline-block;
+  .section_title {
+    font-weight: bold;
+    font-size: 16px;
+  }
+}
+
+.zh {
+  margin-right:25px
+}
+
+
+.submit {
+  text-align:right; padding-right: 200px
+}

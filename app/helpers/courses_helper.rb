@@ -3,9 +3,9 @@ module CoursesHelper
     start = course.start_time
     end_time = course.end_time
     if start.month != end_time.month
-      "#{start.year}#{t'year'}#{start.month}#{t'month'}#{start.day}#{t'day'} #{t('to')} #{end_time.month}#{t'month'}#{end_time.day}#{t'day'}"
+      "#{start.strftime('%F')} ~ #{end_time.strftime('%m-%d')}"
     else
-      "#{start.year}#{t'year'}#{start.month}#{t'month'}#{start.day}#{t'day'} #{t('to')} #{end_time.day}#{t'day'}"
+      "#{start.strftime('%F')} ~ #{end_time.strftime('%d')}"
     end
   end
 end

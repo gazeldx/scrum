@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
   before_filter :authenticate
+  before_filter :set_locale
   #before_filter :handle_sub_domain
 
   #TODO NEEDN'T DO THIS NOW BECAUSE I use in
@@ -13,6 +14,11 @@ class ApplicationController < ActionController::Base
   #def handle_sub_domain
   #  redirect_to "http://shinescrum.com" if request.subdomain.present?
   #end
+
+  def set_locale
+    I18n.locale = params[:locale] || session[:locale] || I18n.default_locale
+    session[:locale] = I18n.locale
+  end
 
   module OrderByCreatedAt
     def up

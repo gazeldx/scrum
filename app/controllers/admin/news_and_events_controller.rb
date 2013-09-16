@@ -33,4 +33,10 @@ class Admin::NewsAndEventsController < ApplicationController
     end
   end
 
+  def preview
+    @news_and_events = NewsAndEvent.find(params[:id])
+
+    render 'news_and_events/show', layout: 'application'
+  end
+
 end
