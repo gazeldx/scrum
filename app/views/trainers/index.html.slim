@@ -8,7 +8,7 @@
         - @trainers.each_with_index do |trainer, i|
           - _css = trainer==@trainer ? 'sel'  : nil
           li class=_css
-            a href="/team_member_#{trainer.url}"
+            a href="/team_member_#{trainer.url}#bio"
               = image_tag(trainer.avatar.thumb.url)
               .name
                 /- if trainer.name.include?("Hubert")
@@ -20,7 +20,7 @@
               div
                 = trainer.work_as
       .clearFix
-    .team_intr
+    .team_intr#bio
       p style="white-space: pre-wrap"
         = @trainer.bio
   .clearFix
