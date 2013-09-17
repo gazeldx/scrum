@@ -510,12 +510,14 @@ input[type="text"], input[type="password"], input[type="search"], textarea {
 	webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 	box-sizing: border-box;         /* Opera/IE 8+ */	
-	padding: 10px;
+	padding-left: 6px;
 	max-width: 100%;
+	width: 200px;
 	border: 1px solid #777;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
-	border-radius: 5px;	
+	border-radius: 5px;
+	display: inline-block;
 	
 }
 
@@ -1090,3 +1092,11 @@ img {
 	
 #primary .show-menu, .mobile-menu {
 	display: none; }
+	
+form.new_message, form.new_register {
+    li {
+	em {
+	    width: 300px;
+	}
+    }
+}
