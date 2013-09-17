@@ -34,7 +34,7 @@
               em
                 | #{t 'courses.trainer'}:
               | #{@course.trainer.name}
-              - unless @course.trainer.name.include? "Jim"
+              - if @course.trainer.need_assistant?
                 | ， Jim Wang(#{t 'courses.assistant_cn'})
             li
               em
