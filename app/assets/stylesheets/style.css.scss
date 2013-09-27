@@ -75,7 +75,7 @@ $xl: 20px;
 .top li.logo {
   width: 255px;
   height: 70px;
-  background: url(../images/logo.gif) 0px 0px no-repeat;
+  background: url(logo.gif) 0px 0px no-repeat;
   border: none;
   padding-top: 0 !important;
   margin-left: 0;
@@ -113,41 +113,45 @@ $xl: 20px;
 .page .title a{ color: #ffffff;}
 
 .page .why_shinescrum {
-  background: url(../images/shinescrum.gif) right top no-repeat #2f2f31;
+  background: url(shinescrum.gif) right top no-repeat #2f2f31;
 }
 
 .page .aboutUs {
-  background: url(../images/aboutUs.gif) right top no-repeat #2f2f31;
+  background: url(aboutUs.gif) right top no-repeat #2f2f31;
 }
 
 .page .team {
-  background: url(../images/team.gif) right top no-repeat #2f2f31;
+  background: url(team.gif) right top no-repeat #2f2f31;
 }
 
 .page .partner {
-  background: url(../images/partner.gif) right top no-repeat #2f2f31;
+  background: url(partner.gif) right top no-repeat #2f2f31;
+}
+
+.page .client {
+  background: url(client.gif) right top no-repeat #2f2f31;
 }
 
 .page .course {
-  background: url(../images/course.gif) right top no-repeat #2f2f31;
+  background: url(course.gif) right top no-repeat #2f2f31;
 }
 
 .page .innerUpdate {
-  background: url(../images/onsite-training.jpg) right bottom no-repeat #2f2f31;
+  background: url(onsite-training.jpg) right bottom no-repeat #2f2f31;
 }
 
 .page .contact {
-  background: url(../images/contact.gif) right top no-repeat #2f2f31;
+  background: url(contact.gif) right top no-repeat #2f2f31;
 }
 
 .page .student_page {
-  background: url(../images/student.gif) right top no-repeat #2f2f31;
+  background: url(student.gif) right top no-repeat #2f2f31;
 }
 
-.page .knowledge{background: url(../images/knowledge.jpg) right bottom no-repeat #2f2f31;}
+.page .knowledge{background: url(knowledge.jpg) right bottom no-repeat #2f2f31;}
 
 .page .news_and_events {
-  background: url(../images/news.gif) right top no-repeat #2f2f31;
+  background: url(news.gif) right top no-repeat #2f2f31;
 }
 
 .page_bg2 {
@@ -159,7 +163,7 @@ $xl: 20px;
   font-size: 18px;
   margin-bottom: 14px;
   padding-left: 24px;
-  background-image: url('/images/bg_list_icon.png');
+  background-image: url('bg_list_icon.png');
   background-repeat: no-repeat;
   background-position: center left;
 }
@@ -167,7 +171,7 @@ $xl: 20px;
 .foot {
   height: 87px;
   margin: auto 0 auto;
-  background: url(../images/foot.gif) 0px 0px repeat-x;
+  background: url(foot.gif) 0px 0px repeat-x;
   text-align: center;
   font-size: 12px;
   color: #FFF;
@@ -258,7 +262,7 @@ $xl: 20px;
 }
 
 .team_photo {
-  background: url(../images/team_line.jpg) center bottom no-repeat;
+  background: url(team_line.jpg) center bottom no-repeat;
   padding-bottom: 50px;
 }
 
@@ -360,7 +364,7 @@ $xl: 20px;
 
 .csm .course_title {
   height: 37px;
-  background: url(../images/course_title.gif) 0px 0px no-repeat;
+  background: url(course_title.gif) 0px 0px no-repeat;
   font-size: 22px;
   line-height: 37px;
   color: #ffffff;
@@ -375,7 +379,7 @@ $xl: 20px;
   width: 118px;
   height: 34px;
   float: right;
-  background: url(../images/apply.gif) 0px 0px no-repeat;
+  background: url(apply.gif) 0px 0px no-repeat;
   color: #ffffff;
   text-align: center;
   font-size: 18px;
@@ -416,7 +420,7 @@ $xl: 20px;
 }
 
 .know_title {
-  background: url(../images/course_line.gif) left bottom repeat-x;
+  background: url(course_line.gif) left bottom repeat-x;
   color: #4b4b4b;
   font-size: 14px;
   margin-left: 33px;
@@ -428,7 +432,7 @@ $xl: 20px;
 
 .know li {
   font-size: 14px;
-  background: url(../images/course_point.gif) 0px 13px no-repeat;
+  background: url(course_point.gif) 0px 13px no-repeat;
   padding-left: 15px;
 }
 
@@ -438,7 +442,7 @@ $xl: 20px;
 }
 
 .know2_title {
-  background: url(../images/course_line.gif) left bottom repeat-x;
+  background: url(course_line.gif) left bottom repeat-x;
   color: #4b4b4b;
   font-size: 14px;
   margin-left: 33px;
@@ -450,7 +454,7 @@ $xl: 20px;
 
 .know2 li {
   font-size: 14px;
-  background: url(../images/course_point.gif) 0px 13px no-repeat;
+  background: url(course_point.gif) 0px 13px no-repeat;
   padding-left: 15px;
 }
 
@@ -461,7 +465,7 @@ $xl: 20px;
 }
 
 .cont_title {
-  background: url(../images/course_line.gif) left bottom repeat-x;
+  background: url(course_line.gif) left bottom repeat-x;
   color: #4b4b4b;
   font-size: 14px;
 }
@@ -470,7 +474,7 @@ $xl: 20px;
   width: 26px;
   height: 26px;
   float: left;
-  background: url(../images/cont_icon.gif) 0px 5px no-repeat;
+  background: url(cont_icon.gif) 0px 5px no-repeat;
 }
 
 .cont ul {
@@ -499,7 +503,7 @@ $xl: 20px;
 }
 
 .pointer_title {
-  background: url(../images/course_line.gif) left bottom repeat-x;
+  background: url(course_line.gif) left bottom repeat-x;
   color: #4b4b4b;
   font-size: 14px;
 }
@@ -508,7 +512,7 @@ $xl: 20px;
   width: 26px;
   height: 26px;
   float: left;
-  background: url(../images/pointer_icon.gif) 0px 5px no-repeat;
+  background: url(pointer_icon.gif) 0px 5px no-repeat;
 }
 
 .pointer ul {
@@ -517,14 +521,14 @@ $xl: 20px;
 .pointer li {
   font-size: 14px;
   line-height: 24px;
-  background: url(../images/course_point.gif) 0px 9px no-repeat;
+  background: url(course_point.gif) 0px 9px no-repeat;
   padding-left: 15px;
   margin-top: 10px;
 }
 
 .course_line {
   height: 30px;
-  background: url(../images/course_line2.gif) 0px 0px no-repeat #ffffff;
+  background: url(course_line2.gif) 0px 0px no-repeat #ffffff;
 }
 
 .teacher li {
@@ -720,7 +724,7 @@ pre {
 .innerUpdate_c li {
   font-size: 14px;
   line-height: 24px;
-  background: url(../images/course_point.gif) 0px 8px no-repeat;
+  background: url(course_point.gif) 0px 8px no-repeat;
   padding-left: 15px;
 }
 
@@ -805,7 +809,7 @@ pre {
 
 .contact_txt {
   font-size: 16px;
-  background: url(../images/contact_txt.gif) 0px 0px no-repeat;
+  background: url(contact_txt.gif) 0px 0px no-repeat;
   background-size:883px 175px;
   width: 883px;
   height: 175px;
@@ -898,7 +902,7 @@ pre {
 .btn {
   width: 118px;
   height: 34px;
-  background: url(../images/btn.gif) 0px 0px no-repeat;
+  background: url(btn.gif) 0px 0px no-repeat;
   border: none;
   margin-top: 10px;
   margin-left: 70px;
@@ -912,7 +916,7 @@ pre {
 .btn2 {
   width: 118px;
   height: 34px;
-  background: url(../images/btn.gif) 0px -34px no-repeat;
+  background: url(btn.gif) 0px -34px no-repeat;
   border: none;
   margin-top: 10px;
   margin-left: 20px;
@@ -995,7 +999,7 @@ pre {
 
 .year .course_title {
   height: 37px;
-  background: url(../images/course_title.gif) 0px 0px no-repeat;
+  background: url(course_title.gif) 0px 0px no-repeat;
   font-size: 22px;
   line-height: 37px;
   color: #ffffff;
@@ -1009,7 +1013,7 @@ pre {
 }
 
 .student_title {
-  background: url("../images/course_title.gif") no-repeat scroll 0 0 transparent;
+  background: url("course_title.gif") no-repeat scroll 0 0 transparent;
   color: #FFFFFF;
   font-size: 22px;
   height: 37px;
@@ -1084,8 +1088,8 @@ pre {
 .course_reg_txt1{ font-size: 20px; margin-left: 33px;}
 .course_reg_txt2{ font-size: 14px; margin-left: 33px; color: #265bab;}
 .course_reg_txt2 em{ font-size: 20px;}
-.course_reg_txt3{ margin-left: 33px; background: url("../images/course_point.gif") no-repeat scroll 0 13px transparent;  font-size: 14px; padding-left: 15px; font-size: 16px;}
-.course_reg_txt3, .course_reg_txt5{ margin-left: 33px; background: url("../images/course_point.gif") no-repeat scroll 0 13px transparent;  font-size: 14px; padding-left: 15px; font-size: 16px;}
+.course_reg_txt3{ margin-left: 33px; background: url("course_point.gif") no-repeat scroll 0 13px transparent;  font-size: 14px; padding-left: 15px; font-size: 16px;}
+.course_reg_txt3, .course_reg_txt5{ margin-left: 33px; background: url("course_point.gif") no-repeat scroll 0 13px transparent;  font-size: 14px; padding-left: 15px; font-size: 16px;}
 .course_reg_txt4{ margin-left: 120px; font-size: 14px; padding-left: 15px; font-size: 16px;}
 
 .tel_and_email{ color:#e74a05; font-size: 18px;}
@@ -1094,7 +1098,7 @@ pre {
 
 .course_reg_con{ padding-left: 33px; padding-top: 20px;}
 
-.write{ width: 510px; height: 300px; background: url(../images/write.gif) 0px 0px no-repeat; padding:20px;}
+.write{ width: 510px; height: 300px; background: url(write.gif) 0px 0px no-repeat; padding:20px;}
 
 
 .write li {
@@ -1196,7 +1200,7 @@ pre {
   height: 400px;
   width: 880px;
   padding: 40px 40px 0;
-  background: url("../images/team_line.jpg") no-repeat scroll center bottom transparent;
+  background: url("team_line.jpg") no-repeat scroll center bottom transparent;
   .left {
     float: left;
     embed {
