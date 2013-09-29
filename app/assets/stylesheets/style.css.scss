@@ -339,12 +339,23 @@ $xl: 20px;
     li.first {
       padding-left: 35px;
     }
-    li.client-logo {
-      width: 220px;
-      height: 124px;
-      margin-left: 20px;
-      img {
-        width: 200px;
+  }
+}
+.client-con {
+  font-size: 18px;
+  line-height: 180%;
+  color: #010101;
+  margin-top: 10px;
+  .client-intr{
+    ul{
+      li{
+        float: left;
+        width: 220px;
+        height: 124px;
+        margin-left: 20px;
+        img {
+          width: 200px;
+        }
       }
     }
   }
