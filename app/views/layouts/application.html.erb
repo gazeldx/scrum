@@ -26,7 +26,8 @@
             <li class="item first <%= controller_path == "home" ? 'selected' : nil %>"><%= link_to t("navigation.home"), "/" %></li>
             <li class="item <%= controller.action_name == "about" ? 'selected' : nil %>"><%= link_to t("navigation.about_us"), "/about" %></li>
             <li class="item <%= controller_path == "trainers" ? 'selected' : nil %>"><%= link_to t("navigation.team"), trainers_path %></li>
-            <li class="item <%= controller.action_name == "partners" ? 'selected' : nil %>"><%= link_to t("navigation.partners"), "/partners" %></li>
+            <!--<li class="item <%= controller.action_name == "partners" ? 'selected' : nil %>"><%= link_to t("navigation.partners"), "/partners" %></li>-->
+            <li class="item <%= controller.action_name == "clients" ? 'selected' : nil %>"><%= link_to t("navigation.clients"), "/clients" %></li>
             <li class="item <%= (["registers", "courses"].include? controller_path) ? 'selected' : nil %>"><%= link_to t("navigation.courses"), courses_path %></li>
             <li class="item <%= controller_path == "class_photos" ? 'selected' : nil %>"><%= link_to t("navigation.trainees"), class_photos_path %></li>
             <li class="item <%= controller.action_name == "inner" ? 'selected' : nil %>"><%= link_to t("navigation.training"), "/inner" %></li>

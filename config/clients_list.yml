@@ -1,0 +1,65 @@
+clients:
+  - name: ACORN
+    link: '#'
+  - name: ADP
+    link: '#'
+  - name: amdocs
+    link: '#'
+  - name: AOL
+    link: '#'
+  - name: avaya
+    link: '#'
+  - name: BMC
+    link: '#'
+  - name: ChinaCache
+    link: '#'
+  - name: CISCO
+    link: '#'
+  - name: Dextrys
+    link: '#'
+  - name: Fender
+    link: '#'
+  - name: GE
+    link: '#'
+  - name: google
+    link: '#'
+  - name: GREE
+    link: '#'
+  - name: GRUNDFOSX
+    link: '#'
+  - name: HALLIBURTON
+    link: '#'
+  - name: honeywell
+    link: '#'
+  - name: HP
+    link: '#'
+  - name: IBM
+    link: '#'
+  - name: INFOSYS
+    link: '#'
+  - name: intel
+    link: '#'
+  - name: IRDETO
+    link: '#'
+  - name: liwitek
+    link: '#'
+  - name: Microsoft
+    link: '#'
+  - name: oracle
+    link: '#'
+  - name: perkinelmer
+    link: '#'
+  - name: reuters
+    link: '#'
+  - name: ScrumInc
+    link: '#'
+  - name: SIEMENS
+    link: '#'
+  - name: VanceInfo
+    link: '#'
+  - name: VIMICRO
+    link: '#'
+  - name: YAHOO!
+    link: '#'
+  - name: yimeng
+    link: '#'

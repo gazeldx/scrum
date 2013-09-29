@@ -26,6 +26,7 @@ en:
     about_us: About us
     team: Team
     partners: Partners
+    clients: Clients
     courses: Courses
     trainees: Trainees
     training: Training
@@ -53,6 +54,9 @@ en:
 
   partners:
     title: Partners
+
+  clients:
+    title: Clients
 
   courses:
     title: Certification Course
