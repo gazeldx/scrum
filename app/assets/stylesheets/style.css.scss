@@ -283,61 +283,67 @@ $xl: 20px;
 .team_photo {
   background: url(team_line.jpg) center bottom no-repeat;
   padding-bottom: 50px;
-}
 
-.team_photo a{
-  color: #333333;
-}
+  div {
+    clear: both;
+    font-size: 12px;
+    width: 126px;
+    padding-top: 5px;
+  }
 
-.team_photo ul {
-}
+  a {
+    color: #333333;
+  }
 
-.team_photo li {
-  float: left;
-  margin-right: 40px;
-  cursor: pointer;
-}
+  ul {
+    margin-left: 35px;
 
-.team_photo .last {
-  margin-right: 0px;
-}
+    li {
+      float: left;
+      width: 132px;
+      height: 300px;
+      margin-right: 40px;
+      cursor: pointer;
 
-.team_photo .sel a {
-  color: #3e78cb;
-  text-decoration: none;
-}
+      a:hover {
+        color: #3e78cb;
+        text-decoration: none;
 
-.team_photo .sel img {
-  border: #3e78cb solid 3px;
-  clear: both;
-}
+        img {
+          border: #3e78cb solid 3px;
+          clear: both;
+        }
+      }
 
-.team_photo li img {
-  border: #cecece solid 3px;
-  clear: both;
-}
+      img {
+        border: #cecece solid 3px;
+        clear: both;
+      }
+    }
+  }
 
-.team_photo div {
-  clear: both;
-  font-size: 12px;
-  width: 126px;
-  padding-top: 5px;
-}
+  .last {
+    margin-right: 0px;
+  }
 
-.team_photo .name {
-  clear: both;
-  font-size: 14px;
-  font-weight: bold;
-}
+  .sel {
+    a {
+      color: #3e78cb;
+      text-decoration: none;
+    }
 
-.team_photo li a:hover {
-  color: #3e78cb;
-  text-decoration: none;
-}
+    img {
+      border: #3e78cb solid 3px;
+      clear: both;
+    }
+  }
 
-.team_photo li a:hover img {
-  border: #3e78cb solid 3px;
-  clear: both;
+  .name {
+    clear: both;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
 }
 
 .partner_con {
