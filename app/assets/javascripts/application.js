@@ -11,9 +11,12 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
-//= require jquery_ujs
-//= require kindeditor
+//= require jquery-migrate-1.2.1
 //= require jquery.flexslider-min
-//= require fcommon
-//= require_tree
+//= require jquery.qtip
+//= require jquery_ujs
 //= require jquery_nested_form
+//= require kindeditor
+//= require fcommon
+//= require main
+//= require_tree

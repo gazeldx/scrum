@@ -1,0 +1,11 @@
+$(document).ready ->
+  $("#weixin_barcode img").qtip(
+    content: $("#weixin-barcode-tip"),
+    position: 
+      my: 'bottom center'
+      target: 'mouse'
+      adjust: 
+        mouse: false
+    style:
+      classes: 'qtip-light qtip-shadow qtip-rounded'
+  )
