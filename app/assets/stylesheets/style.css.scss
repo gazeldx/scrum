@@ -6,6 +6,10 @@ $b: 16px;
 $x: 18px;
 $xl: 20px;
 
+.hidden {
+  display: none;
+}
+
 .cWhite a:hover {
   color: #fff;
   text-decoration: underline;
@@ -178,7 +182,7 @@ $xl: 20px;
     margin: auto;
     .lowertop {
       text-align: left;
-      height: 120px;
+      height: 150px;
       border-bottom:1px solid #2D2C20;
       .shinescrum-sina {
         padding-top: 30px;

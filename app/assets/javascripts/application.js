@@ -17,3 +17,5 @@
 //= require fcommon
 //= require_tree
 //= require jquery_nested_form
+//= require jquery.qtip
+//= require main
