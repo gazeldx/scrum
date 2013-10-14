@@ -222,50 +222,44 @@ $xl: 20px;
   line-height: 180%;
   color: #010101;
   padding-right: 20px;
-}
-
-.why_shinescrum_intr em {
-  color: #245baa;
-  font-style: normal;
-  font-size: 24px;
-}
-
-.why_shinescrum_intr .big {
-  font-size: 24px;
+  em {
+    color: #245baa;
+    font-style: normal;
+    font-size: 24px;
+  }
+  .big {
+    font-size: 24px;
+  }
 }
 
 .aboutUs_con {
   clear: both;
   padding: 40px 30px 0px 30px;
+  em {
+    color: #245baa;
+    font-style: normal;
+    font-size: 28px;
+  }
 }
 
 .aboutUs_intr {
   font-size: 18px;
   line-height: 180%;
   color: #010101;
-}
-
-.aboutUs_con em {
-  color: #245baa;
-  font-style: normal;
-  font-size: 28px;
-}
-
-.aboutUs_intr p {
-  font-size: 14px;
-  padding: 40px 0px 10px 0px;
-  clear: both;
-  line-height: 24px;
-  text-align: justify;
-}
-
-.aboutUs_intr p em {
-  font-size: 18px;
-  color: #245baa;
-}
-
-.aboutUs_intr img {
-  margin-left: 70px;
+  p {
+    font-size: 14px;
+    padding: 40px 0px 10px 0px;
+    clear: both;
+    line-height: 24px;
+    text-align: justify;
+    em {
+      font-size: 18px;
+      color: #245baa;
+    }
+  }
+  img {
+    margin-left: 70px;
+  }
 }
 
 .team_con {
@@ -277,14 +271,13 @@ $xl: 20px;
   font-size: 18px;
   line-height: 180%;
   color: #010101;
-}
-
-.team_intr p {
-  font-size: 14px;
-  padding: 20px 0px 10px 0px;
-  clear: both;
-  line-height: 24px;
-  text-align: justify;
+  p {
+    font-size: 14px;
+    padding: 20px 0px 10px 0px;
+    clear: both;
+    line-height: 24px;
+    text-align: justify;
+  }
 }
 
 .team_photo {
@@ -373,6 +366,7 @@ $xl: 20px;
     }
   }
 }
+
 .client-con {
   font-size: 18px;
   line-height: 180%;
@@ -408,102 +402,66 @@ $xl: 20px;
 .csm {
   width: 635px;
   height: 270px;
-}
-
-.csm .course_title {
-  height: 37px;
-  background: url(course_title.gif) 0px 0px no-repeat;
-  font-size: 22px;
-  line-height: 37px;
-  color: #ffffff;
-  padding-left: 20px;
-}
-
-.csm .course_title span {
-  float: left;
-}
-
-.csm .course_title a {
-  width: 118px;
-  height: 34px;
-  float: right;
-  background: url(apply.gif) 0px 0px no-repeat;
-  color: #ffffff;
-  text-align: center;
-  font-size: 18px;
-  line-height: 34px;
-}
-
-.csm ul {
-  margin-left: 30px;
-}
-
-.csm li {
-  font-size: 14px;
-  line-height: 24px;
-}
-
-.csm .know {
-}
-
-.csm .course_time {
-  color: #04357b;
-  font-size: 12px;
-  line-height: 56px;
-  font-weight: bold;
-  background: none;
-}
-
-.csm li em {
-  font-style: normal;
-  color: #4b4b4b;
-  width: 130px;
-  display: block;
-  float: left;
+  .course_title {
+    height: 37px;
+    background: url(course_title.gif) 0px 0px no-repeat;
+    font-size: 22px;
+    line-height: 37px;
+    color: #ffffff;
+    padding-left: 20px;
+    span {
+      float: left;
+    }
+    a {
+      width: 118px;
+      height: 34px;
+      float: right;
+      background: url(apply.gif) 0px 0px no-repeat;
+      color: #ffffff;
+      text-align: center;
+      font-size: 18px;
+      line-height: 34px;
+    }
+  }
+  .course_time {
+    color: #04357b;
+    font-size: 12px;
+    line-height: 56px;
+    font-weight: bold;
+    background: none;
+  }
+  ul {
+    margin-left: 30px;
+    li {
+      font-size: 14px;
+      line-height: 24px;
+      em {
+        font-style: normal;
+        color: #4b4b4b;
+        width: 130px;
+        display: block;
+        float: left;
+      }
+    }
+  }
 }
 
 .know {
-  width: 635px;
-  /*height: 270px;*/
-}
-
-.know_title {
-  background: url(course_line.gif) left bottom repeat-x;
-  color: #4b4b4b;
-  font-size: 14px;
-  margin-left: 33px;
-}
-
-.know ul {
-  margin-left: 17px;
-}
-
-.know li {
-  font-size: 14px;
-  background: url(course_point.gif) 0px 13px no-repeat;
-  padding-left: 15px;
-}
-
-.know2 {
-  width: 920px;
-  height: 200px;
-}
-
-.know2_title {
-  background: url(course_line.gif) left bottom repeat-x;
-  color: #4b4b4b;
-  font-size: 14px;
-  margin-left: 33px;
-}
-
-.know2 ul {
-  margin-left: 33px;
-}
-
-.know2 li {
-  font-size: 14px;
-  background: url(course_point.gif) 0px 13px no-repeat;
-  padding-left: 15px;
+  .know_title {
+    background: url(course_line.gif) left bottom repeat-x;
+    color: #4b4b4b;
+    font-size: 14px;
+    margin-left: 33px;
+  }
+  ul {
+    margin-left: 33px;
+    li {
+      line-height: 30px;
+      font-size: 14px;
+      background: url(course_point.gif) 0px 13px no-repeat;
+      padding-left: 15px;
+    }
+  }
 }
 
 .cont {
