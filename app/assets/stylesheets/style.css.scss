@@ -397,6 +397,10 @@ $xl: 20px;
   color: #010101;
   padding-top: 40px;
   background: #f2f2f2;
+  .left {
+    float: left;
+    width: 635px;
+  }
 }
 
 .csm {
@@ -537,47 +541,46 @@ $xl: 20px;
   background: url(course_line2.gif) 0px 0px no-repeat #ffffff;
 }
 
-.teacher li {
-  padding: 10px 0 30px 0;
-  clear: both;
-}
-
-.teacher .photo {
-  float: left;
-  color: #5f5f5f;
-  font-size: 14px;
-  line-height: 24px;
-  margin-right: 20px;
-}
-
-.teacher .photo img {
-  border: #cecece solid 3px;
-  clear: both;
-}
-
-.teacher .intr {
-  float: right;
-  width: 470px;
-  color: #454545;
-  line-height: 24px;
-}
-
-.teacher .intr .teacher_title {
-  font-size: 20px;
-  line-height: 24px;
-  color: #275dab;
-}
-
-.teacher .intr .teacher_name {
-  font-size: 14px;
-  font-weight: bold;
-  color: #000000;
-  line-height: 34px;
-}
-
-.teacher .intr .teacher_title2 {
-  font-size: 14px;
-  color: #000000;
+.teacher {
+  li {
+    padding: 10px 0 30px 0;
+    clear: both;
+  }
+  .photo {
+    float: left;
+    color: #5f5f5f;
+    font-size: 14px;
+    line-height: 24px;
+    margin-right: 20px;
+    img {
+      border: #cecece solid 3px;
+      clear: both;
+    }
+  }
+  .intr {
+    float: right;
+    width: 470px;
+    color: #454545;
+    line-height: 24px;
+    .teacher_title {
+      font-size: 20px;
+      line-height: 24px;
+      color: #275dab;
+    }
+    .teacher_title2 {
+      font-size: 14px;
+      color: #000000;
+    }
+    .teacher_name {
+      font-size: 14px;
+      font-weight: bold;
+      color: #000000;
+      line-height: 34px;
+    }
+  }
+  pre {
+    background-color: #FAFAFA;
+  }
 }
 
 /*.course_teacher .name {

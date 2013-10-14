@@ -29,7 +29,7 @@ input, textarea, select {font-size:inherit; font-weight:inherit; *font-size:100%
 .clearFix{ clear: both; zoom:1;}
 a,area { blr:expression(this.onFocus=this.blur()) }
 *:focus{outline:none;}/*ie:hidefocus="true" , autocomplete="off"*/
-.left{ float: left; width: 635px;}
+.left{ float: left; }
 .right{ float: right;}
 
 
