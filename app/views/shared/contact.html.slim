@@ -42,35 +42,42 @@
             em
               | #{t 'contact_us.email_address'}
       .write_title
-        | #{t 'contact_us.leave_message.title'}
-        ul.write.contact_form
-          = form_for @message do |f|
-            = error_msg @message
-            li
-              span
-                | #{t 'contact_us.leave_message.name'}
-              em
-                = f.text_field :name, size: 25, class: 'txt'
-            li
-              span
-                | #{t 'contact_us.leave_message.company'}
-              em
-                = f.text_field :company, size: 25, class: 'txt'
-            li
-              span
-                | #{t 'contact_us.leave_message.phone'}
-              em
-                = f.text_field :phone, size: 25, class: 'txt'
-            li
-              span
-                | #{t 'contact_us.leave_message.email'}
-              em
-                = f.text_field :email, size: 25, class: 'txt'
-            li.textarea
-              span
-                | #{t 'contact_us.leave_message.message'}
-              em
-                = f.text_area :body, class: 'txt2'
-            li.btn_bar
-              input type="button" class="btn" value="#{t 'common.form.reset'}"
-              = f.submit raw("#{t 'common.form.submit'}"), class: "btn2"
+        .left
+          | #{t 'contact_us.leave_message.title'}
+          ul.write.contact_form
+            = form_for @message do |f|
+              = error_msg @message
+              li
+                span
+                  | #{t 'contact_us.leave_message.name'}
+                em
+                  = f.text_field :name, size: 25, class: 'txt'
+              li
+                span
+                  | #{t 'contact_us.leave_message.company'}
+                em
+                  = f.text_field :company, size: 25, class: 'txt'
+              li
+                span
+                  | #{t 'contact_us.leave_message.phone'}
+                em
+                  = f.text_field :phone, size: 25, class: 'txt'
+              li
+                span
+                  | #{t 'contact_us.leave_message.email'}
+                em
+                  = f.text_field :email, size: 25, class: 'txt'
+              li.textarea
+                span
+                  | #{t 'contact_us.leave_message.message'}
+                em
+                  = f.text_area :body, class: 'txt2'
+              li.btn_bar
+                input type="button" class="btn" value="#{t 'common.form.reset'}"
+                = f.submit raw("#{t 'common.form.submit'}"), class: "btn2"
+
+        .left
+          .company_brochure
+            = link_to t('contact_us.download_company_brochure'), '/downloads/ShineScrum_company_brochure.pdf', target: :blank
+
+        .clear

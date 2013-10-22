@@ -1177,10 +1177,28 @@ pre {
 
 .write .btn_bar{ padding-left: 14px;}
 
-.contact_form{ background: none; width: 700px; height: 350px; padding: 0px;}
+.contact_form{ background: none; width: 400px; height: 350px; padding: 0px; }
 .contact_form .btn_bar{ padding-left: 0px;}
 .contact_form .txt2{ width: 500px;}
 .contact_form span{ width: 60px;}
+
+.company_brochure {
+  height: 200px;
+  width: 300px;
+  margin-left: 120px;
+  a {
+    font-weight: normal;
+    font-size: 14px;
+    padding-left: 28px;
+    padding-top: 6px;
+    background: url('file_pdf.png') 0 0 no-repeat;
+    color: #083C86;
+  }
+  a:hover {
+    color: #083C86;
+    text-decoration: underline;
+  }
+}
 
 .field_with_errors {
   padding: 2px;
@@ -1311,4 +1329,8 @@ pre {
     background-position: 0px -21px;
     color: #ffffff;
   }
+}
+
+.clear {
+  clear: both;
 }
