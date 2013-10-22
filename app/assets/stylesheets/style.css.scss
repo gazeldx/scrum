@@ -211,12 +211,12 @@ $xl: 20px;
 
 .why_shinescrum_photo {
   float: left;
-  width: 320px;
+  width: 140px;
   overflow: hidden;
 }
 
 .why_shinescrum_intr {
-  width: 550px;
+  width: 710px;
   float: right;
   font-size: 18px;
   line-height: 180%;
@@ -230,6 +230,14 @@ $xl: 20px;
   .big {
     font-size: 24px;
   }
+  ul {
+    list-style-type: square !important;
+    margin-left: 20px;
+  }
+}
+
+.competitive_advantage {
+  margin-top: 20px;
 }
 
 .aboutUs_con {
@@ -581,7 +589,7 @@ $xl: 20px;
   pre {
     background-color: #FAFAFA;
     font-family: verdana, arial, helvetica, sans-serif;
-    font-size: 14px;
+    why_shinescrum_intrfont-size: 14px;
   }
 }
 
