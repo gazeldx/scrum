@@ -39,14 +39,14 @@ en:
     team_members: Team members of %{name}
     shinescrum_introduction: <em>%{name}</em> was founded by:<br />Jeff Sutherland; the original founder of the concept ‘Scrum’, Jens Østergaard; the world’s first CSP and the first to train and consult the method of Scrum and Agile and Beijing Shinetech Technologies, the global leading company that focuses on professional Agile and Scrum training.
     shinescrum_vision: We focus on CSM/CSPO certified training, with courses especially tailored for each company’s individual culture and business goals. Our courses cover certification, training, assessments, counselling, coaching and advising. Short term, we provide a framework to identify and solve the core issues within your company’s working practise. Through certified training, coaching, counselling and advising, we help you to organize your business. Working with Shinescrum will optimize the efficiency, costs and quality of delivery, improving employee morale and providing sustainable long-term improvements. Our adaptable integrated training turns your business into a truly flexible agile enterprise.
-    competitive_advantage:
-      title: <em>我们的优势</em>是
-      advantage:
-        - 由Scrum的鼻祖Jeff Sutherland共同创办
-        - 拥有最具资历的Scrum敏捷海内外顾问团队和倡导敏捷的领头雁北京盛安德敏捷实践团队
-        - 深刻理解中外文化以及瀑布与敏捷环境的差异，擅长敏捷在中国企业的落地和实施
-        - 关注每位客户和学员，辅导大型软件企业导入Scrum，帮助个人成为优秀的敏捷实践者
-        - 世界级敏捷大师Jens Østergaard秦风和具有海内外背景的Jim Wang王军双讲师授课，课程体系内容千锤百炼
+    our_strengthes:
+      title: <em>Our Strengthes:</em>
+      strengthes:
+        - ShineScrum is co-founded by the originator of Scrum Jeff Sutherland.
+        - Own the most qualified Scrum agile consultant team at home and abroad & leading advocacy agile practice team of Beijing Shinetech Corporation.
+        - Deep understanding of Chinese and foreign culture and the difference between Waterfall and Agile environment. Specialize in Agile landing and implementing in China enterprises.
+        - Concerned about every customer and student; Counselling large software companies to import Scrum; Help individuals to become excellent agilists.
+        - Instructed by World-class Agility Master Jens Østergaard and Jim Wang with overseas backgrounds; Severe training and hammering on the course system and content.
     news_and_events: News
     subscribe: Subscribe ShineScrum Weekly
     more_news: More
