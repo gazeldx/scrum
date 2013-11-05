@@ -872,6 +872,7 @@ pre {
   margin-left: 30px;
   margin-top: 20px;
   margin-bottom: 10px;
+  position: relative;
 }
 
 .write li {
@@ -1177,28 +1178,10 @@ pre {
 
 .write .btn_bar{ padding-left: 14px;}
 
-.contact_form{ background: none; width: 400px; height: 350px; padding: 0px; }
+.contact_form{ background: none; width: 400px; height: 430px; padding: 0px; }
 .contact_form .btn_bar{ padding-left: 0px;}
 .contact_form .txt2{ width: 500px;}
 .contact_form span{ width: 60px;}
-
-.company_brochure {
-  height: 200px;
-  width: 300px;
-  margin-left: 120px;
-  a {
-    font-weight: normal;
-    font-size: 14px;
-    padding-left: 28px;
-    padding-top: 6px;
-    background: url('file_pdf.png') 0 0 no-repeat;
-    color: #083C86;
-  }
-  a:hover {
-    color: #083C86;
-    text-decoration: underline;
-  }
-}
 
 .field_with_errors {
   padding: 2px;
@@ -1333,4 +1316,58 @@ pre {
 
 .clear {
   clear: both;
+}
+
+#contact_us {
+  margin: 0;
+  padding: 10px 36px;
+  form {
+    margin-top: 16px;
+    p {
+      margin: 0;
+      height: auto;
+      label {
+        display: block;
+        height: 26px;
+        text-align: left;
+        color: #666666;
+        font-size: 14px;
+      }
+      input.txt {
+        font-weight: normal;
+        background-color: #F2F2F2;
+      }
+      textarea.txt2 {
+        font-weight: normal;
+        width: 400px;
+        border: 1px solid #777777;
+        background-color: #F2F2F2;
+        resize: none;
+        padding: 6px;
+      }
+    }
+    p.btn_line {
+      margin-top: 14px;
+      input {
+        margin: 40px 16px auto 2px;
+      }
+
+    }
+  }
+}
+
+.company_brochure {
+  position: absolute;
+  top: 10px;
+  right: 106px;
+  width: 360px;
+  text-align: right;
+  a {
+    position: relative;
+    text-align: left;
+    font-weight: normal;
+    float: right;
+    font-size: 14px;
+    line-height: 180%;
+  }
 }
