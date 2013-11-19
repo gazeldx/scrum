@@ -58,11 +58,13 @@
       <div class="flexslider flexsliderV1">
         <div class="flexCon">
           <ul class="slides">
-            <li>
-              <%= link_to course_path(12) do
-                image_tag "slide_ad_#{I18n.locale}.jpg"
-              end %>
-            </li>
+            <% if I18n.locale == :zh %>
+              <li>
+                <%= link_to course_path(42) do %>
+                  <%= image_tag "slide_ad_42.png" %>
+                <% end %>
+              </li>
+            <% end %>
             <% %w{slide01 slide02 slide03}.each do |slide| %>
               <li>
                 <%= link_to courses_path do
