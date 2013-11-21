@@ -248,6 +248,7 @@ en:
 
   register:
     create_succ: Register successful. Our course consultant will contact you within one working day.
+    course_closed: "Course closed."
 
   message:
     create_succ: Leaving message successfull. Thanks for your concern.

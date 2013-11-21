@@ -71,6 +71,15 @@
       </div>
       <!--flexsliderV1 End-->
     </div>
+    <!-- <% if flash %>
+    <div class="flash">
+      <% flash.keys.each do |key| %>
+      <div class="<%= key%>">
+        <%= flash[key] %>
+      </div>
+      <% end %>
+    </div>
+    <% end %>-->
     <%= yield %>
     <div class="footer">
       <div class="footer-container">

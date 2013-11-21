@@ -1,5 +1,6 @@
 class RegistersController < ApplicationController
   skip_before_filter :authenticate, :only => [:new, :create, :edit]
+  before_filter :check_course_status, :only => [:new, :create]
   
   def index
     @registers = Register.order('created_at desc').paginate(page: params[:page] || 1, per_page: params[:per_page] || 10)
@@ -20,7 +21,6 @@ class RegistersController < ApplicationController
   # GET /registers/new.json
   def new
     @register = Register.new
-    @course = Course.find(params[:course_id].to_i)
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @register }
@@ -34,7 +34,6 @@ class RegistersController < ApplicationController
 
   def create
     @register = Register.new(params[:register])
-    @course = Course.find(params[:course_id])
     @register.course = @course
     if @register.save
       RegisterMailer.registration_confirmation(@register).deliver
@@ -70,6 +69,17 @@ class RegistersController < ApplicationController
     respond_to do |format|
       format.html { redirect_to registers_url }
       format.json { head :no_content }
+    end
+  end
+  
+  private
+  
+  def check_course_status
+    @course = Course.find(params[:course_id])
+    unless @course.active?
+      flash[:error] = t "register.course_closed"
+      redirect_to notice_path
+      return
     end
   end
 end

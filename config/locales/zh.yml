@@ -275,6 +275,7 @@ zh:
 
   register:
     create_succ: 您的报名信息已经提交，我们的课程顾问会在一个工作日内与您联系。
+    course_closed: "课程已结束，无法报名。"
 
   message:
     create_succ: 您的留言我们已经收到，感谢您的关注！
