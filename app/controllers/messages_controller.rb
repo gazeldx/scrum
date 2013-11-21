@@ -1,4 +1,5 @@
 class MessagesController < ApplicationController
+  skip_before_filter :authenticate, :only => [:create]
 
   def index
     @messages = Message.order('created_at desc')
