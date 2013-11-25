@@ -49,6 +49,11 @@ en:
         - Instructed by World-class Agility Trainer Jens Østergaard and Jim Wang with overseas backgrounds.
     news_and_events: News
     subscribe: Subscribe ShineScrum Weekly
+    guide:
+      download: Free Download Scrum-Guide 2013
+      title: Download Scrum-Guide
+      header1: Scrum Guide 2013
+      header2: Automatically download after registered mail
     more_news: More
 
   about_us:
@@ -255,3 +260,9 @@ en:
 
   news:
     news_header: News
+
+  activerecord:
+    attributes:
+      user:
+        login: Name
+        email: Email

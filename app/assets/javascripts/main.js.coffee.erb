@@ -9,3 +9,18 @@ $(document).ready ->
     style:
       classes: 'qtip-light qtip-shadow qtip-rounded'
   )
+
+  $("form#guide_download input[type='submit']").on 'click', (e) ->
+    e.preventDefault()
+    form = $(this).closest('form')
+    #form.submit()
+    $.ajax
+      type: "POST"
+      url: form.attr("action")
+      data: form.serialize()
+      success: (data) ->
+        if /^</.test(data)
+          form.closest(".target").html(data)
+        else
+          window.location = data.redirect_url
+          window.showModalDialog(data.download_url)

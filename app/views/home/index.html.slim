@@ -3,7 +3,10 @@
   .title.why_shinescrum
     = t("name")
   .subscribe
-    = link_to t("home.subscribe"), "https://app.e2ma.net/app2/audience/signup/1746862/1720894/?v=a", target: '_blank', class: "reg_btn"
+    div
+      = link_to t("home.subscribe"), "https://app.e2ma.net/app2/audience/signup/1746862/1720894/?v=a", target: '_blank', class: "reg_btn"
+    div
+      = link_to t("home.guide.download"), new_users_path, class: "reg_btn"
   #video_and_news
     .left
       h2.home_page_h2

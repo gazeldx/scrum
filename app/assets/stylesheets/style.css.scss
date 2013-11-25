@@ -1219,7 +1219,7 @@ pre {
 #video_and_news {
   height: 400px;
   width: 880px;
-  padding: 40px 40px 0;
+  padding: 0 40px 0;
   background: url("team_line.jpg") no-repeat scroll center bottom transparent;
   .left {
     float: left;
@@ -1296,21 +1296,24 @@ pre {
 }
 
 .subscribe {
-  padding: 20px 40px 0;
-  a {
-    float: right;
-    width: 220px;
-    height: 21px;
-    background: url(subscribe.gif) 0px 0px no-repeat;
-    color: #ffffff;
-    text-align: center;
-    line-height: 21px;
-    display: block;
-    text-decoration: none;
-  }
-  a:hover {
-    background-position: 0px -21px;
-    color: #ffffff;
+  padding: 20px 40px 0 0;
+  div {
+    height: 30px;
+    a {
+      float: right;
+      width: 220px;
+      height: 21px;
+      background: url(subscribe.gif) 0px 0px no-repeat;
+      color: #ffffff;
+      text-align: center;
+      line-height: 21px;
+      display: block;
+      text-decoration: none;
+    }
+    a:hover {
+      background-position: 0px -21px;
+      color: #ffffff;
+    }
   }
 }
 
@@ -1369,5 +1372,52 @@ pre {
     float: right;
     font-size: 14px;
     line-height: 180%;
+  }
+}
+
+.download_with_sign {
+  text-align: center;
+  .header {
+    margin: 40px 0 20px 0;
+    h3 {
+      color: #245ba9;
+      font-weight: bold;
+    }
+    h4 {
+      color: #245ba9
+    }
+  }
+  form {
+    width: 300px;
+    margin: auto;
+    p {
+      label {
+        width: 300px;
+        height: 24px;
+        display: block;
+        text-align: left;
+        color: #666666;
+        font-size: 14px;
+        font-weight: bold;
+      }
+      input.txt{
+        width: 300px;
+        height: 24px;
+        font-weight: normal;
+        background-color: #F2F2F2;
+        color: #000000;
+        font-size: 14px;
+      }
+      input[type=submit] {
+        width: 123px;
+        height: 25px;
+        background: url(knowledge_down.png) 0px 0px no-repeat;
+        color: #ffffff;
+        padding-left: 40px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        border: 0;
+      }
+    }
   }
 }
