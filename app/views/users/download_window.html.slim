@@ -1,11 +1,13 @@
+= javascript_include_tag "download"
+
 = title t('home.guide.title')
 .page
   .title.why_shinescrum
     = t('home.guide.title')
+
+  = link_to '', download_users_path, id: :download_link
   .download_with_sign
     .download_link
-      = link_to '', download_users_path, id: :download_link, class: :reg_btn
+      | <font color=red> 3 </font>秒后开始下载
     .back_link
       = link_to '返回首页', root_path, id: :back_link
-script type='text/javascript'
-  | $(document).ready(function(){$('#download_link')[0].click();})
