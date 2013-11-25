@@ -11,9 +11,9 @@ class UsersController < ApplicationController
     @user = User.find_by_login_and_email(params[:user][:login], params[:user][:email]) || User.new(params[:user])
     if @user.valid?
       @user.save if @user.new_record?
-      render json: {download_url: download_users_path, redirect_url: root_path}
+      render download_window_users_path
     else
-      render partial: "users/form"
+      render :new
     end
   end
 

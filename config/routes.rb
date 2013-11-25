@@ -34,6 +34,7 @@ Scrum::Application.routes.draw do
   resource :users do
     collection do
       get :download
+      get :download_window
     end
   end
 
