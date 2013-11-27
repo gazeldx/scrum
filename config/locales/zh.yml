@@ -62,8 +62,17 @@ zh:
         - 关注每位客户和学员，辅导大型软件企业导入Scrum，帮助个人成为优秀的敏捷实践者
         - 世界级敏捷大师Jens Østergaard秦风和具有海内外背景的Jim Wang王军双讲师授课，课程体系内容千锤百炼
     news_and_events: 新闻
-    subscribe: 免费订阅 ShineScrum 周刊
     more_news: 更多
+    subscribe: 免费订阅 ShineScrum 周刊
+    guide:
+      download: 免费下载2013新版Scrum-Guide
+      title: 下载Scrum-Guide
+      header1: 2013新版Scrum Guide（含中英文版）
+      header2: 注册邮箱后即可自动下载
+      download_auto: 秒后开始下载
+      if_no_auto: 如果没有自动下载请点击
+      here: 立即下载
+      back_home: 返回首页
 
   about_us:
     title: 关于我们
@@ -532,6 +541,9 @@ zh:
         name: "姓名"
         mobile: "手机"
         email: "Email"
+      user:
+        login: 用户名
+        email: 邮箱
       
   helpers:
     select:

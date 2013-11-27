@@ -31,6 +31,13 @@ Scrum::Application.routes.draw do
     #resources :class_photos
   end
 
+  resource :users do
+    collection do
+      get :download
+      get :download_window
+    end
+  end
+
 
   #match 'courses/:id/register' => 'courses#register'
   match 'course_register' => 'registers#new'
@@ -78,6 +85,9 @@ Scrum::Application.routes.draw do
       member { get :preview }
     end
     resources :course_descriptions
+    resources :users, only: :index do
+      member { get :mark_as_reviewed }
+    end
   end
 
 

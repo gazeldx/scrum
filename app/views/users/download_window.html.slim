@@ -1,0 +1,17 @@
+= javascript_include_tag "download"
+
+= title t('home.guide.title')
+.page
+  .title.why_shinescrum
+    = t('home.guide.title')
+
+  .download_with_sign
+    .download_link
+      span.time
+        | 3
+      = t('home.guide.download_auto')
+    .direct_download_link
+      = t('home.guide.if_no_auto')
+      = link_to t('home.guide.here'), download_users_path, id: :download_link
+    .back_link
+      = link_to t('home.guide.back_home'), root_path, id: :back_link

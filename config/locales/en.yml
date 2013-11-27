@@ -48,8 +48,17 @@ en:
         - Focus on each customer and student; Consulting large software companies to adapt Scrum; Help individuals to become excellent agilists.
         - Instructed by World-class Agility Trainer Jens Østergaard and Jim Wang with overseas backgrounds.
     news_and_events: News
-    subscribe: Subscribe ShineScrum Weekly
     more_news: More
+    subscribe: Subscribe ShineScrum Weekly
+    guide:
+      download: Free Download Scrum-Guide 2013
+      title: Download Scrum-Guide
+      header1: Scrum Guide 2013
+      header2: Automatically download after registered mail
+      download_auto: seconds, then start the download
+      back_home: Back to Home
+      if_no_auto: If there is no automatic download please click
+      here: Here
 
   about_us:
     title: About us
@@ -255,3 +264,9 @@ en:
 
   news:
     news_header: News
+
+  activerecord:
+    attributes:
+      user:
+        login: Name
+        email: Email
