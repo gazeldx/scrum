@@ -5,9 +5,13 @@
   .title.why_shinescrum
     = t('home.guide.title')
 
-  = link_to '', download_users_path, id: :download_link
   .download_with_sign
     .download_link
-      | <font color=red> 3 </font>秒后开始下载
+      span.time
+        | 3
+      = t('home.guide.download_auto')
+    .direct_download_link
+      = t('home.guide.if_no_auto')
+      = link_to t('home.guide.here'), download_users_path, id: :download_link
     .back_link
-      = link_to '返回首页', root_path, id: :back_link
+      = link_to t('home.guide.back_home'), root_path, id: :back_link

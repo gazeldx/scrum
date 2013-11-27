@@ -19,4 +19,3 @@
 //= require kindeditor
 //= require fcommon
 //= require main
-//= require_tree

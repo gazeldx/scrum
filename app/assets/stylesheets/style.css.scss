@@ -99,6 +99,7 @@ $xl: 20px;
 
 .page {
   width: 960px;
+  min-height: 250px;
   margin: 0 auto;
   background: #f2f2f2;
   padding-bottom:50px;
@@ -1418,6 +1419,12 @@ pre {
         margin-bottom: 30px;
         border: 0;
       }
+    }
+  }
+  .download_link {
+    margin-top: 40px;
+    span.time {
+      color: red;
     }
   }
   .back_link {
