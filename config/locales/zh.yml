@@ -253,6 +253,7 @@ zh:
     phone: 电话
     fax: 传真
     email: 邮箱
+    qq: 课程咨询QQ
     location:
       shanghai: "%{name}（上海总部）"
       shanghai_address: 上海市浦东新区杨新路88号，尚馥丽湾3号楼401室
@@ -267,6 +268,7 @@ zh:
       number2: 021-50683597
     fax_number: 021-50762357
     email_address: info@shinescrum.com
+    qq_number: 2732857740
     leave_message:
       title: 给我们留言
       name: 姓名

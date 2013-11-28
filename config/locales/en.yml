@@ -228,6 +228,7 @@ en:
     phone: Phone
     fax: Fax
     email: Email
+    qq: Course consultation QQ
     location:
       shanghai: "%{name} (Shanghai Office)"
       shanghai_address: 'Room 401, ShangfuLiwan Building #3, 88 Yangxin Road, Pudong New District, Shanghai, China'
@@ -242,6 +243,7 @@ en:
       number2: 021-50683597
     fax_number: 021-50762357
     email_address: info@shinescrum.com
+    qq_number: 2732857740
     leave_message:
       title: Leave Message
       name: Name
