@@ -829,38 +829,40 @@ pre {
 
 .contact_txt {
   font-size: 16px;
-  background: url(contact_txt.gif) 0px 0px no-repeat;
+//  background: url(contact_txt.gif) 0px 0px no-repeat;
   background-size:883px 175px;
   width: 883px;
   height: 175px;
   margin: 0 auto;
   padding-top: 15px;
   padding-left: 15px;
+  ul {
+    background-color: #dfdede;
+    border: 1px solid;
+    border-radius: 10px;
+    li {
+      font-size: 14px;
+      line-height: 22px;
+      clear: both;
+      label {
+        width: 250px;
+        display: inline-block;
+        text-align: right;
+        margin-right: 10px;
+        color: #666666;
+      }
+      span {
+        display: inline-block;
+        text-align: left;
+      }
+    }
+  }
 }
 
-.contact_txt li {
-  font-size: 14px;
-  line-height: 22px;
-  clear: both;
-}
-
-.contact_txt span {
-  width: 250px;
-  display: block;
-  float: left;
-  text-align: right;
-  margin-right: 10px;
-  color: #666666;
-}
-
-.contact_txt em {
-  float: left;
-  display: block;
-}
 
 .contact_bg {
   //background: #FAFAFA;
-  color: #010101;
+//  color: #010101;
   font-size: 18px;
   line-height: 180%;
   padding-top: 40px;
