@@ -20,3 +20,5 @@
 
 # Ignore uploaded files
 public/uploads
+
+.DS_Store
