@@ -30,7 +30,7 @@ en:
     courses: Courses
     trainees: Trainees
     training: Training
-    knowledge: Knowledge
+    knowledge: Scrum Studio
     contact_us: Contact us
 
   home:
@@ -216,7 +216,7 @@ en:
     contact: For more info about %{name} onsite training, please call <em>4008210871</em> or send email to <em>info@shinescrum.com</em>. We will reply within one working day.
 
   knowledge:
-    title: Knowledge
+    title: Scrum Studio
     welcome_to_share: 'Welcome to share '
     weekly: "%{name} Weekly"
     ref: Ref

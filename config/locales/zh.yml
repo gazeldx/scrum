@@ -44,7 +44,7 @@ zh:
     courses: 认证课程
     trainees: 学员
     training: 内训
-    knowledge: 知识库
+    knowledge: Scrum工作室
     contact_us: 联系我们
 
   home:
@@ -241,7 +241,7 @@ zh:
     contact: 更多%{name}企业内训信息，请拨打 <em>4008210871</em> 或发信至 <em>info@shinescrum.com</em>我们将在一个工作日内回复。
 
   knowledge:
-    title: 知识库
+    title: Scrum工作室
     welcome_to_share: 欢迎分享
     weekly: "%{name}周刊"
     ref: 来自于
