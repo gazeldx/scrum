@@ -6,7 +6,7 @@ class CoursesController < ApplicationController
 
 
   def index
-    @courses = Course.where('end_time > ?', Time.new(2013)).order('start_time desc')
+    @courses = Course.where('end_time > ?', Time.new(2013) + 6.months).order('start_time desc')
   end
 
   def background_index
