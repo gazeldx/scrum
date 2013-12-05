@@ -1267,26 +1267,32 @@ pre {
     margin-bottom: -40px;
     .news_entry {
       border: #c4c4c4 solid 1px;
+      border-radius: 5px;
       background-color: #F0F0F0;
       margin: 10px 30px;
       padding: 5px;
       .news_title {
         font-size: $m;
-        margin-bottom: 10px;
         font-weight: bold;
+        color: #395D77;
+        border-bottom: 1px dashed #ccc;
+        padding: 5px 0 5px 0;
+        margin-bottom: 5px;
         a:hover {
           color: #245ba9;
           text-decoration: none;
         }
         .news_date {
           float: right;
-          
+          font-size: $s;
+          font-weight: normal;
         }
       }
       .news_abstract {
         color: black;
         text-indent: 2em;
         line-height: 18px;
+        font-size: $s;
       }
     }
     .news_entry:hover {

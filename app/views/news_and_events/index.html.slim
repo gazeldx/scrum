@@ -5,7 +5,7 @@
   .news_list
     - @news_and_events.each do |news_and_event|
       .news_entry
-        h2.news_title
+        .news_title
           = link_to_news news_and_event, target: '_blank'
           .news_date
             = news_and_event.posted_on.strftime('%Y-%m-%d')
