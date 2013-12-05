@@ -1268,28 +1268,25 @@ pre {
     .news_entry {
       border: #c4c4c4 solid 1px;
       background-color: #F0F0F0;
-      margin: 20px 30px;
-      padding: 20px;
-      h2.news_title {
+      margin: 10px 30px;
+      padding: 5px;
+      .news_title {
         font-size: $m;
         margin-bottom: 10px;
         font-weight: bold;
-        color: black;
-        a {
-          color: black;
-        }
         a:hover {
           color: #245ba9;
           text-decoration: none;
+        }
+        .news_date {
+          float: right;
+          
         }
       }
       .news_abstract {
         color: black;
         text-indent: 2em;
         line-height: 18px;
-      }
-      .news_date {
-        text-align: right;
       }
     }
     .news_entry:hover {
