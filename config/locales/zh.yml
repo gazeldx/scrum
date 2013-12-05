@@ -125,7 +125,8 @@ zh:
       remarks: 备注
     course_overview: 课程概述
     course_features: 课程特色
-    course_audience: 课程受众和学员反馈
+    course_audience: 课程受众
+    course_feadback: 学员反馈
     course_agenda: 课程大纲
     contact_info: 联系方式
     course_detail:

@@ -111,7 +111,8 @@ en:
       remarks: Notes
     course_overview: Overview
     course_features: Course Features
-    course_audience: Course Audience & Feedback
+    course_audience: Course Audience
+    course_feadback: Feedback
     course_agenda: Agenda
     contact_info: Contact Information
     course_detail:
