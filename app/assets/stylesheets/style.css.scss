@@ -159,6 +159,8 @@ $xl: 20px;
   background: url(news.gif) right top no-repeat #2f2f31;
 }
 
+.page .faq-title { background: url(faq.jpg) right top no-repeat #2f2f31; }
+
 .page_bg2 {
   background: #fafafa;
 }
@@ -1468,5 +1470,42 @@ pre {
   }
   .back_link {
     padding-top: 40px;
+  }
+}
+
+.faq {
+  ul.questions-list {
+    margin: 30px 50px;
+    li {
+      margin: 6px 0;
+      list-style-image: url(course_point.gif);
+      a {
+        color: #245BA9;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  dl.answers-list {
+    margin: 40px;
+    dt {
+      font-size: 15pt;
+      margin: 40px auto 14px 0;
+    }
+    dd {
+      margin: 6px 0;
+      p { margin: 4px 0; }
+      p.indent { text-indent: 22px; }
+      dl {
+        margin: 0;
+        padding: 0;
+        dt {
+          font-weight: normal;
+          font-size: 14px;
+          margin: 8px auto 2px 0;
+        }
+      }
+    }
   }
 }

@@ -41,13 +41,12 @@
         </nav>
         <div class="top-links">
           <ul>
-            <li>
-              <% if I18n.locale == I18n.default_locale %>
-                <%= link_to "English", params.merge(:locale=>'en')%>
-              <% else %>
-                <%= link_to "中文", params.merge(:locale=>'zh')%>
-              <%end%>
-            </li>
+            <% if I18n.locale == I18n.default_locale %>
+              <li><%= link_to "English", params.merge(:locale=>'en')%></li> |
+              <li><%= link_to "FAQ", faq_path  %></li>
+            <% else %>
+              <li><%= link_to "中文", params.merge(:locale=>'zh')%></li>
+            <%end%>
           </ul>
         </div>
       </div>

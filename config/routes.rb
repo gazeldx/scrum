@@ -55,6 +55,7 @@ Scrum::Application.routes.draw do
   get 'contact' => 'shared#contact'
   get 'partners' => 'shared#partners'
   get 'clients' => 'shared#clients'
+  get 'faq' => 'shared#faq'
   #get 'students' => 'shared#students'
 
   get 'inner' => 'shared#inner'
