@@ -39,7 +39,7 @@
             li class=on
               a href=class_photos_path
                 = t 'trainees.all'
-            - (2003..Time.now.year).to_a.reverse.each do |year|
+            - (2008..Time.now.year).to_a.reverse.each do |year|
               - sel = "sel" if year.to_s == params[:year]
               li class=sel
                 a href="/class_photos_#{year}"
