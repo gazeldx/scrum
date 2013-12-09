@@ -2,6 +2,18 @@
 .page.page_bg2
   .title.client
     = t 'clients.title'
+  .review-header
+    h3= t 'clients.client_reviews.header'
+  .review-con.flexslider
+    ul.slides
+      - t('clients.client_reviews.contents').each do |content|
+        li
+          p.review-content= content["content"]
+          p.review-writer
+            | ——&nbsp;
+            = content["reviewer"]
+  .client-header
+    h3= t 'clients.title'
   .client-con
     .client-intr
       ul

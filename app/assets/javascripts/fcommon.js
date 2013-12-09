@@ -22,5 +22,12 @@ $(function(){
 	}
 	$('.flexsliderV1').css('overflow','visible');
 
+    if($('.review-con')[0]){
+        $('.review-con').flexslider({
+			directionNav: false,
+            animation: "fade"
+        });
+    }
+    $('.review-con').css('overflow','visible');
 });
 

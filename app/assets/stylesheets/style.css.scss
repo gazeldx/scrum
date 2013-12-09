@@ -376,6 +376,13 @@ $xl: 20px;
   }
 }
 
+.client-header, .review-header{
+  padding-left: 20px;
+  h3 {
+    font-weight: bold;
+  }
+}
+
 .client-con {
   font-size: 18px;
   line-height: 180%;
@@ -392,6 +399,27 @@ $xl: 20px;
           width: 200px;
         }
       }
+    }
+  }
+}
+
+.review-con {
+  ul {
+    li {
+      p {
+        padding: 0 80px 0 60px;
+      }
+      .review-content {
+        background: url("review_bg_left.png") 35px 0 no-repeat;
+      }
+
+      .review-writer {
+        text-align: right;
+        font-style: italic;
+        color: #999;
+        background: url("review_bg_right.png") 890px 8px no-repeat;
+      }
+
     }
   }
 }

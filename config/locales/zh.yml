@@ -88,6 +88,17 @@ zh:
 
   clients:
     title: 主要客户
+    client_reviews:
+      header: 客户证言
+      contents:
+        - content: 精彩的研讨，知道了什么是敏捷Scrum？如何实施导入敏捷Scrum？我将会向所有正在从瀑布式或RUP开发方法向敏捷转型的学员推荐这个培训。
+          reviewer: Viral，测试专家
+        - content: 清晰的、极具描述性的例子以及课堂学习任务、趣味练习和敏捷游戏，而且在课程结束后，你最终会通过认证考试，成为一名优秀的ScrumMaster。
+          reviewer: Veni，项目经理
+        - content: 精彩的、极富价值的一次培训，培训师很棒，经验丰富，涉猎广泛，幽默且多样化的授课风格给我们带来许多惊喜。
+          reviewer: George，VP系统解决方案
+        - content: 我将在课堂上学到的敏捷价值观理论以及实践操作具体应用到工作当中，大大提高了工作效率，整个团队的面貌和精神状态也都焕然一新。
+          reviewer: Dannial，开发工程师
 
   courses:
     title: 认证课程
