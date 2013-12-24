@@ -863,55 +863,92 @@ pre {
   margin-bottom: 30px;
 }
 
-.contact_txt {
-  font-size: 16px;
-//  background: url(contact_txt.gif) 0px 0px no-repeat;
-  background-size:883px 175px;
-  width: 883px;
-  height: 175px;
-  margin: 0 auto;
-  padding-top: 15px;
-  padding-left: 15px;
-  ul {
-    background-color: #dfdede;
+.contact_bg {
+  padding: 20px 30px 10px 30px;
+  .company_brochure {
+    span {
+      font-size: 16px;
+      font-weight: bold;
+      color: #083c86;
+    }
+    a {
+      line-height: 180%;
+      margin: 0 20px;
+      display: inline-block;
+    }
+  }
+  .contact_txt {
+    font-size: 16px;
     border: 1px solid #777;
     border-radius: 10px;
-    li {
-      font-size: 14px;
-      line-height: 22px;
-      clear: both;
-      label {
-        width: 250px;
-        display: inline-block;
-        text-align: right;
-        margin-right: 10px;
-        color: #666666;
+    padding: 20px;
+    margin-top: 20px;
+    .phone {
+      background: url(call.png) 0px 0px no-repeat;
+    }
+    .addresses {
+      background: url(address.png) 0px 0px no-repeat;
+    }
+    ul {
+      padding-left: 60px;
+      li {
+        font-size: 14px;
+        line-height: 22px;
+        clear: both;
+        label {
+          display: inline-block;
+          margin-right: 10px;
+          font-weight: bold;
+        }
+        span {
+          display: inline-block;
+          text-align: left;
+        }
       }
-      span {
-        display: inline-block;
-        text-align: left;
+    }
+    .leave_message {
+      background: url(message.png) 0px 0px no-repeat;
+      padding-left: 60px;
+      span{
+        font-size: 16px;
+        font-weight: bold;
+        color: #083c86;
+      }
+      form {
+        margin-top: 16px;
+        p {
+          margin: 0;
+          height: auto;
+          label {
+            display: block;
+            height: 26px;
+            text-align: left;
+            color: #666666;
+            font-size: 14px;
+          }
+          input.txt {
+            font-weight: normal;
+            background-color: #F2F2F2;
+          }
+          textarea.txt2 {
+            font-weight: normal;
+            width: 400px;
+            border: 1px solid #777777;
+            background-color: #F2F2F2;
+            resize: none;
+            padding: 6px;
+          }
+        }
+        p.btn_line {
+          margin-top: 14px;
+          input {
+            margin: 40px 16px auto 2px;
+          }
+
+        }
       }
     }
   }
-}
-
-
-.contact_bg {
-  //background: #FAFAFA;
-//  color: #010101;
-  font-size: 18px;
-  line-height: 180%;
-  padding-top: 40px;
-}
-
-.write_title {
-  color: #083c86;
-  font-weight: bold;
-  font-size: 16px;
-  margin-left: 30px;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  position: relative;
 }
 
 .write li {
@@ -1361,60 +1398,6 @@ pre {
 
 .clear {
   clear: both;
-}
-
-#contact_us {
-  margin: 0;
-  padding: 10px 36px;
-  form {
-    margin-top: 16px;
-    p {
-      margin: 0;
-      height: auto;
-      label {
-        display: block;
-        height: 26px;
-        text-align: left;
-        color: #666666;
-        font-size: 14px;
-      }
-      input.txt {
-        font-weight: normal;
-        background-color: #F2F2F2;
-      }
-      textarea.txt2 {
-        font-weight: normal;
-        width: 400px;
-        border: 1px solid #777777;
-        background-color: #F2F2F2;
-        resize: none;
-        padding: 6px;
-      }
-    }
-    p.btn_line {
-      margin-top: 14px;
-      input {
-        margin: 40px 16px auto 2px;
-      }
-
-    }
-  }
-}
-
-.company_brochure {
-  position: absolute;
-  top: 10px;
-  right: 106px;
-  width: 360px;
-  text-align: right;
-  a {
-    position: relative;
-    text-align: left;
-    font-weight: normal;
-    float: right;
-    font-size: 14px;
-    line-height: 180%;
-  }
 }
 
 .download_with_sign {
