@@ -1475,6 +1475,13 @@ pre {
     dt {
       font-size: 15pt;
       margin: 40px auto 14px 0;
+      a.instruction {
+        background: url(instruction.png) 0 0 no-repeat;
+        display: inline-block;
+        width: 110px;
+        height: 30px;
+        margin-bottom: -7px;
+      }
     }
     dd {
       margin: 6px 0;
