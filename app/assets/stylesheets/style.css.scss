@@ -189,14 +189,27 @@ $xl: 20px;
       border-bottom:1px solid #2D2C20;
       .shinescrum-sina {
         width: 300px;
-        padding-top: 20px;
-        margin-left: 30px;
+        padding-top: 25px;
+        margin-left: 70px;
         float: left;
       }
       .weixin {
         float: right;
         padding-top: 10px;
         margin-right: 30px;
+      }
+      .linkedin {
+        padding-top: 20px;
+        margin-left: 30px;
+        a {
+          width: 32px;
+          height: 32px;
+          text-indent: -9999px;
+          display: block;
+        }
+        .in {
+          background: url(in-icon.png) no-repeat;
+        }
       }
     }
     .lowerfoot {
