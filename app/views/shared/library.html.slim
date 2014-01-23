@@ -2,30 +2,70 @@
 .page
   .title.knowledge
     = t 'knowledge.title'
-  .innerUpdate_con
-    .innerUpdate_intr
-      /.innerUpdate_txt3
-        /| 根据您的反馈，以下文档将选择性的进行翻译并提供中文版本，
-        /br
-        /| 欢迎来电告知：&nbsp;
-        /em
-        /  | #{t'_tel'}
-        /|  或发信至
-        /em
-        /  |  #{t'_email'}
-        /em
-          = t 'knowledge.welcome_to_share'
-          = link_to t('knowledge.weekly', name: t('name')), "https://app.e2ma.net/app2/audience/signup/1732839/1720894/?v=a", target: '_blank'
-      .knowledge_list
+  .page_container
+    .section
+      .content_header
+        | 敏捷文章
+      .content_container
         - KNOWLEDGE[I18n.locale.to_s].each do |item|
           ul
             li
               .knowledge_title
+                = link_to "", item["link"], class: 'knowledge_down'
                 = item["title"]
-              .knowledge_source
+              .knowledge_sources
                 | #{t 'knowledge.ref'}: #{item["source"]}
-              .knowledge_auther
+              .knowledge_authers
                 | #{t 'knowledge.author'}: #{item["author"]}
-              .knowledge_read
+              .knowledge_reads
                 = item["read"]
-              = link_to t('knowledge.download'), item["link"], class: 'knowledge_down'
+    hr.separator
+    .section
+      .content_header
+        | 敏捷工具
+      .content_container
+        = link_to '估算扑克', '/poker'
+    hr.separator
+    .section
+      .content_header
+        | 敏捷游戏
+      .content_container
+        |XP game
+    hr.separator
+    .section
+      .content_header
+        | 敏捷导入攻略
+      .content_container
+        |
+    hr.separator
+    .section
+      .content_header
+        | 敏捷书籍
+      .content_container
+        ul
+          li
+            | 《浪潮之巅》   吴军
+          li
+            | 《30天软件开发——告别瀑布拥抱敏捷》   Ken Schwaber / Jeff Sutherland 著      王军/李麟德  译
+          li
+            | 《敏捷回顾:团队从优秀到卓越之道》    Esther Derby / Diana Larsen 著    周全/冯左鸣/拓志祥/杨丽森  译
+          li
+            | 《如何构建敏捷项目管理团队》    Lyssa Adkins
+          li
+            | 《敏捷估计与规划》   [美] Mike Cohn 著     宋锐  译
+          li
+            | 《持续交付 发布可靠软件的系统方法》    Jez Humble / David Farley  著       乔梁  译
+          li
+            | 《精益软件开发管理之道》      Mary Poppendieck / Tom Poppendieck 著     王海鹏   译
+          li
+            | 《Scrum敏捷产品管理:打造用户喜爱的产品》   Roman Pichler 著      李忠利  译
+          li
+            | 《用户故事与敏捷方法》    [美] Mike Cohn
+          li
+            | 《番茄工作法图解：简单易行的时间管理方法》   [瑞典] 诺特伯格（Noteberg,S.）
+          li
+            | The Scrum Field Guide   Mitch Lacey
+          li
+            | Exploring Scrum: The Fundamentals      Dan Rawsthorne with Doug Shimp
+
+

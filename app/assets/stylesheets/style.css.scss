@@ -847,6 +847,7 @@ pre {
   font-size: 16px;
   font-weight: bold;
   color: #094395;
+  vertical-align: top;
 }
 
 .knowledge_source {
@@ -866,14 +867,12 @@ pre {
 }
 
 .knowledge_down {
-  width: 93px;
-  height: 25px;
-  display: block;
-  background: url(knowledge_down.png) 0px 0px no-repeat;
+  width: 73px;
+  height: 23px;
+  display: inline-block;
+  background: url(download.png) 0px 0px no-repeat;
   color: #ffffff;
-  padding-left: 40px;
-  margin-top: 10px;
-  margin-bottom: 30px;
+  margin-right: 10px;
 }
 
 .contact_bg {
@@ -883,11 +882,7 @@ pre {
       font-size: 16px;
       font-weight: bold;
       color: #083c86;
-    }
-    a {
-      line-height: 180%;
-      margin: 0 20px;
-      display: inline-block;
+      vertical-align: top;
     }
   }
   .contact_txt {
@@ -1510,5 +1505,34 @@ pre {
         }
       }
     }
+  }
+}
+
+.page_container {
+  clear: both;
+  background: #f2f2f2;
+  margin: 20px 20px 0 20px;
+  .section {
+    line-height: 1.8;
+    .content_header {
+      background: url(course_point.gif) 0px 8px no-repeat;
+      padding-left: 15px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .content_container {
+      margin: 10px 0 30px 10px;
+      .sub_header {
+        background: url(course_point.gif) 0px 8px no-repeat;
+        padding-left: 15px;
+      }
+      ul {
+        margin-bottom: 20px;
+      }
+
+    }
+  }
+  hr.separator {
+    border-color: #094395;
   }
 }
