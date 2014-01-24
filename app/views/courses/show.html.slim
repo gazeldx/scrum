@@ -1,4 +1,8 @@
-= title t('courses.title')
+- content_for :head do
+  <meta name="keywords" content="Jens Ostergaard秦风, Jim Wang王军, scrum培训, Scrum管理, 敏捷软件开发, 敏捷管理, ScrumMaster, 敏捷培训"/>
+  
+- page_title = (@course_description.name =~ /CSPO/) ? 'Scrum认证培训，CSPO认证 – CSPO认证培训' : 'Scrum培训课程， CSM认证，CSM培训'
+= title page_title
 .page.page_bg2
   .title.course
     = link_to t('courses.title'), courses_path
