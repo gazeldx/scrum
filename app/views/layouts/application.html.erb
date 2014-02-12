@@ -43,7 +43,7 @@
           <ul>
             <% if I18n.locale == I18n.default_locale %>
               <li><%= link_to "English", params.merge(:locale=>'en')%></li> |
-              <li><%= link_to "FAQ", faq_path  %></li>
+              <li><%= link_to "常见问题", faq_path  %></li>
             <% else %>
               <li><%= link_to "中文", params.merge(:locale=>'zh')%></li>
             <%end%>
@@ -58,7 +58,7 @@
         <div class="flexCon">
           <ul class="slides">
             <!-- <li><%#= link_to image_tag("slide_ad_42_#{I18n.locale}.jpg"), course_path(42) %></li> -->
-            <li><%= link_to image_tag("slide_ad_55_#{I18n.locale}.jpg"), course_path(55) %></li>
+            <li><%= link_to image_tag("slide_ad_55_zh.jpg"), course_path(55) %></li>
             <li><%= link_to image_tag("slide_ad_book_#{I18n.locale}.jpg"), course_path(43) %></li>
             <li><%= link_to image_tag("banner_ken.jpg"), "/ken_schwaber" %></li>
             <% %w{slide04 slide05}.each do |slide| %>
