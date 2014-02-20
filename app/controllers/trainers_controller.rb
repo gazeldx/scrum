@@ -3,12 +3,12 @@ class TrainersController < ApplicationController
   include OrderByCreatedAt
   
   def index
-    @trainers = Trainer.order('created_at')
+    @trainers = Trainer.visible.order('created_at')
     @trainer = @trainers.first
   end
 
   def team
-    @trainers = Trainer.order('created_at')
+    @trainers = Trainer.visible.order('created_at')
     @trainer = @trainers.first
   end
 
@@ -18,9 +18,13 @@ class TrainersController < ApplicationController
   end
 
   def show
-    @trainers = Trainer.order('created_at')
-    @trainer = Trainer.find_by_url(params[:url])
-    render 'team'
+    @trainers = Trainer.visible.order('created_at')
+    @trainer = @trainers.find_by_url(params[:url])
+    if @trainer
+      render 'team'
+    else
+      redirect_to trainers_path
+    end
   end
 
   def new

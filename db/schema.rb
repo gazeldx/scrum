@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131122074147) do
+ActiveRecord::Schema.define(:version => 20140220060740) do
 
   create_table "class_photos", :force => true do |t|
     t.integer  "course_id"
@@ -126,13 +126,14 @@ ActiveRecord::Schema.define(:version => 20131122074147) do
     t.text     "bio_zh"
     t.string   "base"
     t.string   "work_as_zh"
-    t.datetime "created_at",                       :null => false
-    t.datetime "updated_at",                       :null => false
+    t.datetime "created_at",                        :null => false
+    t.datetime "updated_at",                        :null => false
     t.string   "name_en"
     t.text     "description_en"
     t.text     "bio_en"
     t.string   "work_as_en"
     t.boolean  "need_assistant", :default => true
+    t.boolean  "show_in_team",   :default => false
   end
 
   create_table "users", :force => true do |t|
