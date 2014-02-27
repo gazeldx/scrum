@@ -44,7 +44,7 @@ zh:
     courses: 认证课程
     trainees: 学员
     training: 内训
-    knowledge: Scrum工作室
+    knowledge: 敏捷课堂
     contact_us: 联系我们
 
   home:
@@ -81,7 +81,7 @@ zh:
     agile_consulting: <em>敏捷咨询</em><br />我们根据每个企业的公司文化（正如一个人的个性）和业务目标定制敏捷化解决方案，涵盖认证、培训、咨询、教练、辅导等多个方面，短期内我们会为您解决组织及项目的核心问题，包括交付效率、交付质量、交付成本、员工士气等，长期会为您的企业建立持续改善的机制。%{name}将帮助您建立一个真正的敏捷的企业，而非制定和遵循“敏捷制度”。
 
   team:
-    title: 团队
+    title: 顾问团队
 
   partners:
     title: 合作伙伴
@@ -253,7 +253,7 @@ zh:
     contact: 更多%{name}企业内训信息，请拨打 <em>4008210871</em> 或发信至 <em>info@shinescrum.com</em>我们将在一个工作日内回复。
 
   knowledge:
-    title: Scrum工作室
+    title: 敏捷课堂
     welcome_to_share: 欢迎分享
     weekly: "%{name}周刊"
     ref: 来自于

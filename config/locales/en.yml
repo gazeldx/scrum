@@ -24,13 +24,13 @@ en:
   navigation:
     home: Home
     about_us: About us
-    team: Team
+    team: Consultant Team
     partners: Partners
     clients: Clients
     courses: Courses
     trainees: Trainees
     training: Training
-    knowledge: Scrum Studio
+    knowledge: Agile Classroom
     contact_us: Contact us
 
   home:
@@ -67,7 +67,7 @@ en:
     agile_consulting: <em>Agile consulting</em><br />We provide agile solutions which evaluate key aspects such as business objectives, company culture, and individual roles within your organisation. Short term, we provide a framework to identify and solve issues within working practise. Through certified training, coaching, counselling and advising, we help you to organise your business. Working with %{name} will optimize the efficiency, costs and quality of delivery, improving employee morale and providing sustainable long term improvements. Our adaptable integrated training turns your business into a truly flexible agile enterprise.
 
   team:
-      title: Team
+      title: Consultant Team
 
   partners:
     title: Partners
@@ -228,7 +228,7 @@ en:
     contact: For more info about %{name} onsite training, please call <em>4008210871</em> or send email to <em>info@shinescrum.com</em>. We will reply within one working day.
 
   knowledge:
-    title: Scrum Studio
+    title: Agile Classroom
     welcome_to_share: 'Welcome to share '
     weekly: "%{name} Weekly"
     ref: Ref
