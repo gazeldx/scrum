@@ -7,18 +7,10 @@
       .content_header
         | 敏捷文章
       .content_container
-        - KNOWLEDGE[I18n.locale.to_s].each do |item|
-          ul
+        ul
+          - KNOWLEDGE[I18n.locale.to_s].each do |item|
             li
-              .knowledge_title
-                = link_to "", item["link"], class: 'knowledge_down'
-                = item["title"]
-              .knowledge_sources
-                | #{t 'knowledge.ref'}: #{item["source"]}
-              .knowledge_authers
-                | #{t 'knowledge.author'}: #{item["author"]}
-              .knowledge_reads
-                = item["read"]
+              = link_to item["title"], "/books"
     hr.separator
     .section
       .content_header
@@ -36,7 +28,7 @@
       .content_header
         | 敏捷导入攻略
       .content_container
-        |
+        = link_to '企业级敏捷攻略', '/downloads/Software in 30 Days-CN.pdf'
     hr.separator
     .section
       .content_header

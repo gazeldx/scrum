@@ -1,0 +1,22 @@
+= title '敏捷文章'
+.page
+  .title.knowledge
+    | 敏捷文章
+  .page_container
+    .section
+      .content_header
+      .content_container
+        - KNOWLEDGE[I18n.locale.to_s].each do |item|
+          ul
+            li
+              .knowledge_title
+                = link_to "", item["link"], class: 'knowledge_down'
+                = item["title"]
+              - if item["source"]
+                .knowledge_sources
+                  | #{t 'knowledge.ref'}: #{item["source"]}
+              - if item["author"]
+                .knowledge_authers
+                  | #{t 'knowledge.author'}: #{item["author"]}
+              .knowledge_reads
+                = item["read"]

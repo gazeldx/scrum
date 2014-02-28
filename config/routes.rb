@@ -59,9 +59,12 @@ Scrum::Application.routes.draw do
   #get 'students' => 'shared#students'
 
   get 'inner' => 'shared#inner'
+  get 'ken_schwaber' => 'shared#interview_ken_schwaber'
+
+  # library
   get 'library' => 'shared#library'
   get 'poker' => 'shared#poker'
-  get 'ken_schwaber' => 'shared#interview_ken_schwaber'
+  get 'books' => 'shared#books'
 
   get 'destroy_all_class_photos_:id' => 'courses#destroy_all_class_photos'
 

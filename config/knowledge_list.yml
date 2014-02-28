@@ -23,6 +23,11 @@ zh:
     read: 这份指南包含了Scrum的定义,其中包括Scrum 的角色、事件、工件，以及把它们绑在一起的规则。
     link: 'http://www.scrum.org/Portals/0/Documents/Scrum%20Guides/Scrum%20Guide%20-%20CN.pdf#zoom=100'
 
+  - title: Five Levels of Agile Planning (Hubert Smits)
+    author: Hubert Smits
+    read: 这篇文章将系统介绍大型敏捷项目中的规划——敏捷规划中的五个层次
+    link: '/downloads/Five Levels of Agile Planning.pdf'
+
 en:
   - title: The Scrum Papers
     source: www.scrumfoundation.com
@@ -47,3 +52,8 @@ en:
     author: Jeff Sutherland, Ken Schwaber
     read: This guideline includes the definition of Scrum, the different roles of Scrum, events, working material and the different rules for each of the above mentioned.
     link: 'http://www.scrum.org/Portals/0/Documents/Scrum%20Guides/Scrum%20Guide%20-%20CN.pdf#zoom=100'
+
+  - title: Five Levels of Agile Planning (Hubert Smits)
+    author: Hubert Smits
+    read: This paper evaluates agile practices when applied in multi-team and multi-person-year projects. It does so through inspection of the requirements brought on by scaling projects, and applying basic agile principles to those requirements.
+    link: '/downloads/Five Levels of Agile Planning.pdf'
