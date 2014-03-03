@@ -17,7 +17,7 @@
           = t 'courses.location'
         th
       - @courses.each_with_index do |course, i|
-        tr class="#{i.odd? ? 'tr2' : nil} #{'hightlight' if highlight?(course)}"
+        tr class="#{i.odd? ? 'tr2' : nil} #{'highlight' if highlight?(course)}"
           td
             = begin_end_time(course)
           td

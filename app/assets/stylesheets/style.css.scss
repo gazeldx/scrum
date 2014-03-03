@@ -702,9 +702,6 @@ pre {
 .course_list tr {
   height: 30px;
 }
-.course_list tr.highlight {
-  color: #864323;
-}
 
 .course_list .tr2 {
   background: #f2f2f2;
@@ -717,6 +714,10 @@ pre {
 .course_list td {
   padding-left: 20px;
   color: #333333;
+}
+
+.course_list tr.highlight td {
+  color: #864323;
 }
 
 .course_list a{ color: #275CA8;}

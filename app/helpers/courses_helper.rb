@@ -1,3 +1,5 @@
+#encoding = utf-8
+
 module CoursesHelper
   def begin_end_time(course)
     start = course.start_time
@@ -10,7 +12,7 @@ module CoursesHelper
   end
 
   def highlight?(course)
-    @course.active? &&
+    course.active? &&
     course.trainer.url == "Jens-Østergaard"
   end
 end
