@@ -8,4 +8,9 @@ module CoursesHelper
       "#{start.strftime('%F')} ~ #{end_time.strftime('%d')}"
     end
   end
+
+  def highlight?(course)
+    @course.active? &&
+    course.trainer.url == "Jens-Østergaard"
+  end
 end

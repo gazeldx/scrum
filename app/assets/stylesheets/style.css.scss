@@ -702,6 +702,9 @@ pre {
 .course_list tr {
   height: 30px;
 }
+.course_list tr.highlight {
+  color: #864323;
+}
 
 .course_list .tr2 {
   background: #f2f2f2;
