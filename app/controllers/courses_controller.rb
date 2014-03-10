@@ -6,7 +6,8 @@ class CoursesController < ApplicationController
 
 
   def index
-    @courses = Course.where('end_time > ?', Time.new(2014)).order('start_time desc')
+    #@courses = Course.where('end_time > ?', Time.new(2014)).order('start_time desc')
+    @courses = Course.order('start_time desc').paginate(page: (params[:page] || 1), per_page: (params[:per_page] || 20))
   end
 
   def background_index

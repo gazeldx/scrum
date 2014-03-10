@@ -33,6 +33,10 @@
             - else
               span class='closed'
                 = t 'courses.closed'
+      tfoot
+        tr
+          td colspan=5 align="center"
+            = will_paginate @courses
   .course_con
     .course_intr
       .know
