@@ -63,9 +63,9 @@ class CoursesController < ApplicationController
     redirect_to admin_courses_path, :notice => t('delete_succ')
   end
 
-#  def destroy
-#    @course = Course.find(params[:id])
-#    @course.destroy
-#    redirect_to courses_url
-#  end
+  def destroy
+    @course = Course.find(params[:id])
+    @course.destroy
+    redirect_to admin_courses_url
+  end
 end
