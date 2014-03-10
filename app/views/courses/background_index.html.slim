@@ -49,3 +49,7 @@ table.olt
           = link_to '修改课程', edit_course_path(course)
           |  |&nbsp;
           = link_to '删除课程', course_path(course), method: :delete, confirm: "Are you sure you want to delete this course?"
+  tfoot
+    tr
+      td colspan=9 align="right"
+        = will_paginate @courses

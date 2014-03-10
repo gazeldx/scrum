@@ -11,7 +11,7 @@ class CoursesController < ApplicationController
   end
 
   def background_index
-    @courses = Course.order('start_time desc')
+    @courses = Course.order('start_time desc').paginate(page: (params[:page] || 1), per_page: (params[:per_page] || 20))
     render :layout => 'admin'
   end
 
