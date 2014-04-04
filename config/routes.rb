@@ -60,6 +60,7 @@ Scrum::Application.routes.draw do
 
   get 'inner' => 'shared#inner'
   get 'ken_schwaber' => 'shared#interview_ken_schwaber'
+  get 'jens_ostergaard' => 'shared#interview_jens_ostergaard'
 
   # library
   get 'library' => 'shared#library'
