@@ -24,9 +24,13 @@ end
 platform :ruby do # linux
   gem 'libv8', '~> 3.11.8'
   gem 'therubyracer'
-  gem 'unicorn'
 end
 
 platform :mswin, :mingw do # windows
   gem 'execjs'
+end
+
+group :deploy do
+  gem 'unicorn'
+  gem 'puma'
 end
