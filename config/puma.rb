@@ -8,21 +8,24 @@ end
 
 basedir = Rails.root
 
-workers 4
-threads 4, 16
-
-preload_app!
+rackup      "#{basedir}/config.ru"
 
 port        ENV['PORT']     || 3000
 environment ENV['RAILS_ENV'] || 'development'
 
+daemonize true
 
-bind        "unix://#{basedir}/tmp/puma/puma.scrum.sock"
-pidfile     "#{basedir}/tmp/puma/pid"
-state_path  "#{basedir}/tmp/puma/state"
-rackup      "#{basedir}/config.ru"
+pidfile     "#{basedir}/tmp/pids/puma.pid"
+state_path  "#{basedir}/tmp/pids/puma.state"
 
-activate_control_app
+stdout_redirect "#{basedir}/log/stdout", "#{basedir}/log/stderr", true
+
+workers 3
+threads 0, 16
+
+bind        "unix:///var/run/puma.scrum.sock"
+
+preload_app!
 
 on_worker_boot do
   # worker specific setup
