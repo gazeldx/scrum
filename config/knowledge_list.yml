@@ -17,11 +17,17 @@ zh:
     read: 本文将使经理级别的学员获益匪浅。这篇文章阐述了经理角色如何在企业中运用scrum，并且提供了真实案例、练习方法以及工作描述样例供参考。
     link: 'http://assets.scrumfoundation.com/downloads/4/roleofthemanager.pdf?1285932073'
 
-  - title: Scrum 指南（中文）
+  # - title: Scrum 指南（中文）
+  #   source: www.scrum.org
+  #   author: Jeff Sutherland, Ken Schwaber
+  #   read: 这份指南包含了Scrum的定义,其中包括Scrum 的角色、事件、工件，以及把它们绑在一起的规则。
+  #   link: 'http://www.scrum.org/Portals/0/Documents/Scrum%20Guides/Scrum%20Guide%20-%20CN.pdf#zoom=100'
+
+  - title: 2013新版Scrum Guide（含中英文版）
     source: www.scrum.org
     author: Jeff Sutherland, Ken Schwaber
     read: 这份指南包含了Scrum的定义,其中包括Scrum 的角色、事件、工件，以及把它们绑在一起的规则。
-    link: 'http://www.scrum.org/Portals/0/Documents/Scrum%20Guides/Scrum%20Guide%20-%20CN.pdf#zoom=100'
+    link: '/users/download'
 
   - title: Five Levels of Agile Planning (Hubert Smits)
     author: Hubert Smits
@@ -47,11 +53,17 @@ en:
     read: This will benefit students who are on a managerial level.  The article explains how a manager for a company can use Scrum. It provides real-life examples, exercises, methods, and job sample descriptions for reference.
     link: 'http://assets.scrumfoundation.com/downloads/4/roleofthemanager.pdf?1285932073'
 
-  - title: Scrum Guide（Chinese）
+  # - title: Scrum Guide（Chinese）
+  #   source: www.scrum.org
+  #   author: Jeff Sutherland, Ken Schwaber
+  #   read: This guideline includes the definition of Scrum, the different roles of Scrum, events, working material and the different rules for each of the above mentioned.
+  #   link: 'http://www.scrum.org/Portals/0/Documents/Scrum%20Guides/Scrum%20Guide%20-%20CN.pdf#zoom=100'
+
+  - title: The Scrum Guide 2013
     source: www.scrum.org
     author: Jeff Sutherland, Ken Schwaber
     read: This guideline includes the definition of Scrum, the different roles of Scrum, events, working material and the different rules for each of the above mentioned.
-    link: 'http://www.scrum.org/Portals/0/Documents/Scrum%20Guides/Scrum%20Guide%20-%20CN.pdf#zoom=100'
+    link: '/users/download'
 
   - title: Five Levels of Agile Planning (Hubert Smits)
     author: Hubert Smits
