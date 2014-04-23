@@ -1518,6 +1518,11 @@ pre {
   background: #f2f2f2;
   margin: 20px 20px 0 20px;
   line-height: 1.8;
+  .section_title {
+    padding-left: 15px;
+    font-weight: bold;
+    font-size: 16px;
+  }
   .section {
     .content_header {
       background: url(course_point.gif) 0px 8px no-repeat;
@@ -1539,6 +1544,22 @@ pre {
   }
   hr.separator {
     border-color: #094395;
+  }
+  .people {
+    .job_title  {
+      font-size: 14px;
+      color: #454545;
+      font-weight: bold;
+    }
+    .name {
+      font-size: 14px;
+      font-weight: bold;
+      color: #000000;
+      line-height: 34px;
+    }
+    .description {
+
+    }
   }
   .interview {
     .overview{
