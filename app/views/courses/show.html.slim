@@ -72,6 +72,7 @@
             ul
               - @course_description.bonus.each do |i|
                 li= i
+            br
           - if @course_description.comments.present?
             .know_title
               = t 'courses.course_feadback'
@@ -80,6 +81,7 @@
                 li
                   .comment_content= comment.body
                   .comment_by= comment.comment_by
+            br
       .right
         .cont
           .cont_title

@@ -525,6 +525,11 @@ $xl: 20px;
 }
 
 .comment_container {
+  .comment_content {
+    font-style: italic;
+    font-size: 12px;
+    /*color: #999;*/
+  }
   .comment_by {
     text-align: right;
   }
