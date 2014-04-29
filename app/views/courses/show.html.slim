@@ -160,9 +160,12 @@
             li= image_tag('class_jim_1.jpg')
             li= image_tag('class_jim_2.jpg')
           - if @course.trainer.name.include? "Hubert"
-            li= image_tag('class_arne_1.jpg')
-            li= image_tag('class_arne_2.jpg')
+            li= image_tag('class_hubert_1.jpg')
+            li= image_tag('class_hubert_2.jpg')
           - if @course.trainer.name.include? "Carlson"
             li= image_tag('class_carlson_1.jpg')
             li= image_tag('class_carlson_2.jpg')
+          - if @course.trainer.name.include? "Arne"
+            li= image_tag('class_arne_1.jpg')
+            li= image_tag('class_arne_2.jpg')
       .clearFix
