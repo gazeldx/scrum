@@ -165,10 +165,6 @@ $xl: 20px;
 
 .page .faq-title { background: url(faq.jpg) right top no-repeat #2f2f31; }
 
-.page_bg2 {
-  background: #fafafa;
-}
-
 .page h2.home_page_h2 {
   color: #245ba9;
   font-size: 18px;
@@ -759,21 +755,17 @@ pre {
   font-weight: bold;
 }
 
-.innerUpdate_con {
-  clear: both;
-  background:#f2f2f2
-}
 
 .innerUpdate_intr {
-  background: none repeat scroll 0 0 #F2F2F2;
+  /*background: none repeat scroll 0 0 #F2F2F2;*/
   color: #010101;
   font-size: 18px;
   line-height: 180%;
-  padding-top: 40px;
+  /*padding-top: 40px;*/
 }
 
 .innerUpdate_txt {
-  padding: 0px 30px 0 30px;
+  /*padding: 0px 30px 0 30px;*/
   font-size: 16px;
 }
 
@@ -790,18 +782,18 @@ pre {
 .innerUpdate_title {
   color: #4B4B4B;
   font-size: 14px;
-  margin-left: 33px;
+  /*margin-left: 33px;*/
 }
 
 .innerUpdate_title2 {
   color: #275dab;
   font-size: 18px;
-  margin-left: 33px;
+  /*margin-left: 33px;*/
   padding-top: 20px;
 }
 
 .innerUpdate_c ul {
-  margin-left: 33px;
+  /*margin-left: 33px;*/
 }
 
 .innerUpdate_c li {
@@ -816,7 +808,6 @@ pre {
   padding: 10px 10px 10px 20px;
   font-size: 16px;
   border: #c4c4c4 solid 1px;
-  background: #dfdede;
 }
 
 .innerUpdate_txt2 em {
@@ -1525,7 +1516,7 @@ pre {
 .page_container {
   clear: both;
   background: #f2f2f2;
-  margin: 20px 20px 0 20px;
+  margin: 30px 30px 0 30px;
   line-height: 1.8;
   .section_title {
     padding-left: 15px;
@@ -1619,6 +1610,36 @@ pre {
     .note{
       margin-right: 10px;
       text-align: right;
+    }
+  }
+  table.course_type {
+    text-align: center;
+    width: 900px;
+    tr {
+      td {
+        padding: 5px 5px;
+        font-size: 14px;
+        border: 1px solid grey;
+        width: 50%
+      }
+    }
+    thead {
+      background-color: #dedede;
+      font-weight: bold;
+      tr {
+        td {
+          font-size: 16px;
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+        }
+      }
+    }
+    tr.separator {
+      display: none;
     }
   }
 }
