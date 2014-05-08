@@ -3,105 +3,102 @@
   .title.innerUpdate
     = t'training.title'
   .page_container
-    .innerUpdate_intr
-      .innerUpdate_txt
-        = t 'training.introduction', name: t('name')
-        br
-        =raw t 'training.courses'
-      .innerUpdate_c
-        .innerUpdate_title
-          = t 'training.courses_detail.header'
-        table.course_type
-          thead
-            tr
-              td colspan=2
-                | 认证课程
-          tbody
-            tr
-              td
-                | 美国Scrum联盟官方Scrum Master认证 
-              td
-                | 美国Scrum联盟官方Scrum Product Owner认证
-            tr.separator
-              td colspan=2
-                | &nbsp;
-          thead
-            tr
-              td
-                | 管理实践
-              td
-                | 技术实践
+    /.innerUpdate_txt
+      = t 'training.introduction', name: t('name')
+      br
+      =raw t 'training.courses'
+    .innerUpdate_c
+      .innerUpdate_title
+        = t 'training.courses_detail.header'
+      table.course_type
+        thead
+          tr
+            td colspan=2
+              | 认证课程
+        tbody
+          tr
+            td
+              | 美国Scrum联盟官方Scrum Master认证 
+            td
+              | 美国Scrum联盟官方Scrum Product Owner认证
+          tr.separator
+            td colspan=2
+              | &nbsp;
+        thead
+          tr
+            td
+              | 管理实践
+            td
+              | 技术实践
 
-          tbody
-            tr
-              td
-                | Scrum敏捷软件开发管理训练营
-              td
-                | 持续集成实战工作坊
-            tr
-              td
-                | 领导敏捷转型
-              td
-                | TDD测试驱动开发实战工作坊
-            tr
-              td
-                | Scrum敏捷产品管理与需求管理
-              td
-                | 敏捷测试原则与实战工作坊
-            tr
-              td
-                | 管理层敏捷精要
-              td
-                | 单元测试与重构实战工作坊
-            tr
-              td
-                | 精益与看板
-              td
-                | 自动化测试与ATDD实战工作坊
-            tr.separator
-              td colspan=2
-                | &nbsp; 
+        tbody
+          tr
+            td
+              | Scrum敏捷软件开发管理训练营
+            td
+              | 持续集成实战工作坊
+          tr
+            td
+              | 领导敏捷转型
+            td
+              | TDD测试驱动开发实战工作坊
+          tr
+            td
+              | Scrum敏捷产品管理与需求管理
+            td
+              | 敏捷测试原则与实战工作坊
+          tr
+            td
+              | 管理层敏捷精要
+            td
+              | 单元测试与重构实战工作坊
+          tr
+            td
+              | 精益与看板
+            td
+              | 自动化测试与ATDD实战工作坊
+          tr.separator
+            td colspan=2
+              | &nbsp; 
 
-          thead
-            tr
-              td colspan=2
-                | 其他课程
-          tbody
-            tr
-              td
-                | 用户体验设计实战与案例
-              td
-                | Android企业级应用程序开发完整训练
-            tr
-              td
-                | iOS测试最佳实践
-              td
-                | Android软硬整合设计与框架揭秘
-            tr
-              td
-                | 云计算分布式大数据Hadoop企业级完整训练
-              td
-                | &nbsp;
-            tr.separator
-              td colspan=2
-                | &nbsp;
-            tr
-              td.red colspan=2
-                | 获取更多课程信息及详细课程大纲，请致电:400 821 0871
-        .innerUpdate_title2
-          = t 'training.courses_highlights.header'
-        ul
-          - t('training.courses_highlights.content').each do |item|
-            li
-              = item
-        .innerUpdate_title2
-          = t 'training.photos.header'
-        = image_tag('inner_class_1.png')
-        br
-        = image_tag('inner_class_a.png')
-        br
-        = image_tag('inner_class_b.jpg')
-        br
-        = image_tag('inner_class_c.jpg')
-        .innerUpdate_txt2
-          =raw t('training.contact', name: t('name'))
+        thead
+          tr
+            td colspan=2
+              | 其他课程
+        tbody
+          tr
+            td
+              | 用户体验设计实战与案例
+            td
+              | Android企业级应用程序开发完整训练
+          tr
+            td
+              | iOS测试最佳实践
+            td
+              | Android软硬整合设计与框架揭秘
+          tr
+            td
+              | 云计算分布式大数据Hadoop企业级完整训练
+            td
+              | &nbsp;
+          tr.separator
+            td colspan=2
+              | &nbsp;
+          tr
+            td.red colspan=2
+              | 获取更多课程信息及详细课程大纲，请致电:400 821 0871
+      .innerUpdate_title2
+        = t 'training.courses_highlights.header'
+      ul
+        - t('training.courses_highlights.content').each do |item|
+          li
+            = item
+      .innerUpdate_title2
+        = t 'training.photos.header'
+      = image_tag('inner_class_1.png')
+      = image_tag('inner_class_a.png', class: :right)
+      br
+      = image_tag('inner_class_b.png')
+      = image_tag('inner_class_c.jpg', class: :right)
+      .innerUpdate_txt2
+        =raw t('training.contact', name: t('name'))
