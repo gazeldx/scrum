@@ -16,7 +16,6 @@
     <%= stylesheet_link_tag    "skin", :media => "screen" %>
     <%= stylesheet_link_tag    "flexslider", :media => "screen" %>
     <%= javascript_include_tag "application"%>
-    <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
   </head>
   
 
@@ -123,5 +122,11 @@
     } catch( err ) {}
     </script><noscript><p><img src="http://www.shinetechchina.com/piwik/piwik.php?idsite=11" style="border:0" alt="" /></p></noscript>
     <!-- End Piwik Tracking Code -->
+
+    <!-- Sina weibo -->
+    <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+    <!-- End Sina weibo -->
+
+    <%= yield :bdhm %>
   </body>
 </html>
