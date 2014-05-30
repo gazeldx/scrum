@@ -1,5 +1,5 @@
 class ClassPhotosController < ApplicationController
-  skip_before_filter :authenticate, :only => [:index, :year]
+  before_filter :authenticate, :only => [:new, :create]
 
   def index
   	@courses = Course.includes(:class_photos).order('start_time DESC')

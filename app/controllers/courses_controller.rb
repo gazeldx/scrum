@@ -1,9 +1,6 @@
 class CoursesController < ApplicationController
-  skip_before_filter :authenticate, :only => [:all, :show, :register, :index]
-#  def index
-#    @courses = Course.where('end_time > ?', Time.now).order('start_time')
-#  end
-
+  before_filter :authenticate
+  skip_before_filter :authenticate, :only => [:all, :show, :register, :index]#, :background_index, :new, :edit, :create, :update, :destroy_all_class_photos, :destroy]
 
   def index
     #@courses = Course.where('end_time > ?', Time.new(2014)).order('start_time desc')

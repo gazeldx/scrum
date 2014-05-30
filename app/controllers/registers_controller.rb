@@ -1,4 +1,5 @@
 class RegistersController < ApplicationController
+  before_filter :authenticate
   skip_before_filter :authenticate, :only => [:new, :create, :edit]
   before_filter :check_course_status, :only => [:new, :create]
   

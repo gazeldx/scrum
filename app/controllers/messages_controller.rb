@@ -1,12 +1,10 @@
 class MessagesController < ApplicationController
-  skip_before_filter :authenticate, :only => [:create]
+  before_filter :authenticate, :only => [:index, :show, :new, :edit, :update, :destroy]
 
   def index
     @messages = Message.order('created_at desc')
     render :layout => 'admin'
   end
-
-
   
   # GET /messages/1
   # GET /messages/1.json
