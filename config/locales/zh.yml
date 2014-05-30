@@ -52,7 +52,7 @@ zh:
     why_shinescrum: 选择%{name}的理由
     team_members: 查看%{name}团队成员
     shinescrum_introduction: <em>%{name}</em>由<br />Scrum创始人Jeff Sutherland、全球首位CSP Jens Østergaard秦风、倡导敏捷的领头雁北京盛安德科技公司共同创办，是全球领先的专注敏捷及Scrum的专业培训咨询机构。
-    shinescrum_vision: 我们专注于CSM/CSPO认证培训, 根据每个企业的文化和业务目标量身定制培训课程和敏捷导入实施方案，涵盖认证、培训、评估、咨询、教练、辅导等方面，短期内我们会为您解决组织及项目的核心问题，包括交付效率、交付质量、交付成本、员工士气等，长期会为您的企业建立持续改善的机制，成为一个真正的敏捷企业。
+    shinescrum_vision: 我们专注于CSM/CSPO认证培训，并提供Scrum敏捷软件开发管理、领导敏捷转型、看板及精益、持续集成、单元测试与重构、TDD/ATDD等培训课程。<br/>我们根据每个企业的文化和业务目标量身定制培训课程和敏捷导入实施方案，涵盖认证、培训、评估、咨询、教练、辅导等方面。短期内我们会为您解决组织及项目的核心问题，包括交付效率、交付质量、交付成本、员工士气等，长期会为您的企业建立持续改善的机制，成为一个真正的敏捷企业。
     our_strengths:
       title: <em>我们的优势</em>是
       strengths:
@@ -60,7 +60,7 @@ zh:
         - 国内唯一拥有最多CST及最具资历的Scrum敏捷海内外顾问团队
         - 深刻理解中外文化以及瀑布与敏捷环境的差异，擅长敏捷在中国企业的落地和实施
         - 关注每位客户和学员，辅导大型软件企业导入Scrum，帮助个人成为优秀的敏捷实践者
-        - 世界级敏捷大师Jens Østergaard秦风和具有海内外背景的Jim Wang王军双讲师授课，课程体系内容千锤百炼
+        - 世界级敏捷大师Jens Østergaard秦风、Arne Ahlander安儒宣和具有海内外背景的Jim Wang王军双讲师授课，课程体系内容千锤百炼
     news_and_events: 新闻
     more_news: 更多
     subscribe: 免费订阅 ShineScrum 周刊

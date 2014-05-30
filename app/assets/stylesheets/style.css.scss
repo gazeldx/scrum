@@ -1633,7 +1633,8 @@ pre {
     }
     tbody {
       tr {
-        td {
+        td.bold {
+          font-weight: bold;
         }
       }
     }
