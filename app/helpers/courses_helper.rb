@@ -13,6 +13,6 @@ module CoursesHelper
 
   def highlight?(course)
     course.active? &&
-    course.trainer.url == "Arne-Ahlander"
+    (course.trainer.url == "Arne-Ahlander" || course.trainer.url == "Kiro-Harada")
   end
 end
