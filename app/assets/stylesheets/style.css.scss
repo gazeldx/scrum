@@ -14,6 +14,10 @@ $xl: 20px;
   color: red;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .cWhite a:hover {
   color: #fff;
   text-decoration: underline;
@@ -1633,8 +1637,7 @@ pre {
     }
     tbody {
       tr {
-        td.bold {
-          font-weight: bold;
+        td {
         }
       }
     }
