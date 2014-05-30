@@ -1,0 +1,631 @@
+= title t'training.title'
+.page
+  .title.innerUpdate
+    = link_to t('courses.title'), '/inner'
+    | &nbsp;&gt;&nbsp;
+    | Scrum敏捷软件开发管理训练营
+  .page_container
+    .section
+      .content_header
+        | 课程概述
+      .content_container
+        p
+          | 本课程是一个为期两天的面向软件研发团队的培训和实践相结合的课程，旨在帮助学员深入、全面的理解敏捷及Scrum，课程互动、游戏练习非常丰富，贴近实战，实践性很强，真正帮助学员解决在Scrum及敏捷实施过程中面临的实际问题。
+          br
+          | 课程内容涵盖Scrum及敏捷思维模式转变、Scrum及敏捷项目管理实战操作方法及技巧，高效敏捷及Scrum团队的打造，大型团队及项目、异地团队、外包项目如何实施Scrum和敏捷等话题，课程的过程中也会通过一个模拟的Scrum项目、以及大量穿插的实例、练习等让学员切身体会Scrum的工作方式。
+
+    .section
+      .content_header
+        | 课程优势
+      .content_container
+        ul.with_list_style
+          li
+            | 课程采用工作坊（Workshop）模式授课，课程互动性强 
+          li
+            | 资深Scrum培训师授课，讲师授课风趣幽默，游戏、练习丰富、互动性强 
+          li
+            | 讲师在美国工作多年，具有多年在跨国公司的大型团队的带队经验，实战经验丰富，也更了解中国文化及中国团队所面临的挑战。 
+          li
+            | 课程案例、游戏练习非常丰富，贴近实战，实践性很强 
+          li
+            | 课程已经在国内众多知名企业成功交付，千锤百炼，囊括大量项目论证过的实践经验
+
+    .section
+      .content_header
+        | 客户反馈
+      .content_container
+        ul.with_list_style
+          li 
+            | “培训的内容很全面，培训形式多样，鼓励大家多想，多讨论，收获很大” - 上海ADP学员
+          li 
+            | “我将在课堂上学到的敏捷价值观理论以及实践操作具体应用到工作当中，大大提高了工作效率，整个团队的面貌和精神状态也都焕然一新” – 橡果国际学员
+          li 
+            | “对Scrum和敏捷有了更全面、深入的认识，纠正了以前日常工作中的一些误解” - 深圳文思学员
+          li 
+            | “讲的非常透彻，授课技巧不错，很容易和实践联系起来” - 北京汤森路透学员
+
+    .section
+      .content_header
+        | 课程受众
+      .content_container
+        ul.with_list_style
+          li
+            | 任何期望全面了解或尝试Scrum及敏捷方法的个人或组织。 
+          li
+            | 正准备导入敏捷方法，希望在局部项目或者部分团队中尝试敏捷方法的企业。 
+          li
+            | 已经开始尝试敏捷方法，正在努力提升整体敏捷能力的一线研发团队，包括设计，开发，测试及项目管理等多个角色。
+
+    .section
+      .content_header
+        | 课程要点
+      .content_container
+        ul.with_list_style
+          li
+            | 软件项目的复杂性
+          li
+            | 敏捷思维，价值观及原则 
+          li
+            | Scrum概述-Scrum的理论基础、历史、框架及流程
+          li
+            | Scrum角色破解，
+          li
+            | 传统角色到Scrum角色的转换 
+          li
+            | 理解潜在可交付
+          li
+            | “Done”的定义
+          li
+            | 如何做计划
+          li
+            | 如何做评审和回顾会
+          li
+            | Scrum Master的一天
+          li
+            | “59分钟”的模拟Scrum练习
+          li
+            | 产品负责人破解
+          li
+            | 管理人员破解
+          li
+            | Scrum会议破解
+          li
+            | 终止一个Sprint
+          li
+            | 发布管理
+          li
+            | 大型团队和项目的Scrum实施、异地团队的Scrum实施
+          li
+            | Scrum环境下的团队架构，团队之间如何高效协作 
+          li
+            | Scrum框架下的需求管理（用户故事发掘、书写、提炼及拆分的方法与技巧） 
+          li
+            | 敏捷估算与计划的方法与技巧
+          li
+            | Scrum项目的进展跟踪及报告机制 
+          li
+            | Scrum实施的基本模式 
+          li
+            | Scrum环境下的绩效考核及评估
+
+    .section
+      .content_header
+        | 往期课程场景
+      .content_container
+        = image_tag('course_instruction/1-001-1.jpg')
+        = image_tag('course_instruction/1-001-2.jpg')
+
+    .section
+      .content_header
+        | 开课方式
+      .content_container
+        p
+          | 企业内训，预约培训时间（至少提前两周预约）
+
+    .section
+      .content_header
+        | 课程讲师
+      .content_container
+        ul.teacher
+          - trainers = Trainer.where("url in (?)", ["Jim-Wang", "Martin-Chen"])
+          - trainers.each do |trainer|
+            li
+              .photo
+                = image_tag(trainer.avatar.thumb.url)
+                .name
+                  | #{trainer.name}
+              .clear
+              .work_as
+                | #{trainer.work_as}
+
+    .section
+      .content_header
+        | 课程大纲
+      .content_container
+        table
+          thead
+            tr
+              td
+                | 时间
+              td
+                | 内容
+              td
+                | 详细内容
+          tbody
+            tr
+              td
+                | 第一天 上午
+              td
+                | &nbsp;
+              td
+                | &nbsp;
+            tr
+              td rowspan=15
+                | &nbsp;
+              td
+                | 敏捷思维：敏捷的价值观、原则、究竟什么是敏捷？为什么需要敏捷？
+              td
+                | &nbsp;
+            tr
+              td rowspan=8
+                | &nbsp;
+              td
+                | 游戏：传统的问题解决方法 vs 敏捷的问题解决方法
+            tr
+              td
+                | 为什么项目会失败？
+            tr
+              td
+                | 预定义过程 vs 经验性过程
+            tr
+              td
+                | 大而全的需求 vs 涌现式的需求
+            tr
+              td
+                | 项目管理三角形的新视角
+            tr
+              td
+                | 软件研发如何保持精益？
+            tr
+              td
+                | 讨论：松鼠汉堡案例讨论
+            tr
+              td
+                | 解读敏捷的价值观与原则
+            tr
+              td
+                | Scrum的框架与流程详解
+              td
+                | &nbsp;
+            tr
+              td rowspan=5
+                | &nbsp;
+              td
+                | 什么是Scrum： 从五个维度破解Scrum
+            tr
+              td
+                | Scrum的起源及历史
+            tr
+              td
+                | Scrum价值观及特点
+            tr
+              td
+                | Scrum给我们带来了什么？
+            tr
+              td
+                | Scrum的框架和流程
+
+            tr
+              td
+                | 第一天 下午
+              td
+                | &nbsp;
+              td
+                | &nbsp;
+
+            tr
+              td rowspan=40
+                | &nbsp
+              td
+                | Scrum的角色破解
+              td
+                | &nbsp;
+
+            tr
+              td rowspan=12
+                | &nbsp;
+              td
+                | Scrum Master的职责及日常工作
+
+            tr
+              td
+                | 什么是服务式的领导？
+            tr
+              td
+                | 讨论：Scrum Master如何协助团队？
+            tr
+              td
+                | Scrum Master如何对团队及PO进行Coaching？
+            tr
+              td
+                | 讨论：五种常见的工作情景
+            tr
+              td
+                | 优秀的ScrumMaster的特质
+            tr
+              td
+                | 讨论: 当没有专职Scrum Master时怎么办？
+            tr
+              td
+                | 产品负责人的职责及日常工作
+            tr
+              td
+                | 优秀的产品负责人的特质
+            tr
+              td
+                | 讨论： PO休假了
+            tr
+              td
+                | 谁来担任产品负责人？
+            tr
+              td
+                | 讨论：棒球大联盟案例
+
+            tr
+              td
+                | 团队及其环境
+              td
+                | &nbsp;
+            tr
+              td rowspan=16
+                | &nbsp;
+              td
+                | 团队组织形式：棒球型团队、足球型团队、网球双打型团队
+            tr
+              td
+                | Scrum团队的特点
+            tr
+              td
+                | 什么是特性团队
+            tr
+              td
+                | 特性团队面临的挑战
+            tr
+              td
+                | 什么是跨职能的团队？
+            tr
+              td
+                | 什么是自组织团队，自组织团队如何协作？
+            tr
+              td
+                | 讨论：我们的身边有哪些自组织团队？
+            tr
+              td
+                | 管理者如何影响自组织团队？如果领导自组织团队
+            tr
+              td
+                | 高效的团队是如何形成的？有哪些步骤？
+            tr
+              td
+                | 什么是团队宪章？什么叫团队工作协议？
+            tr
+              td
+                | 练习：制定一份团队的工作协议
+            tr
+              td
+                | 团队中会出现哪些消极分子？
+            tr
+              td
+                | 讨论：如何消除消极影响？
+            tr
+              td
+                | 什么样的工作环境有利于团队的形成？
+            tr
+              td
+                | 理想Scrum工作空间展示
+            tr
+              td
+                | 案例：迷茫的团队
+            tr
+              td
+                | Scrum Master的职责及日常工作
+              td
+                | &nbsp;
+            tr
+              td rowspan=8
+                | &nbsp;
+              td
+                | Sprint破解
+            tr
+              td
+                | Sprint计划会议
+            tr
+              td
+                | 每日站会破解，什么失效的每日站会
+            tr
+              td
+                | Sprint的进展跟踪机制：任务板、燃尽图
+            tr
+              td
+                | 讨论：为什么不能做小瀑布？
+            tr
+              td
+                | 什么是透明性？
+            tr
+              td
+                | 讨论：Scrum有哪些手段确保透明性
+            tr
+              td
+                | 如何定义完成？
+
+            tr
+              td
+                | Scrum模拟项目
+              td
+                | 59分钟的Scrum模拟项目
+
+            tr
+              td 
+                | 第二天 上午
+              td
+                | &nbsp;
+              td
+                | &nbsp;
+
+            tr
+              td rowspan=21
+                | &nbsp;
+              td
+                | crum框架下的需求管理
+              td
+                | &nbsp;
+            tr
+              td rowspan=11
+                | &nbsp;
+              td
+                | 涌现式的需求
+
+            tr
+              td
+                | 如何使用产品Backlog来管理涌现式的需求
+            tr
+              td
+                | 讨论：健康的产品Backlog的特征
+            tr
+              td
+                | 产品Backlog排列优先级的技巧
+            tr
+              td
+                | 练习：产品Backlog优先级排列
+            tr
+              td
+                | 从文档到讨论的转变
+            tr
+              td
+                | 什么是用户故事
+            tr
+              td
+                | 讨论：好的用户故事的特征有哪些
+            tr
+              td
+                | 如何分割用户故事
+            tr
+              td
+                | 练习：写用户故事
+            tr
+              td
+                | 如何为用户故事写验收条件
+
+            tr
+              td
+                | Scrum框架下的估算与计划
+              td
+                | &nbsp;
+            tr
+              td rowspan=8
+                | &nbsp;
+              td
+                | 基于规模做估算而不是周期
+
+            tr
+              td
+                | 使用故事点做估算
+            tr
+              td
+                | 估算扑克的使用
+            tr
+              td
+                | 练习：使用估算扑克对产品Backlog进行估算
+            tr
+              td
+                | SprintBacklog中任务的估算方法
+            tr
+              td
+                | 如何确定Sprint的长度
+            tr
+              td
+                | 如何制定发布计划
+            tr
+              td
+                | 如何制定Sprint计划
+
+
+            tr
+              td
+                | 第二天 下午
+              td
+                | 高阶话题（可选）
+              td
+                | &nbsp;
+
+            tr
+              td rowspan=30
+                | &nbsp;
+              td
+                | 异地团队的Scrum实施
+              td
+                | &nbsp;
+            tr
+              td rowspan=5
+                | &nbsp;
+              td
+                | 组织异地团队的基本策略
+
+            tr
+              td
+                | 异地团队如何形成凝聚力
+            tr
+              td
+                | 现场见面会
+            tr
+              td
+                | 改变沟通方式
+            tr
+              td
+                | 异地团队会议如何进行？
+
+            tr
+              td
+                | Scrum如何放大和扩展
+              td
+                | &nbsp;
+            tr
+              td rowspan=6
+                | &nbsp;
+              td
+                | 扩展产品负责人
+
+            tr
+              td
+                | 大型产品Backlog的管理
+            tr
+              td
+                | 主动管理依赖
+            tr
+              td
+                | 团队间的协调工作
+            tr
+              td
+                | 扩展Sprint计划会议
+            tr
+              td
+                | 建立实践分享社区
+
+            tr
+              td
+                | 大型遗留系统的Scrum实施
+              td
+                | &nbsp;
+            tr
+              td rowspan=3
+                | &nbsp;
+              td
+                | 通过自动化保护和隔离策略
+
+            tr
+              td
+                | 自动化测试金字塔
+            tr
+              td
+                | 重构面临的实际困难有哪些？如何克服
+
+            tr
+              td
+                | 维护型项目如何实施敏捷
+              td
+                | &nbsp;
+            tr
+              td rowspan=3
+                | &nbsp;
+              td
+                | 看板方法工作基本原理
+
+            tr
+              td
+                | 看板方法在维护性项目上的应用
+            tr
+              td
+                | 谁来做维护？如何克服团队抵触情绪
+
+            tr
+              td
+                | 敏捷架构和设计
+              td
+                | &nbsp;
+            tr
+              td rowspan=2
+                | &nbsp;
+              td
+                | Scrum和敏捷什么时候做设计？做到什么程度？
+
+            tr
+              td
+                | 什么是演进式样的架构？
+            tr
+              td
+                | 敏捷工程技术实践
+              td
+                | &nbsp;
+            tr
+              td rowspan=3
+                | &nbsp;
+              td
+                | 持续集成
+
+            tr
+              td
+                | TDD测试驱动开发
+            tr
+              td
+                | ATDD及自动化测试
+            tr
+              td
+                | 答疑环节
+              td
+                | &nbsp;
+            tr
+              td
+                | 最后总结
+              td
+                | &nbsp;
+
+    .section
+      .content_header
+        | 课程价格
+      .content_container
+        p
+          | 请联系课程顾问了解价格及优惠。
+
+    .section
+      .content_header
+        | 服务流程
+      .content_container
+        ul.with_list_style
+          li
+            | 客户需求分析及调研
+          li
+            | 培训方案设计及课程内容定制
+          li
+            | 培训实施
+          li
+            | 培训反馈
+          li
+            | 后期服务及跟进
+
+
+    .section
+      .content_header
+        | 后期服务
+      .content_container
+        ul.with_list_style
+          li
+            | 培训结束后2个月内，将对学员提供免费的电话、邮件或在线的技术支持服务。
+          li
+            | 与客户签订企业会员合作协议，企业员工或者客户参加公开课程培训时享受优惠。
+          li
+            | 定期组织多样化的公益性沙龙及学术交流活动。
+
+    .section
+      .content_container
+        p.red.contact_info
+          | 咨询电话：400 821 0871 或 021-6131 5388

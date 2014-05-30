@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 
 gem 'carrierwave', '0.6.2'
 gem 'friendly_id'
+gem 'high_voltage'
 gem 'jquery-rails'
 gem 'mini_magick', '~> 3.3'
 gem 'nested_form'

@@ -604,7 +604,7 @@ $xl: 20px;
 
 ul.teacher {
   li {
-    padding: 10px 0 30px 0;
+    padding: 10px 0 10px 0;
     clear: both;
   }
   .photo {
@@ -1520,8 +1520,23 @@ pre {
         background: url(course_point.gif) 0px 8px no-repeat;
         padding-left: 15px;
       }
-      ul {
-        margin-bottom: 20px;
+      ul.with_list_style {
+        padding-left: 20px;
+        li {
+          list-style: initial;
+        }
+      }
+
+      p.contact_info {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px;
+        border: 1px solid #c4c4c4;
+      }
+
+      img {
+        margin: 10px 10px;
       }
 
     }
@@ -1596,15 +1611,15 @@ pre {
       text-align: right;
     }
   }
-  table.course_type {
+  table {
     text-align: center;
     width: 900px;
+    border-collapse: collapse;
     tr {
       td {
         padding: 5px 5px;
         font-size: 14px;
         border: 1px solid grey;
-        width: 50%
       }
     }
     thead {
@@ -1625,5 +1640,8 @@ pre {
     tr.separator {
       display: none;
     }
+  }
+  table.course_type tr td {
+    width: 50%
   }
 }
