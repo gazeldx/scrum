@@ -522,9 +522,7 @@ $xl: 20px;
 
 .comment_container {
   .comment_content {
-    /*font-style: italic;*/
     font-size: 12px;
-    /*color: #999;*/
   }
   .comment_by {
     text-align: right;
@@ -604,7 +602,7 @@ $xl: 20px;
   background: url(course_line2.gif) 0px 0px no-repeat #ffffff;
 }
 
-.teacher {
+ul.teacher {
   li {
     padding: 10px 0 30px 0;
     clear: both;
@@ -643,15 +641,15 @@ $xl: 20px;
     }
   }
   pre {
-    background-color: #FAFAFA;
+    /*background-color: #FAFAFA;*/
     font-family: verdana, arial, helvetica, sans-serif;
     why_shinescrum_intrfont-size: 14px;
   }
 }
 
-/*.course_teacher .name {
-  width: 125px;
-}*/
+.course_teacher {
+  padding: 20px 20px
+}
 
 pre {
   white-space: pre-wrap;       /* css-3 */
