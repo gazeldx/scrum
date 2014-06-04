@@ -3,39 +3,23 @@
   .title.innerUpdate
     = link_to t('courses.title'), '/inner'
     | &nbsp;&gt;&nbsp;
-    | TDD测试驱动开发实战工作坊
+    | 持续集成实战工作坊
   .page_container
     .section
       .content_header
         | 课程概述
       .content_container
         p
-          | 学习敏捷：你想止步于二十四式简易太极拳，还是想深入练内功？
+          | 持续集成是被广泛认可的技术最佳实践，是敏捷开发的基础，它强调团队成员频繁地集成代码，并通过含自动化测试的自动构建过程保证集成的质量，及时发现和修复问题，以此降低后期集成的风险和成本消耗，提高质量。这需要团队成员提升技能，养成鼓励集成的工作习惯，积累各级测试，更需要为此建设强有力的技术基础设施，有效降低每次集成的消耗，提升反馈的质量。
           br
-          | 测试驱动开发，你听说过但是没尝试过？你尝试过但是觉得没用？你觉得有用但是工作中用不起来？
-          br
-          | 自2003年Kent Beck发展了测试驱动开发方法（Test-Driven Development，简称TDD）以来，包括谷歌、苹果、微软在内的多家软件开发厂商和组织在各种项目中应用TDD：从Web开发，到企业应用，到嵌入式iPhone和Android开发；语言涵盖 C, C++, Java, C#, Python, Ruby, PHP, Objective-C, JavaScript 等等。
-          br
-          | 大量工程实践和研究表明（http://en.wikipedia.org/wiki/Test-driven_development）：采用TDD的开发者更少的使用Debugger，更能保持“小步快跑”的开发节奏，对产品质量的信心更大；同时，虽然TDD要求编写更多的代码，但是开发时间往往更短，大量的单元测试使产品代码的质量更高、设计的可测试性更强，更易实现高内聚低耦合的设计，从而加入新需求和缺陷排查所需的时间更短，项目成本更低。
-          br
-          | 你也想了解TDD是什么？TDD如何做？TDD能不能用在自己项目中？TDD对开发者有什么样的要求和好处。
-          br
-          p.bold
-            | 根据我们开发、培训和咨询经验，TDD几乎是无法自学的！
-          br
-          | TDD是敏捷开发实践中最重要的一招，同时也是最难的一招。为了掌握TDD，除了了解基本的节奏、步骤和原则，还需要大量的练习和观摩，而一个良好的有教师代领和点拨的开端对学习和掌握TDD有非常大的帮助和作用。 
-          br
-          | 本次培训为期2天，采用结对编程的方式组织学员，以“练习-演示-讨论-讲解”为一个单元，由浅入深、循序渐进的方式，每天进行20个左右学习单元，让学员在丰富、密集的练习和互动中建立对TDD的正确认知、学习TDD正确的步骤和方法，在教师的引导和小组讨论中，自己体验、思考、理解、总结TDD对软件的质量、成本、进度的益处。
-          br
-          p.bold
-            | 课程可以采用多种编程语言进行授课，包括但不限于：Java, C#, C++, Python, Ruby
-
+          | 这是一个为期两天的实践课程，在课程中讲师结合自己多年在不同类型项目和公司中实施持续集成的经验，为大家详细讲解持续集成中涉及的各个专题，分享一手的宝贵经验，为大家在自己的公司中建立或改进构建、测试和部署设施提供可行的办法。
 
     .section
       .content_header
         | 课程受众
       .content_container
-        | 面向企业软件研发团队包括但不限于系统架构师、设计师、开发人员、测试人员等。
+        p
+          | 开发工程师，测试工程师，运维工程师，架构师，项目经理，测试经理，技术经理，技术总监，CTO，以及希望学习，应用或改善持续集成实践的团队成员。
 
     .section
       .content_header
@@ -43,31 +27,13 @@
       .content_container
         ul.with_list_style
           li
-            | 资深敏捷技术专家授课，深入浅出
+            | 知名技术顾问授课，实战经验丰富
           li
-            | 理论+实操演练，以“练习-演示-讨论-讲解” 为一个单元，每天20单元
+            | 实战案例讲解，学以致用
           li
-            | 可以同时采用多种编程语言进行授课，包括但不限于：Java, C#, C++, Python, Ruby等
+            | 互动体验式教学，寓教于乐
           li
             | 来自成功企业的经过验证的实战经验
-
-    .section
-      .content_header
-        | 课程收益
-      .content_container
-        | 学习结束后，学员对测试驱动开发能建立正确、深入的观点和理解，了解测试驱动开发的基本步骤、节奏、原则和常见的误解和错误的做法，可以开始在生产环境中尝试使用测试驱动开发。
-
-    .section
-      .content_header
-        | 学员反馈
-      .content_container
-        ul.with_list_style
-          li 
-            | TDD改变了他们对软件设计的看法和做法
-          li 
-            | 掌握TDD后，再也不能回退到没有测试就写产品代码的“裸奔”状态
-          li 
-            | TDD让他们重新体会到了开发的乐趣和成就感
 
     .section
       .content_header
@@ -81,14 +47,14 @@
         | 开课方式
       .content_container
         p
-          | 企业内训，预约培训时间（至少提前两周预约）
+          | 企业内训，预约培训时间
 
     .section
       .content_header
         | 课程讲师
       .content_container
         ul.teacher
-          - trainers = Trainer.where("url in (?)", ["Ning-Lu"])
+          - trainers = Trainer.where(url: "Ning-Lu")
           - trainers.each do |trainer|
             li
               .photo
@@ -107,76 +73,95 @@
           tbody
             tr
               td
-                | 单元测试及TDD 基础
+                | 第1单元
               td
                 | &nbsp;
-              td
-                | &nbsp;
-            tr
-              td rowspan=15
-                | &nbsp;
-              td
-                | 介绍
-              td
-                | &nbsp;
-            tr
-              td rowspan=2
-                | &nbsp;
-              td
-                | 什么是单元测试及TDD?
-            tr
-              td
-                | TDD的好处
-
-            tr
-              td
-                | 单元测试
-              td
-                | &nbsp;
-            tr
-              td rowspan=4
-                | &nbsp;
-              td
-                | xUnit 的原理
-            tr
-              td
-                | 有选择的编写测试
-            tr
-              td
-                | 给测试命名
-            tr
-              td
-                | 满意路径的测试
-
-            tr
-              td
-                | TDD
               td
                 | &nbsp;
             tr
               td rowspan=6
                 | &nbsp;
               td
-                | 为什么编写失败测试?
+                | 重新认识持续集成
+              td
+                | &nbsp;
+            tr
+              td rowspan=5
+                | &nbsp;
+              td
+                | 什么是持续集成，什么不是持续集成
             tr
               td
-                | TDD 的心跳 – 红, 绿, 重构
+                | 反思软件交付的基本原则 - 持续集成的指导
             tr
               td
-                | 演进性设计
+                | 六步代码修改习惯
             tr
               td
-                | 单一责任原则
+                | 分享一个Java项目的基础持续集成系统和脚本
             tr
               td
-                | 依赖性注入
-            tr
-              td
-                | 持续集成
+                | 个人在持续集成模式下需遵守的纪律和关键实践
 
             tr
               td
-                | 在真实项目中使用TDD
+                | 第2单元
+              td
+                | &nbsp;
+              td
+                | &nbsp;
+
+            tr
+              td rowspan=13
+                | &nbsp
+              td
+                | 案例剖析及关键技术介绍
+              td
+                | &nbsp;
+
+            tr
+              td rowspan=12
+                | &nbsp;
+              td
+                | Google的持续集成实践分析
+
+            tr
+              td
+                | 从8天一次交付到2天一次交付 - 一个百度产品线的持续集成和测试实践分享
+            tr
+              td
+                | 一个Web项目的持续集成和测试实践分享
+            tr
+              td
+                | 一个桌面应用项目的持续集成和测试实践分享
+            tr
+              td
+                | 鼓励集成的分支管理策略和规律性发布策略
+            tr
+              td
+                | 应用开关技术
+            tr
+              td
+                | 同源版本管理技术（针对测试、依赖、应用配置、部署配置、环境、以及大数据）
+            tr
+              td
+                | 对架构的可测性改造
+            tr
+              td
+                | 测试自动化改造与测试提前
+            tr
+              td
+                | 自动化提测和自动化上线
+            tr
+              td
+                | Hudson平台应用的10项最佳实践
+            tr
+              td
+                | 持续集成实践成熟度模型
+
+            tr
+              td 
+                | 第3单元
               td
                 | &nbsp;
               td
@@ -184,154 +169,84 @@
 
             tr
               td rowspan=9
-                | &nbsp
+                | &nbsp;
               td
-                | 重构的基础
+                | 建设部署与测试Pipeline
               td
                 | &nbsp;
+            tr
+              td rowspan=8
+                | &nbsp;
+              td
+                | 构建从代码提交到发布的Pipeline
+            tr
+              td
+                | Pipeline建设最佳实践
+            tr
+              td
+                | Web和客户端测试最佳实践
+            tr
+              td
+                | 构建与部署的脚本化技巧
+            tr
+              td
+                | 构建集群与编译集群技术
+            tr
+              td
+                | 本地构建的原则与实践
+            tr
+              td
+                | 自动化验收测试与非功能测试实践
+            tr
+              td
+                | DevOps
 
             tr
-              td rowspan=3
-                | &nbsp;
               td
-                | 技术债务带来的成本
-            tr
-              td
-                | “代码味道”简介
-            tr
-              td
-                | 使用集成开发环境（IDE）中的重构功能
-
-            tr
-              td
-                | 应用TDD
-              td
-                | &nbsp;
-            tr
-              td rowspan=4
-                | &nbsp;
-              td
-                | 关于伪码（fakes）, 模拟数据（mocks） 及桩（ stubs）
-            tr
-              td
-                | 模拟框架
-            tr
-              td
-                | 如何测试GUI
-            tr
-              td
-                | 测试遗留代码
-
-            tr
-              td 
-                | 实战演练
+                | 第4单元
               td
                 | &nbsp;
               td
                 | &nbsp;
 
             tr
-              td rowspan=22
+              td rowspan=7
                 | &nbsp;
               td
-                | 单元1： 如何设计一个类
-              td
-                | &nbsp;
-            tr
-              td rowspan=5
-                | &nbsp;
-              td
-                | 调整你对面向对象编程的理解
-            tr
-              td
-                | 用职责描述类功能
-            tr
-              td
-                | 结对编程
-            tr
-              td
-                | DRY原则
-            tr
-              td
-                | 简单设计
-
-            tr
-              td
-                | 单元2：如何重构一个类
+                | 持续集成周边技术与实践
               td
                 | &nbsp;
             tr
               td rowspan=6
                 | &nbsp;
               td
-                | 重构的循环
-            tr
-              td
-                | 已知的Smells
-            tr
-              td
-                | 命名
-            tr
-              td
-                | 不必要的复杂性
-            tr
-              td
-                | 重复
-            tr
-              td
-                | 条件逻辑
+                | 与持续集成匹配的需求管理及迭代管理方法概要
 
             tr
               td
-                | 单元3： 如何设计类之间的关系
-              td
-                | &nbsp;
-            tr
-              td rowspan=3
-                | &nbsp;
-              td
-                | 组合 - 正方向观察：把变量行为委托到其它对象
+                | 持续集成模式下测试人员的工作与合作流程
             tr
               td
-                | 组合 - 反方向观察：为其它对象增加变量行为
+                | 基础设施建设与环境管理
             tr
               td
-                | 组合 - 包装并延迟对方法的调用
-
+                | 组件与依赖管理
             tr
               td
-                | 单元4： 如何重构类之间的Smells
-              td
-                | &nbsp;
-            tr
-              td rowspan=4
-                | &nbsp;
-              td
-                | 继承
+                | 数据管理
             tr
               td
-                | 责任
-            tr
-              td
-                | 适应变化
-            tr
-              td
-                | 用作公共库的类
-
-            tr
-              td
-                | 总结
-              td
-                | &nbsp;
-              td
-                | &nbsp;
+                | 分布式版本管理技术的应用
 
     .section
       .content_header
         | 课程价格
       .content_container
         p
-          | 请联系课程顾问了解价格及优惠。
+          | 单价：人民币19800元/天， 2天课程总计：人民币39600元
+          br
+          | 客户承担讲师差旅费用。
+
 
     .section
       .content_header

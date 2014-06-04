@@ -1,0 +1,368 @@
+= title t'training.title'
+.page
+  .title.innerUpdate
+    = link_to t('courses.title'), '/inner'
+    | &nbsp;&gt;&nbsp;
+    | TDD测试驱动开发实战工作坊
+  .page_container
+    .section
+      .content_header
+        | 课程概述
+      .content_container
+        p
+          | 学习敏捷：你想止步于二十四式简易太极拳，还是想深入练内功？
+          br
+          | 测试驱动开发，你听说过但是没尝试过？你尝试过但是觉得没用？你觉得有用但是工作中用不起来？
+          br
+          | 自2003年Kent Beck发展了测试驱动开发方法（Test-Driven Development，简称TDD）以来，包括谷歌、苹果、微软在内的多家软件开发厂商和组织在各种项目中应用TDD：从Web开发，到企业应用，到嵌入式iPhone和Android开发；语言涵盖 C, C++, Java, C#, Python, Ruby, PHP, Objective-C, JavaScript 等等。
+          br
+          | 大量工程实践和研究表明（http://en.wikipedia.org/wiki/Test-driven_development）：采用TDD的开发者更少的使用Debugger，更能保持“小步快跑”的开发节奏，对产品质量的信心更大；同时，虽然TDD要求编写更多的代码，但是开发时间往往更短，大量的单元测试使产品代码的质量更高、设计的可测试性更强，更易实现高内聚低耦合的设计，从而加入新需求和缺陷排查所需的时间更短，项目成本更低。
+          br
+          | 你也想了解TDD是什么？TDD如何做？TDD能不能用在自己项目中？TDD对开发者有什么样的要求和好处。
+          br
+          p.bold
+            | 根据我们开发、培训和咨询经验，TDD几乎是无法自学的！
+          br
+          | TDD是敏捷开发实践中最重要的一招，同时也是最难的一招。为了掌握TDD，除了了解基本的节奏、步骤和原则，还需要大量的练习和观摩，而一个良好的有教师代领和点拨的开端对学习和掌握TDD有非常大的帮助和作用。 
+          br
+          | 本次培训为期2天，采用结对编程的方式组织学员，以“练习-演示-讨论-讲解”为一个单元，由浅入深、循序渐进的方式，每天进行20个左右学习单元，让学员在丰富、密集的练习和互动中建立对TDD的正确认知、学习TDD正确的步骤和方法，在教师的引导和小组讨论中，自己体验、思考、理解、总结TDD对软件的质量、成本、进度的益处。
+          br
+          p.bold
+            | 课程可以采用多种编程语言进行授课，包括但不限于：Java, C#, C++, Python, Ruby
+
+
+    .section
+      .content_header
+        | 课程受众
+      .content_container
+        | 面向企业软件研发团队包括但不限于系统架构师、设计师、开发人员、测试人员等。
+
+    .section
+      .content_header
+        | 课程特色
+      .content_container
+        ul.with_list_style
+          li
+            | 资深敏捷技术专家授课，深入浅出
+          li
+            | 理论+实操演练，以“练习-演示-讨论-讲解” 为一个单元，每天20单元
+          li
+            | 可以同时采用多种编程语言进行授课，包括但不限于：Java, C#, C++, Python, Ruby等
+          li
+            | 来自成功企业的经过验证的实战经验
+
+    .section
+      .content_header
+        | 课程收益
+      .content_container
+        | 学习结束后，学员对测试驱动开发能建立正确、深入的观点和理解，了解测试驱动开发的基本步骤、节奏、原则和常见的误解和错误的做法，可以开始在生产环境中尝试使用测试驱动开发。
+
+    .section
+      .content_header
+        | 学员反馈
+      .content_container
+        ul.with_list_style
+          li 
+            | TDD改变了他们对软件设计的看法和做法
+          li 
+            | 掌握TDD后，再也不能回退到没有测试就写产品代码的“裸奔”状态
+          li 
+            | TDD让他们重新体会到了开发的乐趣和成就感
+
+    .section
+      .content_header
+        | 往期课程场景
+      .content_container
+        = image_tag('course_instruction/2-002-1.jpg')
+        = image_tag('course_instruction/2-002-2.jpg')
+
+    .section
+      .content_header
+        | 开课方式
+      .content_container
+        p
+          | 企业内训，预约培训时间（至少提前两周预约）
+
+    .section
+      .content_header
+        | 课程讲师
+      .content_container
+        ul.teacher
+          - trainers = Trainer.where("url in (?)", ["Ning-Lu"])
+          - trainers.each do |trainer|
+            li
+              .photo
+                = image_tag(trainer.avatar.thumb.url)
+                .name
+                  | #{trainer.name}
+              .clear
+              .work_as
+                | #{trainer.work_as}
+
+    .section
+      .content_header
+        | 课程大纲
+      .content_container
+        table
+          tbody
+            tr
+              td
+                | 单元测试及TDD 基础
+              td
+                | &nbsp;
+              td
+                | &nbsp;
+            tr
+              td rowspan=15
+                | &nbsp;
+              td
+                | 介绍
+              td
+                | &nbsp;
+            tr
+              td rowspan=2
+                | &nbsp;
+              td
+                | 什么是单元测试及TDD?
+            tr
+              td
+                | TDD的好处
+
+            tr
+              td
+                | 单元测试
+              td
+                | &nbsp;
+            tr
+              td rowspan=4
+                | &nbsp;
+              td
+                | xUnit 的原理
+            tr
+              td
+                | 有选择的编写测试
+            tr
+              td
+                | 给测试命名
+            tr
+              td
+                | 满意路径的测试
+
+            tr
+              td
+                | TDD
+              td
+                | &nbsp;
+            tr
+              td rowspan=6
+                | &nbsp;
+              td
+                | 为什么编写失败测试?
+            tr
+              td
+                | TDD 的心跳 – 红, 绿, 重构
+            tr
+              td
+                | 演进性设计
+            tr
+              td
+                | 单一责任原则
+            tr
+              td
+                | 依赖性注入
+            tr
+              td
+                | 持续集成
+
+            tr
+              td
+                | 在真实项目中使用TDD
+              td
+                | &nbsp;
+              td
+                | &nbsp;
+
+            tr
+              td rowspan=9
+                | &nbsp
+              td
+                | 重构的基础
+              td
+                | &nbsp;
+
+            tr
+              td rowspan=3
+                | &nbsp;
+              td
+                | 技术债务带来的成本
+            tr
+              td
+                | “代码味道”简介
+            tr
+              td
+                | 使用集成开发环境（IDE）中的重构功能
+
+            tr
+              td
+                | 应用TDD
+              td
+                | &nbsp;
+            tr
+              td rowspan=4
+                | &nbsp;
+              td
+                | 关于伪码（fakes）, 模拟数据（mocks） 及桩（ stubs）
+            tr
+              td
+                | 模拟框架
+            tr
+              td
+                | 如何测试GUI
+            tr
+              td
+                | 测试遗留代码
+
+            tr
+              td 
+                | 实战演练
+              td
+                | &nbsp;
+              td
+                | &nbsp;
+
+            tr
+              td rowspan=22
+                | &nbsp;
+              td
+                | 单元1： 如何设计一个类
+              td
+                | &nbsp;
+            tr
+              td rowspan=5
+                | &nbsp;
+              td
+                | 调整你对面向对象编程的理解
+            tr
+              td
+                | 用职责描述类功能
+            tr
+              td
+                | 结对编程
+            tr
+              td
+                | DRY原则
+            tr
+              td
+                | 简单设计
+
+            tr
+              td
+                | 单元2：如何重构一个类
+              td
+                | &nbsp;
+            tr
+              td rowspan=6
+                | &nbsp;
+              td
+                | 重构的循环
+            tr
+              td
+                | 已知的Smells
+            tr
+              td
+                | 命名
+            tr
+              td
+                | 不必要的复杂性
+            tr
+              td
+                | 重复
+            tr
+              td
+                | 条件逻辑
+
+            tr
+              td
+                | 单元3： 如何设计类之间的关系
+              td
+                | &nbsp;
+            tr
+              td rowspan=3
+                | &nbsp;
+              td
+                | 组合 - 正方向观察：把变量行为委托到其它对象
+            tr
+              td
+                | 组合 - 反方向观察：为其它对象增加变量行为
+            tr
+              td
+                | 组合 - 包装并延迟对方法的调用
+
+            tr
+              td
+                | 单元4： 如何重构类之间的Smells
+              td
+                | &nbsp;
+            tr
+              td rowspan=4
+                | &nbsp;
+              td
+                | 继承
+            tr
+              td
+                | 责任
+            tr
+              td
+                | 适应变化
+            tr
+              td
+                | 用作公共库的类
+
+            tr
+              td
+                | 总结
+              td
+                | &nbsp;
+              td
+                | &nbsp;
+
+    .section
+      .content_header
+        | 课程价格
+      .content_container
+        p
+          | 请联系课程顾问了解价格及优惠。
+
+    .section
+      .content_header
+        | 服务流程
+      .content_container
+        ul.with_list_style
+          li
+            | 客户需求分析及调研
+          li
+            | 培训方案设计及课程内容定制
+          li
+            | 培训实施
+          li
+            | 培训反馈
+          li
+            | 后期服务及跟进
+
+
+    .section
+      .content_header
+        | 后期服务
+      .content_container
+        ul.with_list_style
+          li
+            | 培训结束后2个月内，将对学员提供免费的电话、邮件或在线的技术支持服务。
+          li
+            | 与客户签订企业会员合作协议，企业员工或者客户参加公开课程培训时享受优惠。
+          li
+            | 定期组织多样化的公益性沙龙及学术交流活动。
+
+    .section
+      .content_container
+        p.red.contact_info
+          | 咨询电话：400 821 0871 或 021-6131 5388
