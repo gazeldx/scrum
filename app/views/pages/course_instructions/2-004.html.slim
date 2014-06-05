@@ -1,0 +1,400 @@
+= title t'training.title'
+.page
+  .title.innerUpdate
+    = link_to t('courses.title'), '/inner'
+    | &nbsp;&gt;&nbsp;
+    | 单元测试与重构实战工作坊
+  .page_container
+    .section
+      .content_header
+        | 课程概述
+      .content_container
+        p
+          | “软件产品新功能越来越难加入？”
+          br
+          | “代码越来越难懂，越来越难修改？”
+          br
+          | “写这个模块的工程师离职了，文档又不全，里面的逻辑很乱，但是没人敢修改？”
+          br
+          | “产品功能都开发不完，哪有时间写单元测试？”
+          br
+          | “一个函数100行算什么，我们还有500行，1000行的！”
+        p
+          |作为项目经理/开发主管、开发或者测试人员，是否经常听到这样的声音、惊讶和问题？ 是否大家都认可代码的质量差，但都无计可施、无能为力？ 是否老板拍定了交付日期，开发团队除非拼命加班，否则无论如何也赶不上？
+        p
+          | 如何上述情况出现了一项，那么可以肯定的说：您的项目内部质量出现了问题。
+          br
+          | 怎么办？ 内部出现了问题，就需要重构；想成功的重构，需要完备的单元测试。
+          br
+          | 您也许听过什么是重构，什么是单元测试，更有可能曾经尝试过重构和单元测试，但是：
+        p
+          | 要么：“我们的代码很乱，无法重构”；
+          br
+          | 要么：“我们的代码复杂，无法做单元测试”；
+          br
+          | 也许你小范围的尝试了，觉得不错，但是是否能应用在产品代码还心存疑惑；
+          br
+          | 甚至也许您已经很成功的使用了重构和单元测试，但是觉得对人要求太高，怎么推广到整个团队表示担心。
+        p
+          | 本课程为期两天，课程除了为您深入剖析什么是重构、什么是单元测试、单元测试和重构对人的要求是什么、带来哪些好处，对产品的会带来哪些影响，更重要的是帮助团队全面掌握如何做重构和单元测试的技巧。
+          br
+          | 课程采用结对编程的方式组织学员，以“练习-演示-讨论-讲解”为一个单元，由浅入深，循序渐进的方式，每天进行大量的学习单元（20个左右），让学员在丰富、密集的练习和互动中建立对重构和单元测试的认知、学习重构和单元测试正确的步骤和方法，在资深专家的引导和小组讨论中，自己体验、思考、理解，总结重构和单元测试对软件内部质量提升价值。
+
+    .section
+      .content_header
+        | 课程受众
+      .content_container
+        | 软件研发团队成员包括但不限于项目经理、开发经理、架构师、软件设计师、开发工程师、测试工程师等。
+
+
+    .section
+      .content_header
+        | 学员反馈
+      .content_container
+        ul
+          li 
+            | “受益匪浅！老师授课生动、深入浅出、实践性强！” ——深圳晨星
+          li 
+            | “寓教于乐，讲师实践经验丰富、理论联系实际，十分透彻！” ——盘古搜索
+          li 
+            | “重构和单元测试培训让我对我们的项目又重拾了信心！” ——中兴电子
+          li 
+            | “重构和单元测试培训让我重新正确认识了这两个实践的意义和做法！” ——东方海外
+
+
+    .section
+      .content_header
+        | 课程优势
+      .content_container
+        ul.with_list_style
+          li
+            | 资深敏捷技术专家授课，深入浅出, 贴近实战
+          li
+            | 理论+实操演练，以“练习-演示-讨论-讲解” 为一个单元，每天20单元
+          li
+            | 可以同时采用多种编程语言进行授课，包括但不限于：Java, .Net, C#, C++, Python, Ruby等
+          li
+            | 来自成功企业的经过验证的实战经验
+
+    .section
+      .content_header
+        | 课程收益
+      .content_container
+        p
+          | 学习结束后，学员对重构和单元测试能建立正确、深入的观点和理解，掌握重构和单元测试的基本实践、要点、流行的工具和常见的误解和错误的做法。
+
+    .section
+      .content_header
+        | 课程要点
+      .content_container
+        p.bold
+          | 第一天 重构
+        ul
+          li
+            | 1.   识别代码中的坏味道
+            ul.with_list_style
+              li
+                | 用团队中的产品代码做例子分析所出现的坏味道
+              li
+                | 结对讨论和分析
+              li
+                | 总结、讲解、概要分析所有种类的坏味道（21种）
+              li
+                | 结对讨论和分析
+          li
+            | 2.   正确认识和对待坏味道
+          li
+            | 3.   为什么需要重构？
+            ul.with_list_style
+              li
+                | 重构的考虑、成本、粒度、频率和方式
+          li
+            | 4.   学习重构的原则和步骤
+          li
+            | 5.   学习正确的重构步骤
+          li
+            | 6.   练习小规模重构 - 如何重构一个类
+        p
+          | 实践环节：
+  
+        p.bold
+          | 重构的循环
+          ul
+            li
+              | ［讲座］识别类内的坏味道
+            li
+              | ［讲座］重构的循环
+            li
+              | ［讲座］什么时候算做完了？
+            li
+              | ［讲座］在一个重构之内
+            li
+              | ［练习］小步前进 - 识别重构常用的步骤
+            li
+              | ［练习］简单设计 - 如何判断简单，你是怎么理解的
+
+        p.bold
+          | 已知的Smells
+        ul
+          li
+            | ［［重构］Extract Method / Class / Subclass / Introduce
+            ul.without_list_style
+              li
+                | 1.   Rename Method
+              li
+                | 2.  Introduce Assertion
+              li
+                | 3.  Duplicate Observer Data
+              li
+                | 4.  Replace Parameter with Method
+              li
+                | 5.  Preserve Whole Object
+              li
+                | 6.  Introduce Parameter Object
+          li
+            | ［讲座＆练习］注释         
+          li
+            | ［讲座＆练习］长方法
+          li
+            | ［讲座＆练习］大类
+          li
+            | ［讲座＆练习］长参数列表
+          li
+            | ［练习］测验：Smells和重构
+          li
+            | ［讲座］Smells和重构
+
+        p.bold
+          | 命名
+        ul
+          li
+            | ［重构］
+          li
+            | ［讲座＆练习］在名字中嵌入了类型
+          li
+            | ［讲座＆练习］无法达意的名字
+          li
+            | ［讲座＆练习］不一致的名字      
+  
+        p.bold
+          | 不必要的复杂性
+        ul
+          li
+            | ［重构］
+          li
+            | ［讲座＆练习］死代码
+          li
+            | ［讲座＆练习］投机未来的可能性
+          li
+            | ［讲座］成对出现的重构
+    
+        p.bold
+          | 重复
+        ul
+          li
+            | ［重构］
+          li
+            | ［讲座＆练习］神奇数字
+          li
+            | ［讲座＆练习］重复的代码
+          li
+            | ［讲座＆练习］可互换的类有不同的接口
+    
+        p.bold
+          | 条件逻辑
+        ul
+          li
+            | ［重构］
+          li
+            | ［讲座＆练习］空值检测
+          li
+            | ［讲座＆练习］复杂的布尔表达式
+          li
+            | ［讲座＆练习］特殊处理的Case
+          li
+            | ［讲座＆练习］模拟的继承
+
+        p.bold
+          | 练习较大规模重构 - 多个类之间的重构
+
+        p.bold
+          | 描述数据
+        ul
+          li
+            | ［讲座＆练习］主要的困扰
+          li
+            | ［讲座＆练习］数据类
+          li
+            | ［讲座＆练习］数据块
+          li
+            | ［讲座＆练习］临时字段
+    
+        p.bold
+          | 继承
+        ul
+          li
+            | ［讲座＆练习］子类拒绝来自父类的遗产
+          li
+            | ［讲座＆练习］不合适的亲密关系（生成子类）
+          li
+            | ［讲座＆练习］Lazy Class
+
+        p.bold
+          | 
+        ul
+          li
+            | ［讲座＆练习］父类嫉妒子类的特性
+          li
+            | ［讲座＆练习］不合适的亲密关系（提取父类）
+          li
+            | ［讲座＆练习］消息链
+          li
+            | ［讲座＆练习］中间人
+
+        p.bold
+          | 适应变化
+        ul
+          li
+            | ［讲座＆练习］不同的变化动机
+          li
+            | ［讲座＆练习］散弹猎枪式的修改
+          li
+            | ［讲座＆练习］平行继承结构    
+    
+        p.bold
+          | 用作公共库的类
+        ul
+          li
+            | ［讲座＆练习］不完整的库类
+
+        p.bold
+          | 第二天 单元测试
+
+        p.bold
+          | 单元测试入门：
+        ul
+          li
+            | [演示] 用JUnit 4进行单元测试 - 初步掌握用 JUnit 4 进行单元测试的能力
+          li
+            | [练习] 如何按业务价值导向进行单元测试设计
+        p.bold
+          | 树立正确的单元测试认识、概念和思路
+        p.bold
+          | Fixture组织
+        p.bold
+          | 单测的力度
+        p.bold
+          | 如何划分单元测试
+        ul
+          li
+            | [讨论&分析] 为什么不写单元测试
+          li
+            | [讨论&分析] 谁该对（外部/内部）质量负责
+          li
+            | [讲座] 什么不是单元测试
+          li
+            | [讲座] 什么是单元测试
+          li
+            | [讲座] 项目中单元测试策略
+
+        p.bold
+          | 怎么写单元测试
+        ul
+          li
+            | [讲座] 单元测试结构
+          li
+            | [讲座] 单元测试内容
+          li
+            | [练习] 如何组织测试数据
+          li
+            | [讨论&分析] 边界条件
+          li
+            | [练习] 如何用Mock辅助边界条件测试
+
+        p.bold
+          | 单元测试重构
+        ul
+          li
+            | [讨论&分析] 识别单元测试中的坏味道
+          li
+            | [练习] 重构单元测试
+
+        p.bold
+          | 单元测试和构建流水线（build pipeline）
+        ul
+          li
+            | [讨论&分析] 单元测试在构建流水线中的位置和作用
+          li
+            | [讲座&练习] 用Buildr做Java 项目构建
+          li
+            | [讲座&练习] 用Rake做Ruby 项目构建
+          li
+            | [讲座&练习] 用 Jenkins/Hudson 做持续集成
+        p.bold
+          | 最后总结 
+
+    .section
+      .content_header
+        | 开课方式
+      .content_container
+        p
+          | 企业内训，预约培训时间
+
+    .section
+      .content_header
+        | 课程讲师
+      .content_container
+        ul.teacher
+          - trainers = Trainer.where(url: "Ning-Lu")
+          - trainers.each do |trainer|
+            li
+              .photo
+                = image_tag(trainer.avatar.thumb.url)
+                .name
+                  | #{trainer.name}
+              .clear
+              .work_as
+                | #{trainer.work_as}
+
+    .section
+      .content_header
+        | 课程价格
+      .content_container
+        p
+          | 单价：人民币19800元/天， 2天课程总计：人民币39600元
+          br
+          | 客户承担讲师差旅费用。
+
+    .section
+      .content_header
+        | 服务流程
+      .content_container
+        ul.with_list_style
+          li
+            | 客户需求分析及调研
+          li
+            | 培训方案设计及课程内容定制
+          li
+            | 培训实施
+          li
+            | 培训反馈
+          li
+            | 后期服务及跟进
+
+
+    .section
+      .content_header
+        | 后期服务
+      .content_container
+        ul.with_list_style
+          li
+            | 培训结束后2个月内，将对学员提供免费的电话、邮件或在线的技术支持服务。
+          li
+            | 与客户签订企业会员合作协议，企业员工或者客户参加公开课程培训时享受优惠。
+          li
+            | 定期组织多样化的公益性沙龙及学术交流活动。
+
+    .section
+      .content_container
+        p.red.contact_info
+          | 咨询电话：400 821 0871 或 021-6131 5388

@@ -1,0 +1,221 @@
+= title t'training.title'
+.page
+  .title.innerUpdate
+    = link_to t('courses.title'), '/inner'
+    | &nbsp;&gt;&nbsp;
+    | iOS测试最佳实践
+  .page_container
+    .section
+      .content_header
+        | 课程概述
+      .content_container
+        p
+          | 本课程基于实务经验萃取而成，尤其是测试驱动开发的iOS技术，涵盖iOS测试工具、测试开发方法和技巧、基于测试驱动开发方法的最佳实践等iOS测试的方方面面，尤其适用于iOS开发人员.
+
+    .section
+      .content_header
+        | 课程要点
+      .content_container
+        ul
+          li 
+            | 1. 测试对iOS开发者的意义
+          li 
+            | 2. iOS中的单元测试
+          li 
+            | 3. iOS测试工具：Xcode附带的OCUnit测试框架
+          li 
+            | 4. OCUnit的替代方案：GTM、GHUnit、CATCH、OCMock
+          li 
+            | 5. 持续集成工具：Hudson、CruiseControl；
+          li 
+            | 6. OS测试案例完整流程实战
+          li 
+            | 7. iOS测试编码最佳实践
+          li 
+            | 8. 在历史遗留的iOS进行测试
+          li 
+            | 9. iOS测试开发的未来
+
+
+    .section
+      .content_header
+        | 课程目标
+      .content_container
+        p
+          | 从iOS测试工作人员尤其是iOS开发工程师的角度全面剖析iOS测试和集成工具，测试的具体案例，测试的最佳实践等，涉及iOS测试的方方面面.
+
+
+    .section
+      .content_header
+        | 培训对象
+      .content_container
+        p
+          | 测试人员（可以是传统功能手机的测试人员，也可以是传统的其它平台的测试人员，以及对iOS测试感兴趣的人员等）
+
+    .section
+      .content_header
+        | 课程讲师
+      .content_container
+        ul.teacher
+          - trainers = Trainer.where(url: "Rocky-Wang")
+          - trainers.each do |trainer|
+            li
+              .photo
+                = image_tag(trainer.avatar.thumb.url)
+                .name
+                  | #{trainer.name}
+              .clear
+              .work_as
+                | #{trainer.work_as}
+
+    .section
+      .content_header
+        | 课程大纲
+      .content_container
+        table
+          thead
+            tr
+              td
+                | 时间
+              td
+                | 内容
+              td
+                | 详细内容
+          tbody
+            tr
+              td rowspan=4
+                | 第一天
+              td.text-left
+                | 第01个主题：测试对iOS开发者的意义
+              td.text-left
+                | 1. 软件测试的目标和适用范围
+                br
+                | 2. 测试对iOS开发者的意义
+                br
+                | 3. “失败、成功、重构”三部曲
+
+            tr
+              td.text-left
+                | 第02个主题：iOS中的单元测试
+              td.text-left
+                | 1. 使用已知的输入数据来运行代码
+                br
+                | 2. 查看运行结果是否符合预期
+                br
+                | 3. 使测试代码更具可读性
+                br
+                | 4. 将多个测试用例组织起来
+                br
+                | 5. 重构
+
+            tr
+              td.text-left
+                | 第03个主题：iOS测试工具
+              td.text-left
+                | 1. Xcode附带的OCUnit测试框架
+                br
+                | 2. OCUnit的替代方案：GTM、GHUnit、CATCH、OCMock
+                br
+                | 3. 持续集成工具：Hudson、CruiseControl
+
+
+            tr
+              td.text-left
+                | 第04个主题：针对iOS应用程序的测试驱动开发
+              td.text-left
+                | 1. 测试用例
+                br
+                | 2. 具体方案
+
+            tr
+              td rowspan=4
+                | 第二天
+              td.text-left
+                | 第05个主题：iOS测试案例完整流程实战
+              td.text-left
+                | 1. 数据模型
+                br
+                | 2. 应用程序逻辑
+                br
+                | 3. 网络相关代码
+                br
+                | 4. 视图控制器
+                br
+                | 5. 整合
+
+            tr
+              td.text-left
+                | 第06个主题：iOS测试编码最佳实践
+              td.text-left
+                | 1. 针对接口进行设计，而不要针对实现
+                br
+                | 2. 用命令代替查询
+                br
+                | 3. 简洁而专注的类与方法
+                br
+                | 4. 封装
+                br
+                | 5. 使用比重用更好
+                br
+                | 6. 测试并发代码
+                br
+                | 7. 别耍没有必要的小聪明
+                br
+                | 8. 优先选择宽而浅的继承体系
+
+            tr
+              td.text-left
+                | 第07个主题：在历史遗留的iOS进行测试
+              td.text-left
+                | 1. 第一个测试用例是最重要的
+                br
+                | 2. 通过重构使得代码更易于测试
+                br
+                | 3. 编写测试使得代码更易于重构
+
+
+            tr
+              td.text-left
+                | 第08个主题：iOS测试开发的未来
+              td.text-left
+                | 1. 使用一系列输入输出值构建测试用例
+                br
+                | 2. 行为驱动开发
+                br
+                | 3. 自动生成测试用例
+                br
+                | 4. 自动生成能够通过测试的代码
+
+    .section
+      .content_header
+        | 服务流程
+      .content_container
+        ul.with_list_style
+          li
+            | 客户需求分析及调研
+          li
+            | 培训方案设计及课程内容定制
+          li
+            | 培训实施
+          li
+            | 培训反馈
+          li
+            | 后期服务及跟进
+
+
+    .section
+      .content_header
+        | 后期服务
+      .content_container
+        ul.with_list_style
+          li
+            | 培训结束后2个月内，将对学员提供免费的电话、邮件或在线的技术支持服务。
+          li
+            | 与客户签订企业会员合作协议，企业员工或者客户参加公开课程培训时享受优惠。
+          li
+            | 定期组织多样化的公益性沙龙及学术交流活动。
+
+    .section
+      .content_container
+        p.red.contact_info
+          | 咨询电话：400 821 0871 或 021-6131 5388

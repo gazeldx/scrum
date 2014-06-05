@@ -1,0 +1,536 @@
+= title t'training.title'
+.page
+  .title.innerUpdate
+    = link_to t('courses.title'), '/inner'
+    | &nbsp;&gt;&nbsp;
+    | Android企业级应用程序开发完整训练
+  .page_container
+    .section
+      .content_header
+        | 课程概述
+      .content_container
+        p
+          | 从企业级商业实战的角度入手，24小时内通过23个动手实战案例，循序渐进的对Android商业级别的应用程序开发要点各个击破，依托于在多年的Android（6款完整的硬件产品和超过20款应用软件）开发和企业级培训经验（超过150期的次Android的企业内训和公开课），旨在在实务的基础之上帮助你完成任何复杂程序的高质量Android应用程序开发，让Android开发跟上想象的速度。
+          span.red
+            | 最后，通过ActivityManagerService揭秘Android应用程序一切行为背后的核心根源，让你从此开发应用程序居高零下、举重若轻。
+
+
+    .section
+      .content_header
+        | 课程要点
+      .content_container
+        ul
+          li 
+            | 1. 抽取Android应用开发中用到的最精华的Java技术加以剖析；
+          li 
+            | 2. 从零起步构建Android开发环境和编写并彻底剖析第一个Android程序；
+          li 
+            | 3. 彻底剖析不同Activity之间所有的交互模式；
+          li 
+            | 4. 根据商业化场景彻底剖析Android的生命周期及其使用的最佳时间；
+          li 
+            | 5. 使用JUnit测试Android业务代码；
+          li 
+            | 6. 掌握Android基本和核心的UI开发技术；
+          li 
+            | 7. ”Android商业化高级UI实战”是根据过去20多款商业级别Android应用程序开发尤其是类似CRM系统中最经典、最经常使用的技术抽取而成，掌握之后基本上不会在遇到UI方面的难点；
+          li 
+            | 8. 细致剖析并实战Android性能测试，找出性能瓶颈，并进行代码优化，分享代码优化的最佳实践；
+          li 
+            | 9. 对数据的处理时Android绝大多数应用程序的核心，尤其是对CRM系统而言，这一天，我们会对Android中的本地数据处理方式及其商业使用场景进行彻底剖析和实战；
+          li 
+            | 10. 从SharedPreferences到内部文件系统，从SDCard操作到SQLite数据库，从XML和JSON的解析于生成到数据共享统一接口ContentProvider，对Android本地的数据处理方式进行地毯式轰炸；
+          li 
+            | 11. 通讯录的操作的原理、流程和场景等进行了情景再现性的代码实战；
+          li 
+            | 12. 通过Android手机卫士商业级别的代码案例实战Android中BroadcastReceiver和Service；
+          li 
+            | 13. 根据过去20多款程序的商业实战总结出了能够解决基于HTTP协议的任意文件类型、任意大小文件的网络上传和下载，Android网络开发从此一劳永逸；
+          li 
+            | 14. 实战WiFi数据交换；
+          li 
+            | 15. 尤其是额外提到异步http框架，具备很强的商业价值；
+          li 
+            | 16. Android横竖屏切换的经典场景、生命周期和解决方案；
+          li 
+            | 17. 实战构建多语言国际化的Android应用程序；
+          li 
+            | 18. 如何编译APK来提高应用的安全性；
+          li 
+            | 19. 如何反编译Android应用
+          li 
+            | 20. 通过Android中WebView的特性洞悉Android中JavaScript与Java相互沟通的密码，追寻浏览器和HTML5开发的架构和技术实现根源；
+          li 
+            | 21. 使用NDK等技术利用C/C++的高效性来提高应用程序的性能；
+          li 
+            | 22. 实现Android中以Looper、Handler、Message、MessageQueue为核心的线程间通信方式；
+          li 
+            | 23. 实战并剖析AsyncTask框架实现的源代码，并提出对AsyncTask缺陷的解决方案；
+          li.red 
+            | 24. 最后，揭秘Android应用程序一切行为背后的核心根源：ActivityManagerService
+
+    .section
+      .content_header
+        | 课程目标
+      .content_container
+        ul
+          li
+            | 1，  从零起步24小时内掌握Android应用程序开发
+          li
+            | 2，  通晓Android的架构哲学和力量来源以及实现技术；
+          li
+            | 3，  能够开发出任意类型、任意复杂程度的安全、高效的应用程序；
+          li
+            | 4，  根据过去的20多款Android商业应用软件的实践，提供弥足珍贵的源代码，上完课程即相当于完成了Android应用项目80%左右的开发，所有的开发难点一扫而光；
+
+
+    .section
+      .content_header
+        | 课程要求
+      .content_container
+        p
+          | 对Android有强烈兴趣，能够读懂基本的C#或Java语法；
+
+    .section
+      .content_header
+        | 课程讲师
+      .content_container
+        ul.teacher
+          - trainers = Trainer.where(url: "Rocky-Wang")
+          - trainers.each do |trainer|
+            li
+              .photo
+                = image_tag(trainer.avatar.thumb.url)
+                .name
+                  | #{trainer.name}
+              .clear
+              .work_as
+                | #{trainer.work_as}
+
+    .section
+      .content_header
+        | 课程大纲
+      .content_container
+        table
+          thead
+            tr
+              td
+                | 时间
+              td
+                | 内容
+              td
+                | 详细内容
+          tbody
+            tr
+              td rowspan=6
+                | 第一天
+              td.text-left
+                | 第1个动手案例：Android开发环境搭建和HelloWorld（60分钟）
+              td.text-left
+                | 1. Java、Eclipse、SDK、NDK、ADT
+                br
+                | 2. 搭建环境过程中的疑难问题
+                br
+                | 3. 彻底解决没有3G信号的问题
+                br
+                | 4. 开发HelloWorld
+                br
+                | 5. 彻底剖析第一个程序
+                br
+                | 6. Android应用程序开发的经典模式---MVC模式彻底剖析
+                br
+                | 7. 总结：掌握一个完整的应用程序的开发步骤、注意事项、方法等
+                br
+                | 8. Java在Android开发中的最佳实践之一：Java开发金三角
+                br
+                | 9. Java在Android开发中的最佳实践之二：“Don’t call me, I’ll call you back!”
+                br
+                | 10. Java在Android开发中的最佳实践之三：UI线程和业务线程；
+                br
+                | 11. Java在Android开发中的最佳实践之四：生命周期控制；
+                br
+                | 12. Java在Android开发中的最佳实践之五：面向接口编程；
+                br
+                | 13. Java在Android开发中的最佳实践之六：反射技术
+
+            tr
+              td.text-left
+                | 第2个动手案例：Activity生命周期剖析、应用程序生命周期剖析以及应用程序开发最佳模式（60分钟）
+              td.text-left
+                | 1. Activity生命周期周期图分析
+                br
+                | 2. Activity生命周期测试代码
+                br
+                | 3. Activity嵌套生命周期
+                br
+                | 4. 应用程序生命周期剖析
+                br
+                | 5. 不同Activity之间的相互沟通
+                br
+                | 6. 对Android管理应用程序和Activity方式的思考
+                br
+                | 7. Android应用程序开发的最佳模式
+            tr
+              td.text-left
+                | 第3个动手案例：Android商业化高级UI实战：ListView异步加载技术（60分钟）
+              td.text-left
+                | 1. 使用ListView异步加载技术的必要性
+                br
+                | 2. ListView异步加载技术编程实战
+
+            tr
+              td.text-left
+                | 第4个动手案例：Android商业化高级UI实战：ListView分页加载技术（60分钟）
+              td.text-left
+                | 1. 使用ListView分页加载技术的必要性
+                br
+                | 2. ListView分页加载技术编程实战
+
+            tr
+              td.text-left
+                | 第5个动手案例：Android商业化高级UI实战：Fragment （60分钟）
+              td.text-left
+                | 1. Fragment出现的重要意义和运用场景
+                br
+                | 2. 动态创建Fragment
+                br
+                | 3. 使用Fragment创建选项卡
+                br
+                | 4. Fragment的向下兼容
+                br
+                | 5. Fragment的生命周期
+                br
+                | 6. Fragment之间的通信
+
+            tr
+              td.text-left
+                | 第6个动手案例：Android商业化高级UI实战：自定义标题栏和PopupWindow（60分钟）
+              td.text-left
+                | 1. 自定义标题栏的应用场景
+                br
+                | 2. 自定义标题栏编程实战
+                br
+                | 3. 自定义标题栏疑难问题解析
+                br
+                | 4. PopupWindow为Android程序带来的视觉冲击
+                br
+                | 5. PopupWindow编程实战
+                br
+                | 6. PopupWindow调试
+
+            tr
+              td rowspan=6
+                | 第二天
+              td.text-left
+                | 第7个动手案例：SharedPreferences、手机内部文件的形式存储数据操作、SDCard操作、单元测试（60分钟）
+              td.text-left
+                | 1. SharedPreferences的读
+                br
+                | 2. SharedPreferences的写
+                br
+                | 3. 对SharedPreference操作权限分析
+                br
+                | 4. 读写不同包中的SharedPreference
+                br
+                | 5. SharedPreference源代码剖析
+                br
+                | 6. 对手机的文件进行读写：openFileInput()、openFileOutput()
+                br
+                | 7. 对文件读写的单元测试
+                br
+                | 8. 对四种文件权限模式的测试
+                br
+                | 9. 常用的文件读写API简介
+                br
+                | 10. 剖析源代码
+                br
+                | 11. 使用Activity调用业务层对SDCard进行读写
+                br
+                | 12. 单元测试
+
+            tr
+              td.text-left
+                | 第8个动手案例：SQLite管理工具类、CRUD操作、分页等及源代码剖析、使用Android自身提供的API进行CRUD操作、ListView的详细讲解及源代码剖析（60分钟）
+              td.text-left
+                | 1. SQLite简介
+                br
+                | 2. SQLiteOpenHelper类
+                br
+                | 3. CURD：execSQL()和rawQuery（）
+                br
+                | 4. 分页
+                br
+                | 5. 对getWritableDatabase()和getReadableDatabase()进行源代码分析，剖析其原理
+                br
+                | 6. 执行流程和原理的深入彻底的剖析
+                br
+                | 7. 源代码剖析
+                br
+                | 8. 使用Android自带的insert、update、query、delete等进行CRUD操作
+                br
+                | 9. 剖析insert、update、query、delete的源代码
+                br
+                | 10. 对ListView深入详细的剖析，自定义视图，自定义Adapter。
+                br
+                | 11. 剖析Cursor的源代码
+                br
+                | 12. 关于SQLite和Cursor的“_id”问题的剖析和解决方案
+            tr
+              td.text-left
+                | 第9个动手案例：使用Android内置的pull实现对XML文件的读、写及源代码剖析 Android中JSON解析（60分钟）
+              td.text-left
+                | 1. 为什么在Android中对XML文件的读、写首选pull
+                br
+                | 2. 用pull实现对XML的解析
+                br
+                | 3. 用pull实现对XML的写入
+                br
+                | 4. 使用写入器Writer实现文件的写入已经把内容直接写入内存中
+                br
+                | 5. 采用短点调试的方式剖析PULL的解析流程
+                br
+                | 6. 源代码剖析
+                br
+                | 7. Android下JSON解析代码模板
+
+            tr
+              td.text-left
+                | 第10个动手案例：ContentProvider背景、用途，如何构建ContentProvider，UriMatcher，ContentUris，对CotentProvider进行单元测试、源代码分析（60分钟）
+              td.text-left
+                | 1. ContentProvider背景、用途
+                br
+                | 2. 构建ContentProvider的详细步骤
+                br
+                | 3. 对URI的彻底剖析
+                br
+                | 4. 分析UriMatcher，ContentUris
+                br
+                | 5. 对ContentProvider的业务层代码进行单元测试
+                br
+                | 6. ContentProvider的源代码剖析
+
+            tr
+              td.text-left
+                | 第11个动手案例：基于通讯录的开发（60分钟）
+              td.text-left
+                | 1. 通讯录的数据库和数据表分析
+                br
+                | 2. 通讯录ContentProvider的源码剖析
+                br
+                | 3. 获取所有的联系人信息
+                br
+                | 4. 添加联系人
+                br
+                | 5. 如何处理添加通讯录记录时的事物问题
+
+            tr
+              td.text-left
+                | 第12个动手案例：性能测试和优化（60分钟）
+              td.text-left
+                | 1. 如何进行性能测试
+                br
+                | 2. 性能测试实战
+                br
+                | 3. 优化法则和编码应该注意的地方
+
+            tr
+              td rowspan=7
+                | 第三天
+              td.text-left
+                | 第13个动手案例：广播接受者BroadcastReceiver，短信监听器案例（接受到短信后上传到服务器或发送到指定的号码或者发送到指定的邮件中）（60分钟）
+              td.text-left
+                | 1. 剖析广播接收者，与JMS的比较，广播接受者的IoC原理
+                br
+                | 2. 短信监听Android客户端
+                br
+                | 3. 服务器端搭建
+                br
+                | 4. 通过网络把接收到的短信上传到服务器
+                br
+                | 5. 把接收到的短信发送到指定的手机号码或者邮件中
+                br
+                | 6. BroadcastReceiver的的生命周期和注意事项以及5秒钟生命响应时间的解决方案
+                br
+                | 7. 服务中的ANR问题及其解决方案；
+
+            tr
+              td.text-left
+                | 第13个动手案例：服务Service，电话监听器（每次开机的时候自动开机，电话来时录音并上传到服务器）（60分钟）
+              td.text-left
+                | 1. 详细剖析Service
+                br
+                | 2. 构建电话监听的Service
+                br
+                | 3. 使用BroadcastReceiver监听开机事件，并在开机时启动电话监听的Service
+                br
+                | 4. 上传音频文件到服务器
+                br
+                | 5. 关于Android安全体系的思考
+
+            tr
+              td.text-left
+                | 第14个动手案例：使用AIDL开发远程服务（60分钟）
+              td.text-left
+                | 1. AIDL底层原理：基于Binder的Proxy-Stub
+                br
+                | 2. 使用AIDL编写的具体步骤
+                br
+                | 3. 动手编写服务端和客户端
+                br
+                | 4. 测试并调试
+
+            tr
+              td.text-left
+                | 第15个动手案例：断点续传（一）类似迅雷的多线程下载器（适用于任何类型的文件下载）（120分钟）
+              td.text-left
+                | 1. 多线程下载断点续传原理和流程图
+                br
+                | 2. 下载文件时Http协议协议详解
+                br
+                | 3. 多线程下载断点续传程序：设计服务端和Android端
+                br
+                | 4. Android端的内容涉及IoC、多线程、SQLite数据库、Handler、Http协议、缓存处理、意外关机时候的处理、编写框架、MVC、Service、Android中的I/O流、代码调试、Activity的生命周期等
+                br
+                | 5. 单元测试
+                br
+                | 6. 软件调试
+
+            tr
+              td.text-left
+                | 第16个动手案例：Android客户端表单数据的上传（60分钟）
+              td.text-left
+                | 1. 上传基本的数据类型
+                br
+                | 2. 上传图片等附件
+                br
+                | 3. 把代码重构为能够上传任意数量的字段和任意数量的附件的工具类
+                br
+                | 4. 思考本地离线存储/在线上传的技术方案
+
+            tr
+              td.text-left
+                | 第17个动手案例：httpclient和异步http框架（30分钟）
+              td.text-left
+                | 1. 使用httpclient提交数据到服务器
+                br
+                | 2. 异步http框架实现原理
+                br
+                | 3. 异步http框架提交数据到服务器
+
+            tr
+              td.text-left
+                | 第18个动手案例：WIFI通讯实战（30分钟）
+              td.text-left
+                | 1. WIFI通讯特性剖析
+                br
+                | 2. WifiManager 、InputStream和OutputStream
+                br
+                | 3. WIFI应用开发实战
+
+            tr
+              td rowspan=6
+                | 第四天
+              td.text-left
+                | 第19个动手案例：Android中Java与WebView中Javascript相互沟通（60分钟）
+              td.text-left
+                | 1. 制作Android界面的新大陆
+                br
+                | 2. Java调用Javascript
+                br
+                | 3. Javascript调用Java
+
+            tr
+              td.text-left
+                | 第20个动手案例：Android ndk编程（60分钟）
+              td.text-left
+                | 1. 本地C代码调用Java中的Method 
+                br
+                | 2. 本地C代码获得Java对象的属性值 
+                br
+                | 3. 多个类中有本地C代码的调用 
+                br
+                | 4. 在本地代码中创建Java对象 
+                br
+                | 5. 深度剖析Java、Dalvik VM、C/C++的运行机制与流程 
+                br
+                | 6. Java中分配线程调用C/C++函数
+                br
+                | 7. C/C++本地代码通过分配线程调用Java函数
+
+            tr
+              td.text-left
+                | 第21个动手案例：Android横竖屏切换、应用国际化、软件的编译和反编译（60分钟）
+              td.text-left
+                | 1. Android横竖屏切换的经典场景、生命周期和解决方案；
+                br
+                | 2. 实战构建多语言国际化的Android应用程序；
+                br
+                | 3. 如何编译APK来提高应用的安全性；
+                br
+                | 4. 如何反编译Android应用
+
+            tr
+              td.text-left
+                | 第22个动手案例：Handler、Looper、Message、MessageQueue（60分钟）
+              td.text-left
+                | 1. Android的事件驱动模型
+                br
+                | 2. Looper、MessageQueue、Hanlder、Message等源码深度剖析
+                br
+                | 3. Looper、MessageQueue、Hanlder、Message及多线程实战案例
+
+            tr
+              td.text-left
+                | 第23个动手案例：AsyncTASK异步线程技术（60分钟）
+              td.text-left
+                | 1. 使用AsyncTask的原因及对AsyncTask的思考
+                br
+                | 2. AsyncTask代码示例
+                br
+                | 3. AsyncTask源码剖析
+
+            tr
+              td.text-left.red
+                | Android应用程序运行背后秘密---ActivityManagerService源码剖析（150分钟）
+              td.text-left
+                | 1. Android应用程序的main入口到底在哪里？
+                br
+                | 2. ActivityThread成为应用程序的主线程的过程是什么？
+                br
+                | 3. Looper、MessageQueue、Handler背后的秘密；
+                br
+                | 4. Android的Activity、Service、Provider、Receiver启动的流程源码剖析
+
+    .section
+      .content_header
+        | 服务流程
+      .content_container
+        ul.with_list_style
+          li
+            | 客户需求分析及调研
+          li
+            | 培训方案设计及课程内容定制
+          li
+            | 培训实施
+          li
+            | 培训反馈
+          li
+            | 后期服务及跟进
+
+
+    .section
+      .content_header
+        | 后期服务
+      .content_container
+        ul.with_list_style
+          li
+            | 培训结束后2个月内，将对学员提供免费的电话、邮件或在线的技术支持服务。
+          li
+            | 与客户签订企业会员合作协议，企业员工或者客户参加公开课程培训时享受优惠。
+          li
+            | 定期组织多样化的公益性沙龙及学术交流活动。
+
+    .section
+      .content_container
+        p.red.contact_info
+          | 咨询电话：400 821 0871 或 021-6131 5388

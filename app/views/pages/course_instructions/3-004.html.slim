@@ -1,0 +1,502 @@
+= title t'training.title'
+.page
+  .title.innerUpdate
+    = link_to t('courses.title'), '/inner'
+    | &nbsp;&gt;&nbsp;
+    | Android软硬整合设计与框架揭秘
+  .page_container
+    .section
+      .content_header
+        | 课程概述
+      .content_container
+        p
+          | 如何理解Android架构设计的初心并开发出搭载Android系统
+          span.red
+            | 并且具备深度定制和软硬整合能力特色产品
+          | ，是本课程解决的问题。
+          br
+          | 课程以Android的五大核心：HAL、Binder、Native Service、Android Service（并以AMS和WMS为例）、View System为主轴，一次性彻底掌握Android的精髓。
+          br
+          | 之所以是开发Android产品的必修课，缘起于：
+        ul
+          li
+            | 1. HAL是Android Framework&Application与底层硬件整合的关键技术和必修技术；
+          li
+            | 2. Native Service 对上层来说代表了硬件，是Android底层真正的精髓；
+          li
+            | 3. Android Service是应用程序的控制核心，应用程序的一切行为均有Android Service掌控；
+          li
+            | 4. Binder 是Android系统运行的基石，不掌握Binder就永远无法掌握Android；
+          li
+            | 5. View系统的差异化对消费者而言是Android产品核心竞争力之一，苹果和三星是这方面成功的经典案例；
+        p
+          | 通过Android五大核心的洗礼，
+          span.red
+            | 从而完全具备Android系统二次开发和改造能力，
+          | 进而开发出极具特色的Android产品。
+
+    .section
+      .content_header
+        | 课程特色
+      .content_container
+        ul.with_list_style
+          li 
+            | 建立360度的Android产品研发能力和解决问题的能力，能够独立开发并深度定制出搭载Android系统的产品；
+          li 
+            | 贯通Android软硬整合和HTML5端云整合技术整个体系；
+          li 
+            | 全程案例驱动，重在剖析案例代码背后的设计思维和商业密码；
+          li 
+            | 彻底掌握Android HAL的背后的密码；
+          li 
+            | 彻底掌握Android HAL的实现机制和技术
+          li 
+            | 彻底掌握Android Framwork的背后的密码
+          li 
+            | 彻底掌握Android Framwork的设计思维和理念
+          li 
+            | 揭秘Android系统的运行的基石Binder
+          li 
+            | 以Camera实例来彻底剖析Native Service和Binder
+          li 
+            | 彻底实战编写Andorid应用程序的一切技术
+          li 
+            | 掌握HTML5技术的源泉和精髓
+
+
+    .section
+      .content_header
+        | 培训对象
+      .content_container
+        ul.with_list_style
+          li 
+            | 手机、平板、智能电视、车载系统、智能家居设备（例如微波炉、防盗门、电冰箱）等所有想使用Android的硬件厂商；
+          li 
+            | 对Android软硬整合感兴趣的人员； 
+          li 
+            | 希望迅速了解和掌握Android应用和底层技术的人员； 
+          li 
+            | Android底层开发者；
+          li 
+            | Android框架设计和开发者；
+          li 
+            | Android产品架构师；
+          li 
+            | Android系统架构师；
+          li 
+            | Android应用程序开发者；
+          li 
+            | 欲从事HTML5系统工作的人员（浏览器的开发、PhoneGap的的Plugin开发等）
+          li 
+            | 希望从事移动终端开发的爱好者、工程师、程序员、以及相关行业的工程技术人员
+
+    .section
+      .content_header
+        | 培训目标
+      .content_container
+        ul.with_list_style
+          li 
+            | 致力于打造在软硬云整合时代具有独立思考能力和实践能力的高素质IT人才；
+          li 
+            | Android高级工程师
+          li 
+            | Android移植工程师
+          li 
+            | Android框架开发工程师
+          li 
+            | Android项目经理
+          li 
+            | Android架构师
+          li 
+            | HTML5系统架构和开发人员
+ 
+    .section
+      .content_header
+        | 学员基础
+      .content_container
+        ul.with_list_style
+          li 
+            | 具有Java基础；
+          li 
+            | 具有C和C++基础更佳；
+          li 
+            | 对设计模式有所有了解对提升听课效果会大有裨益；
+
+    .section
+      .content_header
+        | 培训方式
+      .content_container
+        p
+          | 本课程共计3天，内容涵盖Android底层、Android HAL、Android Runtime、Android Framework、Android Native Service、Android Binder、Android App开发、Android的Web开发等软硬云整合的的几乎所有核心技术并揭秘HTML5技术的源泉和精髓，致力于打造在软硬云整合时代具有独立思考能力和实践能力的高素质IT人才；授课是以案例驱动为基础重在讲解代码背后的设计思维和商业密码.
+
+    .section
+      .content_header
+        | 课程讲师
+      .content_container
+        ul.teacher
+          - trainers = Trainer.where(url: "Rocky-Wang")
+          - trainers.each do |trainer|
+            li
+              .photo
+                = image_tag(trainer.avatar.thumb.url)
+                .name
+                  | #{trainer.name}
+              .clear
+              .work_as
+                | #{trainer.work_as}
+
+    .section
+      .content_header
+        | 课程大纲
+      .content_container
+        table
+          thead
+            tr
+              td
+                | 时间
+              td
+                | 内容
+              td
+                | 相信内容
+          tbody
+            tr
+              td rowspan=8
+                | 第一天
+              td.text-left
+                | 第1个主题：Android架构揭秘
+              td.text-left
+                | 1,1 Google是如何通过Android支持、掌控全球的硬件厂商和应用程序开发者的？
+                br
+                | 1,2 Android控制力的源泉是什么？技术上如何实现？
+                br
+                | 1,3 Android的Linux Kernal、HAL、Libararies、Runtime、Application Framework设计的理念和实现技术；
+                br
+                | 1.4 Android平台与硬件、云的微妙关系；
+            tr
+              td.text-left
+                | 第2个主题：Android开机流程揭秘
+              td.text-left
+                | 2,1 第一个用户进程剖析；
+                br
+                | 2,2 ServiceManager与Binder的关系；
+                br
+                | 2,3 Zygote揭秘及其运作方式；
+                br
+                | 2,4 Android中的第一个Java进程揭秘，第一个Java进程和ServiceManager的关系及代码实现；
+            tr
+              td.text-left
+                | 第3个主题：Android中启动一个新的应用程序揭秘
+              td.text-left
+                | 3,1 当我们触摸Android屏幕中Launcher上的一个应用程序的图标的时候到底发生怎样的调用过程？
+                br
+                | 3,2 应用程序的执行入口到底在哪里？
+                br
+                | 3.3 一个新的Android应用程序的进程到底是怎么产生的？
+            tr
+              td.text-left
+                | 第4个主题：HAL揭秘
+              td.text-left
+                | 4.1 HAL被加入Android中的真正历史原因分析
+                br
+                | 4.2 HAL的意外价值揭秘
+                br
+                | 4.3 HAL的Stub
+                br
+                | 4.4 hw_module_t与hw_device_t
+                br
+                | 4.5 C语言如何实现继承来满足HAL Stub的设计目的？包括内存结构分析和代码风格讨论等
+                br
+                | 4.6 如何避免HAL Stub实现时的Dirty Code？
+            tr
+              td.text-left
+                | 第5个主题：HAL Stub实战
+              td.text-left
+                | 5.1 用面向对象的思想分析、设计、实现Stub
+                br
+                | 5.2 hw_module_t的子类和hw_device_t的子类的关系以及这种关系的优势
+                br
+                | 5.3在结构体中如何实现C函数的调用?hw_module_t的子类在代码中又是如何和hw_device_t的子类交互的？
+                br
+                | 5.4 类型转换问题
+            tr
+              td.text-left
+                | 第6个主题：HAL和Linux Kernel
+              td.text-left
+                | 6.1 HAL Stub访问和控制硬件
+                br
+                | 6.2 Android下的Linux Kernel剖析
+                br
+                | 6.3 Android 硬件的Driver
+                br
+                | 6.4 访问Linux内核空间的Driver
+            tr
+              td.text-left
+                | 第7个主题：Service与HAL Stub整合
+              td.text-left
+                | 7.1 以面向服务的观点和方式与HAL交互
+                br
+                | 7.2 Library的中so库文件的类型及C/S结构剖析
+                br
+                | 7.3 hw_get_module
+                br
+                | 7.4 获取HAL Stub对象的代码流程剖析
+                br
+                | 7.5 为何HAL Stub的open方法必须提供supporting API（对设备的操作接口）给runtime；
+            tr
+              td.text-left
+                | 第8个主题：Service、ServiceManager和Binder交互关系揭秘
+              td.text-left
+                | 8.1 Binder的第一号服务是谁？为何要这样设计和实现？
+                br
+                | 8.2 如何编写Service
+                br
+                | 8.3 新的Service产生与ServiceManager和Binder交互流程
+                br
+                | 8.4 如何获取一个Service？
+                br
+                | 8.5 Binder的生产者与消费者模式剖析
+
+
+            tr
+              td rowspan=9
+                | 第二天
+              td.text-left
+                | 第9个主题：Binder与Shared Memory
+              td.text-left
+                | 9.1 Binder源代码剖析
+                br
+                | 9.2 Shared Memory剖析
+                br
+                | 9.3 Binder是如何使用共享内存来完成进程间通信的？
+                br
+                | 9.4 从代码的角度来分析Binder使用Shared Memory的生产者与消费者模式
+            tr
+              td.text-left
+                | 第10个主题：Dalvik VM 
+              td.text-left
+                | 10.1 Dalvik VM的特点，Dalvik VM和JVM的比较
+                br
+                | 10.2 Dalvik VM的内存分布及OOM(Out of Memory)的根本原因和解决方案是什么？
+                br
+                | 10.3 Preload Classes和 Preload Resources，ClassLoader到底在哪里？
+                br
+                | 10.4 Dalvik与Java和C/C++
+            tr
+              td.text-left
+                | 第11个主题：Android中的JNI编程
+              td.text-left
+                | 11.1 Java调用C/C++
+                br
+                | 11.2 JNIEnv、JVM、JObject揭秘
+                br
+                | 11.3 C/C++创建Java对象、调用Java属性和方法
+                br
+                | 11.4 JNI中的多线程编程
+                br
+                | 11.5 Facade Pattern在JNI中绝妙应用剖析
+                br
+                | 11.6 PnP(Plug and Play)
+            tr
+              td.text-left
+                | 第12个主题：Android中的NDK编程
+              td.text-left
+                | 12.1 NDK与JNI关系揭秘
+                br
+                | 12.2 NDK开发的流程
+                br
+                | 12.3 采用NDK方式开发出的程序安装和运行的内幕
+                br
+                | 12.4 NDK中的Java与C/C++相互调用
+                br
+                | 12.5 NDK中的多线程编程
+                br
+                | 12.6 关于Android软件开发的标准化和可替换性揭秘
+            tr
+              td.text-left
+                | 第13个主题：SystemServer与Framework中的Service
+              td.text-left
+                | 13.1 Zygote与SystemServer
+                br
+                | 13.2 SystemServer开启Java世界的过程揭秘
+                br
+                | 13.3 Android Service和Native Service是如何关联起来的？
+                br
+                | 13.4 Android Service与ServiceManager
+                br
+                | 13.5 如何把自己的服务加入到ServiceManager中？
+            tr
+              td.text-left
+                | 第14个主题：把Java写的 Service加入到Applciation Framework中
+              td.text-left
+                | 14.1 IInterface与CTS
+                br
+                | 14.2 Binder
+                br
+                | 14.3 AIDL
+                br
+                | 14.4 Java Service与Manager
+                br
+                | 14.5 SystemServer、ServiceManager
+            tr
+              td.text-left
+                | 第15个主题：Android框架移植移植时的事件驱动机制
+              td.text-left
+                | 15.1 Android Service是如何应对硬件阻塞的？
+                br
+                | 15.2 开辟新的子线程并不断的poll
+                br
+                | 15.3 Listener注册
+                br
+                | 15.4 Callback
+                br
+                | 15.5 Application Framework中的Handler、Message、Looper、MessageQueue、
+                br
+                | 15.6 事件驱动机制实例
+            tr
+              td.text-left
+                | 第16个主题：Manager、Service和完整的数据流
+              td.text-left
+                | 16.1，Manager和Service分离的原则
+                br
+                | 16.2，ANR问题
+                br
+                | 16.3，阻塞式的操作和非阻塞式操作
+                br
+                | 16.4，以实例说明Android中的从最底层到最上层的数据流
+            tr
+              td.text-left
+                | 第17个主题：Android软、硬、云三位一体整合
+              td.text-left
+                | 17.1 从技术角度揭秘云，包括云的关键技术和实现方法
+                br
+                | 17.2 在Native Service中整合Android与云
+                br
+                | 17.3 在Application Framework中整合Android与云
+                br
+                | 17.4 Android软、硬、云三位一体整合，包括模式、策略、实现技术
+
+            tr
+              td rowspan=8
+                | 第三天
+              td.text-left
+                | 第18个主题：Android Application Framwork和App的关系
+              td.text-left
+                | 18.1 Framework和App的具体关系是什么？
+                br
+                | 18.2 Framework和App的交互过程？
+                br
+                | 18.3 Framework如何掌控App的？
+                br
+                | 18.4 Framework与Android的四大组件；
+            tr
+              td.text-left
+                | 第19个主题：Android Application Framwork和App的关系
+              td.text-left
+                | 19.1 Framework和App的具体关系是什么？
+                br
+                | 19.2 Framework和App的交互过程？
+                br
+                | 19.3 Framework如何掌控App的？
+                br
+                | 19.4 Framework与Android的四大组件；
+            tr
+              td.text-left
+                | 第20个主题： Handler、Looper、Message、MessageQueue
+              td.text-left
+                | 20.1. Android的事件驱动模型
+                br
+                | 20.2. Looper、MessageQueue、Hanlder、Message等源码深度剖析
+                br
+                | 20.3. Looper、MessageQueue、Hanlder、Message及多线程实战案例
+            tr
+              td.text-left
+                | 第21主题：AsyncTASK异步线程技术
+              td.text-left
+                | 21.1. 使用AsyncTask的原因及对AsyncTask的思考
+                br
+                | 21.2. AsyncTask代码示例
+                br
+                | 21.3. AsyncTask源码剖析
+            tr
+              td.text-left
+                | 第22堂课：ActivityManagerService原理与核心架构解析
+              td.text-left
+                | 22.1 AMS的架构解析和main剖析
+                br
+                | 22.2 AMS启动一个Process架构解析源码剖析
+                br
+                | 22.3 AMS启动Activity、Service、Broadcast、ContentProvider架构解析与源码剖析
+                br
+                | 22.4 Proxy-Stub
+            tr
+              td.text-left
+                | 第23堂课：WindowManagerService原理与核心架构解析
+              td.text-left
+                | 23.1 WindowManagerService架构解析
+                br
+                | 23.2 Window创建过程分析
+                br
+                | 23.3 Activity与WindowManagerService交互
+                br
+                | 23.4 WindowManagerService下的SurfaceFlinger
+                br
+                | 23.5 窗口的绘制和改变全程代码解析
+            tr
+              td.text-left
+                | 第24个主题：Dalvik虚拟机架构设计和实现彻底剖析
+              td.text-left
+                | 24.1 Dalvik虚拟机启动过程剖析
+                br
+                | 24.2 Dalvik虚拟机运行过程剖析
+                br
+                | 24.3 Dalvik的C/C++与Java交互的JNI方法注册过程剖析
+                br
+                | 24.4 Dalvik关于进程和线程创建与管理剖析
+
+            tr
+              td.text-left
+                | 第25个主题：源码：通过Binder、ServiceManager、BpBinder、BnBinder、AIDL贯通Android整个体系的架构核心（120分钟）
+              td.text-left
+                | 25.1. 源码剖析Service Manager是如何成为一个守护进程的？
+                br
+                | 25.2. 源码剖析Server和Client是如何获得Service Manager接口的？
+                br
+                | 25.3. 源码剖析Server是如何把自己的服务启动起来的？Service Manager在Server启动的过程中是如何为Server提供服务的？ 
+                br
+                | 25.25  源码剖析Service Manager是如何为Client提供服务的？
+                br
+                | 25.5. Android系统进程间通信Binder机制在应用程序框架层的Java接口源代码分析
+
+    .section
+      .content_header
+        | 服务流程
+      .content_container
+        ul.with_list_style
+          li
+            | 客户需求分析及调研
+          li
+            | 培训方案设计及课程内容定制
+          li
+            | 培训实施
+          li
+            | 培训反馈
+          li
+            | 后期服务及跟进
+
+
+    .section
+      .content_header
+        | 后期服务
+      .content_container
+        ul.with_list_style
+          li
+            | 培训结束后2个月内，将对学员提供免费的电话、邮件或在线的技术支持服务。
+          li
+            | 与客户签订企业会员合作协议，企业员工或者客户参加公开课程培训时享受优惠。
+          li
+            | 定期组织多样化的公益性沙龙及学术交流活动。
+
+    .section
+      .content_container
+        p.red.contact_info
+          | 咨询电话：400 821 0871 或 021-6131 5388

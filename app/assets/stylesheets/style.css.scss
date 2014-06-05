@@ -17,6 +17,9 @@ $xl: 20px;
 .bold {
   font-weight: bold;
 }
+.text-left {
+  text-align: left;
+}
 
 .cWhite a:hover {
   color: #fff;
@@ -1528,6 +1531,13 @@ pre {
         padding-left: 20px;
         li {
           list-style: initial;
+        }
+      }
+
+      ul.without_list_style {
+        padding-left: 20px;
+        li {
+          list-style: none;
         }
       }
 

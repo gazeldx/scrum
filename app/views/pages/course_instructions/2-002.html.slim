@@ -88,7 +88,7 @@
         | 课程讲师
       .content_container
         ul.teacher
-          - trainers = Trainer.where("url in (?)", ["Ning-Lu"])
+          - trainers = Trainer.where(url: "Ning-Lu")
           - trainers.each do |trainer|
             li
               .photo

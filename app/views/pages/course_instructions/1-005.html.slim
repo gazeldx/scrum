@@ -1,0 +1,201 @@
+= title t'training.title'
+.page
+  .title.innerUpdate
+    = link_to t('courses.title'), '/inner'
+    | &nbsp;&gt;&nbsp;
+    | 精益及看板实战工作坊
+  .page_container
+    .section
+      .content_header
+        | 课程概述
+      .content_container
+        p
+          | 本课程依托讲师在大型互联网公司，知名外企、软件外包、金融以及创业公司客户中应用看板的丰富实践，结合国际上看板领域最新的发展，为学员带来2天浸入式的看板实战工作坊。
+        p
+          | 课程凝聚了讲师多年来在精益和看板方面的探索与积累，通过学习，相信学员将：
+        ul.with_list_style
+          li
+            | 掌握利用可视化方法管理产品开发、改善团队合作效率的技巧
+          li
+            | 掌握看板度量、消除浪费，缓解瓶颈，流程优化的方法和经验
+          li
+            | 掌握组织各类看板活动，带领团队逐步应用看板的能力
+
+
+    .section
+      .content_header
+        | 课程受众
+      .content_container
+        | 期望在企业或项目中导入kanban和敏捷方法的企业或团队，包括企业决策者、团队管理人员、项目管理人员、设计，开发，测试、质量控制人员等多个角色。
+
+    .section
+      .content_header
+        | 课程特色
+      .content_container
+        ul.with_list_style
+          li
+            | 资深专家授课，深入浅出
+          li
+            | 内容全面、深入,囊括大量项目论证过的实践经验,重在实际操作
+          li
+            | 课程互动、游戏、练习丰富，贴近实战，实战性很强
+
+    .section
+      .content_header
+        | 往期课程场景
+      .content_container
+        = image_tag('course_instruction/1-005-1.jpg')
+        = image_tag('course_instruction/1-005-2.jpg')
+
+    .section
+      .content_header
+        | 开课方式
+      .content_container
+        p
+          | 企业内训，预约培训时间
+
+    .section
+      .content_header
+        | 课程讲师
+      .content_container
+        ul.teacher
+          - trainers = Trainer.where(url: "Ning-Lu")
+          - trainers.each do |trainer|
+            li
+              .photo
+                = image_tag(trainer.avatar.thumb.url)
+                .name
+                  | #{trainer.name}
+              .clear
+              .work_as
+                | #{trainer.work_as}
+
+    .section
+      .content_header
+        | 课程大纲
+      .content_container
+        ul.with_list_style
+          li.bold
+            | ［概述］
+          li
+            | 精益及看板要素
+          li
+            | 看板原则
+          li.bold
+            | ［游戏］
+          li
+            | 看板游戏－Pizza生产
+          li.bold
+            | ［可视化方法］
+          li
+            | 可视化工作项及流程
+          li
+            | 工作项分类与服务分类
+          li
+            | 可视化角色
+          li
+            | 暴露多任务
+          li
+            | 建立服务标准
+          li
+            | 可视化阻碍及问题、建立升级处理策略
+          li
+            | 流程建模的核心模式及案例
+          li
+            | 看板模拟练习
+          li.bold
+            | ［看板度量］
+          li
+            | 累计流图，Burn-Up图
+          li
+            | 度量工作项处理时间（Process Time）及周期时间（Cycle Time）
+          li
+            | 度量在制品数量（WIP）
+          li
+            | 价值流分析及流程效率指标
+          li.bold
+            | ［游戏］
+          li
+            | 看板游戏－拉动
+          li.bold
+            | ［拉动管理］
+          li
+            | 约束在制品数量
+          li
+            | 基于拉动的授权及现场决策实践
+          li
+            | 事件触发设置及JIT看板会议
+          li
+            | 利用Story Map管理需求和计划
+          li
+            | 利用看板管理从愿景到发布的完整流程
+          li
+            | 引入新工作项的机制
+          li
+            | 排队理论及促进拉动的关键因素
+          li
+            | 合适粒度及高质量的工作项
+          li
+            | 降低协调成本、事务成本及流程中差异性的实践
+          li.bold
+            | ［案例及实施］
+          li
+            | 各类企业的看板案例分析
+          li
+            | 看板渐进式改进模型
+          li
+            | 利用看板实践成熟度模型指导看板实施
+          li
+            | 在线看板及其应用建议
+          li
+            | 比较看板与Scrum方法
+          li.bold
+            | ［精益］
+          li
+            | 精益管理思维
+          li.bold
+            | ［总结］
+
+
+    .section
+      .content_header
+        | 课程价格
+      .content_container
+        p
+          | 单价：人民币19800元/天， 2天课程总计：人民币39600元
+          br
+          | 客户承担讲师差旅费用。
+
+    .section
+      .content_header
+        | 服务流程
+      .content_container
+        ul.with_list_style
+          li
+            | 客户需求分析及调研
+          li
+            | 培训方案设计及课程内容定制
+          li
+            | 培训实施
+          li
+            | 培训反馈
+          li
+            | 后期服务及跟进
+
+
+    .section
+      .content_header
+        | 后期服务
+      .content_container
+        ul.with_list_style
+          li
+            | 培训结束后2个月内，将对学员提供免费的电话、邮件或在线的技术支持服务。
+          li
+            | 与客户签订企业会员合作协议，企业员工或者客户参加公开课程培训时享受优惠。
+          li
+            | 定期组织多样化的公益性沙龙及学术交流活动。
+
+    .section
+      .content_container
+        p.red.contact_info
+          | 咨询电话：400 821 0871 或 021-6131 5388

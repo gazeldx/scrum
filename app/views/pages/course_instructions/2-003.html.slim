@@ -1,0 +1,208 @@
+= title t'training.title'
+.page
+  .title.innerUpdate
+    = link_to t('courses.title'), '/inner'
+    | &nbsp;&gt;&nbsp;
+    | 敏捷测试原则与实战工作坊
+  .page_container
+    .section
+      .content_header
+        | 课程概述
+      .content_container
+        p
+          | 在敏捷项目中，除了开发人员负责的开发者测试（Developer Testing）外，还有很多测试工作是由更擅长做软件测试的人员来完成的。这些以测试为主的专业的敏捷测试人员大体上有两类：一类是参与到迭代开发跨职能工作团队（cross-functional team）中的测试人员；一类是独立的测试团队，在大型的、复杂的项目中更为常见。
+        p
+          | 本课程针对这两类敏捷项目中的测试人员，探讨他们在敏捷项目中遇到的测试相关的问题与挑战，比如测试策略的制定、测试估计与计划、测试人员的安排、测试技术的选择与应用等等，介绍了敏捷测试的一些核心原则以及诸多可供参考并直接借鉴的敏捷测试实践。课程启发性强，互动性强，中间穿插8 个游戏或研讨环节，以及一个大型实战演练项目，学员在两天的课程中要进行大量的深入思考以及动手实践，很多测试实践可以即学即用。
+
+    .section
+      .content_header
+        | 客户反馈
+      .content_container
+        ul.with_list_style
+          li 
+            | 练习和互动比较充分，受到很多启发
+          li 
+            | 课程更贴合实际项目，而不是纯敏捷的理论
+          li 
+            | 弥补了敏捷项目中“独立的测试团队”如何运作，这一块很多敏捷书籍中缺少的内容
+
+    .section
+      .content_header
+        | 课程优势
+      .content_container
+        ul.with_list_style
+          li
+            | 课程启发性强，互动性强
+          li
+            | 资深测试专家授课，MFQ&PPDCS是讲师在08年提出的软件测试设计框架，曾在华为多个产品线得到实际推广应用
+          li
+            | 课程已经在国内众多知名企业成功交付，千锤百炼，囊括大量项目论证过的实践经验
+          li
+            | 课程案例、游戏练习非常丰富，贴近实战，实践性很强
+
+    .section
+      .content_header
+        | 课程受众
+      .content_container
+        | 从事软件测试设计、软件测试执行和软件测试管理的人员（其角色可能是测试人员、开发人员或质量人员）
+
+    .section
+      .content_header
+        | 课程要点
+      .content_container
+        ul.with_list_style
+          li
+            | 敏捷测试原则
+          li
+            | 敏捷测试与瀑布测试
+          li
+            | R.M.S敏捷测试策略
+          li
+            | 完整团队中的测试人员
+          li
+            | 大型实战演练
+
+    .section
+      .content_header
+        | 开课方式
+      .content_container
+        p
+          | 企业内训，预约培训时间
+
+    .section
+      .content_header
+        | 课程讲师
+      .content_container
+        ul.teacher
+          - trainers = Trainer.where(url: "Xiaomei-Tai")
+          - trainers.each do |trainer|
+            li
+              .photo
+                = image_tag(trainer.avatar.thumb.url)
+                .name
+                  | #{trainer.name}
+              .clear
+              .work_as
+                | #{trainer.work_as}
+
+    .section
+      .content_header
+        | 课程大纲
+      .content_container
+        ul
+          li.bold
+            | 课程介绍
+          li
+            | 1.学习的金字塔 
+          li
+            | 2.学完本课达成的目标
+          li.bold
+            | 敏捷测试原则
+          li
+            | 1.从测试角度解读敏捷宣言
+          li
+            | 2.游戏环节
+          li
+            | 3.敏捷测试原则
+          li
+            | 4.敏捷测试人员
+          li
+            | 5.我的测试宣言
+          li.bold
+            | 敏捷测试与瀑布测试
+          li
+            | 1.迭代带给我们的变化
+          li
+            | 2.一些对软件测试的传统认识
+          li
+            | 3.研讨环节
+          li
+            | 4.对比敏捷测试与传统测试
+          li.bold
+            | R.M.S 敏捷测试策略
+          li
+            | 1.哪些测试需要在迭代之外开展
+          li
+            | 2.考虑回归测试
+          li
+            | 3.研讨环节
+          li
+            | 4.R.M.S 介绍
+          li
+            | 5.游戏环节
+          li
+            | 6.基于风险的测试策略
+          li
+            | 7.测试深度图
+          li
+            | 8.基于模型的测试
+          li
+            | 9.基于会话的测试
+          li
+            | 10.测试反馈环
+          li
+            | 11.研讨环节
+          li.bold
+            | 完整团队中的测试人员
+          li
+            | 1.敏捷测试四象限
+          li
+            | 2.一个迭代内的测试概览
+          li
+            | 3.研讨环节
+          li
+            | 4.测试人员可以做的事
+          li.bold
+            | 大型实战演练
+          li
+            | 1. 项目的复杂性
+          li
+            | 2. 游戏环节
+          li
+            | 3. 组建团队
+          li
+            | 4.识别价值-Product Backlog
+          li
+            | 5.定义价值流
+          li
+            | 6.迭代计划与估计
+          li
+            | 7.游戏环节
+          li
+            | 8.燃尽图
+          li
+            | 9.项目回顾
+
+    .section
+      .content_header
+        | 服务流程
+      .content_container
+        ul.with_list_style
+          li
+            | 客户需求分析及调研
+          li
+            | 培训方案设计及课程内容定制
+          li
+            | 培训实施
+          li
+            | 培训反馈
+          li
+            | 后期服务及跟进
+
+
+    .section
+      .content_header
+        | 后期服务
+      .content_container
+        ul.with_list_style
+          li
+            | 培训结束后2个月内，将对学员提供免费的电话、邮件或在线的技术支持服务。
+          li
+            | 与客户签订企业会员合作协议，企业员工或者客户参加公开课程培训时享受优惠。
+          li
+            | 定期组织多样化的公益性沙龙及学术交流活动。
+
+    .section
+      .content_container
+        p.red.contact_info
+          | 咨询电话：400 821 0871 或 021-6131 5388

@@ -1,0 +1,306 @@
+= title t'training.title'
+.page
+  .title.innerUpdate
+    = link_to t('courses.title'), '/inner'
+    | &nbsp;&gt;&nbsp;
+    | 自动化测试与ATDD实战工作坊
+  .page_container
+    .section
+      .content_header
+        | 课程概述
+      .content_container
+        p
+          | 如何使产品从同质竞争中脱颖而出？
+          br
+          | 产品开发者自己觉得产品很好用，但是，用户不满意？
+          br
+          | 用户体验就是做好交互设计、界面设计？
+          br
+          | 用户体验涉及面很广，各个产品环节都会影响用户体验，产品人员需要掌握哪些核心要素？
+          br
+          | 知道用户体验对产品很重要，但不知如何落地实施？
+          br
+          | 本课程通过丰富的案例和互动实践，以及业界最佳实践的分享，与您一起探讨解决这些问题。
+        p
+          | 课程不仅仅是关于用户体验，也帮助您对产品价值、产品的商业模式、互联网产品开发方法进行全方位思考与实践。
+
+
+    .section
+      .content_header
+        | 客户反馈
+      .content_container
+        ul
+          li 
+            | 讲师的产品经验很丰富； 小组的讨论式学习比较能带动起学习的氛围； 微信通知的方式非常好，还能有后续的讨论和联络。  ——百度学员
+          li 
+            | 有效的传授产品相关知识，实用性强，可有效应用到工作中。——富士通学员
+          li 
+            | 不仅仅是竞品分析，而是对产品的全方位思考。——创意嘉和学员
+          li 
+            | 在内容和形式上都很有用，能学到很多有用的知识。授课的形式也不错，演练的方式较为新颖。——永安电子商务学员
+          li 
+            | 方法指导与产品实践相结合，老师用了较多的产品案例，并让学员自己动手，结合自己工作中熟悉的产品进行分析，理解和体会分析的方法与过程。——天铭科技
+
+    .section
+      .content_header
+        | 课程受众
+      .content_container
+        ul
+          li
+            | 产品经理
+          li
+            | 策划、设计、市场、运营等产品相关人员
+          li
+            | 希望跨界学习、开拓视野、提升产品技能的产品相关人员
+
+    .section
+      .content_header
+        | 课程收益
+      .content_container
+        ul.with_list_style
+          li
+            | 跨界学习、开拓视野：掌握产品各个环节中的用户体验核心要素，能够更全面地看待产品及其用户体验
+          li
+            | 能够用自己的语言阐述用户体验的要素与内涵
+          li
+            | 能够运用用户体验模型中的相关原则、方法与工具
+          li
+            | 能够运用用户体验度量表发现产品中的改进点
+
+    .section
+      .content_header
+        | 课程特色
+      .content_container
+        ul.with_list_style
+          li
+            | 致力于学习体验与效果，使用户体验变得简单、有效、可落地，提升您的产品竞争力！
+          li
+            | 结合大量的经典案例解读、讨论、反思，使用户体验变得简单
+          li
+            | 提供业界最佳实践与方法论，使用户体验变得有效
+          li
+            | 提供竞品分析与用户体验工具箱，学员动手实践、PK、点评，使用户体验可落地
+
+    .section
+      .content_header
+        | 授课形式
+      .content_container
+        ul
+          li
+            | 启发式学习：大量业界优秀案例、反面案例启发思考；引导学员共同探索出解决方案，而非说教式培训，体验探索的乐趣。
+          li
+            | 行动式学习：采用Workshop的形式，学员动手参与实战演练；提供工具方法及业界最佳实践，可直接借鉴于实际工作中，并与工作结合。
+
+    .section
+      .content_header
+        | 开课方式
+      .content_container
+        p
+          | 企业内训，预约培训时间
+
+    .section
+      .content_header
+        | 课程讲师
+      .content_container
+        ul.teacher
+          - trainers = Trainer.where(url: "Kevin-Zhang")
+          - trainers.each do |trainer|
+            li
+              .photo
+                = image_tag(trainer.avatar.thumb.url)
+                .name
+                  | #{trainer.name}
+              .clear
+              .work_as
+                | #{trainer.work_as}
+
+    .section
+      .content_header
+        | 课程大纲
+      .content_container
+        table
+          thead
+            tr
+              td
+                | 时间
+              td
+                | 内容
+              td
+                | 详细内容
+          tbody
+            tr
+              td
+                | 第一天
+              td
+                | &nbsp;
+              td
+                | &nbsp;
+            tr
+              td rowspan=2
+                | &nbsp;
+              td
+                | 用户体验基础
+              td.text-left
+                |   导入——工程师思维与产品思维
+                br
+                | 从厕所说用户体验
+                br
+                | 什么是用户体验？
+                br
+                | 用户体验的本质与内涵
+                br
+                | 用户体验受关注的原因
+                br
+                | 用户体验对产品成败的影响
+
+            tr
+              td
+                | 用户体验要素及案例
+              td.text-left
+                | 分组演练：从装修设计来理解用户体验的要素
+                br
+                | 用户体验要素简介、案例
+                br
+                | 战略层
+                br
+                | 用户需求与商业目标如何影响用户体验？
+                br
+                | 需求的层次
+                br
+                | 如何探索人性需求
+                br
+                | 互联网的商业规则
+                br
+                | 案例：小米的“铁人三项”、搜狗的“三级火箭”战略
+                br
+                | 范围层
+                br
+                | 产品的功能与优先级如何影响用户体验？
+                br
+                | 如何设定功能优先级
+                br
+                | 如何给产品做减法
+                br
+                | 案例：QQ邮箱的变革历程
+                br
+                | 结构层
+                br
+                | 如何使产品“简单易用”
+                br
+                | 案例：电商网站的购买历程
+                br
+                | 信息架构4原则、案例
+                br
+                | 演练：卡片分类法
+                br
+                | 框架层与表现层
+                br
+                | UI设计4原则、案例
+                br
+                | 演练：设计产品的注册页面
+                br
+                | 案例：MIUI的形色质
+                br
+                | 案例：微博的色彩运用
+                br
+                | 用户体验要素的落地
+                br
+                | 用户体验要素与产品流程
+
+            tr
+              td
+                | 第2天
+              td
+                | &nbsp;
+              td
+                | &nbsp;
+            tr
+              td rowspan=3
+                | &nbsp;
+              td
+                | 用户体验进阶
+              td.text-left
+                | 用户体验的关键时刻（MOT）
+                br
+                | 峰终效应
+                br
+                | 案例：互联网坚果“三只松鼠”
+                br
+                | 情感体验及案例
+                br
+                | 交互体验及案例
+                br
+                | 用户体验检查表及行动计划
+                br
+                | 如何衡量产品的用户体验
+
+
+            tr
+              td
+                | 用户体验常见问题研讨
+              td
+                ul.text-left
+                  li
+                    | 用户体验就是把各个方面做到极致？
+                  li
+                    | “快”与“好”如何取舍？
+                  li
+                    | 天涯、hao123的“体验”那么差，为什么还能成功？
+                  li
+                    | 用户体验，一切以用户为重？
+                  li
+                    | 产品的用户体验归谁负责？
+
+            tr
+              td
+                | 用户体验实战工作坊
+              td.text-left
+                | 创新产品的商业模式实践
+                br
+                | 结合学员具体的工作产品，对用户体验的工具与方法进行实践与落地，
+                br
+                | 使学员切实掌握用户体验的工具与方法，并应用于实际的产品开发中。
+
+    .section
+      .content_header
+        | 课程价格
+      .content_container
+        p
+          | 单价：人民币23000元/天， 2天课程总计：人民币46000元
+          br
+          | 客户承担讲师差旅费用。
+
+
+    .section
+      .content_header
+        | 服务流程
+      .content_container
+        ul.with_list_style
+          li
+            | 客户需求分析及调研
+          li
+            | 培训方案设计及课程内容定制
+          li
+            | 培训实施
+          li
+            | 培训反馈
+          li
+            | 后期服务及跟进
+
+
+    .section
+      .content_header
+        | 后期服务
+      .content_container
+        ul.with_list_style
+          li
+            | 培训结束后2个月内，将对学员提供免费的电话、邮件或在线的技术支持服务。
+          li
+            | 与客户签订企业会员合作协议，企业员工或者客户参加公开课程培训时享受优惠。
+          li
+            | 定期组织多样化的公益性沙龙及学术交流活动。
+
+    .section
+      .content_container
+        p.red.contact_info
+          | 咨询电话：400 821 0871 或 021-6131 5388
