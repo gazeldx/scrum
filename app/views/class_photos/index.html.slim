@@ -21,7 +21,7 @@
                     = image_tag(class_photo.avatar.photo.url)
                   .student_title2
                     /| CSM Trainers
-                    = t 'trainees.trainer_of', course_name: class_photo.course.name
+                    = class_photo.course.name
                   .student_title3
                     | #{class_photo.course.trainer.name}
                     /| Jens Østergaard
